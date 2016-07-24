@@ -30,16 +30,20 @@ int main()
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,Weapon_Release_Button);
-
+		MapKey(&Joystick, S2,Weapon_Release_Button); // TODO map to DX1
+		//MapKey(&Joystick, DX1);
+		
 	//S1 Master Mode Control Button
 		//MapKey(&Joystick, S1,);
 	//Trim
-		MapKey(&Joystick,H1D,Elevator_Trimmer_Switch__PULLCLIMB);
-		MapKey(&Joystick,H1U,Elevator_Trimmer_Switch__PUSHDESCEND);
-		MapKey(&Joystick,H1L,Aileron_Trimmer_Switch__LEFT_WING_DOWN);
-		MapKey(&Joystick,H1R,Aileron_Trimmer_Switch__RIGHT_WING_DOWN);
-
+		MapKey(&Joystick,H1D,Elevator_Trimmer_Switch__PULLCLIMB); //TODO map to DX2
+		//MapKey(&Joystick,H1D,DX2)
+		MapKey(&Joystick,H1U,Elevator_Trimmer_Switch__PUSHDESCEND);//TODO map to DX3
+		//MapKey(&Joystick,H1U,DX3)
+		MapKey(&Joystick,H1L,Aileron_Trimmer_Switch__LEFT_WING_DOWN);//TODO map to DX4
+		//MapKey(&Joystick,H1L,DX4)
+		MapKey(&Joystick,H1R,Aileron_Trimmer_Switch__RIGHT_WING_DOWN);//TODO map to DX5
+		//MapKey(&Joystick,H1R,DX5)
 
 	//TMS
 		//MapKey(&Joystick,H2D,);
@@ -49,10 +53,11 @@ int main()
 
 	//Trigger 
 		//TG1
-			MapKey(&Joystick,TG1,Gun_Trigger__FIRST_DETENT);
+			MapKey(&Joystick,TG1,Gun_Trigger__FIRST_DETENT);//TODO map to DX6
+			//MapKey(&Joystick,TG1,DX6)
 		//TG2
-			MapKey(&Joystick,TG2,Gun_Trigger__SECOND_DETENT_Press_to_shoot);
-	
+			MapKey(&Joystick,TG2,Gun_Trigger__SECOND_DETENT_Press_to_shoot);//TODO map to DX7
+			//MapKey(&Joystick,TG2,DX7)
 	//DMS
 		//MapKey(&Joystick,H3D,);
 		//MapKey(&Joystick,H3U,);
@@ -64,17 +69,18 @@ int main()
 		MapKey(&Joystick,H4U,PULSE + DogfightResume_Search_Switch__FORWARD_DM);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		MapKey(&Joystick,H4P,PULSE + DogfightResume_Search_Switch__CENTERPRESS_RESUME_SEARCH); 
-	
+		MapKey(&Joystick,H4P,PULSE + DogfightResume_Search_Switch__CENTERPRESS_RESUME_SEARCH); //TODO map to DX8
+		//MapKey(&Joystick,H4P,DX8)
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,Nosewheel_Steering_Button);
-	
+		MapKey(&Joystick, S3,Nosewheel_Steering_Button);//TODO map to DX9
+		//MapKey(&Joystick,S4,DX9)
 	//S4 Paddle Switch
 		MapKey(&Joystick, S4,PULSE + Pitch_Damper_Cutoff_Switch);
 
 //THROTTLE
 
 	//Pinky
+		//This is a hack cause my Boat Switch is being flakey
 		MapKey(&Throttle,PSF,PULSE + Flap_Switch__UP);
 		MapKey(&Throttle,PSM,PULSE + Flap_Switch__FIXED);
 		MapKey(&Throttle,PSB,PULSE + Flap_Switch__AUTO);
@@ -83,8 +89,8 @@ int main()
 		//MapKey(&Throttle,LTB,);
 	
 	//Slew
-		MapKey(&Throttle,SC,ANASG31_Sight_Cage_Switch); 
-
+		MapKey(&Throttle,SC,ANASG31_Sight_Cage_Switch); //TODO map to DX10
+		//MapKey(&Throttle,SC,DX10)
 	//Coolie
 		//MapKey(&Throttle,CSD,);
 		//MapKey(&Throttle,CSU,);
@@ -104,9 +110,9 @@ int main()
 		MapKey(&Throttle,SPDB,PULSE + Speed_Brake_Switch__OUT);
 	
 	//Boat
-		MapKey(&Throttle,BSF,PULSE + Flap_Switch__UP);
-		MapKey(&Throttle,BSM,PULSE + Flap_Switch__FIXED);
-		MapKey(&Throttle,BSB,PULSE + Flap_Switch__AUTO);
+		//MapKey(&Throttle,BSF,PULSE + Flap_Switch__UP);
+		//MapKey(&Throttle,BSM,PULSE + Flap_Switch__FIXED);
+		//MapKey(&Throttle,BSB,PULSE + Flap_Switch__AUTO);
 	
 	//China Hat
 		//MapKey(&Throttle,CHF,);
@@ -126,12 +132,12 @@ int main()
 	
 	//Engine Oper
 		//Left
-		MapKey(&Throttle,EOLIGN,Left_Engine_Start_Button);
+		MapKey(&Throttle,EOLIGN,PULSE + Left_Engine_Start_Button);
 		//MapKey(&Throttle,EOLNORM,);
 		//MapKey(&Throttle,EOLMOTOR,);
 		
 		//Right
-		MapKey(&Throttle,EORIGN,Right_Engine_Start_Button );
+		MapKey(&Throttle,EORIGN,PULSE + Right_Engine_Start_Button );
 		//MapKey(&Throttle,EORNORM,);
 		//MapKey(&Throttle,EORMOTOR,);
 				
@@ -141,13 +147,13 @@ int main()
 	
 	//Flaps
 		MapKey(&Throttle,FLAPU,PULSE + Flap_Lever__EMER_UP);
-		MapKey(&Throttle,FLAPM,Flap_Lever__THUMB_SW);
+		MapKey(&Throttle,FLAPM,PULSE + Flap_Lever__THUMB_SW);
 		MapKey(&Throttle,FLAPD,PULSE + Flap_Lever__FULL);
 	
 	//Idle Cutoff
 		//Left
 		MapKey(&Throttle,IDLELON,PULSE + Throttle_Left__OFF);
-		MapKey(&Throttle,IDLELOFF,Throttle_Left__IDLE);
+		MapKey(&Throttle,IDLELOFF,PULSE + Throttle_Left__IDLE);
 		
 		//Right
 		MapKey(&Throttle,IDLERON,PULSE + Throttle_Right__OFF);
@@ -166,7 +172,7 @@ int main()
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		MapKey(&Throttle,APENG,TEMPO(TrackIRPause,TrackIRCenter));
+		MapKey(&Throttle,APENG,TEMPO(PULSE + TrackIRPause,TrackIRCenter));// dont pulse TIR Center so you can adjust your center
 
 	//AP Select Switch
 		//MapKey(&Throttle,APPAT,);

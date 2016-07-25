@@ -30,20 +30,20 @@ int main()
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,Weapon_Release_Button); // TODO map to DX1
-		//MapKey(&Joystick, DX1);
+		//MapKey(&Joystick, S2,Weapon_Release_Button); // TODO map to DX1
+		MapKey(&Joystick,S2, DX1);
 		
 	//S1 Master Mode Control Button
 		//MapKey(&Joystick, S1,);
 	//Trim
-		MapKey(&Joystick,H1D,Elevator_Trimmer_Switch__PULLCLIMB); //TODO map to DX2
-		//MapKey(&Joystick,H1D,DX2)
-		MapKey(&Joystick,H1U,Elevator_Trimmer_Switch__PUSHDESCEND);//TODO map to DX3
-		//MapKey(&Joystick,H1U,DX3)
-		MapKey(&Joystick,H1L,Aileron_Trimmer_Switch__LEFT_WING_DOWN);//TODO map to DX4
-		//MapKey(&Joystick,H1L,DX4)
-		MapKey(&Joystick,H1R,Aileron_Trimmer_Switch__RIGHT_WING_DOWN);//TODO map to DX5
-		//MapKey(&Joystick,H1R,DX5)
+		//MapKey(&Joystick,H1D,Elevator_Trimmer_Switch__PULLCLIMB); //TODO map to DX2
+		MapKey(&Joystick,H1D,DXHATDOWN);
+		//MapKey(&Joystick,H1U,Elevator_Trimmer_Switch__PUSHDESCEND);//TODO map to DX3
+		MapKey(&Joystick,H1U,DXHATUP);
+		//MapKey(&Joystick,H1L,Aileron_Trimmer_Switch__LEFT_WING_DOWN);//TODO map to DX4
+		MapKey(&Joystick,H1L,DXHATLEFT);
+		//MapKey(&Joystick,H1R,Aileron_Trimmer_Switch__RIGHT_WING_DOWN);//TODO map to DX5
+		MapKey(&Joystick,H1R,DXHATRIGHT);
 
 	//TMS
 		//MapKey(&Joystick,H2D,);
@@ -53,11 +53,11 @@ int main()
 
 	//Trigger 
 		//TG1
-			MapKey(&Joystick,TG1,Gun_Trigger__FIRST_DETENT);//TODO map to DX6
-			//MapKey(&Joystick,TG1,DX6)
+			//MapKey(&Joystick,TG1,Gun_Trigger__FIRST_DETENT);//TODO map to DX6
+			MapKey(&Joystick,TG1,DX2);
 		//TG2
-			MapKey(&Joystick,TG2,Gun_Trigger__SECOND_DETENT_Press_to_shoot);//TODO map to DX7
-			//MapKey(&Joystick,TG2,DX7)
+			//MapKey(&Joystick,TG2,Gun_Trigger__SECOND_DETENT_Press_to_shoot);//TODO map to DX7
+			MapKey(&Joystick,TG2,DX3);
 	//DMS
 		//MapKey(&Joystick,H3D,);
 		//MapKey(&Joystick,H3U,);
@@ -69,11 +69,11 @@ int main()
 		MapKey(&Joystick,H4U,PULSE + DogfightResume_Search_Switch__FORWARD_DM);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		MapKey(&Joystick,H4P,PULSE + DogfightResume_Search_Switch__CENTERPRESS_RESUME_SEARCH); //TODO map to DX8
-		//MapKey(&Joystick,H4P,DX8)
+		//MapKey(&Joystick,H4P,PULSE + DogfightResume_Search_Switch__CENTERPRESS_RESUME_SEARCH); //TODO map to DX8
+		MapKey(&Joystick,H4P,DX4);
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,Nosewheel_Steering_Button);//TODO map to DX9
-		//MapKey(&Joystick,S4,DX9)
+		//MapKey(&Joystick, S3,Nosewheel_Steering_Button);//TODO map to DX9
+		MapKey(&Joystick,S3,DX5);
 	//S4 Paddle Switch
 		MapKey(&Joystick, S4,PULSE + Pitch_Damper_Cutoff_Switch);
 
@@ -89,8 +89,8 @@ int main()
 		//MapKey(&Throttle,LTB,);
 	
 	//Slew
-		MapKey(&Throttle,SC,ANASG31_Sight_Cage_Switch); //TODO map to DX10
-		//MapKey(&Throttle,SC,DX10)
+		//MapKey(&Throttle,SC,ANASG31_Sight_Cage_Switch); //TODO map to DX10
+		MapKey(&Throttle,SC,DX6);
 	//Coolie
 		//MapKey(&Throttle,CSD,);
 		//MapKey(&Throttle,CSU,);

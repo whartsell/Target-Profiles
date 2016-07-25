@@ -100,7 +100,8 @@ int main()
 		//MapKey(&Throttle,SPDM,);
 		MapKey(&Throttle,SPDB,PULSE + Speed_Brake_Switch__OUT);
 	
-	//Boat
+	//Boat  
+		//My Boat switch is being flakey so i moved these to the pinky switch
 		//MapKey(&Throttle,BSF,PULSE + Flap_Switch__UP);
 		//MapKey(&Throttle,BSM,PULSE + Flap_Switch__FIXED);
 		//MapKey(&Throttle,BSB,PULSE + Flap_Switch__AUTO);

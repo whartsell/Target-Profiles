@@ -19,11 +19,12 @@ int main()
 	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
 	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
-	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
-	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
-
+	//MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	//MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+	KeyAxis(&Throttle, SCX, 0, AXMAP2(5, ANAPQ159_Radar_TDC_Button__Left, 0, 0, 0, ANAPQ159_Radar_TDC_Button__Right)); 
+	KeyAxis(&Throttle, SCY, 0, AXMAP2(5, ANAPQ159_Radar_TDC_Button__Up, 0, 0, 0, ANAPQ159_Radar_TDC_Button__Down)); 
 //Layers&Modes
 	//SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
 	
@@ -78,15 +79,15 @@ int main()
 		MapKey(&Throttle,PSB,PULSE + Flap_Switch__AUTO);
 		
 	//Left Throttle Button
-		//MapKey(&Throttle,LTB,);
+		MapKey(&Throttle,LTB,DX6);
 	
 	//Slew
-		MapKey(&Throttle,SC,DX6);
+		MapKey(&Throttle,SC,ANAPQ159_Radar_ACQ_Button);
 	//Coolie
-		//MapKey(&Throttle,CSD,);
-		//MapKey(&Throttle,CSU,);
-		//MapKey(&Throttle,CSL,);
-		//MapKey(&Throttle,CSR,);
+		MapKey(&Throttle,CSD,ANAPQ159_Radar_Elevation_Antenna_Tilt_Control__CCWDown);
+		MapKey(&Throttle,CSU,ANAPQ159_Radar_Elevation_Antenna_Tilt_Control__CWUp);
+		MapKey(&Throttle,CSL,PULSE + ANAPQ159_Radar_Range_Selector__CCWDecrease);
+		MapKey(&Throttle,CSR,PULSE + ANAPQ159_Radar_Range_Selector__CWIncrease);
 	
 	//Mic Switch
 		//MapKey(&Throttle, MSD,);

@@ -125,12 +125,12 @@ int main()
 	
 	//Engine Oper
 		//Left
-		MapKey(&Throttle,EOLIGN,PULSE + Left_Engine_Start_Button);
+		MapKey(&Throttle,EOLIGN,Left_Engine_Start_Button);
 		//MapKey(&Throttle,EOLNORM,);
 		//MapKey(&Throttle,EOLMOTOR,);
 		
 		//Right
-		MapKey(&Throttle,EORIGN,PULSE + Right_Engine_Start_Button );
+		MapKey(&Throttle,EORIGN,Right_Engine_Start_Button );
 		//MapKey(&Throttle,EORNORM,);
 		//MapKey(&Throttle,EORMOTOR,);
 				

@@ -1,0 +1,90 @@
+//Autopilot
+define	ApAttHold		L_ALT+USB[0x1E]	//1
+define	ApAltHold		L_ALT+USB[0x1F]	//2*
+define	ApLevelFlt		L_ALT+USB[0x20]	//3
+define	ApBaroAlt		L_ALT+USB[0x21]	//4*
+define	ApRadAlt		L_ALT+USB[0x22]	//5*
+define	ApRoute			L_ALT+USB[0x23]	//6*
+define	ApDisc			L_ALT+USB[0x26]	//9*
+
+//Countermeasures
+define	CMFlares		USB[0x4C] 		//delete*
+define	CMECM			USB[0x08]		//e*
+define	CMChaff			USB[0x49]			//Insert*
+define	CMContDispense	L_SHIFT+USB[0x14]	//Q*
+define	CMRelease		USB[0x14]			//Q*
+
+//Flight Control
+define	TrimUp			R_CTL+USB[0x37] 	//period*
+define	TrimDown		R_CTL+USB[0x33] 	//semi-colon*
+define	TrimLeft		R_CTL+USB[0x36] 	//comma*
+define	TrimRight		R_CTL+USB[0x38] 	// forward slash/*
+define	TrimReset		L_CTL+USB[0x17] 	// T*
+
+//Modes
+define	NextWpt			L_CTL+USB[0x35]	//Tilde*
+define	NavModes		USB[0x1E] 		//1*
+define	BVRMode			USB[0x1F]		//2*
+define	VertScanMode	USB[0x20]		//3*
+define	BoreMode		USB[0x21]		//4*
+
+define	LongAimMode		USB[0x23] 		//6*
+
+
+
+//Sensors		
+
+define	RadScanDec		R_CTL+USB[0x2D]		//minus*
+define	ZoomOut			USB[0x2D]			//minus*
+define	ScanLeft		R_SHIFT+USB[0x36]	//comma*
+define	TDLeft			USB[0x36]			//comma*
+define	ScanDown		R_SHIFT+USB[0x37]	//period*
+define	TDDown			USB[0x37]			//period*
+define	ScanRight		R_SHIFT+USB[0x38]	// question mark*
+define	TDRight			USB[0x38]			// question mark*
+define	ScanUp			R_SHIFT+USB[0x33]	// semi-colon*
+define	TDUp			USB[0x33]			//semi-colon*
+
+define	RadScanInc		R_CTL+USB[0x2E]		//equal*
+define	ZoomIn			USB[0x2E]			//equal*
+define	TgtUnlock		USB[0x2A] 			//Back*
+define	TgtLock			USB[0x28]			//enter*
+define	TWSToggle		R_ALT+USB[0x0C]		//I*
+define	TDCenter		R_CTL+USB[0x0C] 	//I*
+define	RadPRFSel		R_SHIFT+USB[0x0C]	//I*
+define	RadToggle		USB[0x0C]			//I*
+
+
+//Systems
+define	NWS				USB[0x16]			//s
+define	AirbrakeOff		L_CTL+USB[0x05] 	//b*
+define	AirbrakeOn		L_SHIFT+USB[0x05]	//b*
+define	AirbrakeToggle	USB[0x05] 			//b*
+define	LEngStop		R_ALT+USB[0x4D] 	//End*
+define	REngStop		R_CTL+USB[0x4D] 	//END*
+define	FlapsUp			L_CTL+USB[0x09] 	//f*
+define	FlapsLanding	L_SHIFT+USB[0x09]	//f*
+define	FlapsToggle		USB[0x09] 			//f*
+define	GearUp			L_CTL+USB[0x0A] 	//g*
+define	GearDown		L_SHIFT+USB[0x0A]	//g*
+define	GearToggle		USB[0x0A] 			//g*
+define	LEngStart		R_ALT+USB[0x4A] 	//Home*
+define	REngStart		R_CTL+USB[0x4A] 	//Home*
+define	LandingLights	R_ALT+USB[0x0F] 	//l
+define	NavLights		R_CTL+USB[0x0F] 	//l
+define	CockpitLights	USB[0x0F] 			//l
+define	WarningReset	R_SHIFT+USB[0x11]	//n*
+define	Drogue			USB[0x13] 			//p Mapped in VAC
+define	FuelTanksJett	L_ALT+USB[0x15] 	//r
+define	RefuelBoom		L_CTL+USB[0x15]		//r
+define	WeaponsJett		L_CTL+USB[0x1A] 	//w
+define	CommMenu		USB[0x31]			//back slash*
+define	Electric_Power	R_SHIFT + USB[0x0F]
+
+//Weapons
+define	Cannon			USB[0x06] 			//c*
+define	WeaponChange 	USB[0x07] 			//d*
+define	WeaponRelease	R_ALT+USB[0x2C]		//space*
+define	WeaponFire 		USB[0x2C] 			//space*
+define	SalvoMode		L_CTL+USB[0x19] 	//v*
+define	LaunchOverride	L_ALT+USB[0x1A] 	//w*

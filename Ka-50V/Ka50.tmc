@@ -1,0 +1,223 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+
+
+int gunMode;
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+	
+	gunMode=0;
+	//Initialize Backlights
+    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_1));
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	//MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	//MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+	KeyAxis(&Throttle, SCX,0,AXMAP2(3,Spot_light_left,0,Spot_light_right));
+	KeyAxis(&Throttle, SCY,0,AXMAP2(3,Spot_light_up,0,Spot_light_down));
+//Layers&Modes
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,TEMPO(Uncage_SHKVAL_designate_target,KU31_Shkval_center));
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,TEMPO(EXEC("toggleGunMode();"),PULSE + Autopilot_Emergency_Off,1000));
+	//Trim
+		//MapKey(&Joystick,H1D,);
+		//MapKey(&Joystick,H1U,);
+		//MapKey(&Joystick,H1L,);
+		//MapKey(&Joystick,H1R,);
+
+
+	//TMS
+		MapKey(&Joystick,H2D,KU31_Shkval_slew_down);
+		MapKey(&Joystick,H2U,KU31_Shkval_slew_up);
+		MapKey(&Joystick,H2L,KU31_Shkval_slew_left);
+		MapKey(&Joystick,H2R,KU31_Shkval_slew_right);
+
+	//Trigger 
+		//TG1
+			//MapKey(&Joystick,TG1,);
+		//TG2
+			MapKey(&Joystick,TG2,Release_weapons);
+	
+	//DMS
+		//MapKey(&Joystick,H3D,);
+		MapKey(&Joystick,H3U,Cockpit_gauges_illumination_stick);
+		//MapKey(&Joystick,H3L,);
+		//MapKey(&Joystick,H3R,);
+
+	//CMS
+		//MapKey(&Joystick,H4D,);
+		//MapKey(&Joystick,H4U,);
+		//MapKey(&Joystick,H4L,);
+		//MapKey(&Joystick,H4R,);
+		MapKey(&Joystick,H4P,Trimmer); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,Hover_OnOff);
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4,Wheel_brake_press_and_hold);
+
+//THROTTLE
+
+	//Pinky
+		MapKey(&Throttle,PSF,PULSE + Shkval_Narrow_View_23x);
+		//MapKey(&Throttle,PSM,);
+		MapKey(&Throttle,PSB,PULSE + Shkval_Wide_View_7x);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,Lock_target);
+	
+	//Slew
+		MapKey(&Throttle,SC,Collective_brake__Assign_altitude_lever); 
+
+	//Coolie
+		MapKey(&Throttle,CSD,Weapon_selection_AA_mode);
+		MapKey(&Throttle,CSU,Weapon_selection_all_stations);
+		MapKey(&Throttle,CSL,Weapon_selection_outward_stations);
+		MapKey(&Throttle,CSR,Weapon_selection_inward_stations);
+	
+	//Mic Switch
+		MapKey(&Throttle, MSD,TEMPO (TrackIRPause, TrackIRCenter));
+		MapKey(&Throttle, MSU,VAICOM_PTT); //VAC push to talk
+		//MapKey(&Throttle, MSL,);
+		//MapKey(&Throttle, MSR,);
+		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,PULSE + EngageDisengage_Route_Mode);
+		MapKeyR(&Throttle,SPDF,PULSE + EngageDisengage_Route_Mode);
+		//MapKey(&Throttle,SPDM,);
+		MapKey(&Throttle,SPDB,Engage_Descent_Mode);
+	
+	//Boat
+		MapKey(&Throttle,BSF,PULSE + Readjust_Free_Turbine_RPM_to_Nominal);
+		//MapKey(&Throttle,BSM,);
+		MapKey(&Throttle,BSB,PULSE + Readjust_Free_Turbine_RPM_to_Low);
+	
+	//China Hat
+		MapKey(&Throttle,CHF,TV_Target_frame_Increase_size);
+		MapKey(&Throttle,CHB,TV_Target_frame_Decrease_size);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		//MapKey(&Throttle,EFLNORM,);
+		//MapKey(&Throttle,EFLOVER,);
+		
+		//Right
+		//MapKey(&Throttle,EFRNORM,);
+		//MapKey(&Throttle,EFROVER,);
+	
+	//Engine Oper
+		//Left
+		//MapKey(&Throttle,EOLIGN,);
+		//MapKey(&Throttle,EOLNORM,);
+		//MapKey(&Throttle,EOLMOTOR,);
+		
+		//Right
+		//MapKey(&Throttle,EORIGN,);
+		//MapKey(&Throttle,EORNORM,);
+		//MapKey(&Throttle,EORMOTOR,);
+				
+	//APU
+		MapKey(&Throttle,APUON,PULSE + Helmetmounted_system_OnOff);
+		MapKey(&Throttle,APUOFF,PULSE + Helmetmounted_system_OnOff);
+	
+	//Flaps
+		//MapKey(&Throttle,FLAPU,);
+		//MapKey(&Throttle,FLAPM,);
+		//MapKey(&Throttle,FLAPD,);
+	
+	//Idle Cutoff
+		//Left
+		//MapKey(&Throttle,IDLELON,);
+		//MapKey(&Throttle,IDLELOFF,);
+		
+		//Right
+		//MapKey(&Throttle,IDLERON,);
+		//MapKey(&Throttle,IDLEROFF,);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,Gear_lever);
+
+	//EAC
+		//MapKey(&Throttle,EACON,);
+		//MapKey(&Throttle,EACOFF,);
+	//RDR Altm
+		//MapKey(&Throttle,RDRNRM,);
+		//MapKey(&Throttle,RDRDIS,);
+	//AP Engage/Disengage
+		MapKey(&Throttle,APENG,Button_Targeting_mode_reset);
+
+	//AP Select Switch
+		//MapKey(&Throttle,APPAT,);
+		//MapKey(&Throttle,APAH,);
+		//MapKey(&Throttle,APALT,);
+	
+	//RMFD
+		MapKey(&RMFD,OSB15,ABRIS_Button_1);
+		MapKey(&RMFD,OSB14,ABRIS_Button_2);
+		MapKey(&RMFD,OSB13,ABRIS_Button_3);
+		MapKey(&RMFD,OSB12,ABRIS_Button_4);
+		MapKey(&RMFD,OSB11,ABRIS_Button_5);
+		MapKey(&RMFD,OSB10,ABRIS_Axis_Push);
+		MapKey(&RMFD,BRTU,ABRIS_Brightness_Increase);
+		MapKey(&RMFD,BRTD,ABRIS_Brightness_Decrease);
+		MapKey(&RMFD,GAINU,ABRIS_Power);
+		MapKey(&RMFD,CONU,ABRIS_Axis_Increase);
+		MapKey(&RMFD,COND,ABRIS_Axis_Decrease);
+
+	//LMFD
+		MapKey(&LMFD,BRTU,IT23_brightness_Up);
+		MapKey(&LMFD,BRTD,IT23_brightness_Down);
+		MapKey(&LMFD,CONU,IT23_contrast_Up);
+		MapKey(&LMFD,COND,IT23_contrast_Down);
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}
+
+int toggleGunMode()
+{
+		
+	if (gunMode == 0) //Canon Not Currently Selected
+	{
+		gunMode = 1; //Turn on Gun Mode
+		MapKey(&Joystick,TG2,Gun_fire); //Map trigger to canon
+	}
+	else //Canon is currently selected 
+	{
+		gunMode = 0; //Turn off gun Mode
+		MapKey(&Joystick,TG2,Release_weapons); //Map Trigger to canon
+	}
+	ActKey(PULSE + KEYON + Gun_Select); //tell the sim to toggle mode
+}

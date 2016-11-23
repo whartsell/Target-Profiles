@@ -23,10 +23,9 @@ int main()
 	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
 	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
 	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
-	//KeyAxis(&Throttle, SCX, 0, AXMAP2(5, ANAPQ159_Radar_TDC_Button__Left, 0, 0, 0, ANAPQ159_Radar_TDC_Button__Right)); 
-	//KeyAxis(&Throttle, SCY, 0, AXMAP2(5, ANAPQ159_Radar_TDC_Button__Up, 0, 0, 0, ANAPQ159_Radar_TDC_Button__Down)); 
+
 //Layers&Modes
-	//SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
 	
 //STICK
 
@@ -94,7 +93,7 @@ int main()
 	
 	//Mic Switch
 		//MapKey(&Throttle, MSD,);
-		//MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
 		//MapKey(&Throttle, MSR,);
 		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
@@ -158,7 +157,8 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,Landing_Gear_TOGGLE);
+		MapKey(&Throttle,LDGH,USB_G);
+
 	//EAC
 		//MapKey(&Throttle,EACON,);
 		//MapKey(&Throttle,EACOFF,);

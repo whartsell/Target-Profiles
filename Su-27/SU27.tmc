@@ -1,0 +1,197 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+
+
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+    
+    //Initialize Backlights
+    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+
+//Layers&Modes
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,Launch_Permission_Override);
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,PULSE+Cannon);
+	//Trim
+		MapKey(&Joystick,H1D,Trim_Nose_Up);
+		MapKey(&Joystick,H1U,Trim_Nose_Down);
+		MapKey(&Joystick,H1L,Trim_Left_Wing_Down);
+		MapKey(&Joystick,H1R,Trim_Right_Wing_Down);
+
+
+	//TMS
+		MapKey(&Joystick,H2D,TEMPO(Return_To_Search,ElectroOptical_System_OnOff));
+		MapKey(&Joystick,H2U,TEMPO(Target_Lock,Radar_OnOff));
+		MapKey(&Joystick,H2L,Target_Specified_Size_Decrease);
+		MapKey(&Joystick,H2R,Target_Specified_Size_Increase);
+
+	//Trigger 
+		//TG1
+			//MapKey(&Joystick,TG1,);
+		//TG2
+			MapKey(&Joystick,TG2,Weapon_Fire);
+	
+	//DMS
+		MapKey(&Joystick,H3U,TEMPO(_3_Close_Air_Combat_Vertical_Scan_Mode,_5_Close_Air_Combat_HMD_Helmet_Mode));
+		MapKey(&Joystick,H3D,TEMPO(_4_Close_Air_Combat_Bore_Mode,_6_Longitudinal_Missile_Aiming_Mode));
+		MapKey(&Joystick,H3L,_7_AirToGround_Mode);
+		MapKey(&Joystick,H3R,_2_Beyond_Visual_Range_Mode);
+
+	//CMS
+		MapKey(&Joystick,H4D,Countermeasures_Continuously_Dispense);
+		MapKey(&Joystick,H4U,Countermeasures_Release);
+		MapKey(&Joystick,H4L,Countermeasures_Chaff_Dispense);
+		MapKey(&Joystick,H4R,Countermeasures_Flares_Dispense);
+		MapKey(&Joystick,H4P,ECM); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));
+	
+	//S4 Paddle Switch
+		//MapKey(&Joystick, S4,PULSE+ASC_Direct_Control_Cobra);
+		//MapKeyR(&Joystick,S4,PULSE+ASC_Direct_Control_Cobra);
+		MapKey(&Joystick, S4, Wheel_Brake_On);
+//THROTTLE
+
+	//Pinky
+		//MapKey(&Throttle,PSF,);
+		//MapKey(&Throttle,PSM,);
+		//MapKey(&Throttle,PSB,);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,Weapon_Change);
+	
+	//Slew
+		MapKey(&Throttle,SC,Target_Designator_To_Center); 
+
+	//Coolie
+		MapKey(&Throttle,CSD,Scan_Zone_Down);
+		MapKey(&Throttle,CSU,Scan_Zone_Up);
+		MapKey(&Throttle,CSL,Scan_Zone_Left);
+		MapKey(&Throttle,CSR,Scan_Zone_Right);
+	
+	//Mic Switch
+		//MapKey(&Throttle, MSD,);
+		//MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSU,USB_UpArrow); //VAC push to talk
+		//MapKey(&Throttle, MSL,);
+		MapKey(&Throttle, MSR,Communication_menu);
+		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,PULSE+Airbrake_On);
+		MapKey(&Throttle,SPDM,PULSE+Airbrake_Off);
+		MapKey(&Throttle,SPDB,PULSE+Airbrake_On);
+	
+	//Boat
+		MapKey(&Throttle,BSF,PULSE+_2_Beyond_Visual_Range_Mode);
+		MapKey(&Throttle,BSM,PULSE+_1_Navigation_Modes);
+		MapKey(&Throttle,BSB,PULSE+ _3_Close_Air_Combat_Vertical_Scan_Mode);
+	
+	//China Hat
+		//MapKey(&Throttle,CHF,);
+		//MapKey(&Throttle,CHB,);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//MapKey(&Throttle,EFLNORM,);
+		//MapKey(&Throttle,EFLOVER,);
+		
+		//MapKey(&Throttle,EFRNORM,);
+		//MapKey(&Throttle,EFROVER,);
+	
+	//Engine Oper
+		MapKey(&Throttle,EOLIGN,Engine_Left_Start);
+		//MapKey(&Throttle,EOLNORM,);
+		//MapKey(&Throttle,EOLMOTOR,);
+
+		MapKey(&Throttle,EORIGN,Engine_Right_Start);
+		//MapKey(&Throttle,EORNORM,);
+		//MapKey(&Throttle,EORMOTOR,);
+				
+	//APU
+		MapKey(&Throttle,APUON,PULSE+Electric_Power_Switch);
+		MapKey(&Throttle,APUOFF,PULSE+Electric_Power_Switch);
+	
+	//Flaps
+		MapKey(&Throttle,FLAPU,PULSE+Flaps_Up);
+		//MapKey(&Throttle,FLAPM,);
+		MapKey(&Throttle,FLAPD,PULSE+Flaps_Landing_Position);
+	
+	//Idle Cutoff
+		MapKey(&Throttle,IDLEROFF,PULSE+Engine_Left_Stop);
+		MapKey(&Throttle,IDLERON,PULSE+Engine_Right_Stop);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,TEMPO(Audible_Warning_Reset,Landing_Gear_UpDown));
+
+	//EAC
+		//MapKey(&Throttle,EACON,);
+
+	//RDR Altm
+		//MapKey(&Throttle,RDRNRM,);
+
+	//AP Engage/Disengage
+		//MapKey(&Throttle,APENG,);
+
+	//AP Select Switch
+		//MapKey(&Throttle,APPAT,);
+		//MapKey(&Throttle,APAH,);
+		//MapKey(&Throttle,APALT,);
+	
+	//LMFD
+	
+	//RMFD
+		MapKey(&RMFD,BRTU,Display_Zoom_In);
+		MapKey(&RMFD,BRTD,Display_Zoom_Out);
+		MapKey(&RMFD,OSB03,_1_Navigation_Modes);
+		MapKey(&RMFD,CONU,Next_Waypoint_Airfield_Or_Target);
+		MapKey(&RMFD,COND,Previous_Waypoint_Airfield_Or_Target);
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+	DefaultMapping(&o, x);
+	
+	//add event handling code here
+}
+
+int lightControl() {
+	if(Throttle[THR_FC] !=0) {
+	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
+	}
+	else {
+		ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_1));
+		//printf("I should be turned back on\xa");
+		}
+}

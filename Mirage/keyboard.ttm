@@ -1,41 +1,38 @@
-//Created by DCS2Target
-
-
 include "usbkeys.ttm"
 
 
 
 // Kneeboard
 
-define Kneeboard_Jump_To_Shortcut_8                      	                                        
-define Kneeboard_Jump_To_Shortcut_9                      	                                        
-define Kneeboard_Jump_To_Shortcut_6                      	                                        
-define Kneeboard_Previous_Shortcut                       	                                        
-define Kneeboard_Jump_To_Shortcut_7                      	                                        
-define Kneeboard_Jump_To_Shortcut_4                      	                                        
-define Kneeboard_Next_Shortcut                           	                                        
-define Kneeboard_Jump_To_Shortcut_5                      	                                        
-define Kneeboard_Make_Shortcut                           	                                        
+// define Kneeboard_Jump_To_Shortcut_8                      	                                        
+// define Kneeboard_Jump_To_Shortcut_9                      	                                        
+// define Kneeboard_Jump_To_Shortcut_6                      	                                        
+// define Kneeboard_Previous_Shortcut                       	                                        
+// define Kneeboard_Jump_To_Shortcut_7                      	                                        
+// define Kneeboard_Jump_To_Shortcut_4                      	                                        
+// define Kneeboard_Next_Shortcut                           	                                        
+// define Kneeboard_Jump_To_Shortcut_5                      	                                        
+// define Kneeboard_Make_Shortcut                           	                                        
 define Kneeboard_Next_Page                               	USB_RBracket                            
-define Kneeboard_Jump_To_Shortcut_2                      	                                        
-define Kneeboard_Jump_To_Shortcut_3                      	                                        
-define Kneeboard_Jump_To_Shortcut_1                      	                                        
+// define Kneeboard_Jump_To_Shortcut_2                      	                                        
+// define Kneeboard_Jump_To_Shortcut_3                      	                                        
+// define Kneeboard_Jump_To_Shortcut_1                      	                                        
 define Kneeboard_ONOFF                                   	R_SHIFT + USB_K                         
-define Kneeboard_Jump_To_Shortcut_10                     	                                        
-define Kneeboard_Previous_Page                           	                                        
+// define Kneeboard_Jump_To_Shortcut_10                     	                                        
+// define Kneeboard_Previous_Page                           	                                        
 define Kneeboard_glance_view                             	USB_K                                   
-define Kneeboard_current_position_mark_point             	                                        
+// define Kneeboard_current_position_mark_point             	                                        
 
-// Hydraulic & Mechanical
+//Hydraulic & Mechanical
 
 define Landing_Gear_UP                                   	L_CTL + USB_G                           
-define Hydraulic_Emergency_Pump_OFF                      	                                        
-define Canopy_Jettision                                  	                                        
+// define Hydraulic_Emergency_Pump_OFF                      	                                        
+// define Canopy_Jettision                                  	                                        
 define Landing_Gear_TOGGLE                               	USB_G                                   
-define Parking_Brake_OFF                                 	                                        
+// define Parking_Brake_OFF                                 	                                        
 define Wheel_Brakes                                      	USB_W                                   
-define Hydraulic_Emergency_Pump_ON                       	                                        
-define Parking_Brake_ON                                  	                                        
+// define Hydraulic_Emergency_Pump_ON                       	                                        
+// define Parking_Brake_ON                                  	                                        
 define Wheel_Brake_RIGHT                                 	L_ALT + USB_W                           
 define Wheel_Brake_LEFT                                  	L_SHIFT + USB_W                         
 define Landing_Gear_DOWN                                 	L_SHIFT + USB_G                         
@@ -43,21 +40,21 @@ define Canopy_Position_CYCLE                             	L_CTL + USB_C
 
 // Electrical
 
-define Alternator_2_OFF                                  	                                        
-define Electric_Power_Transfer_OFF                       	                                        
-define HUD_Altimeter_Power_Switch_TEST                   	                                        
-define Main_Battery_OFF                                  	                                        
-define Audio_Warning_Switch_OFF                          	                                        
-define Audio_Warning_Switch_ON                           	                                        
+// define Alternator_2_OFF                                  	                                        
+// define Electric_Power_Transfer_OFF                       	                                        
+// define HUD_Altimeter_Power_Switch_TEST                   	                                        
+// define Main_Battery_OFF                                  	                                        
+// define Audio_Warning_Switch_OFF                          	                                        
+// define Audio_Warning_Switch_ON                           	                                        
 define Main_Battery_TOGGLE                               	L_CTL + L_SHIFT + USB_B                 
-define HUD_Altimeter_Power_Switch_ON                     	                                        
-define Electric_Power_Transfer_ON                        	                                        
-define Alternator_1_OFF                                  	                                        
-define HUD_Altimeter_Power_Switch_OFF                    	                                        
-define Alternator_1_ON                                   	                                        
-define Alternator_2_ON                                   	                                        
-define Audio_Warning_Switch_Test                         	                                        
-define Main_Battery_ON                                   	                                        
+// define HUD_Altimeter_Power_Switch_ON                     	                                        
+// define Electric_Power_Transfer_ON                        	                                        
+// define Alternator_1_OFF                                  	                                        
+// define HUD_Altimeter_Power_Switch_OFF                    	                                        
+// define Alternator_1_ON                                   	                                        
+// define Alternator_2_ON                                   	                                        
+// define Audio_Warning_Switch_Test                         	                                        
+// define Main_Battery_ON                                   	                                        
 
 // Labels
 
@@ -68,83 +65,83 @@ define Missile_Labels                                    	L_SHIFT + USB_F6
 
 // 3-Pos. Switch Abstractions
 
-define FBW_Gain_NORM_else_EMER                           	                                        
-define PRF_Selector_Low_else_Int                         	                                        
-define Airbrake_ON_else_OFF                              	                                        
-define Seat_Height_Increase_else_STOP                    	                                        
-define Autopilot_Alt_Hold_Mode_else_Selected_Alt_Hold_Mode	                                        
-define Radar_Azimuth_NARROW_else_MIDDLE                  	                                        
-define Radar_Altimeter_ON_else_OFF                       	                                        
-define Slats_EXTEND_else_AUTO                            	                                        
-define Autopilot_App_Hold_Mode_else_Selected_Alt_Hold_Mode	                                        
-define Radar_Azimuth_WIDE_else_MIDDLE                    	                                        
-define Left_Fuel_Boost_Pump_ON_else_OFF                  	                                        
-define Parking_Brake_ON_else_OFF                         	                                        
-define FBW_Spin_Switch_NORM_else_SPIN                    	                                        
-define Radar_Scan_4LINE_else_2LINE                       	                                        
-define Radar_PPI_Mode_else_BScope_Mode                   	                                        
-define PRF_Selector_High_else_Int                        	                                        
-define Landing_Gear_UP_else_DOWN                         	                                        
-define Slats_RETRACT_else_AUTO                           	                                        
-define Right_Fuel_Boost_Pump_ON_else_OFF                 	                                        
-define Radar_Scan_1LINE_else_2LINE                       	                                        
-define TDC_Mode_S_else_Z                                 	                                        
-define Seat_Height_Decrease_else_STOP                    	                                        
+// define FBW_Gain_NORM_else_EMER                           	                                        
+// define PRF_Selector_Low_else_Int                         	                                        
+// define Airbrake_ON_else_OFF                              	                                        
+// define Seat_Height_Increase_else_STOP                    	                                        
+// define Autopilot_Alt_Hold_Mode_else_Selected_Alt_Hold_Mode	                                        
+// define Radar_Azimuth_NARROW_else_MIDDLE                  	                                        
+// define Radar_Altimeter_ON_else_OFF                       	                                        
+// define Slats_EXTEND_else_AUTO                            	                                        
+// define Autopilot_App_Hold_Mode_else_Selected_Alt_Hold_Mode	                                        
+// define Radar_Azimuth_WIDE_else_MIDDLE                    	                                        
+// define Left_Fuel_Boost_Pump_ON_else_OFF                  	                                        
+// define Parking_Brake_ON_else_OFF                         	                                        
+// define FBW_Spin_Switch_NORM_else_SPIN                    	                                        
+// define Radar_Scan_4LINE_else_2LINE                       	                                        
+// define Radar_PPI_Mode_else_BScope_Mode                   	                                        
+// define PRF_Selector_High_else_Int                        	                                        
+// define Landing_Gear_UP_else_DOWN                         	                                        
+// define Slats_RETRACT_else_AUTO                           	                                        
+// define Right_Fuel_Boost_Pump_ON_else_OFF                 	                                        
+// define Radar_Scan_1LINE_else_2LINE                       	                                        
+// define TDC_Mode_S_else_Z                                 	                                        
+// define Seat_Height_Decrease_else_STOP                    	                                        
 
 // Cockpit Displays & Illumination
 
-define Console_Panel_Lights_LOW                          	                                        
-define HDD_Zoom_IN                                       	                                        
-define Radar_Screen_OFF                                  	                                        
-define Console_Flood_Lights_MEDIUM                       	                                        
-define Dashboard_Flood_Lights_HIGH                       	                                        
-define HDD_Zoom_OUT                                      	                                        
-define Console_Flood_Lights_OFF                          	                                        
-define Elapsed_Time_Clock_STARTSTOPRESET                 	                                        
-define HUD_TEST                                          	                                        
-define HUD_Declutter_Switch_OFF                          	                                        
-define HideShow_Control_Stick                            	                                        
-define Dashboard_Flood_Lights_MEDIUM                     	                                        
-define Dashboard_Panel_Lights_LOW                        	                                        
-define HUD_OFF                                           	                                        
-define Dashboard_Panel_Lights_HIGH                       	                                        
-define HUD_Declutter_Switch_ON                           	                                        
-define HUD_Brightness_DOWN                               	                                        
-define Radar_Screen_ON                                   	                                        
-define VTB_Viewport_ONOFF                                	                                        
-define Dashboard_Flood_Lights_LOW                        	                                        
+// define Console_Panel_Lights_LOW                          	                                        
+// define HDD_Zoom_IN                                       	                                        
+// define Radar_Screen_OFF                                  	                                        
+// define Console_Flood_Lights_MEDIUM                       	                                        
+// define Dashboard_Flood_Lights_HIGH                       	                                        
+// define HDD_Zoom_OUT                                      	                                        
+// define Console_Flood_Lights_OFF                          	                                        
+// define Elapsed_Time_Clock_STARTSTOPRESET                 	                                        
+// define HUD_TEST                                          	                                        
+// define HUD_Declutter_Switch_OFF                          	                                        
+// define HideShow_Control_Stick                            	                                        
+// define Dashboard_Flood_Lights_MEDIUM                     	                                        
+// define Dashboard_Panel_Lights_LOW                        	                                        
+// define HUD_OFF                                           	                                        
+// define Dashboard_Panel_Lights_HIGH                       	                                        
+// define HUD_Declutter_Switch_ON                           	                                        
+// define HUD_Brightness_DOWN                               	                                        
+// define Radar_Screen_ON                                   	                                        
+// define VTB_Viewport_ONOFF                                	                                        
+// define Dashboard_Flood_Lights_LOW                        	                                        
 define Console_Flood_Lights_TOGGLE                       	L_ALT + L_CTL + USB_L                   
-define Console_Flood_Lights_LOW                          	                                        
-define Console_Panel_Lights_OFF                          	                                        
-define Dashboard_Panel_Lights_OFF                        	                                        
-define HideShow_Throttle                                 	                                        
+// define Console_Flood_Lights_LOW                          	                                        
+// define Console_Panel_Lights_OFF                          	                                        
+// define Dashboard_Panel_Lights_OFF                        	                                        
+// define HideShow_Throttle                                 	                                        
 define Master_Caution_RESET                              	L_CTL + USB_R                           
 define Flight_Clock_STARTSTOPRESET                       	R_SHIFT + USB_C                         
-define HUD_ON                                            	                                        
-define HUD_Brightness_UP                                 	                                        
-define Console_Panel_Lights_HIGH                         	                                        
-define Dashboard_Panel_Lights_MEDIUM                     	                                        
-define Dashboard_Flood_Lights_OFF                        	                                        
-define Warning_Lights_TEST                               	                                        
-define Console_Flood_Lights_HIGH                         	                                        
-define Console_Panel_Lights_MEDIUM                       	                                        
+// define HUD_ON                                            	                                        
+// define HUD_Brightness_UP                                 	                                        
+// define Console_Panel_Lights_HIGH                         	                                        
+// define Dashboard_Panel_Lights_MEDIUM                     	                                        
+// define Dashboard_Flood_Lights_OFF                        	                                        
+// define Warning_Lights_TEST                               	                                        
+// define Console_Flood_Lights_HIGH                         	                                        
+// define Console_Panel_Lights_MEDIUM                       	                                        
 
 // Weapons Management
 
-define Selective_Jettison_OFF                            	                                        
-define Selective_Jettison_Safety_Cover_CLOSED            	                                        
-define Selective_Jettison_Safety_Cover_OPEN              	                                        
+// define Selective_Jettison_OFF                            	                                        
+// define Selective_Jettison_Safety_Cover_CLOSED            	                                        
+// define Selective_Jettison_Safety_Cover_OPEN              	                                        
 define AG_Gun_SELECT                                     	L_CTL + USB_0                           
-define Auxiliary_Gunsight_ON                             	                                        
+// define Auxiliary_Gunsight_ON                             	                                        
 define Store_1_SELECT                                    	L_CTL + USB_1                           
-define Selective_Jettison_ON                             	                                        
+// define Selective_Jettison_ON                             	                                        
 define Smoke                                             	USB_T                                   
 define Master_Arm_TOGGLE                                 	USB_0                                   
 define Gun_Arm_TOGGLE                                    	L_CTL + USB_6                           
 define PCA_Button_1_SELECT                               	USB_1                                   
 define PCA_Button_2_SELECT                               	USB_2                                   
 define PCA_Button_3_SELECT                               	USB_3                                   
-define Auxiliary_Gunsight_OFF                            	                                        
+// define Auxiliary_Gunsight_OFF                            	                                        
 define Emergency_Jettison                                	L_SHIFT + USB_E                         
 define PCA_Button_4_SELECT                               	USB_4                                   
 define PCA_Button_5_SELECT                               	USB_5                                   
@@ -155,23 +152,23 @@ define Stores_5_SELECT                                   	L_CTL + USB_5
 
 // HOTAS
 
-define Magic_SlaveAG_DesignateINS_Position_Update        	                                        
+// define Magic_SlaveAG_DesignateINS_Position_Update        	                                        
 define Trim_RIGHT                                        	R_CTL + USB_D                           
-define Radar_Antenna_UP                                  	                                        
+// define Radar_Antenna_UP                                  	                                        
 define TDC_LEFT                                          	USB_Comma                               
 define Weapons_FIREBombs_Release                         	USB_Space                               
 define STTTWS_Toggle_Target_Lock                         	USB_Return                              
 define Flares_DISPENSE                                   	USB_Delete                              
 define TDC_RIGHT                                         	USB_ForwardSlash                        
 define AA_Gun_SELECT                                     	USB_C                                   
-define Radar_Antenna_CENTER                              	                                        
+// define Radar_Antenna_CENTER                              	                                        
 define Airbrake_ON                                       	L_SHIFT + USB_B                         
 define Nosewheel_SteeringIFF_Interrogate                 	USB_S                                   
 define Trim_LEFT                                         	R_CTL + USB_A                           
 define Main_UVHF_Radio_SELECT                            	L_SHIFT + USB_KPPlus                    
-define PCA_SELECT                                        	                                        
+// define PCA_SELECT                                        	                                        
 define Autopilot_Standby_Mode                            	L_ALT + USB_A                           
-define TDC_CENTER                                        	                                        
+// define TDC_CENTER                                        	                                        
 define Target_UnlockSpecial_Modes_Deselect               	USB_Backspace                           
 define Airbrake_OFF                                      	L_CTL + USB_B                           
 define TDC_UP                                            	USB_SemiColon                           
@@ -179,50 +176,50 @@ define Airbrake_TOGGLE                                   	USB_B
 define Trim_UP                                           	R_CTL + USB_S                           
 define TDC_DOWN                                          	USB_Period                              
 define Aux_UHF_Radio_SELECT                              	L_ALT + USB_KPMinus                     
-define Radar_Antenna_DOWN                                	                                        
-define Special_Modes_FWD                                 	                                        
+// define Radar_Antenna_DOWN                                	                                        
+// define Special_Modes_FWD                                 	                                        
 define Trim_DOWN                                         	R_CTL + USB_W                           
-define MAGIC_SELECT                                      	                                        
+// define MAGIC_SELECT                                      	                                        
 define Chaff_DISPENSE                                    	USB_Insert                              
-define Special_Modes_AFT                                 	                                        
+// define Special_Modes_AFT                                 	                                        
 define Autopilot_DisconnectExceed_Elastic_Limit          	L_SHIFT + USB_A                         
 
 // External Illumination
 
-define AntiCollision_Lights_ON                           	                                        
-define Landing_Lights_TAXI                               	                                        
+// define AntiCollision_Lights_ON                           	                                        
+// define Landing_Lights_TAXI                               	                                        
 define Landing_Lights_TOGGLE                             	R_ALT + USB_L                           
 define Formation_Lights_TOGGLE                           	R_CTL + USB_L                           
-define Landing_Lights_OFF                                	                                        
-define Formation_Lights_ON                               	                                        
-define Refuel_Lights_ON                                  	                                        
-define AntiCollision_Lights_OFF                          	                                        
-define Formation_Lights_OFF                              	                                        
-define Landing_Lights_LANDING                            	                                        
+// define Landing_Lights_OFF                                	                                        
+// define Formation_Lights_ON                               	                                        
+// define Refuel_Lights_ON                                  	                                        
+// define AntiCollision_Lights_OFF                          	                                        
+// define Formation_Lights_OFF                              	                                        
+// define Landing_Lights_LANDING                            	                                        
 define AntiCollision_Lights_TOGGLE                       	R_CTL + R_SHIFT + USB_L                 
-define Navigation_Lights_DIM                             	                                        
-define Navigation_Lights_ON                              	                                        
-define Police_Lights_ON                                  	                                        
-define Refuel_Lights_OFF                                 	                                        
-define Navigation_Lights_OFF                             	                                        
-define Police_Lights_OFF                                 	                                        
+// define Navigation_Lights_DIM                             	                                        
+// define Navigation_Lights_ON                              	                                        
+// define Police_Lights_ON                                  	                                        
+// define Refuel_Lights_OFF                                 	                                        
+// define Navigation_Lights_OFF                             	                                        
+// define Police_Lights_OFF                                 	                                        
 define Navigation_Lights_TOGGLE                          	R_ALT + R_CTL + USB_L                   
 
 // Weapons Preparation
 
-define Missile_Selector_Automatic_530D_Fire_Selection    	                                        
-define Bomb_Qty_Increase                                 	                                        
-define Bomb_Fuze_INERT                                   	                                        
-define Bomb_Release_Interval_Increase                    	                                        
-define MIS_PREP_Super_530D_Standby_Toggle                	                                        
-define _530DRocketsGuns_TOTPAR_Firing_Mode_Toggle        	                                        
-define Bomb_Fuze_INST                                    	                                        
-define Missile_Selector_Fire_Right_530D_First            	                                        
-define Bomb_Release_Interval_Decrease                    	                                        
-define Missile_Selector_Fire_Left_530D_First             	                                        
-define Bomb_Fuze_RET                                     	                                        
-define Bomb_Qty_Decrease                                 	                                        
-define MAG_PREP_MAGIC_II_Standby_Toggle                  	                                        
+// define Missile_Selector_Automatic_530D_Fire_Selection    	                                        
+// define Bomb_Qty_Increase                                 	                                        
+// define Bomb_Fuze_INERT                                   	                                        
+// define Bomb_Release_Interval_Increase                    	                                        
+// define MIS_PREP_Super_530D_Standby_Toggle                	                                        
+// define _530DRocketsGuns_TOTPAR_Firing_Mode_Toggle        	                                        
+// define Bomb_Fuze_INST                                    	                                        
+// define Missile_Selector_Fire_Right_530D_First            	                                        
+// define Bomb_Release_Interval_Decrease                    	                                        
+// define Missile_Selector_Fire_Left_530D_First             	                                        
+// define Bomb_Fuze_RET                                     	                                        
+// define Bomb_Qty_Decrease                                 	                                        
+// define MAG_PREP_MAGIC_II_Standby_Toggle                  	                                        
 
 // View
 
@@ -282,43 +279,43 @@ define View_Down_Left_slow                               	USB_KP1
 // Sensors
 
 define Radar_Range_INCREASE                              	USB_Equals                              
-define Radar_IFF_SECTOR                                  	                                        
-define PRF_Selector_Low__Int__High                       	                                        
-define Radar_Azimuth_MIDDLE                              	                                        
-define RWR_TEST                                          	                                        
-define Radar_Altimeter_OFF                               	                                        
-define Radar_IFF_Mode_34                                 	                                        
-define PRF_Selector_High__Int__Low                       	                                        
-define Radar_Altimeter_TEST                              	                                        
-define Radar_IFF_Mode_32                                 	                                        
-define Radar_IFF_Mode_33                                 	                                        
-define Radar_OFF                                         	                                        
-define Radar_Azimuth_WIDE                                	                                        
-define Radar_IFF_R_Selector                              	                                        
-define Radar_ON                                          	                                        
-define Radar_Azimuth_NARROW                              	                                        
-define Radar_Scan_2LINE                                  	                                        
-define RWR_OFF                                           	                                        
-define Radar_IFF_OFF                                     	                                        
-define Radar_STANDBY                                     	                                        
-define Radar_IFF_Mode_1                                  	                                        
-define PRF_Selector_High                                 	                                        
-define Radar_IFF_Mode_2                                  	                                        
-define PRF_Selector_Int                                  	                                        
-define Radar_IFF_Mode_4                                  	                                        
-define TDC_Mode_Switch_Z                                 	                                        
+// define Radar_IFF_SECTOR                                  	                                        
+// define PRF_Selector_Low__Int__High                       	                                        
+// define Radar_Azimuth_MIDDLE                              	                                        
+// define RWR_TEST                                          	                                        
+// define Radar_Altimeter_OFF                               	                                        
+// define Radar_IFF_Mode_34                                 	                                        
+// define PRF_Selector_High__Int__Low                       	                                        
+// define Radar_Altimeter_TEST                              	                                        
+// define Radar_IFF_Mode_32                                 	                                        
+// define Radar_IFF_Mode_33                                 	                                        
+// define Radar_OFF                                         	                                        
+// define Radar_Azimuth_WIDE                                	                                        
+// define Radar_IFF_R_Selector                              	                                        
+// define Radar_ON                                          	                                        
+// define Radar_Azimuth_NARROW                              	                                        
+// define Radar_Scan_2LINE                                  	                                        
+// define RWR_OFF                                           	                                        
+// define Radar_IFF_OFF                                     	                                        
+// define Radar_STANDBY                                     	                                        
+// define Radar_IFF_Mode_1                                  	                                        
+// define PRF_Selector_High                                 	                                        
+// define Radar_IFF_Mode_2                                  	                                        
+// define PRF_Selector_Int                                  	                                        
+// define Radar_IFF_Mode_4                                  	                                        
+// define TDC_Mode_Switch_Z                                 	                                        
 define Radar_Range_DECREASE                              	USB_Minus                               
-define TDC_Mode_Switch_S                                 	                                        
-define Radar_Scan_1LINE                                  	                                        
-define Radar_IFF_CONT                                    	                                        
-define RWR_ON                                            	                                        
-define Radar_IFF_L_Selector                              	                                        
-define Radar_PPI_Mode_Radial_TopDown                     	                                        
-define Radar_WARM_UP                                     	                                        
-define Radar_Altimeter_ON                                	                                        
-define PRF_Selector_Low                                  	                                        
-define Radar_BScope_Mode_Square_Projection               	                                        
-define Radar_Scan_4LINE                                  	                                        
+// define TDC_Mode_Switch_S                                 	                                        
+// define Radar_Scan_1LINE                                  	                                        
+// define Radar_IFF_CONT                                    	                                        
+// define RWR_ON                                            	                                        
+// define Radar_IFF_L_Selector                              	                                        
+// define Radar_PPI_Mode_Radial_TopDown                     	                                        
+// define Radar_WARM_UP                                     	                                        
+// define Radar_Altimeter_ON                                	                                        
+// define PRF_Selector_Low                                  	                                        
+// define Radar_BScope_Mode_Square_Projection               	                                        
+// define Radar_Scan_4LINE                                  	                                        
 
 // View Padlock
 
@@ -335,10 +332,10 @@ define Restart_Mission                                   	L_SHIFT + USB_R
 
 // Communications
 
-define UVHF_Radio_OFF                                    	                                        
+// define UVHF_Radio_OFF                                    	                                        
 define Cover_Me                                          	L_WIN + USB_W                           
 define Receive_Mode                                      	R_SHIFT + \; RShift + USB_M             
-define UVHF_Manual_Mode                                  	                                        
+// define UVHF_Manual_Mode                                  	                                        
 define Flight__Attack_ground_targets                     	L_WIN + USB_G                           
 define Flight__Complete_mission_and_RTB                  	L_WIN + USB_E                           
 define Toggle_Formation                                  	L_WIN + USB_T                           
@@ -346,83 +343,83 @@ define Flight__Complete_mission_and_rejoin               	L_WIN + USB_R
 define Switch_dialog                                     	L_SHIFT + USB_BackSlash                 
 define Request_AWACS_Home_Airbase                        	L_WIN + USB_U                           
 define Communication_menu                                	USB_BackSlash                           
-define UVHF_Guard_Mode                                   	                                        
+// define UVHF_Guard_Mode                                   	                                        
 define Attack_My_Target                                  	L_WIN + USB_Q                           
 define Request_AWACS_Available_Tanker                    	L_WIN + USB_I                           
 define Join_Up_Formation                                 	L_WIN + USB_Y                           
 define Switch_to_main_menu                               	L_CTL + USB_BackSlash                   
 define Flight__Attack_air_defenses                       	L_WIN + USB_D                           
-define UVHF_Radio_ON                                     	                                        
-define UVHF_Preset_Mode                                  	                                        
+// define UVHF_Radio_ON                                     	                                        
+// define UVHF_Preset_Mode                                  	                                        
 
 // Autopilot, Navigation, & INS
 
-define HSI_Mode_1__Nav_Cv                                	                                        
-define PCN_VAL_Button                                    	                                        
+// define HSI_Mode_1__Nav_Cv                                	                                        
+// define PCN_VAL_Button                                    	                                        
 define Selected_Altitude_Hold_Mode                       	L_SHIFT + USB_H                         
-define HSI_Mode_3__TAC                                   	                                        
-define Previous_Waypoint_Airfield_or_Target              	                                        
+// define HSI_Mode_3__TAC                                   	                                        
+// define Previous_Waypoint_Airfield_or_Target              	                                        
 define Alt_Pressure_DECREASE                             	R_SHIFT + USB_Minus                     
-define HSI_Mode_2__Nav                                   	                                        
+// define HSI_Mode_2__Nav                                   	                                        
 define Autopilot                                         	USB_A                                   
-define Next_Waypoint_Airfield_or_Target                  	                                        
+// define Next_Waypoint_Airfield_or_Target                  	                                        
 define Alt_Pressure_INCREASE                             	R_SHIFT + USB_Equals                    
-define HSI_Mode_4__VAD                                   	                                        
-define HSI_Mode_7__TEL                                   	                                        
-define PCN_REC_Button                                    	                                        
+// define HSI_Mode_4__VAD                                   	                                        
+// define HSI_Mode_7__TEL                                   	                                        
+// define PCN_REC_Button                                    	                                        
 define Altitude_Hold_Mode                                	USB_H                                   
-define PCN_ENC_Button                                    	                                        
-define PCN_MRQ_Button                                    	                                        
+// define PCN_ENC_Button                                    	                                        
+// define PCN_MRQ_Button                                    	                                        
 define Approach_Hold_Mode                                	USB_F                                   
-define HSI_Mode_6__                                      	                                        
-define HSI_Mode_5__                                      	                                        
-define PCN_BAD_Button                                    	                                        
+// define HSI_Mode_6__                                      	                                        
+// define HSI_Mode_5__                                      	                                        
+// define PCN_BAD_Button                                    	                                        
 
 // Engine & Fuel
 
-define Right_Fuel_Boost_Pump_OFF                         	                                        
-define Left_Fuel_Boost_Pump_OFF                          	                                        
-define Start_Button_Safety_Cover_CLOSED                  	                                        
-define Start_Button_Safety_Cover_OPEN                    	                                        
+// define Right_Fuel_Boost_Pump_OFF                         	                                        
+// define Left_Fuel_Boost_Pump_OFF                          	                                        
+// define Start_Button_Safety_Cover_CLOSED                  	                                        
+// define Start_Button_Safety_Cover_OPEN                    	                                        
 define Engines_STOP                                      	R_SHIFT + USB_End                       
-define InFlight_Start_Switch_ON                          	                                        
-define InFlight_Start_Switch_OFF                         	                                        
-define Ventilation_Selector_Switch_OFF                   	                                        
-define Ventilation_Selector_Switch_LEFT                  	                                        
-define Starter_Fuel_Pump_OFF                             	                                        
-define Air_Refuel_Transfer_Switch_ON                     	                                        
+// define InFlight_Start_Switch_ON                          	                                        
+// define InFlight_Start_Switch_OFF                         	                                        
+// define Ventilation_Selector_Switch_OFF                   	                                        
+// define Ventilation_Selector_Switch_LEFT                  	                                        
+// define Starter_Fuel_Pump_OFF                             	                                        
+// define Air_Refuel_Transfer_Switch_ON                     	                                        
 define Engines_START                                     	R_SHIFT + USB_Home                      
-define Fuel_Emergency_Cutoff_Switch_OFF                  	                                        
-define Fuel_Emergency_Cutoff_Switch_ON                   	                                        
-define Fuel_Emergency_Cutoff_Switch_Cover_OPEN           	                                        
-define Ventilation_Selector_Switch_RIGHT                 	                                        
-define Fuel_Emergency_Cutoff_Switch_Cover_CLOSE          	                                        
-define Afterburner_Cutoff_Switch_OFF                     	                                        
-define Afterburner_Cutoff_Switch_Cover_CLOSE             	                                        
-define Right_Fuel_Boost_Pump_ON                          	                                        
-define Air_Refuel_Transfer_Switch_OFF                    	                                        
-define Left_Fuel_Boost_Pump_ON                           	                                        
-define Starter_Fuel_Pump_ON                              	                                        
+// define Fuel_Emergency_Cutoff_Switch_OFF                  	                                        
+// define Fuel_Emergency_Cutoff_Switch_ON                   	                                        
+// define Fuel_Emergency_Cutoff_Switch_Cover_OPEN           	                                        
+// define Ventilation_Selector_Switch_RIGHT                 	                                        
+// define Fuel_Emergency_Cutoff_Switch_Cover_CLOSE          	                                        
+// define Afterburner_Cutoff_Switch_OFF                     	                                        
+// define Afterburner_Cutoff_Switch_Cover_CLOSE             	                                        
+// define Right_Fuel_Boost_Pump_ON                          	                                        
+// define Air_Refuel_Transfer_Switch_OFF                    	                                        
+// define Left_Fuel_Boost_Pump_ON                           	                                        
+// define Starter_Fuel_Pump_ON                              	                                        
 define Fuel_Dump_START                                   	USB_R                                   
-define Afterburner_Cutoff_Switch_Cover_OPEN              	                                        
-define Afterburner_Cutoff_Switch_ON                      	                                        
+// define Afterburner_Cutoff_Switch_Cover_OPEN              	                                        
+// define Afterburner_Cutoff_Switch_ON                      	                                        
 
 // Flight Control
 
 define Trim_RUDDER_LEFT                                  	R_CTL + USB_Z                           
 define Aircraft_Pitch_UP                                 	USB_DownArrow                           
-define Slats_RETRACT                                     	                                        
+// define Slats_RETRACT                                     	                                        
 define Aircraft_Rudder_LEFT                              	USB_Z                                   
-define Slats_AUTO                                        	                                        
-define Slats_EXTEND                                      	                                        
+// define Slats_AUTO                                        	                                        
+// define Slats_EXTEND                                      	                                        
 define Throttle_DOWN                                     	USB_KPMinus                             
 define Aircraft_Bank_LEFT                                	USB_LeftArrow                           
 define Aircraft_Bank_RIGHT                               	USB_RightArrow                          
-define FBW_Gain_NORM                                     	                                        
+// define FBW_Gain_NORM                                     	                                        
 define FBW_Spin_Switch_TOGGLE                            	L_CTL + L_SHIFT + USB_V                 
 define Throttle_UP                                       	USB_KPPlus                              
-define FBW_Gain_Cover_CLOSED                             	                                        
-define FBW_Gain_EMER                                     	                                        
+// define FBW_Gain_Cover_CLOSED                             	                                        
+// define FBW_Gain_EMER                                     	                                        
 define Aircraft_Pitch_DOWN                               	USB_UpArrow                             
 define Aircraft_Rudder_RIGHT                             	USB_X                                   
 define Trim_RUDDER_RIGHT                                 	R_CTL + USB_X                           
@@ -461,12 +458,12 @@ define Active_Pause                                      	L_SHIFT + L_WIN + USB_
 // Countermeasures
 
 define Jammer_ACTIVATE                                   	USB_E                                   
-define Jammer_OFF                                        	                                        
-define CM_Box_OFF                                        	                                        
-define Jammer_ON                                         	                                        
-define CM_Box_AUTO                                       	                                        
-define CM_Box_ON                                         	                                        
-define Jammer_TEST                                       	                                        
+// define Jammer_OFF                                        	                                        
+// define CM_Box_OFF                                        	                                        
+// define Jammer_ON                                         	                                        
+// define CM_Box_AUTO                                       	                                        
+// define CM_Box_ON                                         	                                        
+// define Jammer_TEST                                       	                                        
 
 // View Cockpit
 
@@ -505,11 +502,11 @@ define Cockpit_Camera_Move_Up                            	R_CTL + R_SHIFT + USB_
 define Return_Camera                                     	R_CTL + USB_KP5                         
 define View_down_left                                    	R_SHIFT + USB_KP1                       
 define Glance_downleft                                   	R_CTL + USB_KP1                         
-define Camera_transpose_mode_press_and_hold              	                                        
+// define Camera_transpose_mode_press_and_hold              	                                        
 define View_up_right                                     	R_SHIFT + USB_KP9                       
 define Glance_up                                         	R_CTL + USB_KP8                         
 define View_left                                         	R_SHIFT + USB_KP4                       
-define Enable_visual_recon_mode                          	                                        
+// define Enable_visual_recon_mode                          	                                        
 define Custom_Snap_View_5                                	L_WIN + USB_KP5                         
 define Custom_Snap_View_6                                	L_WIN + USB_KP6                         
 define Custom_Snap_View_3                                	L_WIN + USB_KP3                         
@@ -526,27 +523,26 @@ define Cockpit_panel_view_in                             	USB_KP0
 
 //Not Categorized
 
-define TDC_Slew_Vertical                                 	                                        
-define Emergency_Throttle                                	                                        
-define Camera_Vertical_View                              	                                        
-define Wheel_Brakes                                      	                                        
-define Camera_Zoom_View                                  	                                        
-define Absolute_Vertical_Shift_Camera_View               	                                        
-define Radar_Antenna_Elevation                           	                                        
-define Absolute_Horizontal_Shift_Camera_View             	                                        
-define Absolute_Longitude_Shift_Camera_View              	                                        
-define TDC_Slew_Horizontal                               	                                        
-define Absolute_Camera_Horizontal_View                   	                                        
-define Camera_Horizontal_View                            	                                        
-define Pitch                                             	                                        
-define Absolute_Camera_Vertical_View                     	                                        
-define Absolute_Roll_Shift_Camera_View                   	                                        
-define Zoom_View                                         	                                        
-define Wheel_Brake_Left                                  	                                        
-define Wheel_Brake_Right                                 	                                        
-define Roll                                              	                                        
-define Rudder                                            	                                        
-define Thrust                                            	                                        
+//define TDC_Slew_Vertical                                 	                                        
+//define Emergency_Throttle                                	                                        
+//define Camera_Vertical_View                              	                                                                        	                                        
+// define Camera_Zoom_View                                  	                                        
+// define Absolute_Vertical_Shift_Camera_View               	                                        
+// define Radar_Antenna_Elevation                           	                                        
+// define Absolute_Horizontal_Shift_Camera_View             	                                        
+// define Absolute_Longitude_Shift_Camera_View              	                                        
+// define TDC_Slew_Horizontal                               	                                        
+// define Absolute_Camera_Horizontal_View                   	                                        
+// define Camera_Horizontal_View                            	                                        
+// define Pitch                                             	                                        
+// define Absolute_Camera_Vertical_View                     	                                        
+// define Absolute_Roll_Shift_Camera_View                   	                                        
+// define Zoom_View                                         	                                        
+// define Wheel_Brake_Left                                  	                                        
+// define Wheel_Brake_Right                                 	                                        
+// define Roll                                              	                                        
+// define Rudder                                            	                                        
+// define Thrust                                            	                                        
 
 // General
 
@@ -560,13 +556,13 @@ define Info_bar_view_toggle                              	L_CTL + USB_Y
 define Rearming_and_Refueling_Window                     	L_ALT + USB_Apostrophe                  
 define Score_window                                      	USB_Apostrophe                          
 define Time_decelerate                                   	L_ALT + USB_Z                           
-define Multiplayer_chat__mode_All                        	                                        
-define Multiplayer_chat__mode_Allies                     	                                        
+// define Multiplayer_chat__mode_All                        	                                        
+// define Multiplayer_chat__mode_Allies                     	                                        
 define End_mission                                       	Esc                                     
 define Time_accelerate                                   	L_CTL + USB_Z                           
 define Screenshot                                        	USB_PrintScreen                         
 define Get_new_plane__respawn                            	R_CTL + R_SHIFT + USB_Tab               
-define Multiplayer_chat_readwrite_all                    	                                        
+// define Multiplayer_chat_readwrite_all                    	                                        
 define Sound_OnOff                                       	L_CTL + USB_S                           
 define View_briefing_onoff                               	L_ALT + USB_B                           
 define Frame_rate_counter__Service_info                  	R_CTL + USB_Break                       

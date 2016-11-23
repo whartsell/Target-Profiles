@@ -95,7 +95,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Gun Fire",
+			["name"] = "Trigger - SECOND DETENT(Gun Fire)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -163,14 +163,6 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-		},
-		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "View Center",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
 				},
 			},
 		},

@@ -1,0 +1,94 @@
+include "target.tmh"
+include "util.ttm"
+include "keys.ttm"
+
+
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS); 
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);   
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	
+	
+//STICK
+	
+	//S2
+	MapKey(&Joystick, S2,WeaponRel);
+	
+	//S3
+	MapKey(&Joystick, S3,DX3);
+	
+	//S4
+	MapKey(&Joystick, S4,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
+	
+	//Trigger
+	MapKey(&Joystick,TG2,Trigger); //second detent on trigger
+	
+	//Trim
+	MapKey(&Joystick,H1D,TrimUp);
+	MapKey(&Joystick,H1U,TrimDown);
+	MapKey(&Joystick,H1L,TrimLeft);
+	MapKey(&Joystick,H1R,TrimRight);
+	
+	//TMS
+	MapKey(&Joystick,H2D,KneeboardGlance);
+	MapKey(&Joystick,H2U,TEMPO(PULSE+KneeboardToggle,PULSE+KneeboardMark));
+	MapKey(&Joystick,H2L,KneeboardPrev);
+	MapKey(&Joystick,H2R,KneeboardNext);
+	
+	//CMS
+	MapKey(&Joystick,H4P,RadTgtSel); 
+	
+//THROTTLE
+
+	//Speedbrake button
+	MapKey(&Throttle,SPDF,DX17);
+	MapKey(&Throttle,SPDM,PULSE+ AirbrakeToggle);
+	MapKey(&Throttle,SPDB,DX18);
+	
+	//Flaps
+	MapKey(&Throttle,FLAPU,DX19);
+	MapKey(&Throttle,FLAPD,DX20);
+	
+	//LandingGear Horn Silence
+	MapKey(&Throttle,LDGH,TEMPO(HornCutout,GearToggle));
+	
+	//Throttle Idle Detent
+	MapKey(&Throttle,IDLERON,PULSE+EngineStop);
+	MapKeyR(&Throttle,IDLERON,PULSE+EngStart);
+
+	//TDC
+	MapKey(&Throttle,SC,SightElecCage); //TDC button
+	
+	//APU Switch
+	MapKey(&Throttle,APUON,PULSE+GearUp);
+	MapKey(&Throttle,APUOFF,PULSE+GearDown);
+	
+	//Mic Switch
+	MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+	MapKey(&Throttle, MSU,VACPTT);	//VAC PTT
+	MapKey(&Throttle,MSR,PULSE+CommMenu);
+	MapKey(&Throttle,MSD,0);
+	MapKey(&Throttle,MSL,0);
+	
+	//China Hat
+	MapKey(&Throttle,CHB,EngStart);
+	MapKey(&Throttle,CHF,EngStart);
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

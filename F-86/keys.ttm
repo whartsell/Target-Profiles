@@ -1,0 +1,49 @@
+//Flight Control
+define	TrimUp			R_CTL+USB[0x37] 	//period
+define	TrimDown		R_CTL+USB[0x33] 	//semi-colon
+define	TrimLeft		R_CTL+USB[0x36] 	//comma
+define	TrimRight		R_CTL+USB[0x38] 	//forward slash/
+define	TrimRudLeft		R_CTL+USB[0x1D]		//z*
+define	TrimRudRight	R_CTL+USB[0x1B]		//x*
+
+//Systems
+define	AirbrakeToggle	USB[0x05] 			//b*
+define	AirbrakeOn		L_SHIFT+USB[0x05]	//b
+define	AirbrakeOff		L_CTL+USB[0x05] 	//b
+define	FlapsLanding	L_SHIFT+USB[0x09]	//f
+define	FlapsUp			L_CTL+USB[0x09] 	//f
+define	GearToggle		USB[0x0A] 			//g
+define	GearUp			L_CTL+USB[0x0A] 	//g
+define	GearDown		L_SHIFT+USB[0x0A]	//g
+define	WeaponsJett		L_CTL+USB[0x1A] 	//w*
+define	CanopyToggle	L_CTL+USB[0x06]		//c*
+define	Eject			L_CTL+USB[0x08]		//e*
+define	ClockToggle		R_SHIFT+USB[0x06]	//c*
+define	SightElecCage	USB[0x37]			//period
+define	FuelTankJett	L_ALT+USB[0x15]		//r*
+define	EngStart		USB[0x4A]			//home
+define	EngineStop		USB[0x4D]			//end
+define	HornCutout		USB[0x00]			//not mapped
+
+//Comms
+define	CommMenu		USB[0x31]			// back slash
+
+//Kneeboard
+define	KneeboardToggle	R_SHIFT+USB[0x0E]	//k
+define	KneeboardGlance	USB[0x0E]			//k
+define	KneeboardNext	USB[0x30]			//]
+define	KneeboardPrev	USB[0x2F]			//[
+define	KneeboardMark	R_CTL+USB[0x0E]		//k
+
+
+//Stick grip
+define	NWS				USB[0x16]			//s
+define	Trigger			USB[0x2C]			//space
+define	WeaponRel		R_ALT+USB[0x2C]		//space
+define	RadTgtSel		USB[0x28]			//enter
+
+
+
+
+
+

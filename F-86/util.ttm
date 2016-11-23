@@ -1,0 +1,5 @@
+define	TsPTT			USB[0x68]	//F13
+define	VACPTT			USB[0x69]	//F14
+define	TrackIRPause	USB[0x6A]	//F15
+define	TrackIRCenter	USB[0x6B]	//F16
+define	ActivateExport	R_CTL+USB[0x28] //Enter

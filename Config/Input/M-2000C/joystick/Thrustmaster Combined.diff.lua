@@ -102,6 +102,14 @@ local diff = {
 			},
 			["name"] = "Airbrake OFF",
 		},
+		["d179pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN29",
+				},
+			},
+			["name"] = "Communication menu",
+		},
 		["d427pnilu428cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {

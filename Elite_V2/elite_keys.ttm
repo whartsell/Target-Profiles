@@ -1,0 +1,81 @@
+
+//Weapons
+define primaryFire				DX1		//assigned
+define chaff					DX2
+define ECM						DX3
+define shieldCell				DX4
+define cNextFG					DX5		//assigned
+define secFire					DX6		//assigned
+
+//Targeting
+define selTgt					DX7		//assigned
+define cNxtTgt					DX8		//assigned
+define cPrvTarget				DX9	
+define selHighThreat			DX10		//assigned
+define cNxtHostile				DX27
+define cPrvHostile				DX28
+define cNxtSubSys				DX29		//assigned
+define cPrvSubSys				DX30
+define vTargetWingman1 			DX19
+define vTargetWingman2 			DX20
+define vTargetWingman3 			DX21
+define vSelectWingmanTarget 	DX22
+
+//Systems
+define tglCargoScoop			DX11
+define jettisonCargo			DX12
+define tHardpoints				DX13		//assigned
+define tglSilentRunning			DX15
+define tglLandingGear			DX16
+define fltAssist				DX17		//assigned
+define rotationCorrection		DX18
+define tglSpotLight				INS
+define incSystemsPower			DX23	//assigned
+define incEnginePower			DX24	//assigned
+define incWeaponsPower			DX25	//assigned
+define resetPowerDist			DX26	//assigned
+define revThrottle				DX31
+define boost					DX32		//assigned
+define deployHeatSink			'v'		//assigned
+
+//Navigation
+define vSlaveNavToWingman DX14
+define tglFrameShiftDrive		'j'		//assigned
+define galaxyMap				'n'
+define systemMap				'm'
+define targetNextSystemInRoute	','
+define toggleOrbitLines			'='
+define incRadarRange			PGUP	//assigned
+define decRadarRange			PGDN	//assigned
+
+//Flight Controls
+	
+define upThrust					'r'		//assigned
+define dnThrust					'f'		//assigned
+define ltThrust					'a'		//assigned
+define rtThrust					'e'		//assigned
+define fdThrust					'w'
+define bkThrust					's'
+
+	
+//UI
+define vUIFocus 				L_SHIFT
+define vUICommsPanel 			'2'
+define vUIRadarPanel 			'3'
+define selUI					SPC		//assigned
+define uiBack					DX5
+define upUI						'r'
+define dnUI						'f'
+define ltUI						'a'
+define rtUI						'e'
+define cNextPnl					'w'		//shared with rtThrust
+define cPrevPnl					's'		//shared with ltThrust
+define quickComsPanel			ENT		//assigned
+
+//SRV
+define vBrake 					DX32 //brake is only used on SRV
+define vToggleTurret 			't'
+
+//View
+define vSecretCamera 			'c'
+ 

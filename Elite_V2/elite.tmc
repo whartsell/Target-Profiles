@@ -1,0 +1,187 @@
+include "target.tmh"
+include "util.ttm"
+//include "elite_keys.ttm"
+include "elite_functions.tmh"
+define JETTISON_CARGO_DELAY	3000
+
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	Configure(&LMFD,MODE_EXCLUDED);
+	Configure(&RMFD,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	// =======================================================================================
+	// Shift States
+	// ---------------------------------------------------------------------------------------
+    // PSF: Enemy Targeting
+    // Middle: Wing Targeting
+    // PSB: All Targeting
+    //int SetShiftButton(int devI=0, int indexI=0, int devUMD=0, int indexU=0, int indexD=0, int flag=0)
+	SetShiftButton(&Throttle, 0, &Throttle, PSF, PSB);
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	//MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	//MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,TEMPO(PULSE + chaff,PULSE + shieldCell));
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,TEMPO(PULSE+cNextFG,PULSE+tHardpoints));
+	//Trim
+		MapKey(&Joystick,H1D,PULSE+resetPowerDist);
+		MapKey(&Joystick,H1U,PULSE+incEnginePower);
+		MapKey(&Joystick,H1L,PULSE+incSystemsPower);
+		MapKey(&Joystick,H1R,PULSE+incWeaponsPower);
+
+
+	//TMS
+	 	// Up - PSF: Enemy Targeting
+    	// Middle - PSM: Wing Targeting
+    	// Down - PSB: All ships/Subsystems Targeting
+		
+		MapKeyUMD(&Joystick, H2D, TEMPO(cPrvSubSys,selHighThreat), TEMPO(vSelectWingmanTarget,targetNextSystemInRoute), TEMPO(cPrvSubSys, targetNextSystemInRoute));  
+		MapKeyUMD(&Joystick, H2U, TEMPO(cNxtSubSys,selTgt), TEMPO(vTargetWingman2, selTgt), TEMPO(cNxtSubSys, selTgt)); 		
+		MapKeyUMD(&Joystick, H2L, cPrvHostile, vTargetWingman1, cPrvTarget);    
+		MapKeyUMD(&Joystick, H2R, cNxtHostile, vTargetWingman3, cNxtTgt);   
+		
+
+	//Trigger 
+		//TG1
+			MapKey(&Joystick,TG1,primaryFire);  //should be dxbutton
+		//TG2
+			MapKey(&Joystick,TG2,secFire);			
+	
+	//DMS
+		MapKey(&Joystick, H3U, vUIFocus + vUICommsPanel);
+    	MapKey(&Joystick, H3D, vUIFocus + vUIRadarPanel);
+    	MapKey(&Joystick, H3L,0);
+		MapKey(&Joystick, H3R,0);
+
+	//CMS
+		MapKey(&Joystick,H4D,dnUI);
+		MapKey(&Joystick,H4U,upUI);
+		MapKey(&Joystick,H4L,ltUI);
+		MapKey(&Joystick,H4R,rtUI);
+		MapKey(&Joystick,H4P,PULSE+selUI); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,TEMPO(PULSE + ECM, PULSE + deployHeatSink));
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4,fltAssist);
+
+//THROTTLE
+
+	//Pinky
+		// MapKey(&Throttle,PSF,tglCargoScoop);
+		//MapKeyR(&Throttle,PSF,PULSE+tglCargoScoop);
+		//MapKey(&Throttle,PSM,);
+		// MapKey(&Throttle,PSB,PULSE+tglLandingGear);
+		// MapKeyR(&Throttle,PSB,PULSE+tglLandingGear);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,PULSE+tglFrameShiftDrive);
+	
+	//Slew
+		MapKey(&Throttle,SC,revThrottle);
+		KeyAxis(&Throttle, SCX, 0,AXMAP2(LIST(0,10,90,100), ltUI,0, rtUI)); 
+		KeyAxis(&Throttle, SCY, 0,AXMAP2(LIST(0,10,90,100), upUI,0, dnUI)); 
+		
+	//Coolie
+		MapKey(&Throttle,CSD,dnThrust);
+		MapKey(&Throttle,CSU,upThrust);
+		MapKey(&Throttle,CSL,ltThrust);
+		MapKey(&Throttle,CSR,rtThrust);
+	
+	//Mic Switch
+		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		//MapKey(&Throttle, MSL,);
+		MapKey(&Throttle, MSR,cNextPnl);
+		MapKey(&Throttle, MSL,cPrevPnl);
+		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,fltAssist);  //this should be a dx button cause it will be held for awhile
+		//MapKey(&Throttle,SPDM,);
+		MapKey(&Throttle,SPDB,boost);
+	
+	//Boat
+		//MapKey(&Throttle,BSF,);
+		//MapKey(&Throttle,BSM,);
+		//MapKey(&Throttle,BSB,);
+	
+	//China Hat
+		MapKey(&Throttle,CHF,decRadarRange);
+		MapKey(&Throttle,CHB,incRadarRange);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		MapKey(&Throttle, EFLNORM, EXEC("edToggleCamera();"));
+		MapKeyR(&Throttle, EFLNORM, EXEC("edToggleCamera();"));
+	
+		//MapKey(&Throttle,EFLOVER,);
+		
+		//MapKey(&Throttle,EFRNORM,);
+		//MapKey(&Throttle,EFROVER,);
+	
+	//Engine Oper
+		MapKey(&Throttle, EOLIGN, TEMPO(0, jettisonCargo, JETTISON_CARGO_DELAY));
+		//MapKey(&Throttle,EOLNORM,);
+		//MapKey(&Throttle,EOLMOTOR,);
+
+		MapKey(&Throttle, EORIGN, tglSpotLight);
+		//MapKey(&Throttle,EORNORM,);
+		//MapKey(&Throttle,EORMOTOR,);
+				
+	//APU
+		MapKey(&Throttle, APUON, EXEC("edToggleRotationCorrection();"));
+		MapKeyR(&Throttle, APUON, EXEC("edToggleRotationCorrection();"));
+	
+	//Flaps
+		//MapKey(&Throttle,FLAPU,);
+		//MapKey(&Throttle,FLAPM,);
+		//MapKey(&Throttle,FLAPD,);
+	
+	//Idle Cutoff
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,TEMPO(PULSE+tglLandingGear,TrackIRCenter,1000));
+
+	//EAC
+		MapKey(&Throttle, EACON, DOWN + tglCargoScoop);
+		MapKey(&Throttle, EACOFF, UP + tglCargoScoop);	
+
+	//RDR Altm
+		//MapKey(&Throttle,RDRNRM,);
+
+	//AP Engage/Disengage
+		MapKey(&Throttle, APDIS, EXEC("edEngageAP();")); 
+
+	//AP Select Switch --RESERVED for edEngageAP()
+		
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

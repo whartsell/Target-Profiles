@@ -1,0 +1,23 @@
+include "elite_keys.ttm"
+
+//function depends on RDR ALTM and LASTE switch position
+	//RDRDIS = Flight Mode
+	//	PATH = Toggle Silent Running
+	//  ALT/HDG = Toggle Slave NAV to Wing
+	//  ALT = Toggle Deploy Hardpoints
+	
+	//RDRNRM = Ground Mode
+	//	PATH = reserved
+	//	ALT/HDG = reserved
+	//  ALT = Toggle Turret
+int edEngageAP() {
+	if(Throttle[RDRNRM]) {
+		//if(Throttle[APPAT]) ActKey(KEYON+PULSE+...);
+		//if(Throttle[APAH]) ActKey(KEYON+PULSE+...);
+		if(Throttle[APALT]) ActKey(KEYON+PULSE+vToggleTurret);
+	} else {
+		if(Throttle[APPAT]) ActKey(KEYON+PULSE+vSilentRunning);
+		if(Throttle[APAH]) ActKey(KEYON+PULSE+vSlaveNavToWingman);
+		if(Throttle[APALT]) ActKey(KEYON+PULSE+vDeployHardPoints);
+	}
+}

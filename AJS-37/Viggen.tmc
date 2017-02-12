@@ -2,16 +2,16 @@ include "target.tmh"
 include "util.ttm"
 include "keyboard.ttm"
 
-
+int safe;
 int main()
 {
 	Configure(&HCougar,MODE_EXCLUDED);
 	Configure(&T16000,MODE_EXCLUDED);
 	SetKBRate(50, 75);
     if(Init(&EventHandle)) return 1; // declare the event handler, return on error
-
+	safe=1;
 	//Initialize Backlights
-    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_1));
+    	//ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
 
 	//AXIS Assignment
 	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
@@ -25,25 +25,25 @@ int main()
 	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
 
 //Layers&Modes
-	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	//SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
 	
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,Intercom_on_Stick);
+		//MapKey(&Joystick, S2,);
 
 	//S1 Master Mode Control Button
-		MapKey(&Joystick, S1, PULSE+Weapon_Fire_Button_Safety);
+		MapKey(&Joystick, S1,EXEC("toggleSafety();"));
 	//Trim
-		MapKey(&Joystick,H1U,Elevator_Trimmer_Switch_PUSHDESCEND);
-		MapKey(&Joystick,H1D,Elevator_Trimmer_Switch_PULLCLIMB);
-		MapKey(&Joystick,H1L,Aileron_Trimmer_Switch_LEFT);
-		MapKey(&Joystick,H1R,Aileron_Trimmer_Switch_RIGHT);
+		MapKey(&Joystick,H1D,Trim_Nose_Up);
+		MapKey(&Joystick,H1U,Trim_Nose_Down);
+		MapKey(&Joystick,H1L,Trim_Left_Wing_Down);
+		MapKey(&Joystick,H1R,Trim_Right_Wing_Down);
 
 
 	//TMS
 		//MapKey(&Joystick,H2D,);
-		//MapKey(&Joystick,H2U,);
+		MapKey(&Joystick,H2U,Reference_button_DX);
 		//MapKey(&Joystick,H2L,);
 		//MapKey(&Joystick,H2R,);
 
@@ -51,7 +51,7 @@ int main()
 		//TG1
 			//MapKey(&Joystick,TG1,);
 		//TG2
-			MapKey(&Joystick,TG2,Weapon_Fire_Button);
+			MapKey(&Joystick,TG2,Weapon_Release_DX);
 	
 	//DMS
 		//MapKey(&Joystick,H3D,);
@@ -64,29 +64,29 @@ int main()
 		//MapKey(&Joystick,H4U,);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		//MapKey(&Joystick,H4P,); 
+		MapKey(&Joystick,H4P,FR22_Push_to_talk_DX); 
 	
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));
+		//MapKey(&Joystick, S3,);
 	
 	//S4 Paddle Switch
-		MapKey(&Joystick, S4,Wheel_Brake_On);
+		//MapKey(&Joystick, S4,);
 
 //THROTTLE
 
 	//Pinky
-		MapKey(&Throttle,PSF,PULSE+Spotlight_Switch__LANDING);
-		MapKey(&Throttle,PSM,PULSE+Spotlight_Switch__OFF);
-		MapKey(&Throttle,PSB,PULSE+Spotlight_Switch__TAXI);
+		//MapKey(&Throttle,PSF,); //scan zone
+		//MapKey(&Throttle,PSM,);
+		//MapKey(&Throttle,PSB,);
 		
 	//Left Throttle Button
-		MapKey(&Throttle,LTB,Intercom_on_Throttle);
+		MapKey(&Throttle,LTB,Fast_countermeasure_dispense_DX);
 	
 	//Slew
-		//MapKey(&Throttle,SC,); 
+		//MapKey(&Throttle,SC,); //terrain avoidance
 
 	//Coolie
-		//MapKey(&Throttle,CSD,);
+		//MapKey(&Throttle,CSD,); 
 		//MapKey(&Throttle,CSU,);
 		//MapKey(&Throttle,CSL,);
 		//MapKey(&Throttle,CSR,);
@@ -95,22 +95,22 @@ int main()
 		//MapKey(&Throttle, MSD,);
 		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
-		MapKey(&Throttle, MSR,PTT);
-		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		//MapKey(&Throttle, MSR,);
+		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
 
 	//Speed Brake
-		MapKey(&Throttle,SPDF,PULSE+Airbrake_Switch__OPEN);
-		MapKey(&Throttle,SPDM,PULSE+Airbrake_Switch__CLOSE);
-		MapKey(&Throttle,SPDB,PULSE+Airbrake_Switch__OPEN);
+		MapKey(&Throttle,SPDF,PULSE + Airbrake_in);
+		MapKey(&Throttle,SPDM,PULSE + Airbrake_out_force);
+		//MapKey(&Throttle,SPDB,);
 	
 	//Boat
-		//MapKey(&Throttle,BSF,);
+		MapKey(&Throttle,BSF,A0_Mode_Three_position_switch_DX);
 		//MapKey(&Throttle,BSM,);
-		//MapKey(&Throttle,BSB,);
+		MapKey(&Throttle,BSB,A2_Mode_Three_position_switch_DX);
 	
 	//China Hat
-		//MapKey(&Throttle,CHF,);
-		//MapKey(&Throttle,CHB,);
+		MapKey(&Throttle,CHF,PULSE + IR_missile_uncage);
+		MapKey(&Throttle,CHB,PULSE + IR_missile_fast_select);
 	
 	
 //Throttle Panel
@@ -126,23 +126,23 @@ int main()
 	
 	//Engine Oper
 		//Left
-		MapKey(&Throttle,EOLIGN,Turbo_Start_Button);
-		MapKey(&Throttle,EOLNORM,PULSE+Turbo_Start_Button_Cover__OPEN);
-		MapKey(&Throttle,EOLMOTOR,PULSE+Turbo_Start_Button_Cover__CLOSE);
+		//MapKey(&Throttle,EOLIGN,);
+		//MapKey(&Throttle,EOLNORM,);
+		//MapKey(&Throttle,EOLMOTOR,);
 		
 		//Right
-		MapKey(&Throttle,EORIGN,Engine_Start_Button);
-		MapKey(&Throttle,EORNORM,PULSE+Engine_Start_Button_Cover__OPEN);
-		MapKey(&Throttle,EORMOTOR,PULSE+Engine_Start_Button_Cover__CLOSE);
+		//MapKey(&Throttle,EORIGN,);
+		//MapKey(&Throttle,EORNORM,);
+		//MapKey(&Throttle,EORMOTOR,);
 				
 	//APU
-		//MapKey(&Throttle,APUON,PULSE + Parking_Brake_);
-		//MapKey(&Throttle,APUOFF,PULSE + Parking_Brake_Off);
+		//MapKey(&Throttle,APUON,);
+		//MapKey(&Throttle,APUOFF,);
 	
 	//Flaps
-		MapKey(&Throttle,FLAPU,PULSE+Flaps_Flight_Position);
-		MapKey(&Throttle,FLAPM,PULSE+Flaps_TakeOff_Position);
-		MapKey(&Throttle,FLAPD,PULSE+Flaps_Landing_Position);
+		//MapKey(&Throttle,FLAPU,);
+		//MapKey(&Throttle,FLAPM,);
+		//MapKey(&Throttle,FLAPD,);
 	
 	//Idle Cutoff
 		//Left
@@ -150,14 +150,14 @@ int main()
 		//MapKey(&Throttle,IDLELOFF,);
 		
 		//Right
-		MapKey(&Throttle,IDLERON,PULSE+THROTTLE__STOP);
-		MapKey(&Throttle,IDLEROFF,PULSE+THROTTLE__IDLE);
+		//MapKey(&Throttle,IDLERON,);
+		//MapKey(&Throttle,IDLEROFF,);
 	
 	// Throttle Friction Control
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,PULSE+Landing_Gear_Handle_UpDown);
+		MapKey(&Throttle,LDGH,Landing_Gear_Up_Down);
 
 	//EAC
 		//MapKey(&Throttle,EACON,);
@@ -166,7 +166,7 @@ int main()
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		MapKey(&Throttle,APENG,Request_control);
+		//MapKey(&Throttle,APENG,);
 
 	//AP Select Switch
 		//MapKey(&Throttle,APPAT,);
@@ -182,4 +182,19 @@ int EventHandle(int type, alias o, int x)
     DefaultMapping(&o, x);
 	
 	//add event handling code here
+}
+
+int toggleSafety()
+{
+	if (safe ==0) // we are armed
+	{
+		safe = 1;
+		ActKey(PULSE + KEYON + Trigger_safety_bracket_SAFE_DX);
+	}
+	else //we are safe
+	{
+		safe = 0;
+		ActKey(PULSE + KEYON + Trigger_safety_bracket_ARM_DX);	
+	}
+	
 }

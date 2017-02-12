@@ -94,8 +94,8 @@ int main()
 	
 	//Mic Switch
 		//MapKey(&Throttle, MSD,);
-		//MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
-		MapKey(&Throttle, MSU,USB_UpArrow); //VAC push to talk
+		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		//MapKey(&Throttle, MSU,USB_UpArrow); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
 		MapKey(&Throttle, MSR,Communication_menu);
 		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak

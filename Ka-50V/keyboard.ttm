@@ -128,25 +128,25 @@ define Zoom_external_out                                 	R_CTL + USB_KPForwardS
 // Ins Cyclic Stick
 
 define Cyclic_bank_left                                  	                                        
-define Trimmer                                           	USB_T                                   
+define Trimmer                                           	DX6 //USB_T                                   
 define Cyclic_bank_right                                 	                                        
-define Wheel_brake_press_and_hold                        	USB_W                                   
+define Wheel_brake_press_and_hold                        	DX7 //USB_W                                   
 define Cockpit_gauges_illumination_stick                 	L_SHIFT + USB_K                         
 define KU31_Shkval_center                                	R_CTL + USB_I                           
-define Release_weapons                                   	R_ALT + USB_Space                       
+define Release_weapons                                   	DX5 //R_ALT + USB_Space                       
 define Cyclic_nose_down                                  	                                        
-define Uncage_SHKVAL_designate_target                    	USB_O                                   
+define Uncage_SHKVAL_designate_target                    	DX14 //USB_O                                   
 define Wheel_brake_parking                               	L_SHIFT + USB_W                         
 define Autopilot_Emergency_Off                           	L_ALT + USB_A                           
 define Cyclic_nose_up                                    	                                        
-define KU31_Shkval_slew_left                             	USB_Comma                               
-define KU31_Shkval_slew_right                            	USB_ForwardSlash                        
-define KU31_Shkval_slew_up                               	USB_SemiColon                           
+define KU31_Shkval_slew_left                             	DX1 //USB_Comma                               
+define KU31_Shkval_slew_right                            	DX2 //USB_ForwardSlash                        
+define KU31_Shkval_slew_up                               	DX3 //USB_SemiColon                           
 define SPU9_PTT                                          	R_ALT + USB_BackSlash                   
-define KU31_Shkval_slew_down                             	USB_Period                              
+define KU31_Shkval_slew_down                             	DX4 //USB_Period                              
 define Trimmer_reset                                     	L_CTL + USB_T                           
 define Gun_Select                                        	USB_C                                   
-define Gun_fire                                          	USB_Space                               
+define Gun_fire                                          	DX12 //USB_Space                               
 define Hover_OnOff                                       	L_ALT + USB_T                           
 
 // Ins Engines start-up control panel and levers
@@ -585,9 +585,9 @@ define Lock_view_cycle_padlock                           	USB_KPDecimal
 // Ins Collective Stick
 
 define Weapon_selection_inward_stations                  	USB_I                                   
-define TV_Target_frame_Decrease_size                     	USB_LBracket                            
-define Collective_brake__Assign_altitude_lever           	USB_F                                   
-define Engage_Descent_Mode                               	USB_D                                   
+define TV_Target_frame_Decrease_size                     	DX11 //USB_LBracket                            
+define Collective_brake__Assign_altitude_lever           	DX8 //USB_F                                   
+define Engage_Descent_Mode                               	DX9 //USB_D                           
 define Weapon_selection_outward_stations                 	USB_Y                                   
 define Shkval_Wide_View_7x                               	USB_Minus                               
 define Spot_light_right                                  	R_CTL + USB_ForwardSlash                
@@ -601,7 +601,7 @@ define EngageDisengage_Route_Mode                        	USB_R
 define Spot_light_down                                   	R_CTL + USB_Period                      
 define Collective_up                                     	USB_KPPlus                              
 define Readjust_Free_Turbine_RPM_to_Low                  	R_ALT + USB_KPMinus                     
-define TV_Target_frame_Increase_size                     	USB_RBracket                            
+define TV_Target_frame_Increase_size                     	DX10 //USB_RBracket                            
 define Collective_down                                   	USB_KPMinus                             
 define Readjust_Free_Turbine_RPM_to_Nominal              	R_ALT + USB_KPPlus                      
 

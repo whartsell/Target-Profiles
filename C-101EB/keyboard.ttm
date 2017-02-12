@@ -1,0 +1,675 @@
+//Created by DCS2Target
+
+
+include "usbkeys.ttm"
+
+
+
+//Main instrument panel
+
+//define AC_inverter_Norm_Alt__NORMAL                                                 
+//define AC_inverter_Norm_Alt__OFF                                                    
+define ADI_Pitch_adjust_Decrease                                                      R_SHIFT + USB_A
+define ADI_Pitch_adjust_Increase                                                      R_CTL + USB_A
+define Airspeed_indicator_bug_Decrease                                                L_SHIFT + USB_A
+define Airspeed_indicator_bug_Increase                                                L_CTL + USB_A
+define Altimeter_pressure_set_Decrease                                                R_CTL + USB_B
+define Altimeter_pressure_set_Increase                                                R_SHIFT + USB_B
+//define Anti_Rain_fluid                                                              
+//define Antiskid_Indicator_Switch_ON_OFF                                             
+define Attitude_test                                                                  L_ALT + USB_A
+define Back_up_ADI_Cage                                                               L_ALT + USB_H
+//define Battery_master_switch__OFF                                                   
+//define Battery_master_switch__ON                                                    
+//define CAWS_Panel_Bright                                                            
+//define CAWS_Panel_Dim                                                               
+define Chronograph                                                                    L_ALT + USB_Q
+define Clock_Winding__Decrease                                                        L_CTL + USB_Q
+define Clock_Winding__Increase                                                        L_SHIFT + USB_Q
+define Course_Knob_Decrease                                                           L_CTL + USB_I
+define Course_Knob_Increase                                                           L_SHIFT + USB_I
+//define DC_Bus_Tie__OFF                                                              
+//define DC_Bus_Tie__ON                                                               
+//define Essential_Bus_Transfer_Switch                                                
+//define Fire_Alert_test                                                              
+define Fuel_flow_Reset                                                                R_CTL + USB_F
+define Fuel_flow_test                                                                 R_SHIFT + USB_F
+//define Generator__OFF                                                               
+//define Generator__ON                                                                
+//define Generator__RESET                                                             
+//define Generator_ground_Fault                                                       
+//define Generator_ground_Overvoltage                                                 
+//define Gyro_mode__OFF                                                               
+//define Gyro_mode__ON                                                                
+define HSI_Digit_Brightness__Decrease                                                 R_CTL + USB_H
+define HSI_Digit_Brightness__Increase                                                 R_SHIFT + USB_H
+define Heading_Knob_Decrease                                                          R_CTL + USB_I
+define Heading_Knob_Increase                                                          R_SHIFT + USB_I
+//define Inner_marker_lamp_test                                                       
+//define Lamp_test                                                                    
+define Landing_gear_override                                                          L_CTL + USB_G
+//define Left_Battery_Isolation_switch                                                
+//define Manual_gyro_correction__OFF                                                  
+//define Manual_gyro_correction__ON                                                   
+define Master_Caution_Light_Amber_                                                    R_SHIFT + USB_M
+define Master_Warning_Light_Red_                                                      L_SHIFT + USB_M
+//define Middle_marker_lamp_test                                                      
+define NAV_Priority                                                                   L_ALT + USB_N
+//define Outer_marker_lamp_test                                                       
+define Pitot_heat                                                                     L_WIN + USB_H
+define Reset_Button                                                                   L_SHIFT + USB_G
+//define Right_Battery_Isolation_switch                                               
+//define Stall_warning_Power__OFF                                                     
+//define Stall_warning_Power__ON                                                      
+//define Stall_warning_test__OFF                                                      
+//define Stall_warning_test__ON                                                       
+define Standby_Artificial_Horizon_Pitch_Reference_Adjust__Decrease                    L_CTL + USB_H
+define Standby_Artificial_Horizon_Pitch_Reference_Adjust__Increase                    L_SHIFT + USB_H
+define Time_Set__Decrease                                                             R_CTL + USB_Q
+define Time_Set__Increase                                                             R_SHIFT + USB_Q
+//define UHF__Channel_Decrease                                                        
+//define UHF__Channel_Increase                                                        
+//define UHF__Main_selector_Decrease                                                  
+//define UHF__Main_selector_Increase                                                  
+//define UHF__Mode_Decrease                                                           
+//define UHF__Mode_Increase                                                           
+//define UHF__Squelch_OFF                                                             
+//define UHF__Squelch_ON                                                              
+//define UHF__Volume_Decrease                                                         
+//define UHF__Volume_Increase                                                         
+//define UHF__X0X_XXX_Decrease                                                        
+//define UHF__X0X_XXX_Increase                                                        
+//define UHF__XX0_XXX_Decrease                                                        
+//define UHF__XX0_XXX_Increase                                                        
+//define UHF__XXX_0XX_Decrease                                                        
+//define UHF__XXX_0XX_Increase                                                        
+//define UHF__XXX_X00_Decrease                                                        
+//define UHF__XXX_X00_Increase                                                        
+//define UHF_Antenna_selection__OFF                                                   
+//define UHF_Antenna_selection__ON                                                    
+//define UHF_Digital_display_test                                                     
+//define UHF_Dimmer_Decrease                                                          
+//define UHF_Dimmer_Increase                                                          
+define UHF_Priority                                                                   L_ALT + USB_U
+//define UHF_tone_button                                                              
+define VHF_Priority                                                                   L_ALT + USB_V
+define VOR_TACAN_Selector                                                             L_ALT + USB_T
+//define Vertical_gyro_fast_erect__OFF                                                
+//define Vertical_gyro_fast_erect__ON                                                 
+
+//Left Console
+
+//define Aileron_HYD_override                                                         
+//define Anti_Ice                                                                     
+//define Center_wing_tank_Qty                                                         
+//define Computer                                                                     
+define Continuous_IGNITION_START                                                      L_SHIFT + USB_E
+//define Emergency_air_brake_retract                                                  
+//define Emergency_landing_gear_extension__Extend                                     
+//define Engine_start_light_test                                                      
+//define Fuel_Shutoff_Valve_Switch                                                    
+//define Fuel_Transfer_Center_1_AUT                                                   
+//define Fuel_Transfer_Center_1_MAN                                                   
+//define Fuel_Transfer_Center_1_OFF                                                   
+//define Fuel_Transfer_Center_2_AUT                                                   
+//define Fuel_Transfer_Center_2_MAN                                                   
+//define Fuel_Transfer_Center_2_OFF                                                   
+//define Fuel_Transfer_Left_AUT                                                       
+//define Fuel_Transfer_Left_MAN                                                       
+//define Fuel_Transfer_Left_OFF                                                       
+//define Fuel_Transfer_Right_AUT                                                      
+//define Fuel_Transfer_Right_MAN                                                      
+//define Fuel_Transfer_Right_OFF                                                      
+//define Fuselage_tank_Pump                                                           
+define Landing_gear_warning_mute                                                      L_ALT + USB_G
+//define Pitch_trim_breaker__OFF                                                      
+//define Pitch_trim_breaker__ON                                                       
+//define Pitch_trim_cutout_DOWN                                                       
+//define Pitch_trim_cutout_OFF                                                        
+//define Pitch_trim_cutout_UP                                                         
+//define Pitch_trim_cutout_guard_CLOSE                                                
+//define Pitch_trim_cutout_guard_OPEN                                                 
+//define Pitch_trim_disc_lamp_test                                                    
+//define Pitch_trim_tone_mute__OFF                                                    
+//define Pitch_trim_tone_mute__ON                                                     
+define Seat_Adjustment__Down                                                          R_CTL + USB_S
+define Seat_Adjustment__Up                                                            R_CTL + USB_W
+//define Starter_mode_selector_Cranck                                                 
+//define Starter_mode_selector_Normal                                                 
+//define Test_fuel_Qty_indicator                                                      
+
+//Cheat
+
+define Auto_Start                                                                     L_WIN + USB_Home
+define Auto_Stop                                                                      L_WIN + USB_End
+
+//Systems
+
+//define Adjust_Rudder_Pedals__Retracted                                              
+//define Blackout_curtain                                                             
+define Canopy_Open_Close                                                              L_CTL + USB_C
+//define Canopy_emergency_jettison_OUT                                                
+define Eject_3_times_                                                                 L_CTL + USB_E
+define Landing_gear_toggle                                                            USB_G
+define Parking_brake                                                                  L_CTL + USB_W
+define Wheel_Brake_Left_On_Off                                                        L_CTL + USB_X
+define Wheel_Brake_Right_On_Off                                                       L_ALT + USB_X
+define Wheel_brake_On                                                                 USB_W
+
+//Flight Control
+
+define Air_brake_Extend                                                               DX2
+define Air_brake__Retract                                                             DX1
+define Air_brake__Toggle                                                              USB_B
+define Aircraft_Bank_Left                                                             USB_LeftArrow
+define Aircraft_Bank_Right                                                            USB_RightArrow
+define Aircraft_Pitch_Down                                                            USB_UpArrow
+define Aircraft_Pitch_Up                                                              USB_DownArrow
+define Aircraft_Rudder_Left                                                           USB_Z
+define Aircraft_Rudder_Right                                                          USB_X
+//define HOTAS_Flaps_Down                                                             
+//define HOTAS_Flaps_Up                                                               
+define Next_Flap_Detent                                                               L_SHIFT + USB_F
+define Prev_Flap_Detent                                                               L_CTL + USB_F
+define Throttle_Down                                                                  Num + 
+define Throttle_Idle_Detent_Toggle                                                    R_ALT + USB_Home
+define Throttle_Up                                                                    USB_KPPlus
+define trim_Left_wing_Down                                                            R_CTL + USB_Comma
+define trim_Nose_Down                                                                 R_CTL + USB_SemiColon
+define trim_Nose_Up                                                                   R_CTL + USB_Period
+define trim_Right_wing_Down                                                           R_CTL + USB_ForwardSlash
+define trim_Rudder_Left                                                               R_CTL + USB_Z
+define trim_Rudder_Right                                                              R_CTL + USB_X
+
+//Right Console
+
+//define Air_flow_mode__GLASS                                                         
+//define Air_Conditioning_master_switch__OFF                                          
+//define Air_Conditioning_master_switch__ON                                           
+//define Air_Conditioning_master_switch__RESET                                        
+//define Display_test                                                                 
+//define Emergency_ventilation_OFF                                                    
+//define Emergency_ventilation_ON                                                     
+//define Frequency_selector_00_50_Decrease                                            
+//define Frequency_selector_00_50_Increase                                            
+//define HOT_MIC_RX_Volume_Decrease                                                   
+//define HOT_MIC_RX_Volume_Increase                                                   
+//define HOT_MIC_RX_Volume_PULL                                                       
+//define HOT_MIC_RX_Volume_PUSH                                                       
+//define HOT_MIC_TX_Volume_PULL                                                       
+//define HOT_MIC_TX_Volume_PUSH                                                       
+//define INTERCOM_Main_mode_selector_Decrease                                         
+//define INTERCOM_Main_mode_selector_Increase                                         
+//define INTERCOM_Volume_Decrease                                                     
+//define INTERCOM_Volume_Increase                                                     
+//define INTERCOM_Volume_PULL                                                         
+//define INTERCOM_Volume_PUSH                                                         
+//define INTERCOM_call_button                                                         
+//define INTERCOM_master_volume_Knob_Increase                                         
+//define INTERCOM_master_volume_knob_Decrease                                         
+//define Manual_temperature_control__COLD                                             
+//define Manual_temperature_control__HOT                                              
+//define Marker_Beacon_Volume_Decrease                                                
+//define Marker_Beacon_Volume_Increase                                                
+//define Marker_Beacon_Volume_PULL                                                    
+//define Marker_Beacon_Volume_PUSH                                                    
+//define NAV_VOL_Decrease                                                             
+//define NAV_VOL_Increase                                                             
+define Oxygen_supply__OFF                                                             L_CTL + USB_O
+define Oxygen_supply__ON                                                              L_SHIFT + USB_O
+//define TACAN_0_9_Decrease                                                           
+//define TACAN_0_9_Increase                                                           
+//define TACAN_0x_9x_Decrease                                                         
+//define TACAN_0x_9x_Increase                                                         
+//define TACAN_Mode_Decrease                                                          
+//define TACAN_Mode_Increase                                                          
+//define TACAN_Volume_Decrease                                                        
+//define TACAN_Volume_Increase                                                        
+//define TACAN_Volume_PULL                                                            
+//define TACAN_Volume_PUSH                                                            
+//define TACAN_X_Y_Decrease                                                           
+//define TACAN_X_Y_Increase                                                           
+//define TACAN_test                                                                   
+//define TACAN_volume_Decrease                                                        
+//define TACAN_volume_Increase                                                        
+//define Temperature_mode_AUTO                                                        
+//define Temperature_mode_Manual                                                      
+//define Temperature_regulation_control_Decrease                                      
+//define Temperature_regulation_control_Increase                                      
+//define UHF_Volume_Decrease                                                          
+//define UHF_Volume_Increase                                                          
+//define UHF_Volume_PULL                                                              
+//define UHF_Volume_PUSH                                                              
+//define VHF_Frequency_selector_X0X_XXX_Decrease                                      
+//define VHF_Frequency_selector_X0X_XXX_Increase                                      
+//define VHF_Frequency_selector_XX0_XXX_Decrease                                      
+//define VHF_Frequency_selector_XX0_XXX_Increase                                      
+//define VHF_Frequency_selector_XXX_0XX_Decrease                                      
+//define VHF_Frequency_selector_XXX_0XX_Increase                                      
+//define VHF_Frequency_selector_XXX_X00_Decrease                                      
+//define VHF_Frequency_selector_XXX_X00_Increase                                      
+//define VHF_Volume_Decrease                                                          
+//define VHF_Volume_Increase                                                          
+//define VHF_Volume_PULL                                                              
+//define VHF_Volume_PUSH                                                              
+//define VHF_dimmer_Decrease                                                          
+//define VHF_dimmer_Increase                                                          
+//define VHF_power_switch_OFF                                                         
+//define VHF_power_switch_ON                                                          
+//define VHF_volume_Decrease                                                          
+//define VHF_volume_Increase                                                          
+//define VOR_Volume_Decrease                                                          
+//define VOR_Volume_Increase                                                          
+//define VOR_Volume_PULL                                                              
+//define VOR_Volume_PUSH                                                              
+//define VOR_ILS_MB_108_117_Decrease                                                  
+//define VOR_ILS_MB_108_117_Increase                                                  
+//define VOR_ILS_MB_Frequency_selector_0_9_Decrease                                   
+//define VOR_ILS_MB_Frequency_selector_0_9_Increase                                   
+//define VOR_ILS_MB_test_VHF_NAV_DIGITS                                               
+//define VOR_ILS_MB_test_VOR_MKR                                                      
+//define VOR_ILS_Dimmer_Decrease                                                      
+//define VOR_ILS_Dimmer_Increase                                                      
+
+//Labels
+
+define All_Labels                                                                     L_SHIFT + USB_F10
+define Missile_Labels                                                                 L_SHIFT + USB_F6
+define Vehicle__Ship_Labels                                                           L_SHIFT + USB_F9
+
+//View Padlock
+
+define Lock_View_cycle_padlock_                                                       USB_KPDecimal
+define Lock_terrain_view                                                              R_CTL + USB_KPDecimal
+define Threat_missile_padlock                                                         R_ALT + USB_KPDecimal
+define Unlock_view_stop_padlock_                                                      USB_NumLock
+
+//Illumination
+
+define Anti_Collision_beacon__ON                                                      R_SHIFT + USB_J
+//define Console_integral_lighting_Decrease                                           
+//define Console_integral_lighting_Increase                                           
+define Formation_lights__BRIGHT                                                       R_SHIFT + USB_O
+define Formation_lights__OFF                                                          R_CTL + USB_O
+define Formation_lights__TENUE                                                        R_ALT + USB_O
+//define Instrument_lighting_Decrease                                                 
+//define Instrument_lighting_Increase                                                 
+define Left_spotlight_switch__OFF                                                     L_SHIFT + USB_L
+define Left_spotlight_switch__landing                                                 L_ALT + USB_L
+define Left_spotlight_switch__taxi                                                    L_CTL + USB_L
+//define Magnetic_compass_light__OFF                                                  
+//define Magnetic_compass_light__ON                                                   
+define NAV_lights__BRIGHT                                                             R_SHIFT + USB_N
+define NAV_lights__OFF                                                                R_CTL + USB_N
+define NAV_lights__TENUE                                                              R_ALT + USB_N
+define Pilot_Pocket_Light_Torch__ON_OFF                                               R_CTL + R_SHIFT + USB_L
+//define Red_flood_lighting__BRIGHT                                                   
+//define Red_flood_lighting__OFF                                                      
+//define Red_flood_lighting__TENUE                                                    
+define Right_spotlight_switch__OFF                                                    R_SHIFT + USB_L
+define Right_spotlight_switch__landing                                                R_ALT + USB_L
+define Right_spotlight_switch__taxi                                                   R_CTL + USB_L
+//define Storm_lights__OFF                                                            
+//define Storm_lights__ON                                                             
+
+//Communications
+
+define COMM_Switch_dialog                                                             R_CTL + USB_BackSlash
+define Communication_menu                                                             USB_BackSlash
+define Cover_Me                                                                       L_WIN + USB_W
+define Flight__Attack_air_defenses                                                    L_WIN + USB_D
+define Flight__Attack_ground_targets                                                  L_WIN + USB_G
+define Flight__Complete_mission_and_RTB                                               L_WIN + USB_E
+define Flight__Complete_mission_and_rejoin                                            L_WIN + USB_R
+define Join_Up_Formation                                                              L_WIN + USB_Y
+define Request_AWACS_Home_Airbase                                                     L_WIN + USB_U
+define Switch_dialog                                                                  L_SHIFT + USB_BackSlash
+define Switch_to_main_menu                                                            L_CTL + USB_BackSlash
+define Toggle_Formation                                                               L_WIN + USB_T
+
+//IFF panel
+
+//define Audio_light_switch__LIGHT                                                    
+//define Audio_light_switch__OUT                                                      
+//define Code_select_Decrease                                                         
+//define Code_select_Increase                                                         
+//define IDENT_switch__IDENT                                                          
+//define IDENT_switch__MIC                                                            
+//define IDENT_switch__OUT                                                            
+//define IFF_Mode_4__ON                                                               
+//define IFF_Mode_4__OUT                                                              
+//define IFF_reply_lamp_test                                                          
+//define IFF_test                                                                     
+//define MODE_1__0X_Decrease                                                          
+//define MODE_1__0X_Increase                                                          
+//define MODE_1__X0_Decrease                                                          
+//define MODE_1__X0_Increase                                                          
+//define MODE_3__000X_Decrease                                                        
+//define MODE_3__000X_Increase                                                        
+//define MODE_3__00X0_Decrease                                                        
+//define MODE_3__00X0_Increase                                                        
+//define MODE_3__0X00_Decrease                                                        
+//define MODE_3__0X00_Increase                                                        
+//define MODE_3__X000_Decrease                                                        
+//define MODE_3__X000_Increase                                                        
+//define Master_switch_Decrease                                                       
+//define Master_switch_Increase                                                       
+//define RAD_TEST_switch__MON                                                         
+//define RAD_TEST_switch__RAD_TEST                                                    
+//define TEST_M_1_switch__M_1                                                         
+//define TEST_M_1_switch__ON                                                          
+//define TEST_M_1_switch__OUT                                                         
+//define TEST_M_2_switch__M_2                                                         
+//define TEST_M_2_switch__ON                                                          
+//define TEST_M_2_switch__OUT                                                         
+//define TEST_M_3_A_switch__M_3_A                                                     
+//define TEST_M_3_A_switch__ON                                                        
+//define TEST_M_3_A_switch__OUT                                                       
+//define TEST_M_C_switch__M_C                                                         
+//define TEST_M_C_switch__ON                                                          
+//define TEST_M_C_switch__OUT                                                         
+
+//Circuit breaker panel
+
+//define CB_Air_brakeAnti_Skid_operation__ON                                          
+//define CB_Air_Conditioning_Pressurization__OFF                                      
+//define CB_Air_Conditioning_Pressurization__ON                                       
+//define CB_Anti_Ice_Rain_repellent__OFF                                              
+//define CB_Anti_Ice_Rain_repellent__ON                                               
+//define CB_Back_up_ADI__OFF                                                          
+//define CB_Back_up_ADI__ON                                                           
+//define CB_Back_up_inverter__OFF                                                     
+//define CB_Back_up_inverter__ON                                                      
+//define CB_CAUTION_WARNING_panel__OFF                                                
+//define CB_CAUTION_WARNING_panel__ON                                                 
+//define CB_Center_wing_tank_pumps__OFF                                               
+//define CB_Center_wing_tank_pumps__ON                                                
+//define CB_Colour_Smoke__OFF                                                         
+//define CB_Colour_Smoke__ON                                                          
+//define CB_Console_lights__OFF                                                       
+//define CB_Console_lights__ON                                                        
+//define CB_Directional_gyro_AC__OFF                                                  
+//define CB_Directional_gyro_AC__ON                                                   
+//define CB_Directional_gyro_DC__OFF                                                  
+//define CB_Directional_gyro_DC__ON                                                   
+//define CB_Engine_computer__OFF                                                      
+//define CB_Engine_computer__ON                                                       
+//define CB_Engine_starter__OFF                                                       
+//define CB_Engine_starter__ON                                                        
+//define CB_Fire_detector__OFF                                                        
+//define CB_Fire_detector__ON                                                         
+//define CB_Flaps_indicator_ileron_indicator__OFF                                     
+//define CB_Flaps_indicator_ileron_indicator__ON                                      
+//define CB_Flight_Director__OFF                                                      
+//define CB_Flight_Director__ON                                                       
+//define CB_Formation_lights__OFF                                                     
+//define CB_Formation_lights__ON                                                      
+//define CB_Fuel_measuring_system__OFF                                                
+//define CB_Fuel_measuring_system__ON                                                 
+//define CB_Fuselage_tank_pumps__OFF                                                  
+//define CB_Fuselage_tank_pumps__ON                                                   
+//define CB_IFF_AC_115__OFF                                                           
+//define CB_IFF_AC_115__ON                                                            
+//define CB_IFF_PRIM_DC__OFF                                                          
+//define CB_IFF_PRIM_DC__ON                                                           
+//define CB_ITT__OFF                                                                  
+//define CB_ITT__ON                                                                   
+//define CB_Instruments_storm_and_Anti_Collision_lights__OFF                          
+//define CB_Instruments_storm_and_Anti_Collision_lights__ON                           
+//define CB_LH_land_taxi_light__OFF                                                   
+//define CB_LH_land_taxi_light__ON                                                    
+//define CB_Landing_Gear_Airbrake_Trim_indicators__OFF                                
+//define CB_Landing_Gear_Airbrake_Trim_indicators__ON                                 
+//define CB_Landing_gear__OFF                                                         
+//define CB_Landing_gear__ON                                                          
+//define CB_Normal_inverter__OFF                                                      
+//define CB_Normal_inverter__ON                                                       
+//define CB_OXY_SYSHYD_SYS_PRESS_IND__OFF                                             
+//define CB_OXY_SYSHYD_SYS_PRESS_IND__ON                                              
+//define CB_Oil_Pressure__OFF                                                         
+//define CB_Oil_Pressure__ON                                                          
+//define CB_Oil_temp_IND__OFF                                                         
+//define CB_Oil_temp_IND__ON                                                          
+//define CB_Outer_wing_tank_pumps__OFF                                                
+//define CB_Outer_wing_tank_pumps__ON                                                 
+//define CB_Pitot_HeatStall_warning_system__OFF                                       
+//define CB_Pitot_HeatStall_warning_system__ON                                        
+//define CB_Position_lights_RH_land_taxi_lights__OFF                                  
+//define CB_Position_lights_RH_land_taxi_lights__ON                                   
+//define CB_RPM_N1__OFF                                                               
+//define CB_RPM_N1__ON                                                                
+//define CB_RPM_N2__OFF                                                               
+//define CB_RPM_N2__ON                                                                
+//define CB_Red_cockpit_lighting__OFF                                                 
+//define CB_Red_cockpit_lighting__ON                                                  
+//define CB_TACAN_AC_26__OFF                                                          
+//define CB_TACAN_AC_26__ON                                                           
+//define CB_TACAN_DC__OFF                                                             
+//define CB_TACAN_DC__ON                                                              
+//define CB_UHF__OFF                                                                  
+//define CB_UHF__ON                                                                   
+//define CB_VHF_DC_ESS__OFF                                                           
+//define CB_VHF_DC_ESS__ON                                                            
+//define CB_VOR_DC__OFF                                                               
+//define CB_VOR_DC__ON                                                                
+//define CB_Vertical_gyro_AC__OFF                                                     
+//define CB_Vertical_gyro_AC__ON                                                      
+//define CB_Vertical_gyro_DC__OFF                                                     
+//define CB_Vertical_gyro_DC__ON                                                      
+//define CB_White_Smoke__OFF                                                          
+//define CB_White_Smoke__ON                                                           
+//define CB_elevator_trim_Power__OFF                                                  
+//define CB_elevator_trim_Power__ON                                                   
+//define CB_engine_generator__OFF                                                     
+//define CB_engine_generator__ON                                                      
+//define CB_interphone__OFF                                                           
+//define CB_interphone__ON                                                            
+//define CB_seat_adjustment__OFF                                                      
+//define CB_seat_adjustment__ON                                                       
+
+//View Extended
+
+define Keep_terrain_camera_altitude                                                   L_ALT + USB_K
+define Object_exclude                                                                 L_ALT + USB_Delete
+define Objects_all_excluded__include                                                  L_ALT + USB_Insert
+define Objects_switching_direction_forward                                            L_CTL + USB_PageDown
+define Objects_switching_direction_reverse                                            L_CTL + USB_PageUp
+define Toggle_tracking_launched_weapon                                                R_CTL + USB_KPPlus
+define View_all_mode                                                                  R_CTL + USB_Delete
+define View_enemies_mode                                                              R_CTL + R_SHIFT + USB_End
+define View_friends_mode                                                              R_CTL + R_SHIFT + USB_Home
+
+//View Cockpit
+
+define Camera_snap_view_down                                                          R_ALT + USB_KP2
+define Camera_snap_view_down_left                                                     R_ALT + USB_KP1
+define Camera_snap_view_down_right                                                    R_ALT + USB_KP3
+define Camera_snap_view_left                                                          R_ALT + USB_KP4
+define Camera_snap_view_right                                                         R_ALT + USB_KP6
+define Camera_snap_view_up                                                            R_ALT + USB_KP8
+define Camera_snap_view_up_left                                                       R_ALT + USB_KP7
+define Camera_snap_view_up_right                                                      R_ALT + USB_KP9
+define Camera_transpose_mode_press_and_hold_                                          L_SHIFT + USB_F1
+define Center_Camera_View                                                             R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Back                                                       R_CTL + R_SHIFT + Num/; RCtrl + R_SHIFT + Num + 
+define Cockpit_Camera_Move_Center                                                     R_CTL + R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Down                                                       R_CTL + R_SHIFT + USB_KP2
+define Cockpit_Camera_Move_Forward                                                    R_CTL + R_SHIFT + USB_KPAsterisk
+define Cockpit_Camera_Move_Left                                                       R_CTL + R_SHIFT + USB_KP4
+define Cockpit_Camera_Move_Right                                                      R_CTL + R_SHIFT + USB_KP6
+define Cockpit_Camera_Move_Up                                                         R_CTL + R_SHIFT + USB_KP8
+define Cockpit_panel_view_in                                                          USB_KP0
+define Cockpit_panel_view_toggle                                                      R_CTL + USB_KP0
+define Custom_Snap_View_0                                                             L_WIN + USB_KP0
+define Custom_Snap_View_1                                                             L_WIN + USB_KP1
+define Custom_Snap_View_2                                                             L_WIN + USB_KP2
+define Custom_Snap_View_3                                                             L_WIN + USB_KP3
+define Custom_Snap_View_4                                                             L_WIN + USB_KP4
+define Custom_Snap_View_5                                                             L_WIN + USB_KP5
+define Custom_Snap_View_6                                                             L_WIN + USB_KP6
+define Custom_Snap_View_7                                                             L_WIN + USB_KP7
+define Custom_Snap_View_8                                                             L_WIN + USB_KP8
+define Custom_Snap_View_9                                                             L_WIN + USB_KP9
+//define Enable_visual_recon_mode                                                     
+define Flashlight                                                                     L_ALT + USB_L
+define Glance_down                                                                    R_CTL + USB_KP2
+define Glance_down_left                                                               R_CTL + USB_KP1
+define Glance_down_right                                                              R_CTL + USB_KP3
+define Glance_left                                                                    R_CTL + USB_KP4
+define Glance_right                                                                   R_CTL + USB_KP6
+define Glance_up                                                                      R_CTL + USB_KP8
+define Glance_up_left                                                                 R_CTL + USB_KP7
+define Glance_up_right                                                                R_CTL + USB_KP9
+define Occupy_Seat_1                                                                  USB_1
+define Occupy_Seat_2                                                                  USB_2
+define Return_Camera                                                                  R_CTL + USB_KP5
+define Return_Camera_Base                                                             R_ALT + USB_KP5
+define Save_Cockpit_Angles                                                            R_ALT + USB_KP0
+define Toggle_Mirrors                                                                 USB_M
+define View_down                                                                      R_SHIFT + USB_KP2
+define View_down_left                                                                 R_SHIFT + USB_KP1
+define View_down_right                                                                R_SHIFT + USB_KP3
+define View_left                                                                      R_SHIFT + USB_KP4
+define View_right                                                                     R_SHIFT + USB_KP6
+define View_up                                                                        R_SHIFT + USB_KP8
+define View_up_left                                                                   R_SHIFT + USB_KP7
+define View_up_right                                                                  R_SHIFT + USB_KP9
+define Zoom_in                                                                        R_SHIFT + USB_KPAsterisk
+define Zoom_out                                                                       R_SHIFT + USB_KPForwardSlash
+
+//General
+
+define End_mission                                                                    Esc
+define Frame_rate_counter__Service_info                                               R_CTL + USB_Break
+define Get_new_plane__respawn                                                         R_CTL + R_SHIFT + USB_Tab
+define Info_bar_coordinate_units_toggle                                               L_ALT + USB_Y
+define Info_bar_view_toggle                                                           L_CTL + USB_Y
+define Jump_into_selected_aircraft                                                    R_ALT + USB_J
+define Pause                                                                          USB_Break
+define Rearming_and_Refueling_Window                                                  L_ALT + USB_Apostrophe
+define Score_window                                                                   USB_Apostrophe
+define Screenshot                                                                     USB_PrintScreen
+define Show_Pilot_Body                                                                R_SHIFT + USB_P
+define Show_controls_indicator                                                        R_CTL + USB_Return
+define Sound_On_Off                                                                   L_CTL + USB_S
+define Time_accelerate                                                                L_CTL + USB_Z
+define Time_decelerate                                                                L_ALT + USB_Z
+define Time_normal                                                                    L_SHIFT + USB_Z
+define View_briefing_on_off                                                           L_ALT + USB_B
+
+//View
+
+define F1_HUD_only_view_switch                                                        L_ALT + USB_F1
+define F1_Head_shift_movement_on__off                                                 L_WIN + USB_F1
+define F1_Natural_head_movement_view                                                  L_CTL + USB_F1
+define F10_Jump_to_theater_map_view_over_current_point                                L_CTL + USB_F10
+define F10_Theater_map_view                                                           USB_F10
+define F11_Airport_free_camera                                                        USB_F11
+define F11_Camera_moving_backward                                                     L_ALT + USB_KPForwardSlash
+define F11_Camera_moving_forward                                                      L_ALT + USB_KPAsterisk
+define F11_Jump_to_free_camera                                                        L_CTL + USB_F11
+define F12_Civil_traffic_view                                                         L_CTL + USB_F12
+define F12_Static_object_view                                                         USB_F12
+define F12_Trains_cars_toggle                                                         L_SHIFT + USB_F12
+define F2_Aircraft_view                                                               USB_F2
+define F2_Toggle_camera_position                                                      R_ALT + USB_F2
+define F2_Toggle_local_camera_control                                                 L_ALT + USB_F2
+define F2_View_own_aircraft                                                           L_CTL + USB_F2
+define F3_Fly_By_jump_view                                                            L_CTL + USB_F3
+define F3_Fly_By_view                                                                 USB_F3
+define F4_Arcade_Chase_view                                                           L_SHIFT + USB_F4
+define F4_Chase_view                                                                  L_CTL + USB_F4
+define F4_Look_back_view                                                              USB_F4
+define F5_Ground_hostile_view                                                         L_CTL + USB_F5
+define F5_nearest_AC_view                                                             USB_F5
+define F6_Released_weapon_view                                                        USB_F6
+define F6_Weapon_to_target_view                                                       L_CTL + USB_F6
+define F7_Ground_unit_view                                                            USB_F7
+define F8_Player_targets_All_targets_filter                                           R_CTL + USB_F8
+define F8_Target_view                                                                 USB_F8
+define F9_Landing_signal_officer_view                                                 L_ALT + USB_F9
+define F9_Ship_view                                                                   USB_F9
+define Keyboard_Rate_Fast                                                             L_SHIFT + USB_RBracket
+define Keyboard_Rate_Normal                                                           L_ALT + USB_RBracket
+define Keyboard_Rate_Slow                                                             L_CTL + USB_RBracket
+define Mouse_Rate_Fast                                                                L_SHIFT + USB_LBracket
+define Mouse_Rate_Normal                                                              L_ALT + USB_LBracket
+define Mouse_Rate_Slow                                                                L_CTL + USB_LBracket
+define View_Center                                                                    USB_KP5
+define View_Down_Left_slow                                                            USB_KP1
+define View_Down_Right_slow                                                           USB_KP3
+define View_Down_slow                                                                 USB_KP2
+define View_Left_slow                                                                 USB_KP4
+define View_Right_slow                                                                USB_KP6
+define View_Up_Left_slow                                                              USB_KP7
+define View_Up_Right_slow                                                             USB_KP9
+define View_Up_slow                                                                   USB_KP8
+define Zoom_external_in                                                               R_CTL + USB_KPAsterisk
+define Zoom_external_normal                                                           R_CTL + USB_KPEnter
+define Zoom_external_out                                                              R_CTL + USB_KPForwardSlash
+define Zoom_in_slow                                                                   USB_KPAsterisk
+define Zoom_normal                                                                    USB_KPEnter
+define Zoom_out_slow                                                                  USB_KPForwardSlash
+
+//Flight director
+
+define FD_APPROACH_ARM_mode                                                           L_CTL + USB_KP5
+define FD_GLIDESLOPE_EXTENDED_mode                                                    L_CTL + USB_KP3
+define FD_GLIDESLOPE_mode                                                             L_CTL + USB_KP6
+define FD_GO_AROUND_mode                                                              L_CTL + USB_KPForwardSlash
+define FD_HEADING_mode                                                                L_CTL + USB_KP7
+define FD_LOC_REVERSE_mode                                                            L_CTL + USB_KP1
+define FD_PITCH_HOLD_mode                                                             L_CTL + USB_KP9
+define FD_STANDBY_mode                                                                L_CTL + USB_KP2
+define FD_VOR_LOC_mode                                                                L_CTL + USB_KP4
+
+//External GPU
+
+
+//Kneeboard
+
+//define Kneeboard_Jump_To_Shortcut_1                                                 
+//define Kneeboard_Jump_To_Shortcut_2                                                 
+//define Kneeboard_Jump_To_Shortcut_3                                                 
+//define Kneeboard_Jump_To_Shortcut_4                                                 
+//define Kneeboard_Jump_To_Shortcut_5                                                 
+//define Kneeboard_Jump_To_Shortcut_6                                                 
+//define Kneeboard_Jump_To_Shortcut_7                                                 
+//define Kneeboard_Jump_To_Shortcut_8                                                 
+//define Kneeboard_Jump_To_Shortcut_9                                                 
+//define Kneeboard_Jump_To_Shortcut_10                                                
+//define Kneeboard_Make_Shortcut                                                      
+define Kneeboard_Next_Page                                                            USB_RBracket
+//define Kneeboard_Next_Shortcut                                                      
+define Kneeboard_ON_OFF                                                               R_SHIFT + USB_K
+define Kneeboard_Previous_Page                                                        USB_LBracket
+//define Kneeboard_Previous_Shortcut                                                  
+define Kneeboard_current_position_mark_point                                          R_CTL + USB_K
+define Kneeboard_glance_view                                                          USB_K
+
+//Debug
+
+define Toggle_Console                                                                 L_ALT + USB_Tilde
+
+//Smoke System
+
+define Toggle_White_Red                                                               L_SHIFT + USB_T
+define Toggle_White_Yellow                                                            L_CTL + USB_T
+
+//Not Categorized
+
+//define Absolute_Camera_Vertical_View                                                
+//define Absolute_Horizontal_Shift_Camera_View                                        
+//define Absolute_Longitude_Shift_Camera_View                                         
+//define Absolute_Roll_Shift_Camera_View                                              
+//define Absolute_Vertical_Shift_Camera_View                                          
+//define Camera_Horizontal_View_mouse_                                                
+//define Camera_Vertical_View_mouse_                                                  
+//define Camera_Zoom_View_mouse_                                                      
+//define Pitch                                                                        
+//define Roll                                                                         
+//define Rudder                                                                       
+//define Thrust                                                                       
+//define Wheel_Brake_Left                                                             
+//define Wheel_Brake_Right                                                            
+//define Zoom_View                                                                    

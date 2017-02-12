@@ -13,7 +13,7 @@ int main()
 	
 	int AutopilotExecute = SEQ(EXEC("ApMode();"),PULSE+ApDisc);
 	MapKey(&Throttle,APENG,AutopilotExecute);
-	MapKey(&Throttle,LTB,AutopilotExecute);
+	//MapKey(&Throttle,LTB,AutopilotExecute);
 	
 	//AXIS Assignment
 	MapAxis(&Joystick, JOYX, DX_X_AXIS); 

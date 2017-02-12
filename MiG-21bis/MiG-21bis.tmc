@@ -1,0 +1,174 @@
+include "target.tmh"
+include "util.ttm"
+include "MiG-21_keys.ttm"
+
+
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	Configure(&LMFD,MODE_EXCLUDED);
+	Configure(&RMFD,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	
+	// Cursor Axis here set for TDC control
+	// Relative means the axis will stay at the value
+	MapAxis(&Throttle, SCY,DX_YROT_AXIS , AXIS_REVERSED, MAP_RELATIVE);
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_RELATIVE);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,PULSE+SAU_Cancel_Current_Mode);
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));
+	//Trim
+		MapKey(&Joystick,H1D,Trim_Pitch_Up);
+		MapKey(&Joystick,H1U,Trim_Pitch_Down);
+		//MapKey(&Joystick,H1L,);
+		//MapKey(&Joystick,H1R,);
+
+
+	//TMS
+		//MapKey(&Joystick,H2D,);
+		MapKey(&Joystick,H2U,Target_Lock_On);
+		//MapKey(&Joystick,H2L,);
+		//MapKey(&Joystick,H2R,);
+
+	//Trigger 
+		//TG1
+			MapKey(&Joystick,TG1,Gun_Trigger);
+		//TG2
+			//MapKey(&Joystick,TG2,);
+	
+	//DMS
+		//MapKey(&Joystick,H3D,TEMPO(Kneeboard_On_Off,Kneeboard_Mark_Position));
+		MapKey(&Joystick,H3U,PULSE+SAU_Recovery);
+		MapKey(&Joystick,H3L,Kneeboard_Page_Minus);
+		MapKey(&Joystick,H3R,Kneeboard_Page_Plus);
+
+	//CMS
+		//MapKey(&Joystick,H4D,);
+		//MapKey(&Joystick,H4U,);
+		//MapKey(&Joystick,H4L,);
+		//MapKey(&Joystick,H4R,);
+		MapKey(&Joystick,H4P,Weapon_Release); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,Drop_Center_Fuel_Pod);
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4,Wheel_Brakes);
+
+//THROTTLE
+
+	//Pinky
+		MapKey(&Throttle,PSF,PULSE + Landing_Lights_Land);
+		MapKey(&Throttle,PSM,PULSE + Landing_Lights_Taxi);
+		MapKey(&Throttle,PSB,PULSE + Landing_Lights_Off);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,SPRD_ASO_Drop_Chaff_Flares);
+	
+	//Slew
+		//MapKey(&Throttle,SC,); 
+
+	//Coolie
+		//MapKey(&Throttle,CSD,);
+		//MapKey(&Throttle,CSU,);
+		//MapKey(&Throttle,CSL,);
+		//MapKey(&Throttle,CSR,);
+	
+	//Mic Switch
+		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		//MapKey(&Throttle, MSL,);
+		MapKey(&Throttle, MSR,PULSE+Intercomm_Menu);
+		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+
+	//Speed Brake
+		//MapKey(&Throttle,SPDF,);
+		//MapKey(&Throttle,SPDM,);
+		//MapKey(&Throttle,SPDB,);
+	
+	//Boat
+		MapKey(&Throttle,BSF,PULSE+Airbrakes_Off);
+		//MapKey(&Throttle,BSM,);
+		MapKey(&Throttle,BSB,PULSE+Airbrakes_On);
+	
+	//China Hat
+		MapKey(&Throttle,CHF,Drag_Chute_Disconnect);
+		MapKey(&Throttle,CHB,Drag_Chute_Activate);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//MapKey(&Throttle,EFLNORM,);
+		//MapKey(&Throttle,EFLOVER,);
+		
+		//MapKey(&Throttle,EFRNORM,);
+		//MapKey(&Throttle,EFROVER,);
+	
+	//Engine Oper
+		//MapKey(&Throttle,EOLIGN,);
+		//MapKey(&Throttle,EOLNORM,);
+		//MapKey(&Throttle,EOLMOTOR,);
+
+		//MapKey(&Throttle,EORIGN,);
+		//MapKey(&Throttle,EORNORM,);
+		//MapKey(&Throttle,EORMOTOR,);
+				
+	//APU
+		MapKey(&Throttle,APUON,PULSE + Engine_Emergency_Air_Start_On);
+		MapKey(&Throttle,APUOFF,PULSE + Engine_Emergency_Air_Start_Off);
+	
+	//Flaps
+		MapKey(&Throttle,FLAPU,DX1);
+		MapKey(&Throttle,FLAPM,DX2);
+		MapKey(&Throttle,FLAPD,DX3);
+	
+	//Idle Cutoff
+		MapKey(&Throttle,IDLELON,PULSE + Throttle_Start_Stop_Toggle);
+		MapKeyR(&Throttle,IDLELON,PULSE + Throttle_Start_Stop_Toggle);
+		//MapKey(&Throttle,IDLERON,PULSE+REngStop);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,Start_Engine);
+
+	//EAC
+		//MapKey(&Throttle,EACON,);
+
+	//RDR Altm
+		//MapKey(&Throttle,RDRNRM,);
+
+	//AP Engage/Disengage
+		MapKey(&Throttle,APENG,TEMPO(Gear_Handle_Lock_Engaged,Gear_Handle_Lock_Disengaged));
+
+	//AP Select Switch
+		MapKey(&Throttle,APPAT,PULSE + Gear_Up);
+		MapKey(&Throttle,APAH, PULSE + Gear_Handle_Neutral);
+		MapKey(&Throttle,APALT,PULSE + Gear_Down);
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

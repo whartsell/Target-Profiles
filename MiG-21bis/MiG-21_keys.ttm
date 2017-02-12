@@ -1,0 +1,39 @@
+include "usbkeys.ttm"
+
+define 	SAU_Cancel_Current_Mode		L_ALT + L_CTL + USB_A
+define	Trim_Pitch_Down				L_SHIFT + USB_T
+define	Trim_Pitch_Up				L_CTL + USB_T
+define	Target_Lock_On				USB_Return
+define	Gun_Trigger					USB_Space
+define 	SAU_Recovery				USB_A
+define	Weapon_Release				L_ALT + USB_Space
+define	Drop_Center_Fuel_Pod		R_CTL+ USB_PageUp
+define	Wheel_Brakes				USB_W
+define	Intercomm_Menu				USB_BackSlash
+define	Airbrakes_Off				USB_D
+define	Airbrakes_On				USB_C
+define	Throttle_Start_Stop_Toggle	L_SHIFT + L_WIN + USB_E
+define	Kneeboard_On_Off			R_CTL + USB_UpArrow
+define	Kneeboard_Page_Plus			R_CTL + USB_RightArrow
+define	Kneeboard_Page_Minus		R_CTL + USB_LeftArrow
+define	Kneeboard_Mark_Position		R_CTL + USB_DownArrow
+define	Drag_Chute_Activate			USB_P
+define	Drag_Chute_Disconnect		R_CTL + R_SHIFT + USB_D
+define	TDC_Range_Pipper_Span_Inc	USB_O
+define	TDC_Range_Pipper_Span_Dec	USB_L
+define	Gear_Down					L_SHIFT + USB_G
+define	Gear_Up						USB_G
+define	Gear_Handle_Neutral			L_CTL + USB_G
+define 	Gear_Handle_Lock_Engaged	R_CTL + USB_G
+define	Gear_Handle_Lock_Disengaged	R_SHIFT + USB_G
+define	Start_Engine				L_CTL + L_WIN + USB_E
+define	Smoke						USB_T
+define	Engine_Emergency_Air_Start_Off	L_CTL + L_SHIFT + USB_E
+define	Engine_Emergency_Air_Start_On	USB_E
+define	SPRD_Start						L_SHIFT + USB_Space
+define	SPRD_ASO_Drop_Chaff_Flares		L_CTL + USB_Space
+define	Landing_Lights_Land				L_ALT + USB_L
+define	Landing_Lights_Off				L_ALT + L_CTL + USB_L
+define	Landing_Lights_Taxi				L_CTL + USB_L
+
+

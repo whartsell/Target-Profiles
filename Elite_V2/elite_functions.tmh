@@ -1,0 +1,62 @@
+include "elite_keys.ttm"
+
+int inCameraMode = 0;
+int inRotationCorrection = 1;
+
+//function depends on RDR ALTM and LASTE switch position
+	//RDRDIS = Flight Mode
+	//	PATH = Toggle Silent Running
+	//  ALT/HDG = Toggle Slave NAV to Wing
+	//  ALT = Toggle Deploy Hardpoints
+	
+	//RDRNRM = Ground Mode
+	//	PATH = reserved
+	//	ALT/HDG = reserved
+	//  ALT = Toggle Turret
+int edEngageAP() {
+	if(Throttle[RDRNRM]) {
+		//if(Throttle[APPAT]) ActKey(KEYON+PULSE+...);
+		//if(Throttle[APAH]) ActKey(KEYON+PULSE+...);
+		if(Throttle[APALT]) ActKey(KEYON+PULSE+vToggleTurret);
+	} else {
+		if(Throttle[APPAT]) ActKey(KEYON+PULSE+tglSilentRunning);
+		if(Throttle[APAH]) ActKey(KEYON+PULSE+vSlaveNavToWingman);
+		if(Throttle[APALT]) ActKey(KEYON+PULSE+tHardpoints);
+	}
+}
+
+int edToggleCamera(){
+	if(Throttle[EFLNORM]){
+		if(!inCameraMode) {
+			printf("Toggling Camera Mode On\x0a");
+			inCameraMode = 1;
+			ActKey(KEYON+PULSE+vSecretCamera);
+		}
+	}
+	if(!Throttle[EFLNORM]){
+		if(inCameraMode) {
+			printf("Toggling Camera Mode Off\x0a");
+			inCameraMode = 0;
+			ActKey(KEYON+PULSE+vSecretCamera);
+		}
+	}
+}
+
+int edToggleRotationCorrection() {
+	if(Throttle[APUON]){
+		if(!inRotationCorrection) {
+			printf("Toggling Rotation Correction On\x0a");
+			inRotationCorrection = 1;
+			ActKey(KEYON+PULSE+rotationCorrection);
+		}
+	}
+	
+	if(!Throttle[APUON]){
+		if(inRotationCorrection) {
+			printf("Toggling Rotation Correction Off\x0a");
+			inRotationCorrection = 0;
+			ActKey(KEYON+PULSE+rotationCorrection);
+		}
+	}
+	
+}

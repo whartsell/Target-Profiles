@@ -1,5 +1,5 @@
 define	TsPTT			USB[0x68]	//F13
-define	VACPTT			L_SHIFT + USB[0x69]	//F14
+define	VACPTT			USB[0x69]	//F14
 define	TrackIRPause	USB[0x6A]	//F15
 define	TrackIRCenter	USB[0x6B]	//F16
 define	ThrottleBL_OFF	0

@@ -74,9 +74,9 @@ int main()
 
 	//Pinky
 		//This is a hack cause my Boat Switch is being flakey
-		MapKey(&Throttle,PSF,PULSE + Flap_Switch__UP);
-		MapKey(&Throttle,PSM,PULSE + Flap_Switch__FIXED);
-		MapKey(&Throttle,PSB,PULSE + Flap_Switch__AUTO);
+		//MapKey(&Throttle,PSF,PULSE + Flap_Switch__UP);
+		//MapKey(&Throttle,PSM,PULSE + Flap_Switch__FIXED);
+		//MapKey(&Throttle,PSB,PULSE + Flap_Switch__AUTO);
 		
 	//Left Throttle Button
 		MapKey(&Throttle,LTB,DX6);
@@ -93,7 +93,7 @@ int main()
 		//MapKey(&Throttle, MSD,);
 		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
-		//MapKey(&Throttle, MSR,);
+		MapKey(&Throttle, MSR,UHF_Radio_Microphone_Button);
 		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
 
 	//Speed Brake
@@ -102,7 +102,7 @@ int main()
 		MapKey(&Throttle,SPDB,PULSE + Speed_Brake_Switch__OUT);
 	
 	//Boat  
-		//My Boat switch is being flakey so i moved these to the pinky switch
+		
 		MapKey(&Throttle,BSF,PULSE + Flap_Switch__UP);
 		MapKey(&Throttle,BSM,PULSE + Flap_Switch__FIXED);
 		MapKey(&Throttle,BSB,PULSE + Flap_Switch__AUTO);
@@ -116,8 +116,8 @@ int main()
 
 	//Engine Fuel Flow
 		//Left
-		//MapKey(&Throttle,EFLNORM,);
-		//MapKey(&Throttle,EFLOVER,);
+		MapKey(&Throttle,EFLNORM,PULSE + Landing__Taxi_Light_Switch__ONOFF);
+		MapKey(&Throttle,EFLOVER,PULSE + Landing__Taxi_Light_Switch__ONOFF);
 		
 		//Right
 		//MapKey(&Throttle,EFRNORM,);

@@ -518,7 +518,10 @@ define Turbo_Stop_Switch_Cover__CLOSE
 // Stick
 
 define Weapon_Fire_Button                                	USB_Space                               
-define Weapon_Fire_Button_Safety                         	L_CTL + USB_Space                       
+define Weapon_Fire_Button_Safety                         	L_CTL + USB_Space   
+define Intercom_on_Stick									R_ALT + R_CTL + R_SHIFT + USB_I
+define Intercom_on_Throttle									R_CTL + R_SHIFT + USB_I
+define PTT													R_ALT + R_SHIFT + USB_I
 
 // Systems
 

@@ -94,9 +94,11 @@ int main()
 	
 	//Mic Switch
 		MapKey(&Throttle, MSD, PULSE+Communication_menu);
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
-		MapKey(&Throttle, MSL,Aux_UHF_Radio_SELECT);
-		MapKey(&Throttle, MSR,Main_U_VHF_Radio_SELECT);
+		MapKey(&Throttle, MSU,TsPTT); //VAC push to talk
+		MapKey(&Throttle, MSL,CHAIN(PULSE + Aux_UHF_Radio_SELECT,D(),SRSRadio2));
+		//MapKey(&Throttle, MSL,Aux_UHF_Radio_SELECT);
+		MapKey(&Throttle, MSR,CHAIN(PULSE + Main_U_VHF_Radio_SELECT,D(),SRSRadio1));
+		//MapKey(&Throttle, MSR,Main_U_VHF_Radio_SELECT);
 		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
 
 	//Speed Brake

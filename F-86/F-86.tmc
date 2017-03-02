@@ -1,6 +1,8 @@
 include "target.tmh"
 include "util.ttm"
-include "keys.ttm"
+include "keyboard.ttm"
+
+
 
 
 int main()
@@ -21,67 +23,68 @@ int main()
 //STICK
 	
 	//S2
-	MapKey(&Joystick, S2,WeaponRel);
+	MapKey(&Joystick, S2,Weapon_Release);
 	
 	//S3
-	MapKey(&Joystick, S3,DX3);
+	MapKey(&Joystick, S3,DX_Nosewheel_Steering_Button);
 	
 	//S4
 	MapKey(&Joystick, S4,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
 	
 	//Trigger
-	MapKey(&Joystick,TG2,Trigger); //second detent on trigger
+	MapKey(&Joystick,TG2,Trigger__SECOND_DETENT_Gun_Fire); //second detent on trigger
 	
 	//Trim
-	MapKey(&Joystick,H1D,TrimUp);
-	MapKey(&Joystick,H1U,TrimDown);
-	MapKey(&Joystick,H1L,TrimLeft);
-	MapKey(&Joystick,H1R,TrimRight);
+	MapKey(&Joystick,H1D,Trim_Up);
+	MapKey(&Joystick,H1U,Trim_Down);
+	MapKey(&Joystick,H1L,Trim_Left);
+	MapKey(&Joystick,H1R,Trim_Right);
 	
 	//TMS
-	MapKey(&Joystick,H2D,KneeboardGlance);
-	MapKey(&Joystick,H2U,TEMPO(PULSE+KneeboardToggle,PULSE+KneeboardMark));
-	MapKey(&Joystick,H2L,KneeboardPrev);
-	MapKey(&Joystick,H2R,KneeboardNext);
+	MapKey(&Joystick,H2D,Kneeboard_glance_view);
+	MapKey(&Joystick,H2U,TEMPO(PULSE+Kneeboard_ON_OFF,PULSE+Kneeboard_current_position_mark_point));
+	MapKey(&Joystick,H2L,Kneeboard_Previous_Page);
+	MapKey(&Joystick,H2R,Kneeboard_Next_Page);
 	
 	//CMS
-	MapKey(&Joystick,H4P,RadTgtSel); 
+	MapKey(&Joystick,H4P,A_4_Sight_Radar_Target_Selector_Button); 
 	
 //THROTTLE
 
 	//Speedbrake button
-	MapKey(&Throttle,SPDF,DX17);
-	MapKey(&Throttle,SPDM,PULSE+ AirbrakeToggle);
-	MapKey(&Throttle,SPDB,DX18);
+	MapKey(&Throttle,SPDF,DX_Speed_Brake_Switch__IN);
+	MapKey(&Throttle,SPDM,DX_Speed_Brake_Switch__HOLD);
+	MapKey(&Throttle,SPDB,DX_Speed_Brake_Switch__OUT);
 	
 	//Flaps
-	MapKey(&Throttle,FLAPU,DX19);
-	MapKey(&Throttle,FLAPD,DX20);
+	MapKey(&Throttle,FLAPU,PULSE + Flaps_Up);
+	MapKey(&Throttle,FLAPM,PULSE + Flaps_Stop);
+	MapKey(&Throttle,FLAPD,PULSE + Flaps_Down);
 	
 	//LandingGear Horn Silence
-	MapKey(&Throttle,LDGH,TEMPO(HornCutout,GearToggle));
+	MapKey(&Throttle,LDGH,TEMPO(PULSE + Landing_Gear_Warning_Horn_Cutout_Button,PULSE + Landing_Gear_Up_Down ));
 	
 	//Throttle Idle Detent
-	MapKey(&Throttle,IDLERON,PULSE+EngineStop);
-	MapKeyR(&Throttle,IDLERON,PULSE+EngStart);
+	MapKey(&Throttle,IDLERON,PULSE+Throttle__Stop_Engine);
+	MapKeyR(&Throttle,IDLERON,PULSE+Throttle__Start_Engine);
 
 	//TDC
-	MapKey(&Throttle,SC,SightElecCage); //TDC button
+	MapKey(&Throttle,SC,A_4_Sight_Electrical_Caging_Button__On_Throttle); //TDC button
 	
 	//APU Switch
-	MapKey(&Throttle,APUON,PULSE+GearUp);
-	MapKey(&Throttle,APUOFF,PULSE+GearDown);
+	//MapKey(&Throttle,APUON,PULSE+GearUp);
+	//MapKey(&Throttle,APUOFF,PULSE+GearDown);
 	
 	//Mic Switch
-	MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
-	MapKey(&Throttle, MSU,VACPTT);	//VAC PTT
-	MapKey(&Throttle,MSR,PULSE+CommMenu);
+	//MapKey(&Throttle, MSP,);	
+	MapKey(&Throttle, MSU,TsPTT);
+	MapKey(&Throttle,MSR,Microphone_Button);
 	MapKey(&Throttle,MSD,0);
 	MapKey(&Throttle,MSL,0);
 	
 	//China Hat
-	MapKey(&Throttle,CHB,EngStart);
-	MapKey(&Throttle,CHF,EngStart);
+	MapKey(&Throttle,CHB,PULSE+Throttle__Start_Engine);
+	MapKey(&Throttle,CHF,PULSE+Throttle__Start_Engine);
 
 }
 

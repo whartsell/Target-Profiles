@@ -1,3 +1,4 @@
+include "usbkeys.ttm"
 //Autopilot
 define	ApAttHold		L_ALT+USB[0x1E]	//1
 define	ApAltHold		L_ALT+USB[0x1F]	//2*

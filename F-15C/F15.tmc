@@ -101,11 +101,11 @@ int main()
 	MapKey(&Joystick,H4L,CMChaff);
 	
 	//Mic Switch
-	MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
-	MapKey(&Throttle, MSU,VACPTT);	//VAC PTT
-	MapKey(&Throttle,MSR,PULSE+CommMenu);
-	MapKey(&Throttle,MSD,0);
-	MapKey(&Throttle,MSL,0);
+	//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+	MapKey(&Throttle, MSU,TsPTT);	//VAC PTT
+	MapKey(&Throttle,MSR,SRSRadio1);
+	MapKey(&Throttle,MSD,SRSRadio2);
+	MapKey(&Throttle,MSL,SRSRadio3);
 	
 	//Coolie Switch
 	MapKey(&Throttle,CSU,ScanUp);

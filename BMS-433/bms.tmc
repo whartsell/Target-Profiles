@@ -1,0 +1,227 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+
+
+int main()
+{
+	//***** USE BMS - Pitbuilder.key in Falcon BMS for this Script to work properly ****//
+
+Configure(&LMFD, MODE_EXCLUDED);
+Configure(&RMFD, MODE_EXCLUDED);
+Configure(&HCougar, MODE_EXCLUDED);
+Configure(&T16000, MODE_EXCLUDED);
+
+if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+//script and function functions go here
+
+SetKBRate(32, 50);
+SetKBLayout(KB_ENG);
+SetShiftButton(&Joystick, S3);
+
+////////////////// LED CONTROLS //////////////////////////////
+
+//initialize LED status all "OFF"
+ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED1)); //set LED 1 OFF
+ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED2)); //set LED 2 OFF
+ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED3)); //set LED 3 OFF
+ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED4)); //set LED 4 OFF
+ActKey(PULSE+KEYON+LED(&Throttle, LED_ONOFF, LED_CURRENT-LED5)); //set LED 5 OFF
+
+//LED Throttle Position Indicator; LED 1 - MIL Power; LED 1-5 AB
+KeyAxis(&Throttle, THR_LEFT, 0, AXMAP2( LIST( 0, 65, 75 ), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED1), CHAIN( LED(&Throttle, LED_ONOFF, LED_CURRENT+LED1), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED2), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED3), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED4), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT-LED5)), CHAIN( LED(&Throttle, LED_ONOFF, LED_CURRENT+LED2), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT+LED3), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT+LED4), D(), LED(&Throttle, LED_ONOFF, LED_CURRENT+LED5)) ));
+
+////////////////// AXIS CONTROLS //////////////////////////////
+
+MapAxis(&Joystick, JOYX, DX_X_AXIS);
+//SetSCurve(&Joystick, JOYX, 0, 1, 0, 0, 0); //a small center deadzone for the joystick; feel free to rem out this line
+
+MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+//SetSCurve(&Joystick, JOYY, 0, 1, 0, 0, 0); //a small center deadzone for the joystick; feel free to rem out this line
+
+MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+SetCustomCurve(&Throttle, THR_LEFT, LIST(0,5, 65,70, 75,70, 100,100)); //start at 5% for idle cuttoff & create a deadzone between 65% and 75% for AB
+
+MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS);
+SetCustomCurve(&Throttle, THR_RIGHT, LIST(0,5, 65,70, 75,70, 100,100)); //start at 5% for idle cuttoff & create a deadzone between 65% and 75% for AB
+
+MapAxis(&Throttle, SCX, DX_XROT_AXIS);
+SetSCurve(&Throttle, SCX, 0, 0, 0, 0, -2); //Negative number at the end reduces the sensitivity of the cursor X-axis
+
+MapAxis(&Throttle, SCY, DX_YROT_AXIS);
+SetSCurve(&Throttle, SCY, 0, 0, 0, 0, -2); //Negative number at the end reduces the sensitivity of the cursor Y-axis
+
+MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+SetSCurve(&Throttle, THR_FC, 0, 0, 0, 5, 0); //Reduce sensitivity in the center
+
+
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,DX2);
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,DX5);
+	//Trim
+		MapKey(&Joystick,H1D,DXHATDOWN);
+		MapKey(&Joystick,H1U,DXHATUP);
+		MapKey(&Joystick,H1L,DXHATLEFT);
+		MapKey(&Joystick,H1R,DXHATRIGHT);
+
+
+	//TMS
+		MapKey(&Joystick,H2U,DX7);
+		MapKey(&Joystick,H2R,DX8);
+		MapKey(&Joystick,H2D,DX9);
+		MapKey(&Joystick,H2L,DX10);
+
+	//Trigger 
+		//TG1
+			MapKey(&Joystick,TG1,DX1);
+		//TG2
+			MapKey(&Joystick,TG2,DX6);
+	
+	//DMS
+		MapKey(&Joystick,H3U,DX11);
+		MapKey(&Joystick,H3R,DX12);
+		MapKey(&Joystick,H3D,DX13);
+		MapKey(&Joystick,H3L,DX14);
+
+	//CMS
+		MapKey(&Joystick,H4U,DX15);
+		MapKey(&Joystick,H4R,DX16);
+		MapKey(&Joystick,H4D,DX17);
+		MapKey(&Joystick,H4L,DX18);
+		MapKey(&Joystick,H4P,DX29); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,DX3);
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4, TEMPO(PULSE+TrackIRCenter, DX4, 500));
+
+//THROTTLE
+
+	//Pinky
+		MapKey(&Throttle, PSF, PULSE + SimLightsFlash); 
+		MapKeyR(&Throttle, PSF, PULSE + SimLightsSteady );
+		MapKey(&Throttle, PSB, PULSE + SimExtlMasterOff);
+		MapKeyR(&Throttle, PSB,PULSE + SimExtlMasterNorm);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,DX24);
+	
+	//Slew
+		MapKey(&Throttle,SC,DX19); 
+
+	//Coolie
+		MapKey(&Throttle,CSD,0);
+		MapKey(&Throttle,CSU,0);
+		MapKey(&Throttle,CSL,0);
+		MapKey(&Throttle,CSR,0);
+	
+	//Mic Switch
+		MapKey(&Throttle, MSU,DX23);
+		MapKey(&Throttle, MSR,DX21);
+		MapKey(&Throttle, MSD,DX22);
+		MapKey(&Throttle, MSL,DX20);
+		MapKey(&Throttle, MSP,TsPTT);
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,DX28);
+		MapKey(&Throttle,SPDM,0);
+		MapKey(&Throttle,SPDB,DX27);
+	
+	//Boat
+		
+		MapKey(&Throttle, BSF, DX26);
+		MapKey(&Throttle, BSM, 0);
+		MapKey(&Throttle, BSB, DX25);
+	
+	//China Hat
+		MapKey(&Throttle, CHF, AXIS(DX_THROTTLE_AXIS, -500, 20));
+		MapKey(&Throttle, CHB, AXIS(DX_THROTTLE_AXIS, 500, 20));
+	
+
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		MapKey(&Throttle,EFLNORM,0);
+		MapKey(&Throttle,EFLOVER,0);
+		
+		//Right
+		MapKey(&Throttle,EFRNORM,0);
+		MapKey(&Throttle,EFROVER,0);
+	
+	//Engine Oper
+		//Left
+		MapKey(&Throttle,EOLIGN,0);
+		MapKey(&Throttle,EOLNORM,0);
+		MapKey(&Throttle,EOLMOTOR,0);
+		
+		//Right
+		MapKey(&Throttle,EORIGN,0);
+		MapKey(&Throttle,EORNORM,0);
+		MapKey(&Throttle,EORMOTOR,0);
+				
+	//APU
+		MapKey(&Throttle,APUON,PULSE + AFGearUp);
+		MapKey(&Throttle,APUOFF,PULSE + AFGearDown);
+	
+	//Flaps
+		MapKey(&Throttle, FLAPU, PULSE + SimLeftAPUp);
+		MapKey(&Throttle, FLAPM, PULSE + SimLeftAPMid);
+		MapKey(&Throttle, FLAPD, PULSE + SimLeftAPDown);
+		
+	
+	//Idle Cutoff
+		//Left
+		MapKey (&Throttle, IDLELON,
+		EXEC("TrimDXAxis(DX_ZROT_AXIS, 90);"
+		));
+		MapKeyR (&Throttle, IDLELON,
+		EXEC("TrimDXAxis(DX_ZROT_AXIS, SET(0));"
+		));
+
+		//Right
+		MapKey (&Throttle, IDLERON,
+		EXEC("TrimDXAxis(DX_Z_AXIS, 90);"
+		));
+
+		MapKeyR (&Throttle, IDLERON,
+		EXEC("TrimDXAxis(DX_Z_AXIS, SET(0));"
+		));
+
+	// Throttle Friction Control
+		//setup as axis above
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle, LDGH, PULSE + SimSilenceHorn);
+	
+	//EAC
+		MapKey(&Throttle,EACON,0);
+		MapKey(&Throttle,EACOFF,0);
+	
+	//RDR Altm
+		MapKey(&Throttle,RDRNRM,0);
+		MapKey(&Throttle,RDRDIS,0);
+		
+	//AP Engage/Disengage
+		//MapKey(&Throttle,APENG,);
+	
+	//AP Select Switch
+		MapKey(&Throttle, APPAT, PULSE + SimRightAPUp); 
+		MapKey(&Throttle, APAH, PULSE + SimRightAPMid); 
+		MapKey(&Throttle, APALT, PULSE + SimRightAPDown);
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

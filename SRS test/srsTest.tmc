@@ -49,7 +49,7 @@ int main()
 
 	//Trigger 
 		//TG1
-			MapKey(&Joystick,TG1,Pilot_s_radio_trigger_RADIO);
+			//MapKey(&Joystick,TG1,);
 		//TG2
 			//MapKey(&Joystick,TG2,);
 	
@@ -61,10 +61,10 @@ int main()
 
 	//CMS
 		//MapKey(&Joystick,H4D,);
-		MapKey(&Joystick,H4U,TEMPO(0,PULSE + Trimmer_reset,1000));
+		//MapKey(&Joystick,H4U,);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		MapKey(&Joystick,H4P,Pilot_Trimmer); 
+		//MapKey(&Joystick,H4P,); 
 	
 	//S3 Pinky Switch
 		//MapKey(&Joystick, S3,);
@@ -80,7 +80,7 @@ int main()
 		//MapKey(&Throttle,PSB,);
 		
 	//Left Throttle Button
-		MapKey(&Throttle,LTB,Throttle_Stop_Switch);
+		//MapKey(&Throttle,LTB,);
 	
 	//Slew
 		//MapKey(&Throttle,SC,); 
@@ -92,21 +92,21 @@ int main()
 		//MapKey(&Throttle,CSR,);
 	
 	//Mic Switch
-		MapKey(&Throttle, MSD,Intercom_Mode_2);
+		MapKey(&Throttle, MSD,SRSRadio2);
 		MapKey(&Throttle, MSU,TsPTT); //VAC push to talk
-		MapKey(&Throttle, MSL,Intercom_Mode_3);
-		MapKey(&Throttle, MSR,Intercom_Mode_1);
-		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		MapKey(&Throttle, MSL,SRSRadio3);
+		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSP,USB_F14);	// TeamSpeak
 
 	//Speed Brake
 		//MapKey(&Throttle,SPDF,);
 		//MapKey(&Throttle,SPDM,);
-		MapKey(&Throttle,SPDB,Start_up_engine);
+		//MapKey(&Throttle,SPDB,);
 	
 	//Boat
-		MapKey(&Throttle,BSF,Increase_Turbine_RPM);
+		//MapKey(&Throttle,BSF,);
 		//MapKey(&Throttle,BSM,);
-		MapKey(&Throttle,BSB,Decrease_Turbine_RPM);
+		//MapKey(&Throttle,BSB,);
 	
 	//China Hat
 		//MapKey(&Throttle,CHF,);
@@ -157,7 +157,7 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,USB_G);
+		//MapKey(&Throttle,LDGH,);
 
 	//EAC
 		//MapKey(&Throttle,EACON,);

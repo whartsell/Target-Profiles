@@ -67,12 +67,12 @@ int main()
 		MapKey(&Joystick,H4P,ECM); 
 	
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));
-	
+		//MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));
+		MapKey(&Joystick, S3,Wheel_Brake_On);
 	//S4 Paddle Switch
 		//MapKey(&Joystick, S4,PULSE+ASC_Direct_Control_Cobra);
 		//MapKeyR(&Joystick,S4,PULSE+ASC_Direct_Control_Cobra);
-		MapKey(&Joystick, S4, Wheel_Brake_On);
+		//MapKey(&Joystick, S4, Wheel_Brake_On);
 //THROTTLE
 
 	//Pinky
@@ -93,12 +93,11 @@ int main()
 		MapKey(&Throttle,CSR,Scan_Zone_Right);
 	
 	//Mic Switch
-		//MapKey(&Throttle, MSD,);
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
-		//MapKey(&Throttle, MSU,USB_UpArrow); //VAC push to talk
-		//MapKey(&Throttle, MSL,);
-		MapKey(&Throttle, MSR,Communication_menu);
-		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		MapKey(&Throttle, MSD,SRSRadio2);
+		MapKey(&Throttle, MSU,TsPTT);
+		MapKey(&Throttle, MSL,SRSRadio3);
+		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSP,Communication_menu);
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,PULSE+Airbrake_On);

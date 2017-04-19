@@ -70,7 +70,7 @@ int main()
 		//MapKey(&Joystick, S3,);
 	
 	//S4 Paddle Switch
-		MapKey(&Joystick, S4,TEMPO (TrackIRPause,TrackIRCenter));
+		//MapKey(&Joystick, S4,TEMPO (TrackIRPause,TrackIRCenter));
 
 //THROTTLE
 
@@ -93,7 +93,7 @@ int main()
 	
 	//Mic Switch
 		MapKey(&Throttle, MSD,Communication_menu);
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSU,TsPTT);
 		//MapKey(&Throttle, MSL,);
 		//MapKey(&Throttle, MSR,);
 		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak

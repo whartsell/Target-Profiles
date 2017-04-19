@@ -96,10 +96,10 @@ int main()
 		MapKey(&Throttle,CSR,PULSE + Weapon_selection_inward_stations);
 	
 	//Mic Switch
-		MapKey(&Throttle, MSD,TEMPO (TrackIRPause, TrackIRCenter));
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSD,SRSRadio2);
+		MapKey(&Throttle, MSU,TsPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
-		MapKey(&Throttle, MSR,SPU9_PTT);  //change to SPU9 ptt
+		MapKey(&Throttle, MSR,SRSRadio1);  //change to SPU9 ptt
 		//MapKey(&Throttle, MSP,TsPTT);	
 
 	//Speed Brake

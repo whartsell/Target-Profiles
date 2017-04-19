@@ -1,6 +1,7 @@
 include "target.tmh"
 include "util.ttm"
-include "MiG-21_keys.ttm"
+include "keyboard.ttm"
+//include "MiG-21_keys.ttm"
 
 
 int main()
@@ -27,7 +28,7 @@ int main()
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,PULSE+SAU_Cancel_Current_Mode);
+		MapKey(&Joystick, S2,PULSE+ SAU_cancel_current_mode);
 
 	//S1 Master Mode Control Button
 		MapKey(&Joystick, S1,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));

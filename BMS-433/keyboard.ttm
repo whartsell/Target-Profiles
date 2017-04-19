@@ -1,0 +1,24 @@
+include "usbkeys.ttm"
+
+//======== 2.07     EXT LIGHTING PANEL ========
+define SimLightsFlash		L_SHIFT + L_ALT + USB_3				//EXT: POSITION Switch - FLASH
+define SimLightsSteady		L_CTL + L_ALT + USB_3				//EXT: POSITION Switch - STEADY
+define SimExtlMasterNorm	L_SHIFT + L_CTL + L_ALT + USB_5		//EXT: MASTER Switch - NORM
+define SimExtlMasterOff		L_SHIFT + L_CTL + USB_6				//EXT: MASTER Switch - OFF
+
+//======== 2.19     THROTTLE QUADRANT SYSTEM ========
+//define SimSelectSRMOverride		//TQS: DOGFIGHT Switch - DF Override
+//define SimSelectMRMOverride		//TQS: DOGFIGHT Switch - MRM Override
+//define SimDeselectOverride		//TQS: DOGFIGHT Switch - MRM/DF Cancel
+
+//======== 3.05     GEAR PANEL ========
+define AFGearUp			L_CTL + USB_RBracket	//GEAR: LG Handle - UP
+define AFGearDown		L_ALT + USB_RBracket	//GEAR: LG Handle - DN
+define SimSilenceHorn	L_CTL + USB_A			//GEAR: HORN SILENCER Button - Push
+//======== 4.01     MISC PANEL ========
+define SimLeftAPUp			L_ALT + USB_J			//MISC: ROLL Switch - HDG SEL
+define SimLeftAPMid			L_CTL + USB_K			//MISC: ROLL Switch - ATT HOLD
+define SimLeftAPDown		L_ALT + USB_K			//MISC: ROLL Switch -  STRG SEL
+define SimRightAPUp			L_CTL + USB_L			//MISC: PITCH Switch - ALT HOLD
+define SimRightAPMid		L_ALT + USB_L			//MISC: PITCH Switch - A/P OFF
+define SimRightAPDown		L_CTL + USB_SemiColon	//MISC: PITCH Switch - ATT HOLD

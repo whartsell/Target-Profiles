@@ -1,0 +1,509 @@
+//Created by DCS2Target
+
+
+include "usbkeys.ttm"
+
+
+
+//HOTAS
+
+define A_A_Mode_DOWN_Gun                                                     USB_C
+define A_A_Mode_FWD_Sidewinder_Boresight_                                    USB_D
+//added
+define A_A_Mode_AFT_Sidewinder_SEAM											 L_SHIFT + USB_D
+define AG_Target_Undesignate__NWS__FOV_Toggle                                R_WIN + USB_N
+define Airbrake_OFF                                                          L_CTL + USB_B
+define Airbrake_ON                                                           L_SHIFT + USB_B
+define Airbrake_TOGGLE                                                       USB_B
+define Bomb_Pickle_Release_Bombs_Launch_Rockets_Mavericks                    R_ALT + USB_Space
+define Cage_Uncage                                                           L_WIN + USB_C
+define COMM_AFT_Select_COMM_2                                                L_CTL + USB_KPPlus
+define COMM_FWD_Select_COMM_1                                                L_CTL + Num + 
+define ECM_Dispense_AFT_Chaff                                                USB_8
+define ECM_Dispense_FWD_Flares                                               USB_7
+define ECM_Dispense_LEFT_Mini_Jammer                                         USB_9
+define ECM_Dispense_RIGHT_All                                                USB_0
+//define Emergency_Flap_Retraction                                           
+//define Emergency_SAAHS_Disconnect                                          
+//define Engine_Air_Start                                                    
+define Sensor_Select_AFT_DMT_LST_TV                                          L_WIN + USB_J
+define Sensor_Select_DOWN_HUD_Scene_Reject_TGP                               L_WIN + USB_N
+define Sensor_Select_FWD_INS_IRMV_EOMV                                       L_WIN + USB_U
+define Sensor_Select_LEFT_MAP_Center_Decenter                                L_WIN + USB_Y
+define Sensor_Select_RIGHT_FLIR_HUD_BH_WH                                    L_WIN + USB_I
+//define TDC_Action_No_Action_Toggle                                         
+define TDC_Aft                                                               USB_J
+define TDC_Down_Action_Position_                                             USB_N
+define TDC_Forward                                                           USB_U
+define TDC_Left                                                              USB_Y
+define TDC_Right                                                             USB_I
+define Throttle_Cutoff                                                       R_WIN + USB_T
+define Trigger_Fire_Gun_Launch_Sidewinder_Sidearm                            USB_Space
+define Trim_Bank_LEFT                                                        R_CTL + USB_LeftArrow
+define Trim_Bank_RIGHT                                                       R_CTL + USB_RightArrow
+define Trim_Pitch_DOWN                                                       R_CTL + USB_UpArrow
+define Trim_Pitch_UP                                                         R_CTL + USB_DownArrow
+define WP_Increment                                                          R_WIN + USB_W
+
+//Cheat
+
+
+//Exterior Lights
+
+//define Anti_Collision_Lights_Toggle                                        
+//define Auxiliary_Taxi_Light_Toggle                                         
+//define Exterior_Lights_Master_Switch_NORM_NVG_OFF                          
+//define Exterior_Lights_Master_Switch_OFF_NVG_NORM                          
+//define Exterior_Lights_Toggle                                              
+//define Formation_Lights_Knob_Brightness_Increase                           
+//define Landing_Light_Switch_APP_HVR_OFF                                    
+//define Landing_Light_Switch_OFF_HVR_APP                                    
+//define Position_Lights_Switch_BRT_DIM_OFF                                  
+//define Position_Lights_Switch_OFF_DIM_BRT                                  
+
+//Engine & Fuel
+
+define Engines_START                                                         R_SHIFT + USB_Home
+define Engines_STOP                                                          R_SHIFT + USB_End
+define Fuel_Shutoff_Lever_lock_release                                       L_WIN + USB_F
+
+//Flight Control
+
+define Aircraft_Bank_RIGHT                                                   USB_RightArrow
+define Aircraft_Pitch_DOWN                                                   USB_UpArrow
+define Aircraft_Pitch_UP                                                     USB_DownArrow
+define Aircraft_Rudder_LEFT                                                  USB_Z
+define Aircraft_Rudder_RIGHT                                                 USB_X
+define Nozzle_Rotation_DOWN                                                  L_SHIFT + Num + 
+define Nozzle_Rotation_UP                                                    L_SHIFT + USB_KPPlus
+define STO_STOP_DOWN                                                         R_SHIFT + Num + 
+define STO_STOP_UP                                                           R_SHIFT + USB_KPPlus
+define Throttle_DOWN                                                         Num + 
+define Throttle_UP                                                           USB_KPPlus
+define Trim_RUDDER_LEFT                                                      R_CTL + USB_Z
+define Trim_RUDDER_RIGHT                                                     R_CTL + USB_X
+
+//Labels
+
+define All_Labels                                                            L_SHIFT + USB_F10
+define Missile_Labels                                                        L_SHIFT + USB_F6
+define Vehicle__Ship_Labels                                                  L_SHIFT + USB_F9
+
+//View Padlock
+
+define Lock_terrain_view                                                     R_CTL + USB_KPDecimal
+define Lock_View_cycle_padlock_                                              USB_KPDecimal
+define Threat_missile_padlock                                                R_ALT + USB_KPDecimal
+define Unlock_view_stop_padlock_                                             USB_NumLock
+
+//Stability Augmentation & Autopilot
+
+define Automatic_Flight_Control_On_Off_Toggle                                USB_A
+define Q_Feel_On_Off_Toggle                                                  R_WIN + USB_Q
+define Stability_Augmentation__Pitch                                         R_WIN + USB_P
+define Stability_Augmentation__Roll                                          R_WIN + USB_R
+define Stability_Augmentation__Yaw                                           R_WIN + USB_Y
+
+//DEBUG
+
+//define AOA_Indicator_Up                                                    
+
+//Armament Control
+
+//define Armament_Mode_Control_Up                                            
+//define Emergency_Jettison_Pushbutton                                       
+//define IR_Cooling_control                                                  
+//define Jettison_Pushbutton                                                 
+define Launch_Flare_Salvo                                                    L_CTL + USB_F
+//define Manual_Release_Control_Left                                         
+//define Manual_Release_Control_Right                                        
+define Master_Arm_Switch                                                     L_CTL + USB_M
+//define Multiple_Release_Control_Down                                       
+//define Multiple_Release_Control_Up                                         
+//define Release_Interval_100s_Control_Down                                  
+//define Release_Interval_100s_Control_Up                                    
+//define Release_Interval_10s_Control_Down                                   
+//define Release_Interval_10s_Control_Up                                     
+//define Release_Interval_1s_Control_Down                                    
+//define Release_Interval_1s_Control_Up                                      
+//define Release_Quantity_10s_Control_Down                                   
+//define Release_Quantity_10s_Control_Up                                     
+//define Release_Quantity_1s_Control_Down                                    
+//define Release_Quantity_1s_Control_Up                                      
+//define Selective_Jettison_Selector_Left                                    
+//define Selective_Jettison_Selector_Right                                   
+//define Station_1_Pushbutton                                                
+//define Station_2_Pushbutton                                                
+//define Station_3_Pushbutton                                                
+//define Station_4_Pushbutton                                                
+//define Station_5_Pushbutton                                                
+//define Station_6_Pushbutton                                                
+//define Station_7_Pushbutton                                                
+//define Weapons_Fuze_Control_Down                                           
+//define Weapons_Fuze_Control_Up                                             
+
+//Communications
+
+define Communication_menu                                                    USB_BackSlash
+define Cover_Me                                                              L_WIN + USB_W
+define Flight__Attack_air_defenses                                           L_WIN + USB_D
+define Flight__Attack_ground_targets                                         L_WIN + USB_G
+define Flight__Complete_mission_and_RTB                                      L_WIN + USB_E
+define Flight__Complete_mission_and_rejoin                                   L_WIN + USB_R
+define Flight__Engage_Bandits                                                L_WIN + USB_B
+//define Flight__RTB                                                         
+define Join_Up_Formation                                                     L_WIN + USB_Y
+define Request_AWACS_Home_Airbase                                            L_WIN + USB_U
+define Switch_dialog                                                         L_SHIFT + USB_BackSlash
+define Switch_to_main_menu                                                   L_CTL + USB_BackSlash
+define Toggle_Formation                                                      L_WIN + USB_T
+
+//View Extended
+
+define Keep_terrain_camera_altitude                                          L_ALT + USB_K
+define Object_exclude                                                        L_ALT + USB_Delete
+define Objects_all_excluded__include                                         L_ALT + USB_Insert
+define Objects_switching_direction_forward                                   L_CTL + USB_PageDown
+define Objects_switching_direction_reverse                                   L_CTL + USB_PageUp
+define Toggle_tracking_launched_weapon                                       R_CTL + USB_KPPlus
+define View_all_mode                                                         R_CTL + USB_Delete
+define View_enemies_mode                                                     R_CTL + R_SHIFT + USB_End
+define View_friends_mode                                                     R_CTL + R_SHIFT + USB_Home
+
+//View Cockpit
+
+define Camera_snap_view_down                                                 R_ALT + USB_KP2
+define Camera_snap_view_down_left                                            R_ALT + USB_KP1
+define Camera_snap_view_down_right                                           R_ALT + USB_KP3
+define Camera_snap_view_left                                                 R_ALT + USB_KP4
+define Camera_snap_view_right                                                R_ALT + USB_KP6
+define Camera_snap_view_up                                                   R_ALT + USB_KP8
+define Camera_snap_view_up_left                                              R_ALT + USB_KP7
+define Camera_snap_view_up_right                                             R_ALT + USB_KP9
+//define Camera_transpose_mode_press_and_hold_                               
+define Center_Camera_View                                                    R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Back                                              R_CTL + R_SHIFT + Num/; RCtrl + R_SHIFT + Num + 
+define Cockpit_Camera_Move_Center                                            R_CTL + R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Down                                              R_CTL + R_SHIFT + USB_KP2
+define Cockpit_Camera_Move_Forward                                           R_CTL + R_SHIFT + USB_KPAsterisk
+define Cockpit_Camera_Move_Left                                              R_CTL + R_SHIFT + USB_KP4
+define Cockpit_Camera_Move_Right                                             R_CTL + R_SHIFT + USB_KP6
+define Cockpit_Camera_Move_Up                                                R_CTL + R_SHIFT + USB_KP8
+define Cockpit_panel_view_in                                                 USB_KP0
+define Cockpit_panel_view_toggle                                             R_CTL + USB_KP0
+define Custom_Snap_View_0                                                    L_WIN + USB_KP0
+define Custom_Snap_View_1                                                    L_WIN + USB_KP1
+define Custom_Snap_View_2                                                    L_WIN + USB_KP2
+define Custom_Snap_View_3                                                    L_WIN + USB_KP3
+define Custom_Snap_View_4                                                    L_WIN + USB_KP4
+define Custom_Snap_View_5                                                    L_WIN + USB_KP5
+define Custom_Snap_View_6                                                    L_WIN + USB_KP6
+define Custom_Snap_View_7                                                    L_WIN + USB_KP7
+define Custom_Snap_View_8                                                    L_WIN + USB_KP8
+define Custom_Snap_View_9                                                    L_WIN + USB_KP9
+//define Enable_visual_recon_mode                                            
+define Flashlight                                                            L_ALT + USB_L
+define Glance_down                                                           R_CTL + USB_KP2
+define Glance_down_left                                                      R_CTL + USB_KP1
+define Glance_down_right                                                     R_CTL + USB_KP3
+define Glance_left                                                           R_CTL + USB_KP4
+define Glance_right                                                          R_CTL + USB_KP6
+define Glance_up                                                             R_CTL + USB_KP8
+define Glance_up_left                                                        R_CTL + USB_KP7
+define Glance_up_right                                                       R_CTL + USB_KP9
+define Return_Camera                                                         R_CTL + USB_KP5
+define Return_Camera_Base                                                    R_ALT + USB_KP5
+define Save_Cockpit_Angles                                                   R_ALT + USB_KP0
+define View_down                                                             R_SHIFT + USB_KP2
+define View_down_left                                                        R_SHIFT + USB_KP1
+define View_down_right                                                       R_SHIFT + USB_KP3
+define View_left                                                             R_SHIFT + USB_KP4
+define View_right                                                            R_SHIFT + USB_KP6
+define View_up                                                               R_SHIFT + USB_KP8
+define View_up_left                                                          R_SHIFT + USB_KP7
+define View_up_right                                                         R_SHIFT + USB_KP9
+define Zoom_in                                                               R_SHIFT + USB_KPAsterisk
+define Zoom_out                                                              R_SHIFT + USB_KPForwardSlash
+
+//Hydraulic & Mechanical
+
+define Landing_Gear_DOWN                                                     L_SHIFT + USB_G
+define Landing_Gear_TOGGLE                                                   USB_G
+define Landing_Gear_UP                                                       L_CTL + USB_G
+//define Parking_Brake_OFF                                                   
+//define Parking_Brake_ON                                                    
+define Wheel_Brake_LEFT                                                      L_SHIFT + USB_W
+define Wheel_Brake_RIGHT                                                     L_ALT + USB_W
+define Wheel_Brakes                                                          USB_W
+
+//General
+
+define End_mission                                                           Esc
+define Frame_rate_counter__Service_info                                      R_CTL + USB_Break
+define Get_new_plane__respawn                                                R_CTL + R_SHIFT + USB_Tab
+define Info_bar_coordinate_units_toggle                                      L_ALT + USB_Y
+define Info_bar_view_toggle                                                  L_CTL + USB_Y
+define Jump_into_selected_aircraft                                           R_ALT + USB_J
+define Pause                                                                 USB_Break
+define Rearming_and_Refueling_Window                                         L_ALT + USB_Apostrophe
+define Score_window                                                          USB_Apostrophe
+define Screenshot                                                            USB_PrintScreen
+define Show_controls_indicator                                               R_CTL + USB_Return
+define Sound_On_Off                                                          L_CTL + USB_S
+define Time_accelerate                                                       L_CTL + USB_Z
+define Time_decelerate                                                       L_ALT + USB_Z
+define Time_normal                                                           L_SHIFT + USB_Z
+define View_briefing_on_off                                                  L_ALT + USB_B
+
+//Miscellaneous Controls
+
+define FLIR_On_Off_Toggle                                                    R_WIN + USB_F
+define INS_Mode_Left__NAV__ALIGN__OFF_                                       R_WIN + USB_Comma
+define INS_Mode_Right_OFF__ALIGN__NAV_                                       R_WIN + USB_Period
+//define Mission_Computer_Mode_Down_OVRD__AUTO__OFF_                         
+//define Mission_Computer_Mode_Up_OFF__AUTO__OVRD_                           
+//define Stopwatch_Lap_Reset_toggle                                          
+//define Stopwatch_Start_Stop_toggle                                         
+
+//Pilot & Seat Controls
+
+define Helmet_Visor_NVG_Toggle                                               L_SHIFT + USB_N
+define Hide_Show_Control_Stick                                               R_CTL + R_WIN + USB_S
+define Hide_Show_Pilot_Body                                                  R_CTL + R_WIN + USB_P
+define Hide_Show_Throttle                                                    R_CTL + R_WIN + USB_T
+define Mirrors_TOGGLE                                                        L_SHIFT + USB_M
+//define Switch_the_Helmet_Visor_for_NVG_and_viceversa                       
+
+//View
+
+define F1_Head_shift_movement_on__off                                        L_WIN + USB_F1
+define F1_HUD_only_view_switch                                               L_ALT + USB_F1
+define F1_Natural_head_movement_view                                         L_CTL + USB_F1
+define F10_Jump_to_theater_map_view_over_current_point                       L_CTL + USB_F10
+define F10_Theater_map_view                                                  USB_F10
+define F11_Airport_free_camera                                               USB_F11
+define F11_Camera_moving_backward                                            L_ALT + USB_KPForwardSlash
+define F11_Camera_moving_forward                                             L_ALT + USB_KPAsterisk
+define F11_Jump_to_free_camera                                               L_CTL + USB_F11
+define F12_Civil_traffic_view                                                L_CTL + USB_F12
+define F12_Static_object_view                                                USB_F12
+define F12_Trains_cars_toggle                                                L_SHIFT + USB_F12
+define F2_Aircraft_view                                                      USB_F2
+define F2_Toggle_camera_position                                             R_ALT + USB_F2
+define F2_Toggle_local_camera_control                                        L_ALT + USB_F2
+define F2_View_own_aircraft                                                  L_CTL + USB_F2
+define F3_Fly_By_jump_view                                                   L_CTL + USB_F3
+define F3_Fly_By_view                                                        USB_F3
+define F4_Arcade_Chase_view                                                  L_SHIFT + USB_F4
+define F4_Chase_view                                                         L_CTL + USB_F4
+define F4_Look_back_view                                                     USB_F4
+define F5_Ground_hostile_view                                                L_CTL + USB_F5
+define F5_nearest_AC_view                                                    USB_F5
+define F6_Released_weapon_view                                               USB_F6
+define F6_Weapon_to_target_view                                              L_CTL + USB_F6
+define F7_Ground_unit_view                                                   USB_F7
+define F8_Player_targets_All_targets_filter                                  R_CTL + USB_F8
+define F8_Target_view                                                        USB_F8
+define F9_Landing_signal_officer_view                                        L_ALT + USB_F9
+define F9_Ship_view                                                          USB_F9
+define Keyboard_Rate_Fast                                                    L_SHIFT + USB_RBracket
+define Keyboard_Rate_Normal                                                  L_ALT + USB_RBracket
+define Keyboard_Rate_Slow                                                    L_CTL + USB_RBracket
+define Mouse_Rate_Fast                                                       L_SHIFT + USB_LBracket
+define Mouse_Rate_Normal                                                     L_ALT + USB_LBracket
+define Mouse_Rate_Slow                                                       L_CTL + USB_LBracket
+define View_Center                                                           USB_KP5
+define View_Down_Left_slow                                                   USB_KP1
+define View_Down_Right_slow                                                  USB_KP3
+define View_Down_slow                                                        USB_KP2
+define View_Left_slow                                                        USB_KP4
+define View_Right_slow                                                       USB_KP6
+define View_Up_Left_slow                                                     USB_KP7
+define View_Up_Right_slow                                                    USB_KP9
+define View_Up_slow                                                          USB_KP8
+define Zoom_external_in                                                      R_CTL + USB_KPAsterisk
+define Zoom_external_normal                                                  R_CTL + USB_KPEnter
+define Zoom_external_out                                                     R_CTL + USB_KPForwardSlash
+define Zoom_in_slow                                                          USB_KPAsterisk
+define Zoom_normal                                                           USB_KPEnter
+define Zoom_out_slow                                                         USB_KPForwardSlash
+
+//VSTOL Controls
+
+define Flaps_Mode_Up_STOL__AUTO__CRUISE_                                     L_CTL + USB_1
+define Flaps_Power_Left_OFF__ON__RESET_                                      L_CTL + USB_3
+define Flaps_Power_Right_RESET__ON__OFF_                                     L_CTL + USB_4
+define Water_Mode_Down_TO__OFF__LDG_                                         L_CTL + USB_6
+define Water_Mode_Up_LDG__OFF__TO_                                           L_CTL + USB_5
+
+//HUD Control
+
+//define HUD_Brightness_Decrease__Off                                        
+define HUD_Display_Mode_Down_DAY__AUTO__NIGHT                                L_CTL + L_WIN + USB_KP3
+define HUD_Display_Mode_Up_NIGHT__AUTO__DAY                                  L_CTL + L_WIN + USB_KP4
+//define HUD_On__Brightness_Increase                                         
+define HUD_Reject_Mode_Down_NORM__REJ1__REJ2_                                L_CTL + L_WIN + USB_KP1
+define HUD_Reject_Mode_Up_REJ2__REJ1__NORM_                                  L_CTL + L_WIN + USB_KP2
+
+//Kneeboard
+
+define Kneeboard_current_position_mark_point                                 R_CTL + USB_K
+define Kneeboard_glance_view                                                 USB_K
+//define Kneeboard_Jump_To_Shortcut_1                                        
+//define Kneeboard_Jump_To_Shortcut_2                                        
+//define Kneeboard_Jump_To_Shortcut_3                                        
+//define Kneeboard_Jump_To_Shortcut_4                                        
+//define Kneeboard_Jump_To_Shortcut_5                                        
+//define Kneeboard_Jump_To_Shortcut_6                                        
+//define Kneeboard_Jump_To_Shortcut_7                                        
+//define Kneeboard_Jump_To_Shortcut_8                                        
+//define Kneeboard_Jump_To_Shortcut_9                                        
+//define Kneeboard_Jump_To_Shortcut_10                                       
+//define Kneeboard_Make_Shortcut                                             
+//define Kneeboard_Next_Page                                                 
+//define Kneeboard_Next_Shortcut                                             
+define Kneeboard_ON_OFF                                                      R_SHIFT + USB_K
+define Kneeboard_Previous_Page                                               USB_LBracket
+//define Kneeboard_Previous_Shortcut                                         
+
+//Left MPCD
+
+//define Left_MPCD_BRT_Increase                                              
+//define Left_MPCD_CON_Decrease                                              
+//define Left_MPCD_CON_Increase                                              
+//define Left_MPCD_Day_Mode                                                  
+//define Left_MPCD_Export_View_ON_OFF                                        
+//define Left_MPCD_GAIN_Decrease                                             
+//define Left_MPCD_GAIN_Increase                                             
+//define Left_MPCD_Night_Mode                                                
+//define Left_MPCD_OSB_01                                                    
+//define Left_MPCD_OSB_02                                                    
+//define Left_MPCD_OSB_03                                                    
+//define Left_MPCD_OSB_04                                                    
+//define Left_MPCD_OSB_05                                                    
+//define Left_MPCD_OSB_06                                                    
+//define Left_MPCD_OSB_07                                                    
+//define Left_MPCD_OSB_08                                                    
+//define Left_MPCD_OSB_09                                                    
+//define Left_MPCD_OSB_10                                                    
+//define Left_MPCD_OSB_11                                                    
+//define Left_MPCD_OSB_12                                                    
+//define Left_MPCD_OSB_13                                                    
+//define Left_MPCD_OSB_14                                                    
+//define Left_MPCD_OSB_15                                                    
+//define Left_MPCD_OSB_16                                                    
+//define Left_MPCD_OSB_17                                                    
+//define Left_MPCD_OSB_18                                                    
+//define Left_MPCD_OSB_19                                                    
+//define Left_MPCD_OSB_20                                                    
+//define Left_MPCD_SYM_Decrease                                              
+//define Left_MPCD_SYM_Increase                                              
+
+//Master Modes
+
+define Master_Mode_NAV                                                       L_ALT + USB_1
+define Master_Mode_VSTOL                                                     L_ALT + USB_2
+defube Naster_Mode_AG														 L_ALT + USB_3
+//Internal Lights
+
+
+//Up Front Control
+
+//define ODU_Option_2                                                        
+//define ODU_Option_3                                                        
+//define ODU_Option_4                                                        
+//define ODU_Option_5                                                        
+//define UFC__Button                                                         
+//define UFC_0_Button                                                        
+//define UFC_1_Button                                                        
+//define UFC_2_N_Button                                                      
+//define UFC_3_Button                                                        
+//define UFC_4_W_Button                                                      
+//define UFC_5_Button                                                        
+//define UFC_6_E_Button                                                      
+//define UFC_7_Button                                                        
+//define UFC_8_S_Button                                                      
+//define UFC_9_Button                                                        
+//define UFC_Altimeter_Function_Button                                       
+//define UFC_AWLS_Function_Button                                            
+//define UFC_Clear_Button                                                    
+//define UFC_Display_Brightness_Increase                                     
+//define UFC_EMCON_Toggle_Button                                             
+//define UFC_Enter_Button                                                    
+//define UFC_I_P_Button                                                      
+//define UFC_IFF_Function_Button                                             
+//define UFC_ON_OFF_Toggle_Button                                            
+//define UFC_RDR_Beacon_Function_Button                                      
+//define UFC_Save_Button                                                     
+//define UFC_TACAN_Function_Button                                           
+//define UFC_Target_Of_Opportunity_Function_Button                           
+//define UFC_Timer_Function_Button                                           
+//define UFC_Weapons_Function_Button                                         
+//define UFC_Wpt_Over_Fly_Function_Button                                    
+
+//Debug
+
+define Toggle_Console                                                        L_ALT + USB_Tilde
+
+//Right MFCD
+
+//define Right_MFCD_OSB_02                                                   
+//define Right_MFCD_OSB_03                                                   
+//define Right_MFCD_OSB_04                                                   
+//define Right_MFCD_OSB_05                                                   
+//define Right_MFCD_OSB_06                                                   
+//define Right_MFCD_OSB_07                                                   
+//define Right_MFCD_OSB_08                                                   
+//define Right_MFCD_OSB_09                                                   
+//define Right_MFCD_OSB_10                                                   
+//define Right_MFCD_OSB_11                                                   
+//define Right_MFCD_OSB_12                                                   
+//define Right_MFCD_OSB_13                                                   
+//define Right_MFCD_OSB_14                                                   
+//define Right_MFCD_OSB_15                                                   
+//define Right_MFCD_OSB_16                                                   
+//define Right_MFCD_OSB_17                                                   
+//define Right_MFCD_OSB_18                                                   
+//define Right_MFCD_OSB_19                                                   
+//define Right_MFCD_OSB_20                                                   
+
+//Right MPCD
+
+//define Right_MPCD_BRT_Increase                                             
+//define Right_MPCD_CON_Decrease                                             
+//define Right_MPCD_CON_Increase                                             
+//define Right_MPCD_Day_Mode                                                 
+//define Right_MPCD_Export_View_ON_OFF                                       
+//define Right_MPCD_GAIN_Decrease                                            
+//define Right_MPCD_GAIN_Increase                                            
+//define Right_MPCD_Night_Mode                                               
+//define Right_MPCD_SYM_Decrease                                             
+//define Right_MPCD_SYM_Increase                                             
+
+//Not Categorized
+
+//define Absolute_Camera_Vertical_View                                       
+//define Absolute_Horizontal_Shift_Camera_View                               
+//define Absolute_Longitude_Shift_Camera_View                                
+//define Absolute_Roll_Shift_Camera_View                                     
+//define Absolute_Vertical_Shift_Camera_View                                 
+//define Camera_Horizontal_View                                              
+//define Camera_Vertical_View                                                
+//define Camera_Zoom_View                                                    
+//define Head_Tracker__Forward_Backward                                      
+//define Head_Tracker__Pitch                                                 
+//define Head_Tracker__Right_Left                                            
+//define Head_Tracker__Roll                                                  
+//define Head_Tracker__Up_Down                                               
+//define Head_Tracker__Yaw                                                   
+//define Nozzle_Angle                                                        
+//define Pitch                                                               
+//define Roll                                                                
+//define Rudder                                                              
+//define TDC_Slew_Horizontal                                                 
+//define TDC_Slew_Vertical                                                   
+//define Thrust                                                              
+//define Wheel_Brake_Left                                                    
+//define Wheel_Brake_Right                                                   
+//define Wheel_Brakes                                                        
+//define Zoom_View                                                           

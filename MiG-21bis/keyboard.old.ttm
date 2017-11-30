@@ -120,11 +120,11 @@ define SARPP_12_Flight_Data_Recorder__On_Off                                 L_C
 define ARU_manual__High_Speed                                                R_CTL + USB_U
 define ARU_manual__Low_Speed                                                 L_CTL + USB_U
 define Aileron_Boosters_On_Off                                               R_ALT + USB_H
-define Airbrakes_On_Off                                                      USB_C
+define AirEs_On_Off                                                      USB_C
 define Emergency_Hydraulic_Pump_On_Off                                       R_SHIFT + USB_H
-define Flaps_0DX                                                             DX3
-define Flaps_25DX                                                            DX4
-define Flaps_45DX                                                            DX5
+//define Flaps_0                                                             
+//define Flaps_25                                                            
+//define Flaps_45                                                            
 define Flaps_Down                                                            USB_F
 define Flaps_Up                                                              L_SHIFT + USB_F
 //define Flaps_releave_springs                                               
@@ -346,9 +346,9 @@ define Cockpit_Red_Lights_                                                   L_C
 define Cockpit_Texts_Backlight_                                              L_ALT + Num + 
 define Cockpit_White_Lights_                                                 L_WIN + USB_KPPlus
 define Landing_Lights                                                        L_ALT + USB_L
-define Landing_Lights_LANDINGDX                                                DX6
-define Landing_Lights_OFFDX                                                    DX7
-define Landing_Lights_TAXIDX                                                   DX8
+//define Landing_Lights_LANDING                                              
+//define Landing_Lights_OFF                                                  
+//define Landing_Lights_TAXI                                                 
 define Nav_Lights                                                            L_SHIFT + USB_L
 define Pilot_torch_light_on_off                                              R_CTL + USB_L
 define SORC                                                                  USB_Backspace
@@ -369,7 +369,7 @@ define SPRD_Start                                                            L_S
 //Weapons
 
 define Emergency_Missile_Rocket_Launcher_Cover_Open_Close                    R_ALT + USB_N
-define Fire_GunDX															 DX1                                                            
+define Fire_GunDX															 DX4                                                            
 define GS_23_Gun_On_Off                                                      R_SHIFT + USB_Period
 define Gun_reload__1                                                         L_ALT + USB_1
 define Gun_reload__2                                                         L_ALT + USB_2
@@ -383,7 +383,7 @@ define Tactical_Drop_Off                                                     R_A
 define Tactical_Drop_On                                                      R_CTL + USB_Equals
 define Tactical_Drop_Safety_Cover_Close                                      R_ALT + R_CTL + USB_Equals
 define Tactical_Drop_Safety_Cover_Open                                       R_ALT + USB_Equals
-define Weapon_ReleaseDX														 DX2                                                     
+define Weapon_ReleaseDX														 DX5                                                      
 define Weapon_Release_Cover_Close                                            R_CTL + R_SHIFT + USB_Equals
 define Weapon_Release_Cover_Open                                             R_SHIFT + USB_Equals
 
@@ -469,12 +469,6 @@ define View_Up_slow                                                          USB
 
 //Not Categorized
 
-//define Absolute_Camera_Horizontal_View                                     
-//define Absolute_Camera_Vertical_View                                       
-//define Absolute_Horizontal_Shift_Camera_View                               
-//define Absolute_Longitude_Shift_Camera_View                                
-//define Absolute_Roll_Shift_Camera_View                                     
-//define Absolute_Vertical_Shift_Camera_View                                 
 //define Altimeter_pressure                                                  
 //define Camera_Horizontal_View                                              
 //define Camera_Vertical_View                                                

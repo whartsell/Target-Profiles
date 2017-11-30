@@ -1,0 +1,139 @@
+include "target.tmh"
+include "util.ttm"
+include "keys.ttm"
+
+//program startup
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&T16000,MODE_EXCLUDED);
+	Configure(&LMFD,MODE_EXCLUDED);
+	Configure(&RMFD,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+	
+	int AutopilotExecute = SEQ(EXEC("ApMode();"),PULSE+ApDisc);
+	MapKey(&Throttle,APENG,AutopilotExecute);
+	MapKey(&Throttle,LTB,AutopilotExecute);
+	
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS); 
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);   
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	
+	//MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCY, 0, 10, 0, 0, -4); 
+	//MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCX, 0, 10, 0, 0, -4);
+	KeyAxis(&Throttle, SCX, 0, AXMAP2(5, TDLeft, 0, 0, 0, TDRight)); 
+	KeyAxis(&Throttle, SCY, 0, AXMAP2(5, TDUp, 0, 0, 0, TDDown)); 
+	
+	//UTIL
+	
+	MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
+	MapKey(&Joystick,S4,TEMPO(TrimReset,WheelBrakes,250));
+
+	
+	
+	//Layers&Modes
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	MapKey(&Throttle,BSF,PULSE+A2GMode);
+	MapKey(&Throttle,BSM,PULSE+NavModes);
+	MapKey(&Throttle,BSB,PULSE+A2AMode);
+	
+	//Systems
+	
+	//Trim
+	MapKey(&Joystick,H1D,TrimUp);
+	MapKey(&Joystick,H1U,TrimDown);
+	MapKey(&Joystick,H1L,TrimLeft);
+	MapKey(&Joystick,H1R,TrimRight);
+	
+	//AirBrake
+	MapKey(&Throttle,SPDF,PULSE+AirbrakeOn);
+	MapKey(&Throttle,SPDM,PULSE+AirbrakeOff);
+	MapKey(&Throttle,SPDB,PULSE+AirbrakeOn);
+	//Power
+	MapKey(&Throttle,APUON,PULSE+ElectPwrSw);
+	MapKey(&Throttle,APUOFF,PULSE+ElectPwrSw);
+	//Flaps
+	MapKey(&Throttle,FLAPU,PULSE+FlapsUp);
+	MapKey(&Throttle,FLAPM,PULSE+FlapsToggle);
+	MapKey(&Throttle,FLAPD,PULSE+FlapsLanding);
+	//Gear&Warning
+	MapKey(&Throttle,LDGH,TEMPO(WarningReset,GearToggle));
+	//Engines
+	MapKey(&Throttle,IDLELON,PULSE+LEngStop);
+	MapKey(&Throttle,IDLERON,PULSE+REngStop);
+	MapKey(&Throttle,EOLIGN,LEngStart);
+	MapKey(&Throttle,EORIGN,REngStart);
+	
+	//Weapons
+	MapKey(&Joystick,TG2,WeaponFire);
+	MapKey(&Joystick,S1,TEMPO(PULSE+Cannon,PULSE+Gunsite,1000));
+	
+	//TMS
+	MapKeyUMD(&Joystick,H2U,PULSE+TgtLock,0,0);
+	MapKeyUMD(&Joystick,H2R,TgtGpInc,0,0);
+	MapKeyUMD(&Joystick,H2D,PULSE+TgtUnlock,0,0);
+	MapKeyUMD(&Joystick,H2L,TgtGpDec,0,0);
+	
+	//DMS
+	MapKeyUMD(&Joystick,H3U,TEMPO(PULSE+ZoomIn,PULSE+NextWpt,500),PULSE+NextWpt,0); 
+	MapKeyUMD(&Joystick,H3R,PULSE+LaserTgl,AltPresInc,0); 
+	MapKeyUMD(&Joystick,H3D,TEMPO(PULSE+ZoomOut,PULSE+NavModes,500),PULSE+NavModes,0);
+	MapKeyUMD(&Joystick,H3L,PULSE+NightVis,AltPresDec,0);
+	
+	//CMS
+	MapKey(&Joystick,H4P,CHAIN(PULSE+CMIRJam,D(),PULSE+CMECM));
+	MapKey(&Joystick,H4U,PULSE+CMContDispense);
+	MapKey(&Joystick,H4R,CMFlares);
+	MapKey(&Joystick,H4D,CMRelease);
+	MapKey(&Joystick,H4L,CMChaff);
+	
+	//Mic Switch
+	MapKey(&Throttle, MSP,0);	// TeamSpeak
+	MapKey(&Throttle, MSU,TsPTT);	//VAC PTT
+	MapKey(&Throttle,MSR,SRSRadio1);
+	MapKey(&Throttle,MSD,SRSRadio2);
+	MapKey(&Throttle,MSL,SRSRadio3);
+	
+	//China Hat
+	MapKey(&Throttle,CHB,TEMPO(PULSE+WeaponChange,PULSE+BurstCutOut,1000));
+	MapKey(&Throttle,CHF,TEMPO(PULSE+RippleQtySPPU,PULSE+SalvoMode,1000));
+	
+	//Slew Control
+	MapKey(&Throttle,SC,TDCenter);
+	
+		// LeftMFD
+	//MapKey(&LMFD,CONU,PULSE+ActivateExport);
+	//MapKey(&LMFD,BRTU,PULSE+RippleIntInc);
+	//MapKey(&LMFD,BRTD,PULSE+RippleIntDec);
+	//MapKey(&LMFD,OSB02,PULSE+NavLights);
+	//MapKey(&LMFD,OSB03,PULSE+LandingLights);
+	//MapKey(&LMFD,OSB05,PULSE+Drogue);
+	
+	// RightMFD
+	//MapKey(&RMFD,CONU,PULSE+EOToggle);
+
+}
+
+
+//MapKeyUMD(&Joystick,H4U,0,0,0);
+//event handler
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}
+
+int ApMode()
+{
+	if (Throttle[APPAT]) ActKey(KEYON+PULSE+ApRoute);
+	else if (Throttle[APALT] & Throttle[RDRDIS]) ActKey(PULSE+KEYON+ApBaroAlt);
+	else if (Throttle[APALT] & Throttle[RDRNRM]) ActKey(PULSE+KEYON+ApRadAlt);
+	else ActKey(PULSE+KEYON+ApAltRolHold);
+}

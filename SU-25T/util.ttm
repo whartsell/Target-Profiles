@@ -1,0 +1,12 @@
+define	TsPTT			R_SHIFT + USB_F14
+define	SRSRadio1		L_SHIFT + USB_F14
+define	SRSRadio2		L_CTL + USB_F14
+define	SRSRadio3		L_ALT + USB_F14
+define	TrackIRPause	L_CTL	+ USB_F24
+define	TrackIRCenter	L_SHIFT	+ USB_F24
+define	ThrottleBL_OFF	0
+define	ThrottleBL_1	43
+define	ThrottleBL_2	86
+define	ThrottleBL_3	129
+define	ThrottleBL_4	172
+define	ThrottleBL_5	215

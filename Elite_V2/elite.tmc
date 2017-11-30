@@ -104,11 +104,11 @@ int main()
 	
 	//Mic Switch
 		//MapKey(&Throttle, MSD,);
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSU,TsPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
 		MapKey(&Throttle, MSR,cNextPnl);
 		MapKey(&Throttle, MSL,cPrevPnl);
-		MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		MapKey(&Throttle, MSP,igPTT);	// TeamSpeak
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,fltAssist);  //this should be a dx button cause it will be held for awhile
@@ -160,7 +160,7 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,TEMPO(PULSE+tglLandingGear,TrackIRCenter,1000));
+		MapKey(&Throttle,LDGH,TEMPO(PULSE+tglLandingGear,0,1000));
 
 	//EAC
 		MapKey(&Throttle, EACON, DOWN + tglCargoScoop);

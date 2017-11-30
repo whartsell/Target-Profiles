@@ -11,7 +11,7 @@ int main()
     if(Init(&EventHandle)) return 1; // declare the event handler, return on error
 
 	//Initialize Backlights
-    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_1));
+    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_5));
 
 	//AXIS Assignment
 	MapAxis(&Joystick, JOYX, DX_X_AXIS); 

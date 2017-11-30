@@ -93,10 +93,10 @@ int main()
 	
 	//Mic Switch
 		//MapKey(&Throttle, MSD,);
-		MapKey(&Throttle, MSU,VACPTT); //VAC push to talk
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		//MapKey(&Throttle, MSL,);
 		//MapKey(&Throttle, MSR,);
-		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		//MapKey(&Throttle, MSP,);	
 
 	//Speed Brake
 		//MapKey(&Throttle,SPDF,);

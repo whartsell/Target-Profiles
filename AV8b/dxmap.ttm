@@ -1,4 +1,4 @@
 //HOTAS
 define Bomb_Pickle_Release_Bombs_Launch_Rockets_MavericksDX					 DX1
 define Trigger_Fire_Gun_Launch_Sidewinder_SidearmDX							 DX2
-AG_Target_Undesignate__NWS__FOV_ToggleDX									 DX3
+define AG_Target_Undesignate__NWS__FOV_ToggleDX									 DX3

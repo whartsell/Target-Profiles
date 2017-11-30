@@ -18,7 +18,7 @@ define Airbrake_TOGGLE                                                       USB
 define Bomb_Pickle_Release_Bombs_Launch_Rockets_Mavericks                    R_ALT + USB_Space
 define Cage_Uncage                                                           L_WIN + USB_C
 define COMM_AFT_Select_COMM_2                                                L_CTL + USB_KPPlus
-define COMM_FWD_Select_COMM_1                                                L_CTL + Num + 
+define COMM_FWD_Select_COMM_1                                                L_CTL + USB_KPMinus
 define ECM_Dispense_AFT_Chaff                                                USB_8
 define ECM_Dispense_FWD_Flares                                               USB_7
 define ECM_Dispense_LEFT_Mini_Jammer                                         USB_9
@@ -403,7 +403,7 @@ define Kneeboard_Previous_Page                                               USB
 
 define Master_Mode_NAV                                                       L_ALT + USB_1
 define Master_Mode_VSTOL                                                     L_ALT + USB_2
-defube Naster_Mode_AG														 L_ALT + USB_3
+define Naster_Mode_AG														 L_ALT + USB_3
 //Internal Lights
 
 

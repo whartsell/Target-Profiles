@@ -20,10 +20,10 @@ int main()
 	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
 	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
-	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
-	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+	//MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	//MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	//SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
 
 //Layers&Modes
 	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
@@ -34,7 +34,7 @@ int main()
 		MapKey(&Joystick, S2,Bomb_Pickle_Release_Bombs_Launch_Rockets_MavericksDX);
 
 	//S1 Master Mode Control Button
-		//MapKey(&Joystick, S1,);
+		MapKey(&Joystick, S1,PULSE + Sensor_Select_DOWN_HUD_Scene_Reject_TGP);
 	//Trim
 		MapKey(&Joystick,H1D,Trim_Pitch_UP);
 		MapKey(&Joystick,H1U,Trim_Pitch_DOWN);
@@ -43,10 +43,10 @@ int main()
 
 
 	//TMS
-		MapKey(&Joystick,H2D,Sensor_Select_AFT_DMT_LST_TV);
-		MapKey(&Joystick,H2U,Sensor_Select_FWD_INS_IRMV_EOMV);
-		MapKey(&Joystick,H2L,Sensor_Select_LEFT_MAP_Center_Decenter);
-		MapKey(&Joystick,H2R,Sensor_Select_RIGHT_FLIR_HUD_BH_WH);
+		MapKey(&Joystick,H2D,PULSE + Sensor_Select_AFT_DMT_LST_TV);
+		MapKey(&Joystick,H2U,PULSE + Sensor_Select_FWD_INS_IRMV_EOMV);
+		MapKey(&Joystick,H2L,PULSE + Sensor_Select_LEFT_MAP_Center_Decenter);
+		MapKey(&Joystick,H2R,PULSE + Sensor_Select_RIGHT_FLIR_HUD_BH_WH);
 		//need to figure out if mapping Sensor_Select_DOWN_HUD_Scene_Reject_TGP to long down is appropriate
 	//Trigger 
 		//TG1
@@ -55,17 +55,17 @@ int main()
 			MapKey(&Joystick,TG2,Trigger_Fire_Gun_Launch_Sidewinder_SidearmDX);
 	
 	//DMS
-		//MapKey(&Joystick,H3D,);
-		MapKey(&Joystick,H3U,WP_Increment);
-		//MapKey(&Joystick,H3L,);
-		//MapKey(&Joystick,H3R,);
+		//MapKey(&Joystick,H3D,); // reserved for VR Zoom
+		MapKey(&Joystick,H3U,PULSE + WP_Increment);
+		MapKey(&Joystick,H3L,0);
+		MapKey(&Joystick,H3R,0);
 
 	//CMS
-		MapKey(&Joystick,H4D,A_A_Mode_AFT_Sidewinder_SEAM);
-		MapKey(&Joystick,H4U,A_A_Mode_FWD_Sidewinder_Boresight_);
+		MapKey(&Joystick,H4D,PULSE + A_A_Mode_AFT_Sidewinder_SEAM);
+		MapKey(&Joystick,H4U,PULSE + A_A_Mode_FWD_Sidewinder_Boresight_);
 		MapKey(&Joystick,H4L,0);
 		MapKey(&Joystick,H4R,0);
-		MapKey(&Joystick,H4P,A_A_Mode_DOWN_Gun); 
+		MapKey(&Joystick,H4P,PULSE + A_A_Mode_DOWN_Gun); 
 	
 	//S3 Pinky Switch
 		MapKey(&Joystick, S3,AG_Target_Undesignate__NWS__FOV_ToggleDX);
@@ -77,16 +77,18 @@ int main()
 //THROTTLE
 
 	//Pinky
-		//MapKey(&Throttle,PSF,);
-		//MapKey(&Throttle,PSM,);
-		//MapKey(&Throttle,PSB,);
+		MapKey(&Throttle,PSF,0);
+		MapKey(&Throttle,PSM,0);
+		MapKey(&Throttle,PSB,0);
+		//Maybe use this for water?
 		
 	//Left Throttle Button
-		//MapKey(&Throttle,LTB,);
+		MapKey(&Throttle,LTB,0);
 	
 	//Slew
-		//MapKey(&Throttle,SC,); 
-
+		MapKey(&Throttle,SC,TDC_Down_Action_PositionDX); 
+		KeyAxis(&Throttle, SCX, 0, AXMAP2(5, TDC_LeftDX, 0,0,0, TDC_RightDX));
+		KeyAxis(&Throttle, SCY, 0, AXMAP2(5, TDC_AftDX, 0,0,0, TDC_ForwardDX));
 	//Coolie
 		MapKey(&Throttle,CSD,ECM_Dispense_FWD_Flares);
 		MapKey(&Throttle,CSU,ECM_Dispense_AFT_Chaff);
@@ -94,16 +96,16 @@ int main()
 		MapKey(&Throttle,CSR,ECM_Dispense_RIGHT_All);
 	
 	//Mic Switch
-		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSD,0);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,COMM_AFT_Select_COMM_2);
 		MapKey(&Throttle, MSR,COMM_FWD_Select_COMM_1);
-		//MapKey(&Throttle, MSP,);	
+		MapKey(&Throttle, MSP,0);	
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,PULSE + Airbrake_OFF);
 		MapKey(&Throttle,SPDM,PULSE + Airbrake_ON);
-		//MapKey(&Throttle,SPDB,);
+		MapKey(&Throttle,SPDB,0);
 	
 	//Boat
 		//MapKey(&Throttle,BSF,);
@@ -111,8 +113,8 @@ int main()
 		//MapKey(&Throttle,BSB,);
 	
 	//China Hat
-		//MapKey(&Throttle,CHF,);
-		//MapKey(&Throttle,CHB,);
+		MapKey(&Throttle,CHF,0);
+		MapKey(&Throttle,CHB,PULSE + Cage_Uncage);
 	
 	
 //Throttle Panel
@@ -142,9 +144,11 @@ int main()
 		//MapKey(&Throttle,APUOFF,);
 	
 	//Flaps
-		//MapKey(&Throttle,FLAPU,);
+		MapKey(&Throttle,FLAPU,PULSE + Flaps_Mode_Up_STOL__AUTO__CRUISE_);
+		MapKeyR(&Throttle,FLAPU,PULSE + Flaps_Mode_Dn_CRUISE_AUTO_STOL_);
 		//MapKey(&Throttle,FLAPM,);
-		//MapKey(&Throttle,FLAPD,);
+		MapKey(&Throttle,FLAPD,PULSE + Flaps_Mode_Dn_CRUISE_AUTO_STOL_);
+		MapKeyR(&Throttle,FLAPD,PULSE + Flaps_Mode_Up_STOL__AUTO__CRUISE_);
 	
 	//Idle Cutoff
 		//Left
@@ -152,8 +156,8 @@ int main()
 		//MapKey(&Throttle,IDLELOFF,);
 		
 		//Right
-		//MapKey(&Throttle,IDLERON,);
-		//MapKey(&Throttle,IDLEROFF,);
+		MapKey(&Throttle,IDLERON,PULSE + Throttle_CutoffDX);
+		MapKey(&Throttle,IDLEROFF,PULSE + Throttle_CutoffDX);
 	
 	// Throttle Friction Control
 	
@@ -171,9 +175,11 @@ int main()
 		//MapKey(&Throttle,APENG,);
 
 	//AP Select Switch
-		//MapKey(&Throttle,APPAT,);
+		MapKey(&Throttle,APPAT,PULSE + Water_Mode_Up_LDG__OFF__TO_);
+		MapKeyR(&Throttle,APPAT,PULSE + Water_Mode_Down_TO__OFF__LDG_);
 		//MapKey(&Throttle,APAH,);
-		//MapKey(&Throttle,APALT,);
+		MapKey(&Throttle,APALT,PULSE + Water_Mode_Down_TO__OFF__LDG_);
+		MapKeyR(&Throttle,APALT,PULSE + Water_Mode_Up_LDG__OFF__TO_);
 
 
 }

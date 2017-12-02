@@ -1,4 +1,10 @@
 //HOTAS
 define Bomb_Pickle_Release_Bombs_Launch_Rockets_MavericksDX					 DX1
 define Trigger_Fire_Gun_Launch_Sidewinder_SidearmDX							 DX2
-define AG_Target_Undesignate__NWS__FOV_ToggleDX									 DX3
+define AG_Target_Undesignate__NWS__FOV_ToggleDX								 DX3
+define Throttle_CutoffDX													 DX4
+define TDC_AftDX                                                             DX5
+define TDC_ForwardDX			                                             DX6
+define TDC_LeftDX	                                                         DX7
+define TDC_RightDX                                                           DX8
+define TDC_Down_Action_PositionDX                                            DX9

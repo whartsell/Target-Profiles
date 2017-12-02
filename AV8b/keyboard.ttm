@@ -331,6 +331,7 @@ define Zoom_out_slow                                                         USB
 //VSTOL Controls
 
 define Flaps_Mode_Up_STOL__AUTO__CRUISE_                                     L_CTL + USB_1
+define Flaps_Mode_Dn_CRUISE_AUTO_STOL_										 L_CTL + USB_2
 define Flaps_Power_Left_OFF__ON__RESET_                                      L_CTL + USB_3
 define Flaps_Power_Right_RESET__ON__OFF_                                     L_CTL + USB_4
 define Water_Mode_Down_TO__OFF__LDG_                                         L_CTL + USB_6

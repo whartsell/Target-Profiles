@@ -66,6 +66,14 @@ local diff = {
 			},
 			["name"] = "AG Target Undesignate / NWS / FOV Toggle",
 		},
+		["d566pnilu553cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Sensor Select DOWN: HUD Scene Reject/TGP",
+		},
 		["d634pnilu635cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {

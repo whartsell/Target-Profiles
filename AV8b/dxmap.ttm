@@ -8,3 +8,5 @@ define TDC_ForwardDX			                                             DX6
 define TDC_LeftDX	                                                         DX7
 define TDC_RightDX                                                           DX8
 define TDC_Down_Action_PositionDX                                            DX9
+//for some reason this will not work properly with default key Map
+define Sensor_Select_DOWN_HUD_Scene_Reject_TGPDX							 DX10

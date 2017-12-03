@@ -34,7 +34,7 @@ int main()
 		MapKey(&Joystick, S2,Bomb_Pickle_Release_Bombs_Launch_Rockets_MavericksDX);
 
 	//S1 Master Mode Control Button
-		MapKey(&Joystick, S1,PULSE + Sensor_Select_DOWN_HUD_Scene_Reject_TGP);
+		MapKey(&Joystick, S1,PULSE + Sensor_Select_DOWN_HUD_Scene_Reject_TGPDX);
 	//Trim
 		MapKey(&Joystick,H1D,Trim_Pitch_UP);
 		MapKey(&Joystick,H1U,Trim_Pitch_DOWN);
@@ -163,7 +163,7 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,Landing_Gear_TOGGLE);
+		MapKey(&Throttle,LDGH,PULSE + Landing_Gear_TOGGLE);
 
 	//EAC
 		//MapKey(&Throttle,EACON,);

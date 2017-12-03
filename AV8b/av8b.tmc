@@ -88,7 +88,7 @@ int main()
 	//Slew
 		MapKey(&Throttle,SC,TDC_Down_Action_PositionDX); 
 		KeyAxis(&Throttle, SCX, 0, AXMAP2(5, TDC_LeftDX, 0,0,0, TDC_RightDX));
-		KeyAxis(&Throttle, SCY, 0, AXMAP2(5, TDC_AftDX, 0,0,0, TDC_ForwardDX));
+		KeyAxis(&Throttle, SCY, 0, AXMAP2(5, TDC_ForwardDX, 0,0,0, TDC_AftDX));
 	//Coolie
 		MapKey(&Throttle,CSD,ECM_Dispense_FWD_Flares);
 		MapKey(&Throttle,CSU,ECM_Dispense_AFT_Chaff);

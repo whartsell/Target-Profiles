@@ -166,13 +166,13 @@ int main()
 		MapKey(&Throttle,LDGH,PULSE + Landing_Gear_TOGGLE);
 
 	//EAC
-		//MapKey(&Throttle,EACON,);
-		//MapKey(&Throttle,EACOFF,);
+		MapKey(&Throttle,EACON, PULSE + Air_Refueling_Probe_Toggle);
+		MapKey(&Throttle,EACOFF,PULSE + Air_Refueling_Probe_Toggle);
 	//RDR Altm
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		//MapKey(&Throttle,APENG,);
+		MapKey(&Throttle,APENG,Master_Warning_Caution_ResetDX);
 
 	//AP Select Switch
 		MapKey(&Throttle,APPAT,PULSE + Water_Mode_Up_LDG__OFF__TO_);

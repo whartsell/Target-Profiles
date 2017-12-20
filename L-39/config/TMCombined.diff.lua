@@ -18,6 +18,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d1672pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Request Aircraft Control",
+		},
 		["d3022pnilunilcd3vd1vpnilvunil"] = {
 			["name"] = "Weapon Fire Button Safety",
 			["removed"] = {

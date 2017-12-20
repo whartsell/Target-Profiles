@@ -42,6 +42,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d252pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+				},
+			},
+			["name"] = "Master Warning/Caution Reset",
+		},
 		["d3490pnilu3490cd9vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {

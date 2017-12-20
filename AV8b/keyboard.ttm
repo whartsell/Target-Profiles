@@ -66,7 +66,7 @@ define WP_Increment                                                          R_W
 define Engines_START                                                         R_SHIFT + USB_Home
 define Engines_STOP                                                          R_SHIFT + USB_End
 define Fuel_Shutoff_Lever_lock_release                                       L_WIN + USB_F
-
+define Air_Refueling_Probe_Toggle											 L_WIN + USB_A
 //Flight Control
 
 define Aircraft_Bank_RIGHT                                                   USB_RightArrow

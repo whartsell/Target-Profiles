@@ -1,0 +1,4 @@
+define Fire_Gun_or_RocketsDX	DX1
+define TrimmerDX				DX2
+define Autopilot_MasterDX		DX3
+define Missile_Launch_ButtonDX	DX4

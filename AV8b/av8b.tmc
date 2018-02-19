@@ -6,8 +6,13 @@ include "dxmap.ttm"
 
 int main()
 {
-	Configure(&HCougar,MODE_EXCLUDED);
-	Configure(&T16000,MODE_EXCLUDED);
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
 	SetKBRate(50, 75);
     if(Init(&EventHandle)) return 1; // declare the event handler, return on error
 
@@ -98,9 +103,9 @@ int main()
 	//Mic Switch
 		MapKey(&Throttle, MSD,0);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		MapKey(&Throttle, MSL,COMM_AFT_Select_COMM_2);
-		MapKey(&Throttle, MSR,COMM_FWD_Select_COMM_1);
-		MapKey(&Throttle, MSP,0);	
+		MapKey(&Throttle, MSL,SRSRadio2);
+		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSP,Communication_menu);	
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,PULSE + Airbrake_OFF);

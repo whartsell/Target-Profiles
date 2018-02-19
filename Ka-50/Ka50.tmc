@@ -53,7 +53,7 @@ int main()
 
 	//Trigger 
 		//TG1
-			//MapKey(&Joystick,TG1,);
+			MapKey(&Joystick,TG1,0);
 		//TG2
 			MapKey(&Joystick,TG2,Release_weapons); //DX5
 	

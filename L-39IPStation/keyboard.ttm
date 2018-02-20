@@ -1,0 +1,843 @@
+//Created by DCS2Target
+
+
+include "usbkeys.ttm"
+
+
+
+// Kneeboard
+
+define Kneeboard_Jump_To_Shortcut_8                      	                                        
+define Kneeboard_Jump_To_Shortcut_9                      	                                        
+define Kneeboard_Jump_To_Shortcut_6                      	                                        
+define Kneeboard_Previous_Shortcut                       	                                        
+define Kneeboard_Jump_To_Shortcut_7                      	                                        
+define Kneeboard_Jump_To_Shortcut_4                      	                                        
+define Kneeboard_Next_Shortcut                           	                                        
+define Kneeboard_Jump_To_Shortcut_5                      	                                        
+define Kneeboard_Make_Shortcut                           	                                        
+define Kneeboard_Next_Page                               	USB_RBracket                            
+define Kneeboard_Jump_To_Shortcut_2                      	                                        
+define Kneeboard_Jump_To_Shortcut_3                      	                                        
+define Kneeboard_Jump_To_Shortcut_1                      	                                        
+define Kneeboard_ONOFF                                   	R_SHIFT + USB_K                         
+define Kneeboard_Jump_To_Shortcut_10                     	                                        
+define Kneeboard_Previous_Page                           	USB_LBracket                            
+define Kneeboard_glance_view                             	USB_K                                   
+define Kneeboard_current_position_mark_point             	R_CTL + USB_K                           
+
+// Labels
+
+define Vehicle__Ship_Labels                              	L_SHIFT + USB_F9                        
+define All_Labels                                        	L_SHIFT + USB_F10                       
+define Aircraft_Labels                                   	L_SHIFT + USB_F2                        
+define Missile_Labels                                    	L_SHIFT + USB_F6                        
+
+// View
+
+define F12_Civil_traffic_view                            	L_CTL + USB_F12                         
+define F12_Trainscars_toggle                             	L_SHIFT + USB_F12                       
+define F8_Target_view                                    	USB_F8                                  
+define View_Down_slow                                    	USB_KP2                                 
+define F2_View_own_aircraft                              	L_CTL + USB_F2                          
+define F11_Jump_to_free_camera                           	L_CTL + USB_F11                         
+define View_Down_Right_slow                              	USB_KP3                                 
+define View_Center                                       	USB_KP5                                 
+define F1_Head_shift_movement_on__off                    	L_WIN + USB_F1                          
+define F5_nearest_AC_view                                	USB_F5                                  
+define F8_Player_targetsAll_targets_filter               	R_CTL + USB_F8                          
+define F6_Weapon_to_target_view                          	L_CTL + USB_F6                          
+define F2_Toggle_local_camera_control                    	L_ALT + USB_F2                          
+define F1_HUD_only_view_switch                           	L_ALT + USB_F1                          
+define F5_Ground_hostile_view                            	L_CTL + USB_F5                          
+define F9_Landing_signal_officer_view                    	L_ALT + USB_F9                          
+define F4_Look_back_view                                 	USB_F4                                  
+define F3_FlyBy_view                                     	USB_F3                                  
+define Zoom_in_slow                                      	USB_KPAsterisk                          
+define View_Left_slow                                    	USB_KP4                                 
+define F10_Theater_map_view                              	USB_F10                                 
+define Zoom_external_out                                 	R_CTL + USB_KPForwardSlash              
+define Zoom_out_slow                                     	USB_KPForwardSlash                      
+define F11_Airport_free_camera                           	USB_F11                                 
+define Mouse_Rate_Fast                                   	L_SHIFT + USB_LBracket                  
+define F4_Arcade_Chase_view                              	L_SHIFT + USB_F4                        
+define F1_Cockpit_view                                   	USB_F1                                  
+define F7_Ground_unit_view                               	USB_F7                                  
+define Keyboard_Rate_Normal                              	L_ALT + USB_RBracket                    
+define F11_Camera_moving_backward                        	L_ALT + USB_KPForwardSlash              
+define F1_Natural_head_movement_view                     	L_CTL + USB_F1                          
+define Keyboard_Rate_Slow                                	L_CTL + USB_RBracket                    
+define F10_Jump_to_theater_map_view_over_current_point   	L_CTL + USB_F10                         
+define F2_Toggle_camera_position                         	R_ALT + USB_F2                          
+define Mouse_Rate_Normal                                 	L_ALT + USB_LBracket                    
+define Zoom_external_normal                              	R_CTL + USB_KPEnter                     
+define View_Up_Right_slow                                	USB_KP9                                 
+define F11_Camera_moving_forward                         	L_ALT + USB_KPAsterisk                  
+define F3_FlyBy_jump_view                                	L_CTL + USB_F3                          
+define F12_Static_object_view                            	USB_F12                                 
+define Keyboard_Rate_Fast                                	L_SHIFT + USB_RBracket                  
+define Zoom_external_in                                  	R_CTL + USB_KPAsterisk                  
+define View_Up_slow                                      	USB_KP8                                 
+define Mouse_Rate_Slow                                   	L_CTL + USB_LBracket                    
+define F2_Aircraft_view                                  	USB_F2                                  
+define F4_Chase_view                                     	L_CTL + USB_F4                          
+define View_Up_Left_slow                                 	USB_KP7                                 
+define View_Right_slow                                   	USB_KP6                                 
+define Zoom_normal                                       	USB_KPEnter                             
+define F9_Ship_view                                      	USB_F9                                  
+define F6_Released_weapon_view                           	USB_F6                                  
+define View_Down_Left_slow                               	USB_KP1                                 
+
+// Oxygen Control Panel
+
+define Oxygen_Bottles_Interconnect_Valve__CCW            	                                        
+define Emergency_Oxygen_Switch__ONOFF                    	L_SHIFT + USB_O                         
+define Oxygen_Diluter_Switch__100NORMAL                  	L_ALT + USB_O                           
+define Oxygen_Diluter_Switch__100                        	                                        
+define Oxygen_Supply_Valve__CW                           	L_ALT + L_CTL + USB_O                   
+define Emergency_Oxygen_Switch__OFF                      	                                        
+define Emergency_Oxygen_Switch__ON                       	                                        
+define Oxygen_Bottles_Interconnect_Valve__CW             	R_ALT + R_CTL + USB_O                   
+define Oxygen_Supply_Valve__CCW                          	L_CTL + L_SHIFT + USB_O                 
+define Oxygen_Diluter_Switch__NORMAL                     	                                        
+
+// RSBN-5 Control Panel
+
+define RSBN5_Azimuth_Initial_Setting_Switch__INCREASE    	L_ALT + L_SHIFT + USB_A                 
+define RSBN5_Emergency_Landing_Mode_On_Switch__OFF       	                                        
+define SDU_Switch__OFF                                   	                                        
+define RSBN_Identification_Button                        	R_ALT + R_CTL + USB_I                   
+define RSBN5_Course_Accordance_Button                    	L_CTL + USB_X                           
+define RSBN5_Mode_Switch__NAVIGATION                     	                                        
+define RSBN5_Volume_Rheostat__CW                         	R_ALT + R_SHIFT + USB_V                 
+define RSBN5_Mode_Switch__LANDING                        	                                        
+define RSBN5_Emergency_Landing_Mode_On_Switch__ON        	                                        
+define RSBN5_Lighting_Rheostat__CCW                      	                                        
+define RSBN5_Azimuth_0_Setting_Button                    	R_ALT + R_CTL + R_SHIFT + USB_A         
+define RSBN5_Listen_Callsign_Button                      	USB_L                                   
+define RSBN5_Emergency_Landing_Mode_On_Switch__ONOFF     	                                        
+define RSBN_Mode_Switch__NAVIGATION                      	L_SHIFT + USB_N                         
+define RSBN5_Landing_Channel__DECREASE                   	                                        
+define RSBN5_Testing_Button                              	                                        
+define SDU_Switch__ONOFF                                 	R_ALT + R_CTL + USB_S                   
+define RSBN5_Distance_Initial_Setting_Switch__DECREASE   	L_ALT + L_CTL + USB_D                   
+define RSBN5_Mode_Switch__GLIDE_PATH                     	                                        
+define RSBN5_Navigation_Channel__INCREASE                	                                        
+define RSBN_Mode_Switch__GLIDE_PATH                      	L_ALT + USB_N                           
+define RSBN5_Identification_Button                       	                                        
+define RSBN5_Navigation_Channel__DECREASE                	                                        
+define RSBN_Control_Box_Lighting_Intensity_Knob__CCW     	R_ALT + R_CTL + USB_L                   
+define RSBN_Mode_Switch__LANDING                         	L_CTL + USB_N                           
+define RSBN5_QNH_Pressure_Knob__CCW                      	L_ALT + L_CTL + USB_H                   
+define RSBN5_Volume_Rheostat__CCW                        	                                        
+define RSBN5_Distance_Initial_Setting_Switch__INCREASE   	L_ALT + L_SHIFT + USB_D                 
+define RSBN_Test_Button                                  	R_ALT + R_CTL + USB_T                   
+define RSBN5_Azimuth_Initial_Setting_Switch__DECREASE    	                                        
+define RSBN5_Lighting_Rheostat__CW                       	                                        
+define RSBN_Mode_Switch__CYCLEDOWN                       	                                        
+define RSBN_Control_Box_Lighting_Intensity_Knob__CW      	R_ALT + R_SHIFT + USB_L                 
+define RSBN5_Landing_Channel__INCREASE                   	                                        
+define RSBN5_QNH_Pressure_Knob__CW                       	L_ALT + L_SHIFT + USB_H                 
+define RSBN_Mode_Switch__CYCLEUP                         	                                        
+define SDU_Switch__ON                                    	                                        
+
+// View Padlock
+
+define All_missiles_padlock                              	R_SHIFT + USB_KPDecimal                 
+define Unlock_view_stop_padlock                          	USB_NumLock                             
+define Threat_missile_padlock                            	R_ALT + USB_KPDecimal                   
+define Lock_View_cycle_padlock                           	USB_KPDecimal                           
+define Lock_terrain_view                                 	R_CTL + USB_KPDecimal                   
+
+// ASP-3NMU Gunsight
+
+define ASP3NMU_Gunsight_Color_Filter_ONOFF               	R_ALT + USB_L                           
+define ASP3NMU_Gunsight_Mode_GYROFIXED                   	R_SHIFT + USB_J                         
+define ASP3NMU_Gunsight_Target_Wingspan_Adjustment_Dial_Increase	USB_Comma                               
+define ASP3NMU_Gunsight_Brightness_Knob_Increase         	R_CTL + USB_O                           
+define ASP3NMU_Gunsight_Glass_Lower                      	L_ALT + USB_H                           
+define ASP3NMU_Gunsight_Target_Distance_Increase         	USB_SemiColon                           
+define ASP3NMU_Gunsight_Target_Distance_Decrease         	USB_Period                              
+define ASP3NMU_Gunsight_Brightness_Knob_Decrease         	R_ALT + USB_O                           
+define ASP3NMU_Gunsight_Glass_Raise                      	L_SHIFT + USB_H                         
+define ASP3NMU_Gunsight_Target_Wingspan_Adjustment_Dial_Decrease	USB_ForwardSlash                        
+define ASP3NMU_Gunsight_Fixed_Reticle_Mask_Lever         	L_ALT + USB_M                           
+
+// Debug
+
+define Toggle_Console                                    	L_ALT + USB_Tilde                       
+define Restart_Mission                                   	L_SHIFT + USB_R                         
+
+// Communications
+
+define Cover_Me                                          	L_WIN + USB_W                           
+define Intercom_Volume_Knob__Decrease                    	L_CTL + USB_I                           
+define Reserve_Intercom_Switch__ON                       	                                        
+define Reserve_Intercom_Switch__ONOFF                    	L_ALT + USB_I                           
+define Flight__Attack_ground_targets                     	L_WIN + USB_G                           
+define Flight__Complete_mission_and_RTB                  	L_WIN + USB_E                           
+define Toggle_Formation                                  	L_WIN + USB_T                           
+define Toggle_Intercom_ADF_Switch                        	                                        
+define Reserve_Intercom_Switch__OFF                      	                                        
+define Switch_dialog                                     	L_SHIFT + USB_BackSlash                 
+define INT_Button_On_Stick                               	R_ALT + R_CTL + R_SHIFT + USB_I         
+define Radio_Volume_Knob__Decrease                       	R_CTL + USB_I                           
+define Request_AWACS_Home_Airbase                        	L_WIN + USB_U                           
+define Attack_My_Target                                  	L_WIN + USB_Q                           
+define Intercom_Volume_Knob__Increase                    	L_SHIFT + USB_I                         
+define Join_Up_Formation                                 	L_WIN + USB_Y                           
+define Toggle_Reserve_Intercom_Switch                    	                                        
+define Radio_Button                                      	R_ALT + R_SHIFT + USB_I                 
+define Radio_Squelch_Switch__ON                          	                                        
+define INT_Button                                        	R_CTL + R_SHIFT + USB_I                 
+define Toggle_Radio_Squelch_Switch                       	                                        
+define Radio_Channel_Knob__Next                          	R_SHIFT + USB_R                         
+define ADF_Switch__ONOFF                                 	R_ALT + USB_I                           
+define Flight__Complete_mission_and_rejoin               	L_WIN + USB_R                           
+define ADF_Switch__OFF                                   	                                        
+define Toggle_Radio_Control_Switch                       	R_CTL + R_SHIFT + USB_R                 
+define Communication_menu                                	USB_BackSlash                           
+define Radio_Channel_Knob__Previous                      	R_CTL + USB_R                           
+define Radio_Squelch_Switch__ONOFF                       	R_ALT + USB_R                           
+define Radio_Squelch_Switch__OFF                         	                                        
+define Switch_to_main_menu                               	L_CTL + USB_BackSlash                   
+define Flight__Attack_air_defenses                       	L_WIN + USB_D                           
+define ADF_Switch__ON                                    	                                        
+define Radio_Volume_Knob__Increase                       	R_SHIFT + USB_I                         
+
+// Miscellaneous CB Switch Panel
+
+define CB_Signal_Switch__ONOFF                           	L_CTL + USB_3                           
+define CB_Air_Conditioning_Shutoff_Switch_Cover__CLOSE   	                                        
+define CB_Air_Conditioning_Shutoff_Switch_Cover__OPENCLOSE	                                        
+define CB_Intercom_Ground_Switch__ON                     	                                        
+define CB_Air_Conditioning_Shutoff_Switch__OFF           	                                        
+define CB_Seat_Switch__ONOFF                             	L_CTL + USB_2                           
+define CB_Seat_Switch__ON                                	                                        
+define NET_SWITCH__OFF                                   	                                        
+define CB_Arms_Switch__OFF                               	                                        
+define CB_Intercom_Ground_Switch__OFF                    	                                        
+define CB_Intercom_Ground_Switch__ONOFF                  	L_CTL + USB_5                           
+define CB_Arms_Switch__ONOFF                             	L_CTL + USB_4                           
+define CB_Signal_Switch__OFF                             	                                        
+define Net_Switch__ON                                    	                                        
+define CB_Air_Conditioning_Shutoff_Switch__OPEN          	                                        
+define CB_Signal_Switch__ON                              	                                        
+define CB_Arms_Switch__ON                                	                                        
+define CB_Air_Conditioning_Shutoff_Switch_Cover__OPEN    	                                        
+define CB_Seat_Switch__OFF                               	                                        
+define CB_Air_Conditioning_Shutoff_Switch__CLOSE         	                                        
+define Net_Switch__ONOFF                                 	L_CTL + USB_1                           
+
+// Emergency
+
+define Jettison_Weapons                                  	L_CTL + USB_W                           
+
+// Main CB Switch Panel
+
+define CB_Inverter_2_AC_115_V_Switch__ON                 	                                        
+define CB_SDU_Switch__OFF                                	                                        
+define Emergency_Generator_Switch__OFF                   	                                        
+define CB_IFF_SRO_Emergency_Connection_Switch__OFF       	                                        
+define CB_Inverter_2_AC_115_V_Switch__ONOFF              	R_CTL + USB_2                           
+define CB_AGDGMK_Switch__ONOFF                           	R_SHIFT + USB_5                         
+define Main_Generator_Switch__ON                         	                                        
+define CB_RDO_ICS_and_Radio_Switch__ON                   	                                        
+define CB_Engine_Switch__ONOFF                           	R_SHIFT + USB_4                         
+define CB_RSBN_ISKRA_Emergency_Connection_Switch__OFF    	                                        
+define CB_RSBN_ISKRA_Switch__ON                          	                                        
+define Main_Generator_Switch__ONOFF                      	R_SHIFT + USB_2                         
+define CB_AGDGMK_Switch__OFF                             	                                        
+define CB_RIO3_DeIcing_Signal_Switch__ONOFF              	R_ALT + USB_4                           
+define CB_Inverter_1_AC_115_V_Switch__ON                 	                                        
+define CB_Inverter_2_AC_115_V_Switch__OFF                	                                        
+define CB_SDU_Switch__ON                                 	                                        
+define Battery_Switch__ONOFF                             	R_SHIFT + USB_1                         
+define CB_IFF_SRO_Emergency_Connection_Switch__ON        	                                        
+define CB_Inverter_1_AC_115_V_Switch__ONOFF              	R_CTL + USB_1                           
+define CB_Wing_Tanks_Switch__ON                          	                                        
+define CB_RSBN_ISKRA_Emergency_Connection_Switch__ON     	                                        
+define CB_SDU_Switch__ONOFF                              	R_ALT + USB_5                           
+define CB_MRPRV_Marker_Beacon_Receiver_and_Radio_Altimeter_Switch__OFF	                                        
+define CB_RIO3_DeIcing_Signal_Switch__ON                 	                                        
+define CB_AGDGMK_Switch__ON                              	                                        
+define CB_RDO_ICS_and_Radio_Switch__ONOFF                	R_CTL + USB_3                           
+define CB_Wing_Tanks_Switch__ONOFF                       	R_ALT + USB_3                           
+define Emergency_Generator_Switch__ON                    	                                        
+define CB_RSBN_ISKRA_Switch__OFF                         	                                        
+define Emergency_Generator_Switch__ONOFF                 	R_SHIFT + USB_3                         
+define CB_RIO3_DeIcing_Signal_Switch__OFF                	                                        
+define Main_Generator_Switch__OFF                        	                                        
+define CB_Engine_Switch__OFF                             	                                        
+define CB_RDO_ICS_and_Radio_Switch__OFF                  	                                        
+define CB_MRPRV_Marker_Beacon_Receiver_and_Radio_Altimeter_Switch__ONOFF	R_CTL + USB_4                           
+define Battery_Switch__ON                                	                                        
+define CB_Engine_Switch__ON                              	                                        
+define Battery_Switch__OFF                               	                                        
+define CB_Inverter_1_AC_115_V_Switch__OFF                	                                        
+define CB_IFF_SRO_Emergency_Connection_Switch__ONOFF     	R_ALT + USB_1                           
+define CB_Wing_Tanks_Switch__OFF                         	                                        
+define CB_RSBN_ISKRA_Emergency_Connection_Switch__ONOFF  	R_ALT + USB_2                           
+define CB_RSBN_ISKRA_Switch__ONOFF                       	R_CTL + USB_5                           
+define CB_MRPRV_Marker_Beacon_Receiver_and_Radio_Altimeter_Switch__ON	                                        
+
+// Flight Control
+
+define Throttle_Toggle_Position__IDLESTOP                	R_ALT + USB_Backspace                   
+define Thrust_Smoothly_Down                              	USB_KPMinus                             
+define Thrust_Smoothly_Up                                	USB_KPPlus                              
+define THROTTLE__STOP                                    	R_ALT + USB_End                         
+define Aircraft_Bank_Right                               	USB_RightArrow                          
+define Flaps_Flight_Position                             	USB_F                                   
+define Flaps_Landing_Position                            	L_CTL + USB_F                           
+define Elevator_Trimmer_Switch_PULLCLIMB                 	R_CTL + USB_Period                      
+define Elevator_Trimmer_Switch_PUSHDESCEND               	R_CTL + USB_SemiColon                   
+define Aircraft_Rudder_Right                             	USB_X                                   
+define Airbrake_Button                                   	USB_B                                   
+define Thrust_Step_Up                                    	USB_PageUp                              
+define Airbrake_Switch__OPEN                             	L_SHIFT + USB_B                         
+define Aircraft_Rudder_Left                              	USB_Z                                   
+define Aileron_Trimmer_Switch_RIGHT                      	R_CTL + USB_ForwardSlash                
+define Aircraft_Bank_Left                                	USB_LeftArrow                           
+define Thrust_Step_Down                                  	USB_PageDown                            
+define Flaps_TakeOff_Position                            	L_SHIFT + USB_F                         
+define Trimmer__Reset_Position                           	L_CTL + USB_T                           
+define THROTTLE__IDLE                                    	R_ALT + USB_Home                        
+define Aileron_Trimmer_Switch_LEFT                       	R_CTL + USB_Comma                       
+define Aircraft_Up                                       	USB_DownArrow                           
+define Airbrake_Switch__CLOSE                            	L_CTL + USB_B                           
+define Aircraft_Down                                     	USB_UpArrow                             
+define Request_control										L_ALT + USB_R
+
+// Aft CB Switch Panel
+
+define CB_SARPP_Switch__ONOFF                            	                                        
+define CB_Signaling_Switch__ONOFF                        	                                        
+define CB_Ignition_1_Switch__ON                          	                                        
+define CB_Start_Panel_Switch__ONOFF                      	                                        
+define CB_Conditioning_Switch__OFF                       	                                        
+define CB_SARPP_Switch__OFF                              	                                        
+define CB_Navigation_Lights_Switch__ONOFF                	                                        
+define CB_SARPP_Switch__ON                               	                                        
+define CB_Emergency_Jettison_Switch__OFF                 	                                        
+define CB_PT500_Inverter_Switch__ON                      	                                        
+define CB_Gears__Balance_Switch__OFF                     	                                        
+define CB_SRO_Switch__ONOFF                              	                                        
+define CB_Seat__Helmet_Switch__ONOFF                     	                                        
+define CB_Start_Panel_Switch__ON                         	                                        
+define CB_Gears__Balance_Switch__ONOFF                   	                                        
+define CB_White_Cockpit_Lights_Switch__ONOFF             	                                        
+define CB_Ignition_2_Switch__ONOFF                       	                                        
+define CB_Engine_Instruments_Switch__ON                  	                                        
+define CB_PT500_Inverter_Switch__ONOFF                   	                                        
+define CB_SRO_Switch__OFF                                	                                        
+define CB_Left_Spotlight_Switch__ON                      	                                        
+define CB_Engine_Instruments_Switch__ONOFF               	                                        
+define CB_White_Cockpit_Lights_Switch__ON                	                                        
+define CB_Conditioning_Switch__ON                        	                                        
+define CB_Left_Pitot_Switch__OFF                         	                                        
+define CB_Red_Cockpit_Lights_Switch__OFF                 	                                        
+define CB_Navigation_Lights_Switch__OFF                  	                                        
+define CB_Right_Pitot_Switch__ON                         	                                        
+define CB_Left_Pitot_Switch__ON                          	                                        
+define CB_Start_Panel_Switch__OFF                        	                                        
+define CB_Ignition_1_Switch__ONOFF                       	                                        
+define CB_Left_Pitot_Switch__ONOFF                       	                                        
+define CB_Radio_Compass_Switch__ON                       	                                        
+define CB_Fire_Switch__ON                                	                                        
+define CB_Signaling_Switch__OFF                          	                                        
+define CB_Right_Spotlight_Switch__ONOFF                  	                                        
+define CB_Control_Switch__ONOFF                          	                                        
+define CB_Control_Switch__ON                             	                                        
+define CB_Right_Pitot_Switch__OFF                        	                                        
+define CB_PT500_Inverter_Switch__OFF                     	                                        
+define CB_Pump_Switch__ON                                	                                        
+define CB_Ignition_1_Switch__OFF                         	                                        
+define CB_Radio_Compass_Switch__ONOFF                    	                                        
+define CB_Ignition_2_Switch__OFF                         	                                        
+define CB_Gears__Balance_Switch__ON                      	                                        
+define CB_Radio_Compass_Switch__OFF                      	                                        
+define CB_Left_Spotlight_Switch__ONOFF                   	                                        
+define CB_AntiIce_Switch__ON                             	                                        
+define CB_Seat__Helmet_Switch__OFF                       	                                        
+define CB_Pump_Switch__OFF                               	                                        
+define CB_Emergency_Jettison_Switch__ONOFF               	                                        
+define CB_Engine_Instruments_Switch__OFF                 	                                        
+define CB_Fire_Switch__OFF                               	                                        
+define CB_Right_Spotlight_Switch__OFF                    	                                        
+define CB_Left_Spotlight_Switch__OFF                     	                                        
+define CB_White_Cockpit_Lights_Switch__OFF               	                                        
+define CB_AntiIce_Switch__OFF                            	                                        
+define CB_Signaling_Switch__ON                           	                                        
+define CB_Conditioning_Switch__ONOFF                     	                                        
+define CB_Right_Spotlight_Switch__ON                     	                                        
+define CB_Seat__Helmet_Switch__ON                        	                                        
+define CB_Fire_Switch__ONOFF                             	                                        
+define CB_Red_Cockpit_Lights_Switch__ONOFF               	                                        
+define CB_Right_Pitot_Switch__ONOFF                      	                                        
+define CB_Control_Switch__OFF                            	                                        
+define CB_SRO_Switch__ON                                 	                                        
+define CB_AntiIce_Switch__ONOFF                          	                                        
+define CB_Emergency_Jettison_Switch__ON                  	                                        
+define CB_Ignition_2_Switch__ON                          	                                        
+define CB_Navigation_Lights_Switch__ON                   	                                        
+define CB_Pump_Switch__ONOFF                             	                                        
+define CB_Red_Cockpit_Lights_Switch__ON                  	                                        
+
+// View Extended
+
+define Objects_all_excluded__include                     	L_ALT + USB_Insert                      
+define Camera_jiggle_toggle                              	L_SHIFT + USB_J                         
+define Object_exclude                                    	L_ALT + USB_Delete                      
+define Objects_switching_direction_forward               	L_CTL + USB_PageDown                    
+define View_enemies_mode                                 	R_CTL + R_SHIFT + USB_End               
+define Toggle_tracking_launched_weapon                   	R_CTL + USB_KPPlus                      
+define Keep_terrain_camera_altitude                      	L_ALT + USB_K                           
+define View_all_mode                                     	R_CTL + USB_Delete                      
+define Objects_switching_direction_reverse               	L_CTL + USB_PageUp                      
+define View_friends_mode                                 	R_CTL + R_SHIFT + USB_Home              
+
+// Instrument Panel
+
+define Radar_altimeter_dangerous_RALT_set_rotary_right   	L_SHIFT + USB_Period                    
+define Artificial_Horizon_Zero_Pitch_Trim_Knob_CW        	R_CTL + USB_H                           
+define Artificial_Horizon_Zero_Pitch_Trim_Knob_CCW       	R_SHIFT + USB_H                         
+define AChS1_Cockpit_Chronograph_Left_Knob_Pull          	R_SHIFT + USB_M                         
+define Variometer_Adjusting_Knob_CCW                     	                                        
+define Heading_Knob_CW                                   	L_SHIFT + USB_K                         
+define Heading_Knob_CCW                                  	                                        
+define AChS1_Cockpit_Chronograph_Left_Knob_Push          	R_ALT + R_CTL + R_SHIFT + USB_C         
+define AChS1_Cockpit_Chronograph_Left_Knob_Rotate_right  	L_ALT + USB_Period                      
+define AChS1_Cockpit_Chronograph_Right_Knob_Rotate_left  	R_CTL + R_SHIFT + USB_Comma             
+define Radar_altimeter_dangerous_RALT_set_rotary_left    	L_SHIFT + USB_Comma                     
+define Barometric_Pressure_QFE_Knob_CCW                  	L_CTL + USB_0                           
+define AChS1_Cockpit_Chronograph_Right_Knob_Push         	R_ALT + R_SHIFT + USB_C                 
+define Barometric_Pressure_QFE_Knob_CW                   	                                        
+define Radar_altimeter_test_button                       	L_ALT + L_SHIFT + USB_R                 
+define AChS1_Cockpit_Chronograph_Right_Knob_Rotate_right 	R_CTL + R_SHIFT + USB_Period            
+define AChS1_Cockpit_Chronograph_Left_Knob_Rotate_left   	L_ALT + USB_Comma                       
+define Artificial_Horizon_Cage                           	L_WIN + USB_H                           
+define Variometer_Adjusting_Knob_CW                      	L_ALT + L_SHIFT + USB_V                 
+
+// GMK-1AE GMC Control Panel
+
+define GMK1AE_GMC_Magnetic_Declination_Knob__CCW         	L_ALT + L_CTL + USB_M                   
+define GMK1AE_GMC_Course_Selector_Switch__INCREASE       	R_CTL + USB_C                           
+define GMK1AE_GMC_Test_Switch__0OFF                      	R_ALT + USB_X                           
+define GMK1AE_GMC_Hemisphere_Selection_Switch__N         	R_ALT + USB_Z                           
+define GMK1AE_GMC_Latitude_Selector_Knob__CCW            	R_ALT + R_CTL + USB_K                   
+define GMK1AE_GMC_Synchronization_Button                 	R_ALT + R_SHIFT + USB_S                 
+define GMK1AE_GMC_Magnetic_Declination_Knob__CW          	L_ALT + L_SHIFT + USB_M                 
+define GMK1AE_GMC_Hemisphere_Selection_Switch__S         	R_CTL + USB_Z                           
+define GMK1AE_GMC_Mode_Switch__MC                        	R_ALT + USB_M                           
+define GMK1AE_GMC_Hemisphere_Selection_Switch__NS        	R_ALT + R_CTL + USB_Z                   
+define GMK1AE_GMC_Mode_Switch__MCGC                      	R_ALT + R_CTL + USB_M                   
+define GMK1AE_GMC_Course_Selector_Switch__DECREASE       	R_ALT + USB_C                           
+define GMK1AE_GMC_Mode_Switch__GC                        	R_CTL + USB_M                           
+define GMK1AE_GMC_Latitude_Selector_Knob__CW             	R_ALT + R_SHIFT + USB_K                 
+define GMK1AE_GMC_Test_Switch__300OFF                    	R_CTL + USB_X                           
+
+// Cheat
+
+define Auto_Stop                                         	L_WIN + USB_End                         
+define Active_Pause                                      	L_SHIFT + L_WIN + USB_Break             
+define Auto_Start                                        	L_WIN + USB_Home                        
+
+// Engine Control Panel
+
+define Fire_Extinguish_Button_Cover__CLOSE               	                                        
+define Turbo_Stop_Switch__STOPOFF                        	L_CTL + USB_End                         
+define RT12_JPT_Regulator_Manual_Disable_Switch_Cover__CLOSE	                                        
+define Turbo_Stop_Switch_Cover__OPENCLOSE                	L_SHIFT + USB_End                       
+define Engine_Stop_Switch_Cover                          	                                        
+define EGT_Indicator_Switch__FRONTREAR                   	L_CTL + L_SHIFT + USB_I                 
+define RT12_JPT_Regulator_Manual_Disable_Switch_Cover__OPEN	                                        
+define Emergency_Fuel_Switch_Cover__OPEN                 	                                        
+define Engine_Launch_Method_Switch__STARTING             	L_ALT + L_CTL + USB_L                   
+define Engine_Start_Button_Cover__OPEN                   	L_SHIFT + USB_Home                      
+define RT12_JPT_Regulator_Manual_Disable_Switch__DISABLEDENABLED	L_ALT + USB_T                           
+define Turbo_Stop_Switch_Cover__OPEN                     	                                        
+define Fire_Signals_Test_Switch_II                       	R_CTL + USB_E                           
+define Throttle__IdleStop                                	                                        
+define Turbo_Start_Button_Cover                          	                                        
+define Engine_Start_Button_Cover                         	                                        
+define Fire_Extinguish_Button_Cover                      	                                        
+define Fire_Signals_Test_Switch_I                        	R_SHIFT + USB_E                         
+define Engine_Launch_Method_Switch__CYCLEUP              	                                        
+define RT12_JPT_Regulator_Power_Switch__ON               	                                        
+define RT12_JPT_Regulator_Test_Switch__CYCLEUP           	                                        
+define Turbo_Start_Button                                	L_ALT + USB_Home                        
+define Engine_Launch_Method_Switch__COLD_ROTATION        	L_SHIFT + USB_L                         
+define Engine_Start_Button_Cover__OPENCLOSE              	R_CTL + USB_Home                        
+define RT12_JPT_Regulator_Test_Switch__II                	R_CTL + USB_T                           
+define Engine_Start_Button_Cover__CLOSE                  	L_CTL + USB_Home                        
+define Turbo_Start_Button_Cover__OPENCLOSE               	                                        
+define Turbo_Stop_Switch__STOP                           	                                        
+define RT12_JPT_Regulator_Test_Switch__CYCLEDOWN         	                                        
+define RT12_JPT_Regulator_Manual_Disable_Switch__ENABLED 	                                        
+define RT12_JPT_Regulator_Test_Switch_OFF                	                                        
+define RT12_JPT_Regulator_Test_Switch__OFF               	R_CTL + R_SHIFT + USB_T                 
+define RT12_JPT_Regulator_Test_Switch__I                 	R_SHIFT + USB_T                         
+define Engine_Stop_Switch_Cover__OPEN                    	                                        
+define EGT_Indicator_Switch                              	                                        
+define Engine_Launch_Method_Switch_Cover__OPEN           	                                        
+define Engine_Stop_Switch__OFF                           	                                        
+define RT12_JPT_Regulator_Test_Switch_I                  	                                        
+define RT12_JPT_Regulator_Test_Switch_II                 	                                        
+define RT12_JPT_Regulator_Manual_Disable_Switch_Cover__OPENCLOSE	L_SHIFT + USB_T                         
+define Engine_Stop_Switch__STOPOFF                       	USB_End                                 
+define RT12_JPT_Regulator_Power_Switch__OFF              	                                        
+define Turbo_Start_Button_Cover__OPEN                    	L_ALT + L_SHIFT + USB_Home              
+define Engine_Launch_Method_Switch__CYCLEDOWN            	                                        
+define Emergency_Fuel_Switch__OFF                        	                                        
+define Engine_Stop_Switch__STOP                          	                                        
+define Engine_Launch_Method_Switch_Cover__OPENCLOSE      	L_CTL + L_SHIFT + USB_L                 
+define Turbo_Stop_Switch__OFF                            	                                        
+define Emergency_Fuel_Switch_Cover__OPENCLOSE            	R_SHIFT + USB_F                         
+define Emergency_Fuel_Switch_Cover__CLOSE                	                                        
+define Engine_Start_Button                               	USB_Home                                
+define Engine_Stop_Switch                                	                                        
+define Engine_Stop_Switch_Cover__CLOSE                   	                                        
+define Engine_Launch_Method_Switch_Cover                 	                                        
+define Fire_Extinguish_Button_Cover__OPENCLOSE           	L_SHIFT + USB_E                         
+define IV300_Engine_Vibration_Test_Button                	L_ALT + USB_V                           
+define Engine_Launch_Method_Switch_Cover__CLOSE          	                                        
+define Fire_Extinguish_Button_Cover__OPEN                	                                        
+define Emergency_Fuel_Switch__ON                         	                                        
+define Emergency_Fuel_Switch__ONOFF                      	R_CTL + USB_F                           
+define RT12_JPT_Regulator_Power_Switch__ONOFF            	R_ALT + USB_T                           
+define Engine_Stop_Switch_Cover__OPENCLOSE               	R_CTL + USB_End                         
+define RT12_JPT_Regulator_Manual_Disable_Switch__DISABLED	                                        
+define Turbo_Start_Button_Cover__CLOSE                   	L_ALT + L_CTL + USB_Home                
+define EGT_Indicator_Switch__FRONT                       	                                        
+define EGT_Indicator_Switch__REAR                        	                                        
+define Engine_Launch_Method_Switch__PRESERV              	L_CTL + USB_L                           
+define Fire_Extinguish_Button                            	USB_E                                   
+define Turbo_Stop_Switch_Cover__CLOSE                    	                                        
+
+// Stick
+
+define Weapon_Fire_Button                                	USB_Space                               
+define Weapon_Fire_Button_Safety                         	L_CTL + USB_Space   
+define Intercom_on_Stick									R_ALT + R_CTL + R_SHIFT + USB_I
+define Intercom_on_Throttle									R_CTL + R_SHIFT + USB_I
+define PTT													R_ALT + R_SHIFT + USB_I
+
+// Systems
+
+define Emergency_RAM_Air_Turbine_Lever__OPEN             	                                        
+define Right_Pitot_Heating_On_Button                     	R_CTL + USB_P                           
+define Emergency_Flaps_Lever__OPEN                       	                                        
+define Emergency_Wheel_Brake__Down                       	L_ALT + L_CTL + USB_W                   
+define Cockpit_Lights_Switch__RED                        	R_CTL + USB_Y                           
+define GMC_Failure_Switch__ONOFF                         	L_ALT + L_CTL + USB_F                   
+define Emergency_Hydraulic_Systems_Interconnect_Lever__CLOSE	                                        
+define Spotlight_Switch__TAXI                            	R_ALT + USB_S                           
+define Main_and_Emergency_Hydraulic_Systems_Interconnection_Lever__CLOSE	                                        
+define Suit_Ventilation_Mode_Switch__AUTO                	R_ALT + USB_U                           
+define Eject_3_times                                     	L_CTL + USB_E                           
+define Warning_Lights_Test_Button                        	R_CTL + USB_W                           
+define ADF_Failure_Switch__ONOFF                         	R_ALT + R_CTL + USB_F                   
+define Emergency_Canopy_Jettison_Handle                  	L_CTL + L_SHIFT + USB_C                 
+define Left_Pitot_Heating_Off_Button                     	L_ALT + USB_P                           
+define Seat_Adjustment_Down                              	L_ALT + L_SHIFT + USB_S                 
+define Static_Pressure_Failure_Knob__CCW                 	R_CTL + USB_Minus                       
+define Cockpit_Lights_Brightness_Rheostat__CW            	R_ALT + R_SHIFT + USB_Y                 
+define Spotlight_Switch__LANDING                         	R_CTL + USB_S                           
+define Emergency_Landing_Gear_Lever__OPEN                	                                        
+define Main_and_Emergency_Hydraulic_Systems_Interconnection_Lever__OPENCLOSE	R_ALT + R_SHIFT + USB_H                 
+define KPP_Bank_Failure_Switch__ONOFF                    	R_ALT + USB_F                           
+define KPP_Pitch_Failure_Switch__ONOFF                   	L_ALT + USB_F                           
+define Emergency_Cockpit_Light_Switch                    	L_SHIFT + USB_Y                         
+define Hood__ONOFF                                       	USB_S                                   
+define Emergency_Flaps_Extension_Lever__OPEN             	                                        
+define Emergency_RAM_Air_Turbine_Lever__OPENCLOSE        	                                        
+define Suit_Ventilation_Mode_Switch__COOL                	R_CTL + USB_U                           
+define Full_Pressure_Failure_Knob__CCW                   	R_ALT + USB_Minus                       
+define Emergency_RAM_Air_Turbine_Lever__CLOSE            	                                        
+define Parking_Brake_Off                                 	L_ALT + USB_W                           
+define Landing_Gear_Handle_UpDown                        	USB_G                                   
+define RIO3_DeIcing_Sensor_Heating_Circuit_Check_Button  	L_ALT + L_SHIFT + USB_I                 
+define Cockpit_Lights_Brightness_Rheostat__CCW           	R_ALT + R_CTL + USB_Y                   
+define Emergency_Wheel_Brake__Up                         	L_CTL + L_SHIFT + USB_W                 
+define Emergency_Landing_Gear_Extension_Lever__CLOSE     	                                        
+define Seat_Adjustment_Up                                	L_SHIFT + USB_S                         
+define Pitot_Tube_Selector_Lever__RIGHT                  	L_ALT + L_SHIFT + USB_P                 
+define Emergency_Landing_Gear_Lever__OPENCLOSE           	                                        
+define Right_Pitot_Heating_Off_Button                    	R_ALT + USB_P                           
+define Suit_Ventilation_Air_Louvre_Rheostat__CW          	L_ALT + L_SHIFT + USB_U                 
+define Canopy_OpenClose                                  	L_CTL + USB_C                           
+define Emergency_Hydraulic_Systems_Interconnect_Lever__OPEN	                                        
+define Suit_Ventilation_Air_Louvre_Rheostat__CCW         	L_ALT + L_CTL + USB_U                   
+define Emergency_Landing_Gear_Lever__CLOSE               	                                        
+define Spotlight_Switch__OFF                             	R_SHIFT + USB_S                         
+define Full_Pressure_Failure_Knob__CW                    	R_ALT + USB_Equals                      
+define Left_Pitot_Heating_On_Button                      	L_CTL + USB_P                           
+define RAT_Emergency_Generator_Emergency_Lever__OPEN     	                                        
+define Pitot_Tube_Selector_Lever__LEFT                   	L_CTL + L_SHIFT + USB_P                 
+define Emergency_Flaps_Extension_Lever__OPENCLOSE        	R_ALT + R_SHIFT + USB_F                 
+define Main_and_Emergency_Hydraulic_Systems_Interconnection_Lever__OPEN	                                        
+define Wheel_Brake_On                                    	USB_W                                   
+define Suit_Ventilation_Mode_Switch__HEAT                	R_SHIFT + USB_U                         
+define Emergency_Flaps_Lever__CLOSE                      	                                        
+define Emergency_Flaps_Lever__OPENCLOSE                  	                                        
+define Static_Pressure_Failure_Knob__CW                  	R_CTL + USB_Equals                      
+define Emergency_Hydraulic_Systems_Interconnect_Lever__OPENCLOSE	                                        
+define Fuel_ShutOff_Lever__SHUTOPEN                      	L_ALT + USB_S                           
+define Landing_Gear_Handle_Up                            	L_CTL + USB_G                           
+define Pitot_Tube_Selector_Lever__LEFTRIGHT              	L_ALT + L_CTL + USB_P                   
+define Landing_Gear_Handle_Down                          	L_SHIFT + USB_G                         
+define Landing_Gear_Handle_Neutral                       	                                        
+define Cockpit_Lights_Switch__OFF                        	R_SHIFT + USB_Y                         
+define Emergency_Landing_Gear_Extension_Lever__OPENCLOSE 	R_ALT + R_SHIFT + USB_G                 
+define SARPP_Flight_Recorder_Switch__OFF                 	R_ALT + R_CTL + USB_D                   
+define Canopy_Lock_Handle__LOCKOPEN                      	L_SHIFT + USB_C                         
+define Emergency_Landing_Gear_Extension_Lever__OPEN      	                                        
+define RAT_Emergency_Generator_Emergency_Lever__CLOSE    	                                        
+define Emergency_Flaps_Extension_Lever__CLOSE            	                                        
+define Cockpit_Lights_Switch__WHITE                      	R_ALT + USB_Y                           
+define RAT_Emergency_Generator_Emergency_Lever__OPENCLOSE	R_ALT + R_SHIFT + USB_T                 
+define Warning_Lights_Brightness_Rheostat__CCW           	R_ALT + R_CTL + USB_W                   
+define Warning_Lights_Brightness_Rheostat__CW            	R_ALT + R_SHIFT + USB_W                 
+define SARPP_Flight_Recorder_Switch__ON                  	R_ALT + R_SHIFT + USB_D                 
+define SARPP_Flight_Recorder_Switch__ONOFF               	R_CTL + R_SHIFT + USB_D                 
+
+// View Cockpit
+
+define Glance_right                                      	R_CTL + USB_KP6                         
+define Cockpit_Camera_Move_Down                          	R_CTL + R_SHIFT + USB_KP2               
+define Flashlight                                        	L_ALT + USB_L                           
+define Custom_Snap_View_1                                	L_WIN + USB_KP1                         
+define Custom_Snap_View_2                                	L_WIN + USB_KP2                         
+define Camera_snap_view_down                             	R_ALT + USB_KP2                         
+define Custom_Snap_View_0                                	L_WIN + USB_KP0                         
+define View_right                                        	R_SHIFT + USB_KP6                       
+define Camera_pan_mode_toggle                            	L_ALT + L_SHIFT + USB_Z                 
+define Glance_downright                                  	R_CTL + USB_KP3                         
+define Zoom_out                                          	R_SHIFT + USB_KPForwardSlash            
+define Return_Camera_Base                                	R_ALT + USB_KP5                         
+define Camera_snap_view_right                            	R_ALT + USB_KP6                         
+define View_up                                           	R_SHIFT + USB_KP8                       
+define Center_Camera_View                                	R_SHIFT + USB_KP5                       
+define View_down_right                                   	R_SHIFT + USB_KP3                       
+define Cockpit_panel_view_toggle                         	R_CTL + USB_KP0                         
+define Enable_exploration_mode                           	                                        
+define View_up_left                                      	R_SHIFT + USB_KP7                       
+define Cockpit_Camera_Move_Center                        	R_CTL + R_SHIFT + USB_KP5               
+define Glance_upleft                                     	R_CTL + USB_KP7                         
+define Toggle_Mirrors                                    	USB_M                                   
+define Camera_snap_view_up                               	R_ALT + USB_KP8                         
+define Cockpit_Camera_Move_Left                          	R_CTL + R_SHIFT + USB_KP4               
+define Occupy_Seat_1                                     	USB_1                                   
+define Occupy_Seat_2                                     	USB_2                                   
+define Cockpit_Camera_Move_Right                         	R_CTL + R_SHIFT + USB_KP6               
+define Camera_snap_view_downright                        	R_ALT + USB_KP3                         
+define Glance_down                                       	R_CTL + USB_KP2                         
+define Cockpit_Camera_Move_Back                          	R_CTL + R_SHIFT + Num/; RCtrl + R_SHIFT + USB_KPMinus
+define Camera_snap_view_upleft                           	R_ALT + USB_KP7                         
+define Cockpit_Camera_Move_Forward                       	R_CTL + R_SHIFT + USB_KPAsterisk        
+define Glance_upright                                    	R_CTL + USB_KP9                         
+define Zoom_in                                           	R_SHIFT + USB_KPAsterisk                
+define Save_Cockpit_Angles                               	R_ALT + USB_KP0                         
+define Cockpit_Camera_Move_Up                            	R_CTL + R_SHIFT + USB_KP8               
+define Return_Camera                                     	R_CTL + USB_KP5                         
+define View_down_left                                    	R_SHIFT + USB_KP1                       
+define Glance_downleft                                   	R_CTL + USB_KP1                         
+define View_up_right                                     	R_SHIFT + USB_KP9                       
+define Glance_up                                         	R_CTL + USB_KP8                         
+define View_left                                         	R_SHIFT + USB_KP4                       
+define Camera_transpose_mode_onoff                       	                                        
+define Custom_Snap_View_5                                	L_WIN + USB_KP5                         
+define Custom_Snap_View_6                                	L_WIN + USB_KP6                         
+define Custom_Snap_View_3                                	L_WIN + USB_KP3                         
+define Custom_Snap_View_4                                	L_WIN + USB_KP4                         
+define Custom_Snap_View_9                                	L_WIN + USB_KP9                         
+define View_down                                         	R_SHIFT + USB_KP2                       
+define Camera_snap_view_downleft                         	R_ALT + USB_KP1                         
+define Custom_Snap_View_7                                	L_WIN + USB_KP7                         
+define Camera_snap_view_left                             	R_ALT + USB_KP4                         
+define Custom_Snap_View_8                                	L_WIN + USB_KP8                         
+define Glance_left                                       	R_CTL + USB_KP4                         
+define Camera_snap_view_upright                          	R_ALT + USB_KP9                         
+define Cockpit_panel_view_in                             	USB_KP0                                 
+
+// Signal Flares Control Panel
+
+define White_Signal_Flare_Button__ONOFF                  	L_SHIFT + USB_1                         
+define Green_Signal_Flare_Button__OFF                    	L_ALT + L_CTL + USB_3                   
+define Yellow_Signal_Flare_Button__OFF                   	L_ALT + L_CTL + USB_4                   
+define Red_Signal_Flare_Button__ON                       	L_ALT + L_SHIFT + USB_2                 
+define Green_Signal_Flare_Button__ONOFF                  	L_SHIFT + USB_3                         
+define Green_Signal_Flare_Button__ON                     	L_ALT + L_SHIFT + USB_3                 
+define White_Signal_Flare_Button__OFF                    	L_ALT + L_CTL + USB_1                   
+define Red_Signal_Flare_Button__ONOFF                    	L_SHIFT + USB_2                         
+define Yellow_Signal_Flare_Button__ON                    	L_ALT + L_SHIFT + USB_4                 
+define White_Signal_Flare_Button__ON                     	L_ALT + L_SHIFT + USB_1                 
+define Signal_Flares_Power_Switch__ON                    	L_ALT + L_SHIFT + USB_Tilde             
+define Red_Signal_Flare_Button__OFF                      	L_ALT + L_CTL + USB_2                   
+define Signal_Flares_Power_Switch__ONOFF                 	L_SHIFT + USB_Tilde                     
+define Yellow_Signal_Flare_Button__ONOFF                 	L_SHIFT + USB_4                         
+define Signal_Flares_Power_Switch__OFF                   	L_ALT + L_CTL + USB_Tilde               
+
+// RKL-41 ADF Control Panel
+
+define RKL41_ADF_Inner_Beacon_10_kHz_Frequency_Knob__DECREASE	R_ALT + R_SHIFT + USB_LBracket          
+define RKL41_ADF_Inner_Beacon_100_kHz_Frequency_Knob__INCREASE	R_ALT + USB_RBracket                    
+define RKL41_ADF_Outer_Beacon_100_kHz_Frequency_Knob__DECREASE	R_CTL + USB_LBracket                    
+define RKL41_ADF_Outer_Beacon_10_kHz_Frequency_Knob__DECREASE	R_CTL + R_SHIFT + USB_LBracket          
+define RKL41_ADF_Volume_Knob__INCREASE                   	L_SHIFT + USB_V                         
+define RKL41_ADF_Control_Switch__FRONT                   	R_ALT + R_CTL + USB_C                   
+define RKL41_ADF_Function_Switch__ADFMANUAL              	L_CTL + USB_D                           
+define RKL41_ADF_Brightness_Knob__CW                     	R_ALT + R_SHIFT + USB_J                 
+define RKL41_ADF_Function_Switch__OFF                    	L_ALT + USB_D                           
+define RKL41_ADF_Outer_Beacon_Frequency_Tune_Knob__CW    	L_ALT + L_SHIFT + USB_RBracket          
+define RKL41_ADF_LOOP_Switch__LEFTOFF                    	L_CTL + USB_J                           
+define RKL41_ADF_Control_Switch__FRONTREAR               	R_SHIFT + USB_C                         
+define RKL41_ADF_Outer_Beacon_Frequency_Tune_Knob__CCW   	L_ALT + L_SHIFT + USB_LBracket          
+define RKL41_ADF_Dial_Selector_Switch__FARNEAR           	R_CTL + R_SHIFT + USB_B                 
+define RKL41_ADF_Dial_Selector_Switch__FAR               	R_ALT + R_SHIFT + USB_B                 
+define RKL41_ADF_Outer_Beacon_100_kHz_Frequency_Knob__INCREASE	R_CTL + USB_RBracket                    
+define RKL41_ADF_Function_Switch__ANTENNA                	L_CTL + L_SHIFT + USB_D                 
+define RKL41_ADF_Inner_Beacon_10_kHz_Frequency_Knob__INCREASE	R_ALT + R_SHIFT + USB_RBracket          
+define RKL41_ADF_Inner_Beacon_Frequency_Tune_Knob__CW    	L_CTL + L_SHIFT + USB_RBracket          
+define RKL41_ADF_LOOP_Switch__RIGHTOFF                   	L_ALT + USB_J                           
+define RKL41_ADF_Inner_Beacon_Frequency_Tune_Knob__CCW   	L_CTL + L_SHIFT + USB_LBracket          
+define RKL41_ADF_Control_Switch__REAR                    	R_CTL + R_SHIFT + USB_C                 
+define RKL41_ADF_Dial_Selector_Switch__NEAR              	R_ALT + R_CTL + USB_B                   
+define RKL41_ADF_Mode_Switch__TLG                        	R_CTL + USB_L                           
+define RKL41_ADF_Outer_Beacon_10_kHz_Frequency_Knob__INCREASE	R_CTL + R_SHIFT + USB_RBracket          
+define RKL41_ADF_Volume_Knob__DECREASE                   	L_CTL + USB_V                           
+define RKL41_ADF_Function_Switch__LOOP                   	L_ALT + L_CTL + L_SHIFT + USB_D         
+define RKL41_ADF_Brightness_Knob__CCW                    	R_ALT + R_CTL + USB_J                   
+define RKL41_ADF_Mode_Switch__TLF                        	R_SHIFT + USB_L                         
+define RKL41_ADF_Inner_Beacon_100_kHz_Frequency_Knob__DECREASE	R_ALT + USB_LBracket                    
+define RKL41_ADF_Function_Switch__ADFAUTO                	L_SHIFT + USB_D                         
+define RKL41_ADF_Mode_Switch__TLFTLG                     	R_CTL + R_SHIFT + USB_L                 
+
+// Auxiliary Switch Panel
+
+define Navigation_Lights_Mode_Control_Switch__FLICKER    	R_SHIFT + USB_N                         
+define Cabin_Air_Temperature_Controller_Rheostat__CW     	R_ALT + R_SHIFT + USB_A                 
+define Navigation_Lights_Intensity_Control_Switch__CYCLEDOWN	                                        
+define Cabin_Heating_Mode_Switch__HEAT                   	                                        
+define Cabin_Heating_Mode_Switch__OFF                    	                                        
+define Navigation_Lights_Brightness_Switch__30           	                                        
+define Navigation_Lights_Mode_Control_Switch__FIXED_LIGHTING	R_CTL + USB_N                           
+define Navigation_Lights_Mode_Switch__FIXED_LIGHTING     	                                        
+define Navigation_Lights_Brightness_Switch__100          	                                        
+define Cabin_Air_Conditioning_Control_Switch__HEAT       	R_ALT + USB_A                           
+define Navigation_Lights_Mode_Switch__OFF                	                                        
+define DeIcing_Mode_Switch__CYCLEUP                      	                                        
+define Cabin_Air_Conditioning_Control_Switch__CYCLECCW   	                                        
+define DeIcing_Mode_Switch__OFF                          	R_CTL + USB_D                           
+define Navigation_Lights_Intensity_Control_Switch__30    	R_ALT + USB_B                           
+define Cabin_Air_Conditioning_Control_Switch__OFF        	R_CTL + R_SHIFT + USB_A                 
+define DeIcing_Mode_Switch__CYCLEDOWN                    	                                        
+define DeIcing_Mode_Switch__MANUAL                       	R_ALT + USB_D                           
+define DeIcing_Mode_Switch__AUTOMATIC                    	R_SHIFT + USB_D                         
+define AntiIcing_Mode_Switch__AUTOMATIC                  	                                        
+define Emergency_Engine_Instruments_Power_Switch__OFF    	                                        
+define Navigation_Lights_Mode_Control_Switch__CYCLEDOWN  	                                        
+define AntiIcing_Mode_Switch__MANUAL                     	                                        
+define Cabin_Heating_Mode_Switch__COOL                   	                                        
+define Emergency_Engine_Instruments_Power_Switch__ON     	                                        
+define Navigation_Lights_Brightness_Switch__60           	                                        
+define Navigation_Lights_Mode_Switch__FLICKER            	                                        
+define Navigation_Lights_Mode_Control_Switch__CYCLEUP    	                                        
+define Cabin_Heating_Mode_Switch__AUTOMATIC              	                                        
+define Cabin_Air_Conditioning_Control_Switch__COOL       	R_CTL + USB_A                           
+define Cabin_Air_Conditioning_Control_Switch__CYCLECW    	                                        
+define Navigation_Lights_Intensity_Control_Switch__60    	R_CTL + USB_B                           
+define Cabin_Air_Conditioning_Control_Switch__AUTOMATIC  	R_SHIFT + USB_A                         
+define Navigation_Lights_Intensity_Control_Switch__CYCLEUP	                                        
+define Emergency_Engine_Instruments_Power_Switch__ONOFF  	L_ALT + USB_E                           
+define AntiIcing_Mode_Switch__OFF                        	                                        
+define Navigation_Lights_Mode_Control_Switch__OFF        	R_ALT + USB_N                           
+define Cabin_Air_Temperature_Controller_Rheostat__CCW    	R_ALT + R_CTL + USB_A                   
+define Navigation_Lights_Intensity_Control_Switch__100   	R_SHIFT + USB_B                         
+
+//Not Categorized
+
+define Front_Cockpit_Emergency_Wheel_Brake_Lever         	                                        
+define Second_Cockpit_Emergency_Wheel_Brake_Lever        	                                        
+define Camera_Vertical_View                              	                                        
+define Camera_Zoom_View                                  	                                        
+define ASP3NMU_Gunsight_Target_Wingspan_Adjustment_Dial  	                                        
+define Absolute_Vertical_Shift_Camera_View               	                                        
+define Absolute_Horizontal_Shift_Camera_View             	                                        
+define Absolute_Longitude_Shift_Camera_View              	                                        
+define ASP3_Glass_RaiseLower                             	                                        
+define Absolute_Camera_Horizontal_View                   	                                        
+define Camera_Horizontal_View                            	                                        
+define Pitch                                             	                                        
+define Absolute_Camera_Vertical_View                     	                                        
+define Absolute_Roll_Shift_Camera_View                   	                                        
+define Zoom_View                                         	                                        
+define Roll                                              	                                        
+define Rudder                                            	                                        
+define Thrust                                            	                                        
+define Wheel_Brake                                       	                                        
+define ASP3NMU_Gunsight_Target_Distance                  	                                        
+
+// Armament Control Panel
+
+define UB16_Switch__OFF                                  	L_ALT + L_CTL + USB_6                   
+define Gun_Sight_and_Gun_Camera_Power_Switch__OFF        	L_ALT + L_CTL + USB_7                   
+define Missiles_Heating_Switch__ON                       	L_ALT + L_SHIFT + USB_8                 
+define Live_or_Blank_Switch_Cover__CLOSE                 	R_ALT + R_CTL + USB_U                   
+define ARMS_Switch__OFF                                  	L_ALT + L_CTL + USB_5                   
+define Missile_Tone_Volume_Knob__CCW                     	R_SHIFT + USB_Minus                     
+define Emergency_Jettison_Switch_Cover__OPEN             	L_ALT + L_SHIFT + USB_J                 
+define Live_or_Blank_Switch_Cover__OPENCLOSE             	R_CTL + R_SHIFT + USB_U                 
+define Gun_Sight_and_Gun_Camera_Power_Switch__ONOFF      	L_SHIFT + USB_7                         
+define UB16_Switch__ONOFF                                	L_SHIFT + USB_6                         
+define Live_or_Blank_Switch__LIVE                        	L_SHIFT + USB_U                         
+define Emergency_Jettison_Switch__OFF                    	L_ALT + L_CTL + USB_K                   
+define Rockets_Firing_Mode_Selector_Switch__AUT          	R_SHIFT + USB_V                         
+define ARMS_Switch__ONOFF                                	L_SHIFT + USB_5                         
+define UB16_Switch__ON                                   	L_ALT + L_SHIFT + USB_6                 
+define Live_or_Blank_Switch_Cover__OPEN                  	R_ALT + R_SHIFT + USB_U                 
+define Missiles_Glowing_Switch__OFF                      	L_ALT + L_CTL + USB_9                   
+define Emergency_Jettison_Switch__ON                     	L_ALT + L_SHIFT + USB_K                 
+define Missiles_Glowing_Switch__ON                       	L_ALT + L_SHIFT + USB_9                 
+define Missiles_Glowing_Switch__ONOFF                    	L_SHIFT + USB_9                         
+define Emergency_Jettison_Switch_Cover__CLOSE            	L_ALT + L_CTL + USB_J                   
+define Rockets_Firing_Mode_Selector_Switch__2RS          	R_ALT + USB_V                           
+define Emergency_Jettison_Switch_Cover__OPENCLOSE        	L_ALT + L_CTL + L_SHIFT + USB_J         
+define MissileBomb_Release_Selector_Switch__PORTLeftSTARBBOTHRight_for_MissilesBoth	R_ALT + R_CTL + R_SHIFT + USB_R         
+define MissileBomb_Release_Selector_Switch__STARBBOTHRight_for_MissilesBoth	R_ALT + R_CTL + USB_R                   
+define Missiles_Heating_Switch__OFF                      	L_ALT + L_CTL + USB_8                   
+define Emergency_Jettison_Switch__ONOFF                  	L_ALT + L_CTL + L_SHIFT + USB_K         
+define Gun_Sight_and_Gun_Camera_Power_Switch__ON         	L_ALT + L_SHIFT + USB_7                 
+define Missile_Tone_Volume_Knob__CW                      	R_SHIFT + USB_Equals                    
+define ARMS_Switch__ON                                   	L_ALT + L_SHIFT + USB_5                 
+define MissileBomb_Release_Selector_Switch__PORTLeft     	R_ALT + R_SHIFT + USB_R                 
+define Missiles_Heating_Switch__ONOFF                    	L_SHIFT + USB_8                         
+define Rockets_Firing_Mode_Selector_Switch__4RS          	R_CTL + USB_V                           
+define Live_or_Blank_Switch__BLANK                       	L_CTL + USB_U                           
+define Live_or_Blank_Switch__NEUTRAL                     	L_ALT + USB_U                           
+
+// General
+
+define Jump_into_selected_aircraft                       	R_ALT + USB_J                           
+define Clickable_mouse_cockpit_mode_OnOff                	L_ALT + USB_C                           
+define Info_bar_coordinate_units_toggle                  	L_ALT + USB_Y                           
+define Chat_readwrite_All                                	L_SHIFT + USB_Tab                       
+define Pause                                             	USB_Break                               
+define Time_normal                                       	L_SHIFT + USB_Z                         
+define Show_controls_indicator                           	R_CTL + USB_Return                      
+define Chat_showhide                                     	L_CTL + L_SHIFT + USB_Y                 
+define Info_bar_view_toggle                              	L_CTL + USB_Y                           
+define Rearming_and_Refueling_Window                     	L_ALT + USB_Apostrophe                  
+define Show_pilot                                        	R_SHIFT + USB_P                         
+define Score_window                                      	USB_Apostrophe                          
+define Time_decelerate                                   	L_ALT + USB_Z                           
+define Multiplayer_chat__mode_All                        	USB_Tab                                 
+define Multiplayer_chat__mode_Allies                     	L_CTL + USB_Tab                         
+define End_mission                                       	Esc                                     
+define Time_accelerate                                   	L_CTL + USB_Z                           
+define Screenshot                                        	USB_PrintScreen                         
+define Get_new_plane__respawn                            	R_CTL + R_SHIFT + USB_Tab               
+define Sound_OnOff                                       	L_CTL + USB_S                           
+define View_briefing_onoff                               	L_ALT + USB_B                           
+define Frame_rate_counter__Service_info                  	R_CTL + USB_Break                       

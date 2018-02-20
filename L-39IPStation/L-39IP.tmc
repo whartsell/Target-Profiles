@@ -1,0 +1,162 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+
+
+int main()
+{
+	Configure(&HCougar,MODE_EXCLUDED);
+	Configure(&Joystick,MODE_EXCLUDED);
+	//Configure(&T16000,MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	//Initialize Backlights
+    	ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_5));
+
+	//AXIS Assignment
+	MapAxis(&T16000, JOYX, DX_X_AXIS); 
+	MapAxis(&T16000, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+
+//Layers&Modes
+	//SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	
+//STICK
+	//S1 
+		MapKey(&T16000, S1, Wheel_Brake_On);
+		
+	//S2
+		MapKey(&T16000, S2,Intercom_on_Stick);
+
+	//S3
+		MapKey(&T16000, S3,Request_control);
+	
+	//S4 
+		//MapKey(&T16000, S4,);
+	
+	//Trim
+		MapKey(&T16000,H1U,Elevator_Trimmer_Switch_PUSHDESCEND);
+		MapKey(&T16000,H1D,Elevator_Trimmer_Switch_PULLCLIMB);
+		MapKey(&T16000,H1L,Aileron_Trimmer_Switch_LEFT);
+		MapKey(&T16000,H1R,Aileron_Trimmer_Switch_RIGHT);
+	
+	
+
+//THROTTLE
+
+	//Pinky
+		MapKey(&Throttle,PSF,PULSE+Spotlight_Switch__LANDING);
+		MapKey(&Throttle,PSM,PULSE+Spotlight_Switch__OFF);
+		MapKey(&Throttle,PSB,PULSE+Spotlight_Switch__TAXI);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,Intercom_on_Throttle);
+	
+	//Slew
+		//MapKey(&Throttle,SC,); 
+
+	//Coolie
+		//MapKey(&Throttle,CSD,);
+		//MapKey(&Throttle,CSU,);
+		//MapKey(&Throttle,CSL,);
+		//MapKey(&Throttle,CSR,);
+	
+	//Mic Switch
+		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		//MapKey(&Throttle, MSL,);
+		MapKey(&Throttle, MSR,PTT);
+		//MapKey(&Throttle, MSP,);	
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,PULSE+Airbrake_Switch__OPEN);
+		MapKey(&Throttle,SPDM,PULSE+Airbrake_Switch__CLOSE);
+		MapKey(&Throttle,SPDB,PULSE+Airbrake_Switch__OPEN);
+	
+	//Boat
+		//MapKey(&Throttle,BSF,);
+		//MapKey(&Throttle,BSM,);
+		//MapKey(&Throttle,BSB,);
+	
+	//China Hat
+		//MapKey(&Throttle,CHF,);
+		//MapKey(&Throttle,CHB,);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		//MapKey(&Throttle,EFLNORM,);
+		//MapKey(&Throttle,EFLOVER,);
+		
+		//Right
+		//MapKey(&Throttle,EFRNORM,);
+		//MapKey(&Throttle,EFROVER,);
+	
+	//Engine Oper
+		//Left
+		MapKey(&Throttle,EOLIGN,Turbo_Start_Button);
+		MapKey(&Throttle,EOLNORM,PULSE+Turbo_Start_Button_Cover__OPEN);
+		MapKey(&Throttle,EOLMOTOR,PULSE+Turbo_Start_Button_Cover__CLOSE);
+		
+		//Right
+		MapKey(&Throttle,EORIGN,Engine_Start_Button);
+		MapKey(&Throttle,EORNORM,PULSE+Engine_Start_Button_Cover__OPEN);
+		MapKey(&Throttle,EORMOTOR,PULSE+Engine_Start_Button_Cover__CLOSE);
+				
+	//APU
+		//MapKey(&Throttle,APUON,PULSE + Parking_Brake_);
+		//MapKey(&Throttle,APUOFF,PULSE + Parking_Brake_Off);
+	
+	//Flaps
+		MapKey(&Throttle,FLAPU,PULSE+Flaps_Flight_Position);
+		MapKey(&Throttle,FLAPM,PULSE+Flaps_TakeOff_Position);
+		MapKey(&Throttle,FLAPD,PULSE+Flaps_Landing_Position);
+	
+	//Idle Cutoff
+		//Left
+		//MapKey(&Throttle,IDLELON,);
+		//MapKey(&Throttle,IDLELOFF,);
+		
+		//Right
+		MapKey(&Throttle,IDLERON,PULSE+THROTTLE__STOP);
+		MapKey(&Throttle,IDLEROFF,PULSE+THROTTLE__IDLE);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,PULSE+Landing_Gear_Handle_UpDown);
+
+	//EAC
+		//MapKey(&Throttle,EACON,);
+		//MapKey(&Throttle,EACOFF,);
+	//RDR Altm
+		//MapKey(&Throttle,RDRNRM,);
+		//MapKey(&Throttle,RDRDIS,);
+	//AP Engage/Disengage
+		MapKey(&Throttle,APENG,Request_control);
+
+	//AP Select Switch
+		//MapKey(&Throttle,APPAT,);
+		//MapKey(&Throttle,APAH,);
+		//MapKey(&Throttle,APALT,);
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

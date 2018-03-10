@@ -86,12 +86,13 @@ define Strobe_Lights_Up                                                         
 //Autopilot
 
 define Auto_Collective_Toggle                                                         USB_C
+//define Altitude_Mode																 
 //define Gyro_Knob_                                                                   
 //define Gyro_Test_Switch                                                             
 //define Gyro_Test_Switch_Cover                                                       
 //define Master_On_Off                                                                
-//define Mode_Down                                                                    
-//define Mode_Up                                                                      
+define Mode_Down                                                                    L_CTL + USB_A
+define Mode_Up                                                                      L_SHIFT + USB_A
 //define Pitch_On_Off                                                                 
 //define Roll_On_Off                                                                  
 //define Speed_Mode                                                                   
@@ -140,7 +141,8 @@ define Slew_right                                                               
 define Slew_up                                                                        USB_SemiColon
 //define VCB_Power_Selector_2_Positions_Switch_OFF_ON                                 
 //define VCB_Power_Selector_OFF_ON                                                    
-define VCB_Zoom_                                                                       + 
+define VCB_Zoom_In                                                                    USB_Equals 
+define VCB_Zoom_Out																	  USB_Minus
 //define Slew_Left_Right                                                              
 //define Slew_Up_Down                                                                 
 
@@ -387,17 +389,18 @@ define Rotor_Brake_Release_lever_Forward_                                       
 
 //WSO Left Stick
 
-//define Gain_increase                                                                
-//define Image_Brightness_decrease                                                    
+define Gain_Increase                                                                  L_SHIFT + USB_G
+define Gain_Decrease																  L_CTL + USB_G
+//define Image_Brightness_decrease                                                      
 //define Image_Brightness_increase                                                    
-//define Image_Toggle_Button_Normal_Inversed                                          
-//define Lasing_Button                                                                
-//define Lasing_Button_Cover                                                          
+define Image_Toggle_Button_Normal_Inversed                                            L_SHIFT + USB_I
+define Lasing_Button                                                                  L_SHIFT + USB_Space
+define Lasing_Button_Cover                                                            L_ALT + USB_Space
 define Missile_Launch_Button                                                          USB_Space
-//define Missile_Launch_Button_Cover                                                  
+define Missile_Launch_Button_Cover                                                    L_CTL + USB_Space	
 //define Symbology_Brightness_decrease                                                
-//define Symbology_Brightness_increase                                                
-//define Symbology_Toggle_Button_Normal_Inversed                                      
+//define Symbology_Brightness_increase                                                 
+define Symbology_Toggle_Button_Normal_Inversed 		                                 L_ALT + USB_I    
 
 //Kneeboard
 

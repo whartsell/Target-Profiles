@@ -1,7 +1,7 @@
-define	TsPTT			R_SHIFT + USB_F14
+define	TsPTT			L_ALT + USB_F14 //should change to L_ALT so it doesnt impact the License check on startup
 define	SRSRadio1		L_SHIFT + USB_F14
 define	SRSRadio2		L_CTL + USB_F14
-define	SRSRadio3		L_ALT + USB_F14
+define	SRSRadio3		R_SHIFT + USB_F14		//change to R_SHIFT
 define	TrackIRPause	L_CTL	+ USB_F24
 define	TrackIRCenter	L_SHIFT	+ USB_F24
 define	ThrottleBL_OFF	0

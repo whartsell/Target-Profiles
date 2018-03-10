@@ -101,7 +101,7 @@ int main()
 		MapKey(&Throttle,CSR,ECM_Dispense_RIGHT_All);
 	
 	//Mic Switch
-		MapKey(&Throttle, MSD,0);
+		MapKey(&Throttle, MSD,SRSRadio3);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,SRSRadio2);
 		MapKey(&Throttle, MSR,SRSRadio1);

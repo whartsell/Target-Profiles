@@ -31,15 +31,17 @@ int main()
 	//SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
 
 //Layers&Modes
-	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	// EAC ON is Gunner (I)
+	// EAC OFF is Pilot (O)
+	SetShiftButton(&Throttle,EACON,&Throttle,BSF,BSB);
 	
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,Missile_Launch_ButtonDX);
+		MapKeyIO(&Joystick, S2,PULSE + Missile_Launch_ButtonDX,PULSE + Auto_Slaved_Toggle);
 
 	//S1 Master Mode Control Button
-		MapKey(&Joystick, S1,PULSE + Auto_Slaved_Toggle);
+		MapKeyIO(&Joystick, S1,PULSE + Missile_Launch_Button_Cover,0);
 	//Trim
 		MapKey(&Joystick,H1D,Trim_Nose_Up);
 		MapKey(&Joystick,H1U,Trim_Nose_Down);
@@ -50,8 +52,8 @@ int main()
 	//TMS
 		//MapKey(&Joystick,H2D,);
 		//MapKey(&Joystick,H2U,);
-		//MapKey(&Joystick,H2L,);
-		//MapKey(&Joystick,H2R,);
+		MapKeyIO(&Joystick,H2L,Gain_Decrease,0);
+		MapKeyIO(&Joystick,H2R,Gain_Increase,0);
 
 	//Trigger 
 		//TG1
@@ -67,13 +69,15 @@ int main()
 
 	//CMS
 		MapKey(&Joystick,H4D,PULSE + Trimmer_reset);
-		MapKey(&Joystick,H4U,PULSE + Autopilot_MasterDX);
+		MapKeyIO(&Joystick,H4U,PULSE + Lasing_Button_Cover,PULSE + Autopilot_MasterDX);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		MapKey(&Joystick,H4P,TrimmerDX); 
+		MapKeyIO(&Joystick,H4P,PULSE + Lasing_Button,TrimmerDX); 
 	
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,PULSE + Auto_Hover_Toggle);
+		MapKeyIO(&Joystick, S3,
+			TEMPO(PULSE + Image_Toggle_Button_Normal_Inversed,PULSE + Symbology_Toggle_Button_Normal_Inversed),
+			PULSE + Auto_Hover_Toggle);
 	
 	//S4 Paddle Switch
 		MapKey(&Joystick, S4,PULSE + Autopilot_MasterDX);
@@ -116,8 +120,8 @@ int main()
 		//MapKey(&Throttle,BSB,);
 	
 	//China Hat
-		//MapKey(&Throttle,CHF,);
-		//MapKey(&Throttle,CHB,);
+		MapKeyIO(&Throttle,CHF,PULSE + VCB_Zoom_In,0);
+		MapKeyIO(&Throttle,CHB,PULSE + VCB_Zoom_Out,0);
 	
 	
 //Throttle Panel
@@ -147,9 +151,11 @@ int main()
 		//MapKey(&Throttle,APUOFF,);
 	
 	//Flaps
-		//MapKey(&Throttle,FLAPU,);
+		MapKey(&Throttle,FLAPU,PULSE + Mode_Up);
+		MapKeyR(&Throttle,FLAPU,PULSE + Mode_Down);
 		//MapKey(&Throttle,FLAPM,);
-		//MapKey(&Throttle,FLAPD,);
+		MapKeyR(&Throttle,FLAPD,PULSE + Mode_Up);
+		MapKey(&Throttle,FLAPD,PULSE + Mode_Down);
 	
 	//Idle Cutoff
 		//Left
@@ -167,13 +173,13 @@ int main()
 		//MapKey(&Throttle,LDGH,);
 
 	//EAC
-		//MapKey(&Throttle,EACON,);
-		//MapKey(&Throttle,EACOFF,);
+		MapKey(&Throttle,EACON,PULSE + USB_2);
+		MapKey(&Throttle,EACOFF,PULSE + USB_1);
 	//RDR Altm
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		//MapKey(&Throttle,APENG,);
+		//MapKey(&Throttle,APENG,F14);
 
 	//AP Select Switch
 		//MapKey(&Throttle,APPAT,);

@@ -1,2 +1,2 @@
-define	TsPTT			R_SHIFT + F14
+define	TsPTT			L_ALT + USB_F14
 define	igPTT			L_SHIFT + F14

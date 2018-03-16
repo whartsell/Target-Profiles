@@ -16,6 +16,14 @@ local diff = {
 				},
 			},
 		},
+		["a2003cdnil"] = {
+			["name"] = "Rudder",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_RZ",
+				},
+			},
+		},
 		["a2004cdnil"] = {
 			["name"] = "Thrust",
 			["removed"] = {
@@ -24,24 +32,56 @@ local diff = {
 				},
 			},
 		},
-		["a2112cdnil"] = {
+		["a3321cd5"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Wheel Brake Left",
+			["name"] = "Radar stick horizontal",
 		},
-		["a2113cdnil"] = {
+		["a3322cd5"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Wheel Brake Right",
+			["name"] = "Radar stick vertical",
 		},
 	},
 	["keyDiffs"] = {
+		["d3005pnilunilcd23vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "T0 Fix",
+		},
+		["d3006pnilunilcd23vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "T1 Fix",
+		},
+		["d3007pnilunilcd23vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "TV Fix",
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Release",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {

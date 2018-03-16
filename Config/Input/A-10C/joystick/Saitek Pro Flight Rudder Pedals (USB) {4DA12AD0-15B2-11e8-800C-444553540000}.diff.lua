@@ -1,32 +1,48 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2003cdnil"] = {
-			["name"] = "Flight Control Rudder",
+		["a2001cdnil"] = {
+			["name"] = "Pitch",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_RZ",
+					["key"] = "JOY_Y",
 				},
 			},
 		},
-		["a2087cdnil"] = {
+		["a2002cdnil"] = {
+			["name"] = "Roll",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+		},
+		["a2003cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0,
-						["invert"] = true,
+						["deadzone"] = 0.05,
+						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = true,
+						["slider"] = false,
 					},
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Rudder",
+		},
+		["a2004cdnil"] = {
+			["name"] = "Throttle Both",
+			["removed"] = {
+				[1] = {
 					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Flight Control Collective",
 		},
-		["a3026cd3"] = {
+		["a2112cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
@@ -39,34 +55,60 @@ local diff = {
 						["saturationY"] = 1,
 						["slider"] = true,
 					},
-					["key"] = "JOY_RZ",
+					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Throttle",
+			["name"] = "Wheel Brake Left",
+		},
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_Y",
+				},
+			},
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
-		["d3004pnilu3004cd41vd1vpnilvu0"] = {
-			["name"] = "Pilot Trimmer",
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon release",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN2",
 				},
 			},
 		},
-		["d3009pnilu3009cd21vd1vpnilvu0"] = {
-			["name"] = "Pilot's radio trigger RADIO",
+		["d554pnilu638cdnilvdnilvpnilvunil"] = {
+			["name"] = "Gun Trigger",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
 		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Pilot weapon release/Machinegun fire",
+		["d562pnilu606cdnilvdnilvpnilvunil"] = {
+			["name"] = "HOTAS Nosewheel Steering Button",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN4",
+				},
+			},
+		},
+		["d957pnilu958cdnilvdnilvpnilvunil"] = {
+			["name"] = "Stick to trimmer control mode",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
 				},
 			},
 		},
@@ -135,7 +177,7 @@ local diff = {
 			},
 		},
 		["dnilp36unilcdnilvdnilvpnilvunil"] = {
-			["name"] = "Center View",
+			["name"] = "View Center",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",

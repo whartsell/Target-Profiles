@@ -34,6 +34,30 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3001pnilu3001cd4vd1vpnilvu0"] = {
+			["name"] = "N-37D Cannon Fire Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Release Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["name"] = "NR-23 Cannon Fire Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {

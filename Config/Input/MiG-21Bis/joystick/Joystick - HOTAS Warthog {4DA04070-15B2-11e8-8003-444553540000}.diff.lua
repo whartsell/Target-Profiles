@@ -17,22 +17,12 @@ local diff = {
 			},
 		},
 		["a2003cdnil"] = {
-			["changed"] = {
+			["name"] = "Rudder",
+			["removed"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.2,
-						},
-						["deadzone"] = 0.05,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Rudder",
 		},
 		["a2004cdnil"] = {
 			["name"] = "Thrust",
@@ -42,50 +32,18 @@ local diff = {
 				},
 			},
 		},
-		["a2112cdnil"] = {
-			["added"] = {
+		["a73cdnil"] = {
+			["name"] = "Wheel Brakes Lever",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_X",
+					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Wheel Brake Left",
-		},
-		["a2113cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_Y",
-				},
-			},
-			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle (Target Lock)",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d564pnilu563cdnilvdnilvpnilvunil"] = {
-			["name"] = "Nosewheel Steering/IFF Interrogate",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-		},
-		["d74pnilu75cdnilvdnilvpnilvunil"] = {
-			["name"] = "Wheel Brakes",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapons FIRE/Bombs Release",
+		["d3191pnilu3191cd42vd1vpnilvu0"] = {
+			["name"] = "Fire Gun",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -153,6 +111,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
 				},
 			},
 		},

@@ -16,24 +16,6 @@ local diff = {
 				},
 			},
 		},
-		["a2003cdnil"] = {
-			["changed"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.2,
-						},
-						["deadzone"] = 0.02,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
-					["key"] = "JOY_RZ",
-				},
-			},
-			["name"] = "Rudder",
-		},
 		["a2004cdnil"] = {
 			["name"] = "Thrust",
 			["removed"] = {
@@ -44,8 +26,16 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d3022pnilunilcd3vd1vpnilvunil"] = {
-			["name"] = "Weapon Fire Button Safety",
+		["d3001pnilu3001cd4vd1vpnilvu0"] = {
+			["name"] = "N-37D Cannon Fire Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Release Button",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -53,7 +43,7 @@ local diff = {
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire Button",
+			["name"] = "NR-23 Cannon Fire Button",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",

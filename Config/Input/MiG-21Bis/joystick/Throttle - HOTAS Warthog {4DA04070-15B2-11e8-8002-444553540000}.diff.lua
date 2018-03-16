@@ -1,5 +1,21 @@
 local diff = {
 	["axisDiffs"] = {
+		["a2001cdnil"] = {
+			["name"] = "Pitch",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Y",
+				},
+			},
+		},
+		["a2002cdnil"] = {
+			["name"] = "Roll",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+		},
 		["a2003cdnil"] = {
 			["name"] = "Rudder",
 			["removed"] = {
@@ -8,34 +24,26 @@ local diff = {
 				},
 			},
 		},
-		["a2012cdnil"] = {
-			["added"] = {
+		["a2004cdnil"] = {
+			["name"] = "Thrust",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
+		},
+		["a73cdnil"] = {
+			["name"] = "Wheel Brakes Lever",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Zoom View",
 		},
 	},
 	["keyDiffs"] = {
-		["d1672pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Request Aircraft Control",
-		},
-		["d3022pnilunilcd3vd1vpnilvunil"] = {
-			["name"] = "Weapon Fire Button Safety",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire Button",
+		["d3191pnilu3191cd42vd1vpnilvu0"] = {
+			["name"] = "Fire Gun",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -103,6 +111,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
 				},
 			},
 		},

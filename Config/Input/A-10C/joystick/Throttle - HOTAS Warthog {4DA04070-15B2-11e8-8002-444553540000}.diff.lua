@@ -1,22 +1,22 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2003cdnil"] = {
-			["changed"] = {
+		["a2012cdnil"] = {
+			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.2,
+							[1] = -0.17,
 						},
-						["deadzone"] = 0.01,
+						["deadzone"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
-					["key"] = "JOY_RZ",
+					["key"] = "JOY_SLIDER1",
 				},
 			},
-			["name"] = "Flight Control Rudder",
+			["name"] = "Zoom View",
 		},
 	},
 }

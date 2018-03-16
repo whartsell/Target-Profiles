@@ -1,64 +1,104 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2001cdnil"] = {
-			["name"] = "Pitch",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_Y",
-				},
-			},
-		},
-		["a2002cdnil"] = {
-			["name"] = "Roll",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_X",
-				},
-			},
-		},
 		["a2003cdnil"] = {
-			["changed"] = {
+			["name"] = "Rudder",
+			["removed"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.2,
-						},
-						["deadzone"] = 0.02,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
 					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Rudder",
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
+		["a2012cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_SLIDER2",
+				},
+			},
+			["name"] = "Zoom View",
+		},
+		["a3213cd41"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_RY",
+				},
+			},
+			["name"] = "TDC Range / Pipper Span control",
+		},
+		["a73cdnil"] = {
+			["name"] = "Wheel Brakes Lever",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_Z",
+					["key"] = "JOY_SLIDER2",
 				},
 			},
 		},
 	},
 	["keyDiffs"] = {
-		["d3022pnilunilcd3vd1vpnilvunil"] = {
-			["name"] = "Weapon Fire Button Safety",
-			["removed"] = {
+		["d3124pnilunilcd15vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Flaps 0",
+		},
+		["d3125pnilunilcd15vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Flaps 25",
+		},
+		["d3126pnilunilcd15vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Flaps 45",
+		},
+		["d3193pnilu3193cd42vd1vpnilvu0"] = {
+			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
+			["name"] = "Weapon Release",
 		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Fire Button",
-			["removed"] = {
+		["d3331pnilunilcd46vd0vpnilvunil"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
+					["key"] = "JOY_BTN7",
 				},
 			},
+			["name"] = "Landing Lights OFF",
+		},
+		["d3332pnilunilcd46vd0.5vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Landing Lights TAXI",
+		},
+		["d3333pnilunilcd46vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Landing Lights LANDING",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -121,6 +161,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
 				},
 			},
 		},

@@ -8,6 +8,30 @@ local diff = {
 				},
 			},
 		},
+		["a2004cdnil"] = {
+			["name"] = "Thrust",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
+		},
+		["a2005cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Thrust Left",
+		},
+		["a2006cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
+			["name"] = "Thrust Right",
+		},
 		["a2012cdnil"] = {
 			["added"] = {
 				[1] = {
@@ -18,109 +42,61 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle (Target Lock)",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d107pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-			["name"] = "Special Modes FWD",
-		},
-		["d109pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Special Modes AFT",
-		},
-		["d110pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "MAGIC SELECT",
-		},
-		["d1126pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "NAV Update/MAGIC unlock",
-		},
-		["d112pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "PCA SELECT",
-		},
-		["d276pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN9",
-				},
-			},
-			["name"] = "Magic Slave/AG Designate/INS Position Update",
-		},
-		["d3449pnilu3449cd16vd0vpnilvunil"] = {
+		["d3004pnilu3004cd7vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Police Lights OFF",
+			["name"] = "Nosewheel Steering Button",
 		},
-		["d3449pnilu3449cd16vd1vpnilvunil"] = {
+		["d3006pnilu3006cd18vd1vpnilvu0"] = {
 			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Police Lights ON",
-		},
-		["d564pnilu563cdnilvdnilvpnilvunil"] = {
-			["name"] = "Nosewheel Steering/IFF Interrogate",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-		},
-		["d74pnilu75cdnilvdnilvpnilvunil"] = {
-			["name"] = "Wheel Brakes",
-			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
 				},
 			},
+			["name"] = "Dogfight/Resume Search Switch - CENTER-PRESS (RESUME SEARCH)",
 		},
-		["dnilp141u230cdnilvdnilvpnilvunil"] = {
+		["d3007pnilu3007cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN11",
 				},
 			},
-			["name"] = "Radar Antenna UP",
+			["name"] = "Flare-Chaff Button",
 		},
-		["dnilp142u230cdnilvdnilvpnilvunil"] = {
+		["d3014pnilu3014cd15vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN10",
+					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Radar Antenna DOWN",
+			["name"] = "Missile Uncage Switch",
+		},
+		["d3016pnilu3016cd15vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Gun Trigger - FIRST DETENT",
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Weapon Release Button",
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -185,6 +161,38 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
+		},
+		["dnilp93u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_L",
+				},
+			},
+			["name"] = "Aileron Trimmer Switch - LEFT WING DOWN",
+		},
+		["dnilp94u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_R",
+				},
+			},
+			["name"] = "Aileron Trimmer Switch - RIGHT WING DOWN",
+		},
+		["dnilp95u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+				},
+			},
+			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
+		},
+		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+			["name"] = "Elevator Trimmer Switch - PULL(CLIMB)",
 		},
 	},
 }

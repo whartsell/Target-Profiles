@@ -8,79 +8,88 @@ local diff = {
 				},
 			},
 		},
-		["a2041cdnil"] = {
-			["added"] = {
+		["a2004cdnil"] = {
+			["name"] = "Thrust",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_SLIDER2",
+					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Wing Span",
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilu1627cdnilvdnilvpnilvunil"] = {
-			["name"] = "A-4 Sight Radar Target Selector Button",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-		},
-		["d3005pnilunilcd2vd-1vpnilvunil"] = {
+		["d3005pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN5",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
 				},
 			},
-			["name"] = "Speed Brake Switch - OUT",
+			["name"] = "T0 Fix",
 		},
-		["d3005pnilunilcd2vd0vpnilvunil"] = {
+		["d3006pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN1",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
 				},
 			},
-			["name"] = "Speed Brake Switch - HOLD",
+			["name"] = "T1 Fix",
 		},
-		["d3005pnilunilcd2vd1vpnilvunil"] = {
+		["d3007pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN6",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
 				},
 			},
-			["name"] = "Speed Brake Switch - IN",
+			["name"] = "TV Fix",
 		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Release",
-			["removed"] = {
+		["d3090pnilu3090cd22vd1vpnilvu0"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN11",
 				},
 			},
+			["name"] = "Reference button",
 		},
-		["d439pnilu440cdnilvdnilvpnilvunil"] = {
-			["name"] = "A-4 Sight Electrical Caging Button (On Throttle)",
-			["removed"] = {
+		["d3300pnilunilcd2vd0vpnilvunil"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN4",
+					["key"] = "JOY_BTN5",
 				},
 			},
+			["name"] = "Trigger safety bracket SAFE",
 		},
-		["d562pnilu606cdnilvdnilvpnilvunil"] = {
+		["d3300pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Nosewheel Steering Button",
-			["removed"] = {
+			["name"] = "Trigger safety bracket ARM",
+		},
+		["d3302pnilunilcd22vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Autopilot mode ATT (Attitude hold)",
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Trigger - SECOND DETENT(Gun Fire)",
+			["name"] = "Weapon Release",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -150,6 +159,38 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
+		},
+		["dnilp93u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_L",
+				},
+			},
+			["name"] = "Trim: Left Wing Down",
+		},
+		["dnilp94u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_R",
+				},
+			},
+			["name"] = "Trim: Right Wing Down",
+		},
+		["dnilp95u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+			["name"] = "Trim: Nose Up",
+		},
+		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+				},
+			},
+			["name"] = "Trim: Nose Down",
 		},
 	},
 }

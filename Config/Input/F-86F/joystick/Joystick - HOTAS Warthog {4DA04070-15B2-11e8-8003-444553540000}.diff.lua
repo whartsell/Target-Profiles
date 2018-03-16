@@ -1,23 +1,55 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2003cdnil"] = {
-			["name"] = "Rudder",
+		["a2001cdnil"] = {
+			["name"] = "Pitch",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_RZ",
+					["key"] = "JOY_Y",
 				},
 			},
 		},
-		["a2012cdnil"] = {
-			["added"] = {
+		["a2002cdnil"] = {
+			["name"] = "Roll",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_SLIDER2",
+					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Zoom View",
 		},
 	},
 	["keyDiffs"] = {
+		["d100pnilu1627cdnilvdnilvpnilvunil"] = {
+			["name"] = "A-4 Sight Radar Target Selector Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN19",
+				},
+			},
+		},
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Release",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+		},
+		["d562pnilu606cdnilvdnilvpnilvunil"] = {
+			["name"] = "Nosewheel Steering Button",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trigger - SECOND DETENT(Gun Fire)",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {
@@ -79,6 +111,38 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp93u215cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trim Left",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+		},
+		["dnilp94u215cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trim Right",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+		},
+		["dnilp95u215cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trim Up",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+		},
+		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trim Down",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
 				},
 			},
 		},

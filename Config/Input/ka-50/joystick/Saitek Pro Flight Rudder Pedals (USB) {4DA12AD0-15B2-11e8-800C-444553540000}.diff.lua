@@ -1,116 +1,73 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
-			["changed"] = {
+			["name"] = "Flight Control Cyclic Pitch",
+			["removed"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0.01,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Pitch",
+		},
+		["a2002cdnil"] = {
+			["name"] = "Flight Control Cyclic Roll",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+		},
+		["a2087cdnil"] = {
+			["name"] = "Flight Control Collective",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
 		},
 	},
 	["keyDiffs"] = {
-		["d3001pnilu3001cd4vd1vpnilvu0"] = {
-			["added"] = {
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Release weapons",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "N-37D Cannon Fire Button",
+		},
+		["d509pnilu510cdnilvdnilvpnilvunil"] = {
+			["name"] = "Lock target",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN4",
 				},
 			},
 		},
-		["d3010pnilunilcd4vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Guns Safety Cover",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN19",
-				},
-			},
-			["name"] = "Weapon Release Button",
+		["d537pnilu385cdnilvdnilvpnilvunil"] = {
+			["name"] = "Hover On/Off",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
-				},
-			},
-		},
-		["d73pnilu73cdnilvd1vpnilvu0"] = {
-			["name"] = "Airbrake Button",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
 				},
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "NR-23 Cannon Fire Button",
+			["name"] = "Gun fire",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
 		},
-		["d93pnilu93cdnilvd1vpnilvu0"] = {
-			["added"] = {
+		["d957pnilu958cdnilvdnilvpnilvunil"] = {
+			["name"] = "Trimmer",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
+					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Aileron Trimmer Switch, LEFT",
-		},
-		["d94pnilu94cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch, RIGHT",
-		},
-		["d95pnilu95cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch, PULL(CLIMB)",
-		},
-		["d96pnilu96cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch, PUSH(DESCEND)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -173,6 +130,58 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Center View",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+		},
+		["dnilp88u235cdnilvdnilvpnilvunil"] = {
+			["name"] = "KU-31 Shkval slew left",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_L",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+		},
+		["dnilp89u235cdnilvdnilvpnilvunil"] = {
+			["name"] = "KU-31 Shkval slew right",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_R",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+		},
+		["dnilp90u235cdnilvdnilvpnilvunil"] = {
+			["name"] = "KU-31 Shkval slew up",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+		},
+		["dnilp91u235cdnilvdnilvpnilvunil"] = {
+			["name"] = "KU-31 Shkval slew down",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_D",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
 				},
 			},
 		},

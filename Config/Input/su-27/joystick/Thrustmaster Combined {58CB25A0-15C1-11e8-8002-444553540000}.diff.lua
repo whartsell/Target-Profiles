@@ -55,16 +55,6 @@ local diff = {
 		["a2005cdnil"] = {
 			["added"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
 					["key"] = "JOY_RZ",
 				},
 			},
@@ -73,16 +63,6 @@ local diff = {
 		["a2006cdnil"] = {
 			["added"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
 					["key"] = "JOY_Z",
 				},
 			},
@@ -98,61 +78,37 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d3004pnilu3004cd7vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Nosewheel Steering Button",
-		},
-		["d3006pnilu3006cd18vd1vpnilvu0"] = {
-			["added"] = {
+		["d101pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Change",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Dogfight/Resume Search Switch - CENTER-PRESS (RESUME SEARCH)",
 		},
-		["d3007pnilu3007cd13vd1vpnilvu0"] = {
-			["added"] = {
+		["d113pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Cannon",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN11",
+					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Flare-Chaff Button",
 		},
-		["d3014pnilu3014cd15vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Missile Uncage Switch",
-		},
-		["d3016pnilu3016cd15vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Gun Trigger - FIRST DETENT",
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Fire",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Weapon Release Button",
 		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["added"] = {
+		["d957pnilu958cdnilvdnilvpnilvunil"] = {
+			["name"] = "Stick to Trimmer Control Mode",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -217,38 +173,6 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
-		},
-		["dnilp93u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch - LEFT WING DOWN",
-		},
-		["dnilp94u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch - RIGHT WING DOWN",
-		},
-		["dnilp95u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
-		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch - PULL(CLIMB)",
 		},
 	},
 }

@@ -44,115 +44,111 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_Z",
-				},
-			},
-		},
-		["a2005cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_RZ",
-				},
-			},
-			["name"] = "Thrust Left",
-		},
-		["a2006cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_Z",
-				},
-			},
-			["name"] = "Thrust Right",
-		},
-		["a2012cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER2",
-				},
-			},
-			["name"] = "Zoom View",
-		},
 	},
 	["keyDiffs"] = {
-		["d3004pnilu3004cd7vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Nosewheel Steering Button",
-		},
-		["d3006pnilu3006cd18vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Dogfight/Resume Search Switch - CENTER-PRESS (RESUME SEARCH)",
-		},
-		["d3007pnilu3007cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-			["name"] = "Flare-Chaff Button",
-		},
-		["d3014pnilu3014cd15vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Missile Uncage Switch",
-		},
-		["d3016pnilu3016cd15vd1vpnilvu0"] = {
-			["added"] = {
+		["d100pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "STT/TWS Toggle (Target Lock)",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Gun Trigger - FIRST DETENT",
 		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Weapon Release Button",
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+		["d107pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
+			["name"] = "Special Modes FWD",
+		},
+		["d109pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "Special Modes AFT",
+		},
+		["d110pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "MAGIC SELECT",
+		},
+		["d1126pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "NAV Update/MAGIC unlock",
+		},
+		["d112pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "PCA SELECT",
+		},
+		["d276pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "Magic Slave/AG Designate/INS Position Update",
+		},
+		["d3449pnilu3449cd16vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Police Lights OFF",
+		},
+		["d3449pnilu3449cd16vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Police Lights ON",
+		},
+		["d564pnilu563cdnilvdnilvpnilvunil"] = {
+			["name"] = "Nosewheel Steering/IFF Interrogate",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d74pnilu75cdnilvdnilvpnilvunil"] = {
+			["name"] = "Wheel Brakes",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+		},
+		["dnilp141u230cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+				},
+			},
+			["name"] = "Radar Antenna UP",
+		},
+		["dnilp142u230cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Radar Antenna DOWN",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -217,38 +213,6 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
-		},
-		["dnilp93u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch - LEFT WING DOWN",
-		},
-		["dnilp94u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch - RIGHT WING DOWN",
-		},
-		["dnilp95u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
-		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch - PULL(CLIMB)",
 		},
 	},
 }

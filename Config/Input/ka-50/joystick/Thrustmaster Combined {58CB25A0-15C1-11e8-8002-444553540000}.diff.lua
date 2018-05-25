@@ -1,158 +1,129 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2001cdnil"] = {
-			["changed"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0.01,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
-					["key"] = "JOY_Y",
-				},
-			},
-			["name"] = "Pitch",
-		},
-		["a2002cdnil"] = {
-			["changed"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0.01,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
-					["key"] = "JOY_X",
-				},
-			},
-			["name"] = "Roll",
-		},
 		["a2003cdnil"] = {
-			["name"] = "Rudder",
+			["name"] = "Flight Control Rudder",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_RZ",
 				},
 			},
-		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_Z",
-				},
-			},
-		},
-		["a2005cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_RZ",
-				},
-			},
-			["name"] = "Thrust Left",
-		},
-		["a2006cdnil"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0.13,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_Z",
-				},
-			},
-			["name"] = "Thrust Right",
 		},
 		["a2012cdnil"] = {
 			["added"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = -0.22,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
 					["key"] = "JOY_SLIDER2",
 				},
 			},
 			["name"] = "Zoom View",
 		},
+		["a2087cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Flight Control Collective",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
+		},
 	},
 	["keyDiffs"] = {
-		["d3004pnilu3004cd7vd1vpnilvu0"] = {
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Nosewheel Steering Button",
+			["name"] = "Release weapons",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
 		},
-		["d3006pnilu3006cd18vd1vpnilvu0"] = {
-			["added"] = {
+		["d509pnilu510cdnilvdnilvpnilvunil"] = {
+			["name"] = "Lock target",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Dogfight/Resume Search Switch - CENTER-PRESS (RESUME SEARCH)",
 		},
-		["d3007pnilu3007cd13vd1vpnilvu0"] = {
-			["added"] = {
+		["d537pnilu385cdnilvdnilvpnilvunil"] = {
+			["name"] = "Hover On/Off",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN11",
+					["key"] = "JOY_BTN3",
+					["reformers"] = {
+						[1] = "LAlt",
+					},
 				},
 			},
-			["name"] = "Flare-Chaff Button",
 		},
-		["d3014pnilu3014cd15vd1vpnilvu0"] = {
+		["d74p74u75cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Wheel brake (press and hold)",
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+				},
+			},
+			["name"] = "Gun fire",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
+		["d856pnilu857cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Collective brake - Assign altitude lever",
+		},
+		["d957pnilu958cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Missile Uncage Switch",
-		},
-		["d3016pnilu3016cd15vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Gun Trigger - FIRST DETENT",
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Weapon Release Button",
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["added"] = {
+			["name"] = "Trimmer",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -218,37 +189,85 @@ local diff = {
 				},
 			},
 		},
-		["dnilp93u215cdnilvdnilvpnilvunil"] = {
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Center View",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+		},
+		["dnilp439u440cdnilvdnilvpnilvunil"] = {
 			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN14",
+				},
+			},
+			["name"] = "Uncage SHKVAL, designate target",
+		},
+		["dnilp88u235cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "KU-31 Shkval slew left",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_L",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
 				},
 			},
-			["name"] = "Aileron Trimmer Switch - LEFT WING DOWN",
 		},
-		["dnilp94u215cdnilvdnilvpnilvunil"] = {
+		["dnilp89u235cdnilvdnilvpnilvunil"] = {
 			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+			["name"] = "KU-31 Shkval slew right",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_R",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
 				},
 			},
-			["name"] = "Aileron Trimmer Switch - RIGHT WING DOWN",
 		},
-		["dnilp95u215cdnilvdnilvpnilvunil"] = {
+		["dnilp90u235cdnilvdnilvpnilvunil"] = {
 			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "KU-31 Shkval slew up",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_U",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
 				},
 			},
-			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
 		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+		["dnilp91u235cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
+					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Elevator Trimmer Switch - PULL(CLIMB)",
+			["name"] = "KU-31 Shkval slew down",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_D",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
 		},
 	},
 }

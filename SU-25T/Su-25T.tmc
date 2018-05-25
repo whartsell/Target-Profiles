@@ -32,7 +32,7 @@ int main()
 	
 	//UTIL
 	
-	MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
+	//MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
 	MapKey(&Joystick,S4,TEMPO(TrimReset,WheelBrakes,250));
 
 	

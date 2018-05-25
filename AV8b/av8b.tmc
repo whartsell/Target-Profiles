@@ -135,12 +135,12 @@ int main()
 	
 	//Engine Oper
 		//Left
-		//MapKey(&Throttle,EOLIGN,);
+		MapKey(&Throttle,EOLIGN,PULSE + Altitude_Hold_On_Off_Toggle);
 		//MapKey(&Throttle,EOLNORM,);
 		//MapKey(&Throttle,EOLMOTOR,);
 		
 		//Right
-		//MapKey(&Throttle,EORIGN,);
+		MapKey(&Throttle,EORIGN, PULSE + Automatic_Flight_Control_On_Off_Toggle);
 		//MapKey(&Throttle,EORNORM,);
 		//MapKey(&Throttle,EORMOTOR,);
 				

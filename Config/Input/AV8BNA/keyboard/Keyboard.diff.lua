@@ -44,28 +44,6 @@ local diff = {
 				},
 			},
 		},
-		["d3489pnilunilcd27vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "B",
-					["reformers"] = {
-						[1] = "RCtrl",
-					},
-				},
-			},
-			["name"] = "Parking Brake ON",
-		},
-		["d3489pnilunilcd27vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "B",
-					["reformers"] = {
-						[1] = "RShift",
-					},
-				},
-			},
-			["name"] = "Parking Brake OFF",
-		},
 	},
 }
 return diff

@@ -99,6 +99,7 @@ define Unlock_view_stop_padlock_                                             USB
 //Stability Augmentation & Autopilot
 
 define Automatic_Flight_Control_On_Off_Toggle                                USB_A
+define Altitude_Hold_On_Off_Toggle											 USB_H
 define Q_Feel_On_Off_Toggle                                                  R_WIN + USB_Q
 define Stability_Augmentation__Pitch                                         R_WIN + USB_P
 define Stability_Augmentation__Roll                                          R_WIN + USB_R

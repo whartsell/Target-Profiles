@@ -1,40 +1,82 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
+			["name"] = "Pitch",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Y",
+				},
+			},
+		},
+		["a2002cdnil"] = {
+			["name"] = "Roll",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+		},
+		["a2003cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0,
+							[1] = 0.05,
 						},
-						["deadzone"] = 0.01,
+						["deadzone"] = 0.03,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = false,
 					},
-					["key"] = "JOY_Y",
+					["key"] = "JOY_RZ",
 				},
 			},
-			["name"] = "Pitch",
+			["name"] = "Rudder",
 		},
-		["a2002cdnil"] = {
-			["changed"] = {
+		["a2112cdnil"] = {
+			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.01,
-						["invert"] = false,
+						["deadzone"] = 0,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
-						["slider"] = false,
+						["slider"] = true,
 					},
 					["key"] = "JOY_X",
 				},
 			},
-			["name"] = "Roll",
+			["name"] = "Wheel Brake Left",
+		},
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_Y",
+				},
+			},
+			["name"] = "Wheel Brake Right",
+		},
+		["a3025cd5"] = {
+			["name"] = "Throttle",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
 		},
 	},
 	["keyDiffs"] = {
@@ -99,70 +141,6 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-		},
-		["dnilp93u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Trim: Left Wing Down",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-					["reformers"] = {
-						[1] = "LCtrl",
-					},
-				},
-			},
-		},
-		["dnilp94u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Trim: Right Wing Down",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-					["reformers"] = {
-						[1] = "LCtrl",
-					},
-				},
-			},
-		},
-		["dnilp95u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Trim: Nose Down",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-					["reformers"] = {
-						[1] = "LCtrl",
-					},
-				},
-			},
-		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Trim: Nose Up",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-					["reformers"] = {
-						[1] = "LCtrl",
-					},
 				},
 			},
 		},

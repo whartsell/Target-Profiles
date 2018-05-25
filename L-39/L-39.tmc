@@ -48,7 +48,7 @@ int main()
 
 	//TMS
 		//MapKey(&Joystick,H2D,);
-		//MapKey(&Joystick,H2U,);
+		MapKey(&Joystick,H2U,PULSE + Request_control);
 		//MapKey(&Joystick,H2L,);
 		//MapKey(&Joystick,H2R,);
 
@@ -69,7 +69,7 @@ int main()
 		//MapKey(&Joystick,H4U,);
 		//MapKey(&Joystick,H4L,);
 		//MapKey(&Joystick,H4R,);
-		//MapKey(&Joystick,H4P,); 
+		//MapKey(&Joystick,H4P,); B
 	
 	//S3 Pinky Switch
 		MapKey(&Joystick, S3,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));

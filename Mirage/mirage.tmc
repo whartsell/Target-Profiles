@@ -5,8 +5,13 @@ include "keyboard.ttm"
 
 int main()
 {
-	Configure(&HCougar,MODE_EXCLUDED);
-	Configure(&T16000,MODE_EXCLUDED);
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
 	SetKBRate(50, 75);
     if(Init(&EventHandle)) return 1; // declare the event handler, return on error
 
@@ -31,7 +36,7 @@ int main()
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,PULSE + NAV_Update_MAGIC_unlock); //DX4
+		MapKey(&Joystick, S2,NAV_Update_MAGIC_unlock); //DX4
 
 	//S1 Master Mode Control Button
 		//MapKey(&Joystick, S1,0);

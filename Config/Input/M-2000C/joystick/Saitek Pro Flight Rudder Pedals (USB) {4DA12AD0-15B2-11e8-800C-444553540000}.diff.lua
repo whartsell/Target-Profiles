@@ -1,116 +1,96 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
+			["name"] = "Pitch",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Y",
+				},
+			},
+		},
+		["a2002cdnil"] = {
+			["name"] = "Roll",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+		},
+		["a2003cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0,
+							[1] = 0.2,
 						},
-						["deadzone"] = 0.01,
+						["deadzone"] = 0.06,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = false,
 					},
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Rudder",
+		},
+		["a2004cdnil"] = {
+			["name"] = "Thrust",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_Z",
+				},
+			},
+		},
+		["a2112cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_X",
+				},
+			},
+			["name"] = "Wheel Brake Left",
+		},
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Pitch",
+			["name"] = "Wheel Brake Right",
 		},
 	},
 	["keyDiffs"] = {
-		["d3001pnilu3001cd4vd1vpnilvu0"] = {
-			["added"] = {
+		["d100pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "STT/TWS Toggle (Target Lock)",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "N-37D Cannon Fire Button",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
 		},
-		["d3010pnilunilcd4vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Guns Safety Cover",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN19",
-				},
-			},
-			["name"] = "Weapon Release Button",
+		["d564pnilu563cdnilvdnilvpnilvunil"] = {
+			["name"] = "Nosewheel Steering/IFF Interrogate",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
 		},
-		["d73pnilu73cdnilvd1vpnilvu0"] = {
-			["name"] = "Airbrake Button",
+		["d74pnilu75cdnilvdnilvpnilvunil"] = {
+			["name"] = "Wheel Brakes",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN4",
 				},
 			},
 		},
 		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "NR-23 Cannon Fire Button",
+			["name"] = "Weapons FIRE/Bombs Release",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-		},
-		["d93pnilu93cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch, LEFT",
-		},
-		["d94pnilu94cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Aileron Trimmer Switch, RIGHT",
-		},
-		["d95pnilu95cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch, PULL(CLIMB)",
-		},
-		["d96pnilu96cdnilvd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch, PUSH(DESCEND)",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

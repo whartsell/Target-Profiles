@@ -1,4 +1,4 @@
-
+include "usbkeys.ttm"
 //Weapons
 define primaryFire				DX1		//assigned
 define chaff					DX2

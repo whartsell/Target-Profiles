@@ -1,0 +1,1113 @@
+//Created by DCS2Target
+
+
+include "usbkeys.ttm"
+
+
+
+//Instrument Panel
+
+//define AAU_52_Altimeter_Pressure_Setting_Knob__CW_Increase                                      
+//define APU_Fire_Warning_Extinguisher_Light_Switch__PRESS                                        
+//define APU_Fire_Warning_Extinguisher_Light_Switch__PRESS_RELEASE                                
+//define APU_Fire_Warning_Extinguisher_Light_Switch__RELEASE                                      
+//define Auxiliary_Release_Switch__ENABLE                                                         
+//define Auxiliary_Release_Switch__ENABLE_NORM                                                    
+//define Auxiliary_Release_Switch__NORM                                                           
+//define Course_Set_Switch__Left                                                                  
+//define Course_Set_Switch__Right                                                                 
+//define Emergency_Jettison_Button                                                                
+//define Heading_Set_Switch__Left                                                                 
+//define Heading_Set_Switch__Right                                                                
+//define IFEI_Brightness_Control_Knob__CCW_Decrease                                               
+//define IFEI_Brightness_Control_Knob__CW_Increase                                                
+//define IFEI_Down_Arrow_Button                                                                   
+//define IFEI_ET_Button                                                                           
+//define IFEI_Mode_Button                                                                         
+//define IFEI_QTY_Button                                                                          
+//define IFEI_Up_Arrow_Button                                                                     
+//define IFEI_ZONE_Button                                                                         
+//define IR_Cooling_Switch__Down                                                                  
+//define IR_Cooling_Switch__NORM                                                                  
+//define IR_Cooling_Switch__OFF                                                                   
+//define IR_Cooling_Switch__ORIDE                                                                 
+//define IR_Cooling_Switch__Up                                                                    
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__CLOSE                            
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__OPEN                             
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__OPEN_CLOSE                       
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__PRESS                           
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__PRESS_RELEASE                   
+//define Left_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__RELEASE                         
+define MASTER_CAUTION_Reset_Button                                                                USB_N
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__CLOSE                           
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__OPEN                            
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Cover__OPEN_CLOSE                      
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__PRESS                          
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__PRESS_RELEASE                  
+//define Right_Engine_AMAD_Fire_Warning_Extinguisher_Light_Switch__RELEASE                        
+//define Rudder_Pedal_Adjust_Lever                                                                
+//define RWR_Intensity_Knob__CCW_Decrease                                                         
+//define RWR_Intensity_Knob__CW_Increase                                                          
+//define SAI_Cage_Knob__CCW                                                                       
+//define SAI_Cage_Knob__CW                                                                        
+//define SAI_Cage_Knob__PULL                                                                      
+//define SAI_Test_Button                                                                          
+//define Spin_Recovery_Switch__NORM                                                               
+//define Spin_Recovery_Switch__RCVY                                                               
+//define Spin_Recovery_Switch__RCVY_NORM                                                          
+//define Spin_Recovery_Switch_Cover__CLOSE                                                        
+//define Spin_Recovery_Switch_Cover__OPEN                                                         
+//define Spin_Recovery_Switch_Cover__OPEN_CLOSE                                                   
+//define Station_Jettison_Select_Button__CENTER                                                   
+//define Station_Jettison_Select_Button__LEFT_IN                                                  
+//define Station_Jettison_Select_Button__LEFT_OUT                                                 
+//define Station_Jettison_Select_Button__RIGHT_IN                                                 
+//define Station_Jettison_Select_Button__RIGHT_OUT                                                
+//define IFEI_Brightness_Control_Knob                                                             
+//define RWR_Intensity_Knob                                                                       
+
+//Cheat
+
+define Auto_Start                                                                                 L_WIN + USB_Home
+define Auto_Stop                                                                                  L_WIN + USB_End
+define Recorder_Off                                                                               L_ALT + L_SHIFT + USB_R
+define Recorder_On                                                                                L_CTL + L_SHIFT + USB_R
+
+//Flight Control
+
+define Aircraft_Bank_Right                                                                        USB_RightArrow
+define Aircraft_Pitch_Down                                                                        USB_UpArrow
+define Aircraft_Pitch_Up                                                                          USB_DownArrow
+define Aircraft_Rudder_Left                                                                       USB_Z
+define Aircraft_Rudder_Right                                                                      USB_X
+//define Pitch                                                                                    
+//define Roll                                                                                     
+//define Rudder                                                                                   
+//define Thrust                                                                                   
+//define Thrust_Left                                                                              
+//define Thrust_Right                                                                             
+
+//Labels
+
+define All_Labels                                                                                 L_SHIFT + USB_F10
+define Missile_Labels                                                                             L_SHIFT + USB_F6
+define Vehicle__Ship_Labels                                                                       L_SHIFT + USB_F9
+
+//Instrument Panel; ALR-67
+
+//define ALR_67_DIS_TYPE_Switch__A                                                                
+//define ALR_67_DIS_TYPE_Switch__CCW                                                              
+//define ALR_67_DIS_TYPE_Switch__CW                                                               
+//define ALR_67_DIS_TYPE_Switch__F                                                                
+//define ALR_67_DIS_TYPE_Switch__I                                                                
+//define ALR_67_DIS_TYPE_Switch__N                                                                
+//define ALR_67_DIS_TYPE_Switch__U                                                                
+//define ALR_67_DISPLAY_Pushbutton                                                                
+//define ALR_67_DMR_Control_Knob__CCW_Decrease                                                    
+//define ALR_67_DMR_Control_Knob__CW_Increase                                                     
+//define ALR_67_OFFSET_Pushbutton                                                                 
+//define ALR_67_POWER_Pushbutton                                                                  
+//define ALR_67_SPECIAL_Pushbutton                                                                
+//define ALR_67_DMR_Control_Knob                                                                  
+
+//View Padlock
+
+define Lock_terrain_view                                                                          R_CTL + USB_KPDecimal
+define Lock_View_cycle_padlock_                                                                   USB_KPDecimal
+define Threat_missile_padlock                                                                     R_ALT + USB_KPDecimal
+define Unlock_view_stop_padlock_                                                                  USB_NumLock
+
+//Instrument Panel; HUD Control Panel
+
+//define Altitude_Switch__BARO_RDR                                                                
+//define Altitude_Switch__RDR                                                                     
+//define AOA_Indexer_Control_Knob__CCW_Decrease                                                   
+//define AOA_Indexer_Control_Knob__CW_Increase                                                    
+//define Attitude_Selector_Switch__AUTO                                                           
+//define Attitude_Selector_Switch__Down                                                           
+//define Attitude_Selector_Switch__INS                                                            
+//define Attitude_Selector_Switch__STBY                                                           
+//define Attitude_Selector_Switch__Up                                                             
+//define Balance_Control_Knob__CCW_Decrease                                                       
+//define Balance_Control_Knob__CW_Increase                                                        
+//define Black_Level_Control_Knob__CCW_Decrease                                                   
+//define Black_Level_Control_Knob__CW_Increase                                                    
+//define HUD_Symbology_Brightness_Control_Knob__CCW_Decrease                                      
+//define HUD_Symbology_Brightness_Control_Knob__CW_Increase                                       
+//define HUD_Symbology_Brightness_Selector_Knob__DAY                                              
+//define HUD_Symbology_Brightness_Selector_Knob__DAY_NIGHT                                        
+//define HUD_Symbology_Brightness_Selector_Knob__NIGHT                                            
+//define HUD_Symbology_Reject_Switch__Down                                                        
+//define HUD_Symbology_Reject_Switch__NORM                                                        
+//define HUD_Symbology_Reject_Switch__REJ_1                                                       
+//define HUD_Symbology_Reject_Switch__REJ_2                                                       
+//define HUD_Symbology_Reject_Switch__Up                                                          
+//define HUD_Video_Control_Switch__Down                                                           
+//define HUD_Video_Control_Switch__OFF                                                            
+//define HUD_Video_Control_Switch__Up                                                             
+//define HUD_Video_Control_Switch__VID                                                            
+//define HUD_Video_Control_Switch__W_B                                                            
+//define AOA_Indexer_Control_Knob                                                                 
+//define Balance_Control_Knob                                                                     
+//define Black_Level_Control_Knob                                                                 
+//define HUD_Symbology_Brightness_Control_Knob                                                    
+
+//Instrument Panel; AMPCD
+
+//define AMPCD_Contrast_Control_Switch__UP                                                        
+//define AMPCD_Gain_Control_Switch__DOWN                                                          
+//define AMPCD_Gain_Control_Switch__UP                                                            
+//define AMPCD_Night_Day_Brightness_Selector__DAY                                                 
+//define AMPCD_Night_Day_Brightness_Selector__NGT                                                 
+//define AMPCD_Off_Brightness_Control_Knob__CCW_Decrease                                          
+//define AMPCD_Off_Brightness_Control_Knob__CW_Increase                                           
+//define AMPCD_PB_1                                                                               
+//define AMPCD_PB_10                                                                              
+//define AMPCD_PB_11                                                                              
+//define AMPCD_PB_12                                                                              
+//define AMPCD_PB_13                                                                              
+//define AMPCD_PB_14                                                                              
+//define AMPCD_PB_15                                                                              
+//define AMPCD_PB_16                                                                              
+//define AMPCD_PB_17                                                                              
+//define AMPCD_PB_18                                                                              
+//define AMPCD_PB_19                                                                              
+//define AMPCD_PB_2                                                                               
+//define AMPCD_PB_20                                                                              
+//define AMPCD_PB_3                                                                               
+//define AMPCD_PB_4                                                                               
+//define AMPCD_PB_5                                                                               
+//define AMPCD_PB_6                                                                               
+//define AMPCD_PB_7                                                                               
+//define AMPCD_PB_8                                                                               
+//define AMPCD_PB_9                                                                               
+//define AMPCD_Symbology_Control_Switch__DOWN                                                     
+//define AMPCD_Symbology_Control_Switch__UP                                                       
+//define AMPCD_Off_Brightness_Control_Knob                                                        
+
+//Left Vertical Panel
+
+//define Anti_Skid_Switch__ON                                                                     
+//define Anti_Skid_Switch__ON_OFF                                                                 
+//define Down_Lock_Override_Button                                                                
+define Emergency_Parking_Brake_Handle__CCW                                                        L_CTL + USB_P
+define Emergency_Parking_Brake_Handle__CW                                                         L_ALT + USB_P
+define Emergency_Parking_Brake_Handle__PULL                                                       R_CTL + USB_P
+define Emergency_Parking_Brake_Handle__STOW                                                       R_ALT + USB_P
+define FLAP_Switch__AUTO                                                                          USB_F
+//define FLAP_Switch__Cycle                                                                       
+define FLAP_Switch__Down                                                                          L_ALT + L_CTL + USB_F
+define FLAP_Switch__FULL                                                                          L_CTL + USB_F
+define FLAP_Switch__HALF                                                                          L_SHIFT + USB_F
+define FLAP_Switch__Up                                                                            L_ALT + L_SHIFT + USB_F
+//define HOOK_BYPASS_Switch__FIELD_CARRIER                                                        
+//define Landing_Gear_Control_Handle_EMERGENCY_DOWN__EXTEND                                       
+//define Landing_Gear_Control_Handle_EMERGENCY_DOWN__EXTEND_RETRACT                               
+//define Landing_Gear_Control_Handle_EMERGENCY_DOWN__RETRACT                                      
+define Landing_Gear_Control_Handle__DOWN                                                          L_SHIFT + USB_G
+define Landing_Gear_Control_Handle__UP                                                            L_CTL + USB_G
+define Landing_Gear_Control_Handle__UP_DOWN                                                       USB_G
+//define Launch_Bar_Control_Switch__EXTEND_RETRACT                                                
+//define LDG_TAXI_LIGHT_Switch__OFF                                                               
+//define LDG_TAXI_LIGHT_Switch__ON                                                                
+//define LDG_TAXI_LIGHT_Switch__ON_OFF                                                            
+//define Left_Louver__Left                                                                        
+//define Left_Louver__Right                                                                       
+//define Selective_Jettison_Knob__CCW                                                             
+//define Selective_Jettison_Knob__CW                                                              
+//define Selective_Jettison_Knob__L_FUS_MSL                                                       
+//define Selective_Jettison_Knob__R_FUS_MSL                                                       
+//define Selective_Jettison_Knob__RACK_LCHR                                                       
+//define Selective_Jettison_Knob__SAFE                                                            
+//define Selective_Jettison_Knob__STORES                                                          
+//define Selective_Jettison_Pushbutton                                                            
+//define Warning_Tone_Silence_Button                                                              
+//define Left_Louver                                                                              
+
+//Left Console
+
+//define COMM_1_Antenna_Selector_Switch__AUTO                                                     
+//define COMM_1_Antenna_Selector_Switch__Down                                                     
+//define COMM_1_Antenna_Selector_Switch__LOWER                                                    
+//define COMM_1_Antenna_Selector_Switch__UPPER                                                    
+//define COMM_1_Antenna_Selector_Switch__Up                                                       
+//define Engine_Crank_Switch__LEFT                                                                
+//define Engine_Crank_Switch__Left                                                                
+//define Engine_Crank_Switch__OFF                                                                 
+//define Engine_Crank_Switch__RIGHT                                                               
+//define Engine_Crank_Switch__Right                                                               
+//define Generator_TIE_Control_Switch__NORM                                                       
+//define Generator_TIE_Control_Switch__NORM_RESET                                                 
+//define Generator_TIE_Control_Switch__RESET                                                      
+//define Generator_TIE_Control_Switch_Cover__CLOSE                                                
+//define Generator_TIE_Control_Switch_Cover__OPEN                                                 
+//define Generator_TIE_Control_Switch_Cover__OPEN_CLOSE                                           
+//define Hydraulic_Isolate_Override_Switch__NORM                                                  
+//define Hydraulic_Isolate_Override_Switch__NORM_ORIDE                                            
+//define Hydraulic_Isolate_Override_Switch__ORIDE                                                 
+//define IFF_Antenna_Selector_Switch__BOTH                                                        
+//define IFF_Antenna_Selector_Switch__Down                                                        
+//define IFF_Antenna_Selector_Switch__LOWER                                                       
+//define IFF_Antenna_Selector_Switch__UPPER                                                       
+//define IFF_Antenna_Selector_Switch__Up                                                          
+//define MC_Switch__1_OFF                                                                         
+//define MC_Switch__2_OFF                                                                         
+//define MC_Switch__Down                                                                          
+//define MC_Switch__NORM                                                                          
+//define MC_Switch__Up                                                                            
+//define OBOGS_Control_Switch__OFF                                                                
+//define OBOGS_Control_Switch__ON                                                                 
+//define OBOGS_Control_Switch__ON_OFF                                                             
+//define OXY_Flow_Knob__CCW_Decrease_OFF                                                          
+//define OXY_Flow_Knob__CW_Increase_ON                                                            
+//define OXY_Flow_Knob                                                                            
+
+//Right Vertical Panel
+
+//define Arresting_Hook_Handle__Down                                                              
+//define Arresting_Hook_Handle__Up                                                                
+//define AV_COOL_Switch__EMERG                                                                    
+//define AV_COOL_Switch__NORM                                                                     
+//define AV_COOL_Switch__NORM_EMERG                                                               
+//define Push_to_Test_Switch__CCW_Decrease                                                        
+//define Push_to_Test_Switch__CW_Increase                                                         
+//define Push_to_Test_Switch__Push_to_activate_BIT                                                
+//define Right_Louver__Left                                                                       
+//define Right_Louver__Right                                                                      
+define Wing_Fold_Control_Handle__CCW_Left                                                         R_SHIFT + USB_O
+define Wing_Fold_Control_Handle__CW_Right                                                         R_CTL + USB_O
+//define Wing_Fold_Control_Handle__FOLD                                                           
+//define Wing_Fold_Control_Handle__HOLD                                                           
+//define Wing_Fold_Control_Handle__PULL                                                           
+define Wing_Fold_Control_Handle__PULL_STOW                                                        USB_O
+//define Wing_Fold_Control_Handle__SPREAD                                                         
+//define Wing_Fold_Control_Handle__STOW                                                           
+//define Right_Louver                                                                             
+
+//Throttle Grip; HOTAS
+
+define Cage_Uncage_Button                                                                         USB_C
+define COMM_Switch__COMM_1                                                                        R_ALT + USB_BackSlash
+define COMM_Switch__COMM_2                                                                        R_CTL + USB_BackSlash
+//define COMM_Switch__MIDS_A                                                                      
+//define COMM_Switch__MIDS_B                                                                      
+define Dispense_Switch__Aft_FLARE_Center_OFF_                                                     USB_D
+define Dispense_Switch__Forward_CHAFF_Center_OFF_                                                 USB_E
+//define Exterior_Lights_Switch__OFF                                                              
+//define Exterior_Lights_Switch__ON                                                               
+define Exterior_Lights_Switch__ON_OFF                                                             USB_L
+define RAID_FLIR_FOV_Select_Button                                                                USB_I
+define Radar_Elevation_Control__Down                                                               + 
+define Radar_Elevation_Control__Up                                                                USB_Equals
+define Speed_Brake_Switch__EXTEND                                                                 L_SHIFT + USB_B
+define Speed_Brake_Switch__OFF                                                                    USB_B
+define Speed_Brake_Switch__RETRACT                                                                L_CTL + USB_B
+define Throttle_Designator_Controller__Depress                                                    USB_Return
+define Throttle_Designator_Controller__Down                                                       USB_Period
+define Throttle_Designator_Controller__Left                                                       USB_Comma
+define Throttle_Designator_Controller__Right                                                      USB_ForwardSlash
+define Throttle_Designator_Controller__Up                                                         USB_SemiColon
+define ATC_Engage_Disengage_Switch																  USB_T
+//define Radar_Elevation_Control                                                                  
+
+//Communications
+
+define Communication_menu                                                                         USB_BackSlash
+define Cover_Me                                                                                   L_WIN + USB_W
+define Flight__Attack_air_defenses                                                                L_WIN + USB_D
+define Flight__Attack_ground_targets                                                              L_WIN + USB_G
+define Flight__Complete_mission_and_RTB                                                           L_WIN + USB_E
+define Flight__Complete_mission_and_rejoin                                                        L_WIN + USB_R
+define Flight__Engage_Bandits                                                                     L_WIN + USB_B
+//define Flight__RTB                                                                              
+define Join_Up_Formation                                                                          L_WIN + USB_Y
+define Request_AWACS_Home_Airbase                                                                 L_WIN + USB_U
+define Switch_dialog                                                                              L_SHIFT + USB_BackSlash
+define Switch_to_main_menu                                                                        L_CTL + USB_BackSlash
+define Toggle_Formation                                                                           L_WIN + USB_T
+
+//Special For Joystick; Instrument Panel; HUD Control Panel
+
+//define Attitude_Selector_Switch__STBY_AUTO                                                      
+//define HUD_Symbology_Reject_Switch__NORM_REJ_1                                                  
+//define HUD_Symbology_Reject_Switch__REJ_2_REJ_1                                                 
+//define HUD_Video_Control_Switch__OFF_VID                                                        
+//define HUD_Video_Control_Switch__W_B_VID                                                        
+
+//Left Console; Communication Control Panel
+
+//define AUX_Volume_Control_Knob__CW_Increase                                                     
+//define COMM_G_XMT_Switch__COMM_1                                                                
+//define COMM_G_XMT_Switch__COMM_2                                                                
+//define COMM_G_XMT_Switch__Down                                                                  
+//define COMM_G_XMT_Switch__OFF                                                                   
+//define COMM_G_XMT_Switch__Up                                                                    
+//define Comm_Relay_Switch__CIPHER                                                                
+//define Comm_Relay_Switch__Down                                                                  
+//define Comm_Relay_Switch__OFF                                                                   
+//define Comm_Relay_Switch__PLAIN                                                                 
+//define Comm_Relay_Switch__Up                                                                    
+//define CRYPTO_Switch__HOLD_NORM                                                                 
+//define CRYPTO_Switch__ZERO_NORM                                                                 
+//define ICS_Volume_Control_Knob__CCW_Decrease                                                    
+//define ICS_Volume_Control_Knob__CW_Increase                                                     
+//define IFF_Master_Switch__EMER                                                                  
+//define IFF_Master_Switch__EMER_NORM                                                             
+//define IFF_Master_Switch__NORM                                                                  
+//define IFF_Mode_4_Switch__DIS                                                                   
+//define IFF_Mode_4_Switch__DIS_AUD                                                               
+//define IFF_Mode_4_Switch__Down                                                                  
+//define IFF_Mode_4_Switch__OFF                                                                   
+//define IFF_Mode_4_Switch__Up                                                                    
+//define ILS_Channel_Selector_Switch__CCW_Decrease                                                
+//define ILS_Channel_Selector_Switch__CW_Increase                                                 
+//define ILS_UFC_MAN_Switch__MAN                                                                  
+//define ILS_UFC_MAN_Switch__UFC                                                                  
+//define ILS_UFC_MAN_Switch__UFC_MAN                                                              
+//define MIDS_A_Volume_Control_Knob__CCW_Decrease                                                 
+//define MIDS_A_Volume_Control_Knob__CW_Increase                                                  
+//define MIDS_B_Volume_Control_Knob__CCW_Decrease                                                 
+//define MIDS_B_Volume_Control_Knob__CW_Increase                                                  
+//define RWR_Volume_Control_Knob__CCW_Decrease                                                    
+//define RWR_Volume_Control_Knob__CW_Increase                                                     
+//define TACAN_Volume_Control_Knob__CCW_Decrease                                                  
+//define TACAN_Volume_Control_Knob__CW_Increase                                                   
+//define VOX_Volume_Control_Knob__CCW_Decrease                                                    
+//define VOX_Volume_Control_Knob__CW_Increase                                                     
+//define WPN_Volume_Control_Knob__CCW_Decrease                                                    
+//define WPN_Volume_Control_Knob__CW_Increase                                                     
+//define AUX_Volume_Control_Knob                                                                  
+//define ICS_Volume_Control_Knob                                                                  
+//define MIDS_A_Volume_Control_Knob                                                               
+//define MIDS_B_Volume_Control_Knob                                                               
+//define RWR_Volume_Control_Knob                                                                  
+//define TACAN_Volume_Control_Knob                                                                
+//define VOX_Volume_Control_Knob                                                                  
+//define WPN_Volume_Control_Knob                                                                  
+
+//Stick; HOTAS
+
+//define Control_Stick__HIDE                                                                      
+define Control_Stick__HIDE_SHOW                                                                   Backspace
+//define Control_Stick__SHOW                                                                      
+define Gun_Trigger__SECOND_DETENT_Press_to_shoot_                                                 USB_Space
+define RECCE_Event_Mark_Switch                                                                    USB_R
+define Select_AMRAAM                                                                              L_SHIFT + USB_D
+define Select_Gun                                                                                 L_SHIFT + USB_X
+define Select_Sidewinder                                                                          L_SHIFT + USB_S
+define Select_Sparrow                                                                             L_SHIFT + USB_W
+define Sensor_Control_Switch__Aft                                                                 R_ALT + USB_Period
+define Sensor_Control_Switch__Fwd                                                                 R_ALT + USB_SemiColon
+define Sensor_Control_Switch__Left                                                                R_ALT + USB_Comma
+define Sensor_Control_Switch__Right                                                               R_ALT + USB_ForwardSlash
+define Undesignate_Nose_Wheel_Steer_Switch                                                        USB_S
+define Weapon_Release_Button                                                                      R_ALT + USB_Space
+
+//Right Console; Electrical Power Panel
+
+//define Battery_Switch__OFF                                                                      
+//define Battery_Switch__ON                                                                       
+//define Battery_Switch__ORIDE                                                                    
+//define Battery_Switch__Up                                                                       
+//define Left_Generator_Control_Switch__NORM                                                      
+//define Left_Generator_Control_Switch__NORM_OFF                                                  
+//define Left_Generator_Control_Switch__OFF                                                       
+//define Right_Generator_Control_Switch__NORM                                                     
+//define Right_Generator_Control_Switch__NORM_OFF                                                 
+//define Right_Generator_Control_Switch__OFF                                                      
+
+//Special For Joystick; Right Console; Electrical Power Panel
+
+//define Battery_Switch__ORIDE_OFF                                                                
+
+//Right Console; ECS Panel
+
+//define Bleed_Air_Knob__CCW                                                                      
+//define Bleed_Air_Knob__CW                                                                       
+//define Bleed_Air_Knob__L_OFF                                                                    
+//define Bleed_Air_Knob__NORM                                                                     
+//define Bleed_Air_Knob__OFF                                                                      
+//define Bleed_Air_Knob__R_OFF                                                                    
+//define Cabin_Pressure_Switch__Down                                                              
+//define Cabin_Pressure_Switch__DUMP                                                              
+//define Cabin_Pressure_Switch__NORM                                                              
+//define Cabin_Pressure_Switch__RAM_DUMP                                                          
+//define Cabin_Pressure_Switch__Up                                                                
+//define Cabin_Temperature_Knob__CCW_Decrease_COLD                                                
+//define Cabin_Temperature_Knob__CW_Increase_HOT                                                  
+//define ECS_Mode_Switch__AUTO                                                                    
+//define ECS_Mode_Switch__Down                                                                    
+//define ECS_Mode_Switch__MAN                                                                     
+//define ECS_Mode_Switch__OFF_RAM                                                                 
+//define ECS_Mode_Switch__Up                                                                      
+//define Engine_Anti_Ice_Switch__Down                                                             
+//define Engine_Anti_Ice_Switch__OFF                                                              
+//define Engine_Anti_Ice_Switch__ON                                                               
+//define Engine_Anti_Ice_Switch__TEST                                                             
+//define Engine_Anti_Ice_Switch__Up                                                               
+//define Pitot_Heater_Switch__ON_AUTO                                                             
+//define Suit_Temperature_Knob__CCW_Decrease_COLD                                                 
+//define Suit_Temperature_Knob__CW_Increase_HOT                                                   
+//define Cabin_Temperature_Knob                                                                   
+//define Suit_Temperature_Knob                                                                    
+
+//Special For Joystick; Right Console; ECS Panel
+
+//define Cabin_Pressure_Switch__RAM_DUMP_DUMP                                                     
+//define ECS_Mode_Switch__AUTO_MAN                                                                
+//define ECS_Mode_Switch__OFF_RAM_MAN                                                             
+//define Engine_Anti_Ice_Switch__ON_OFF                                                           
+//define Engine_Anti_Ice_Switch__TEST_OFF                                                         
+
+//View Extended
+
+define Keep_terrain_camera_altitude                                                               L_ALT + USB_K
+define Object_exclude                                                                             L_ALT + USB_Delete
+define Objects_all_excluded__include                                                              L_ALT + USB_Insert
+define Objects_switching_direction_forward                                                        L_CTL + USB_PageDown
+define Objects_switching_direction_reverse                                                        L_CTL + USB_PageUp
+define Toggle_tracking_launched_weapon                                                            R_CTL + USB_KPPlus
+define View_all_mode                                                                              R_CTL + USB_Delete
+define View_enemies_mode                                                                          R_CTL + R_SHIFT + USB_End
+define View_friends_mode                                                                          R_CTL + R_SHIFT + USB_Home
+
+//View Cockpit
+
+define Camera_snap_view_down                                                                      R_ALT + USB_KP2
+define Camera_snap_view_down_left                                                                 R_ALT + USB_KP1
+define Camera_snap_view_down_right                                                                R_ALT + USB_KP3
+define Camera_snap_view_left                                                                      R_ALT + USB_KP4
+define Camera_snap_view_right                                                                     R_ALT + USB_KP6
+define Camera_snap_view_up                                                                        R_ALT + USB_KP8
+define Camera_snap_view_up_left                                                                   R_ALT + USB_KP7
+define Camera_snap_view_up_right                                                                  R_ALT + USB_KP9
+//define Camera_transpose_mode_press_and_hold_                                                    
+define Center_Camera_View                                                                         R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Back                                                                   R_CTL + R_SHIFT + Num/; RCtrl + R_SHIFT + Num + 
+define Cockpit_Camera_Move_Center                                                                 R_CTL + R_SHIFT + USB_KP5
+define Cockpit_Camera_Move_Down                                                                   R_CTL + R_SHIFT + USB_KP2
+define Cockpit_Camera_Move_Forward                                                                R_CTL + R_SHIFT + USB_KPAsterisk
+define Cockpit_Camera_Move_Left                                                                   R_CTL + R_SHIFT + USB_KP4
+define Cockpit_Camera_Move_Right                                                                  R_CTL + R_SHIFT + USB_KP6
+define Cockpit_Camera_Move_Up                                                                     R_CTL + R_SHIFT + USB_KP8
+define Cockpit_panel_view_in                                                                      USB_KP0
+define Cockpit_panel_view_toggle                                                                  R_CTL + USB_KP0
+define Custom_Snap_View_0                                                                         L_WIN + USB_KP0
+define Custom_Snap_View_1                                                                         L_WIN + USB_KP1
+define Custom_Snap_View_2                                                                         L_WIN + USB_KP2
+define Custom_Snap_View_3                                                                         L_WIN + USB_KP3
+define Custom_Snap_View_4                                                                         L_WIN + USB_KP4
+define Custom_Snap_View_5                                                                         L_WIN + USB_KP5
+define Custom_Snap_View_6                                                                         L_WIN + USB_KP6
+define Custom_Snap_View_7                                                                         L_WIN + USB_KP7
+define Custom_Snap_View_8                                                                         L_WIN + USB_KP8
+define Custom_Snap_View_9                                                                         L_WIN + USB_KP9
+//define Enable_visual_recon_mode                                                                 
+define Flashlight                                                                                 L_ALT + USB_L
+define Glance_down                                                                                R_CTL + USB_KP2
+define Glance_down_left                                                                           R_CTL + USB_KP1
+define Glance_down_right                                                                          R_CTL + USB_KP3
+define Glance_left                                                                                R_CTL + USB_KP4
+define Glance_right                                                                               R_CTL + USB_KP6
+define Glance_up                                                                                  R_CTL + USB_KP8
+define Glance_up_left                                                                             R_CTL + USB_KP7
+define Glance_up_right                                                                            R_CTL + USB_KP9
+define Return_Camera                                                                              R_CTL + USB_KP5
+define Return_Camera_Base                                                                         R_ALT + USB_KP5
+define Save_Cockpit_Angles                                                                        R_ALT + USB_KP0
+define Toggle_Mirrors                                                                             R_WIN + USB_M
+define View_down                                                                                  R_SHIFT + USB_KP2
+define View_down_left                                                                             R_SHIFT + USB_KP1
+define View_down_right                                                                            R_SHIFT + USB_KP3
+define View_left                                                                                  R_SHIFT + USB_KP4
+define View_right                                                                                 R_SHIFT + USB_KP6
+define View_up                                                                                    R_SHIFT + USB_KP8
+define View_up_left                                                                               R_SHIFT + USB_KP7
+define View_up_right                                                                              R_SHIFT + USB_KP9
+define Zoom_in                                                                                    R_SHIFT + USB_KPAsterisk
+define Zoom_out                                                                                   R_SHIFT + USB_KPForwardSlash
+
+//Right Wall; Systems
+
+//define Canopy_Control_Switch__CLOSE                                                             
+//define Canopy_Control_Switch__HOLD                                                              
+//define Canopy_Control_Switch__OPEN                                                              
+
+//Left Wall
+
+//define Canopy_Jettison_Handle__PULL_PUSH                                                        
+//define Canopy_Jettison_Handle__PUSH                                                             
+//define Canopy_Jettison_Handle_Unlock_Button                                                     
+
+//Left Wall; Left Circuit Breaker Panel
+
+//define CB_FCS_CHAN_1__ON                                                                        
+//define CB_FCS_CHAN_1__ON_OFF                                                                    
+//define CB_FCS_CHAN_2__OFF                                                                       
+//define CB_FCS_CHAN_2__ON                                                                        
+//define CB_FCS_CHAN_2__ON_OFF                                                                    
+//define CB_LAUNCH_BAR__OFF                                                                       
+//define CB_LAUNCH_BAR__ON                                                                        
+//define CB_LAUNCH_BAR__ON_OFF                                                                    
+//define CB_SPD_BRK__OFF                                                                          
+//define CB_SPD_BRK__ON                                                                           
+//define CB_SPD_BRK__ON_OFF                                                                       
+
+//Right Wall; Right Circuit Breaker Panel
+
+//define CB_FCS_CHAN_3__ON                                                                        
+//define CB_FCS_CHAN_3__ON_OFF                                                                    
+//define CB_FCS_CHAN_4__OFF                                                                       
+//define CB_FCS_CHAN_4__ON                                                                        
+//define CB_FCS_CHAN_4__ON_OFF                                                                    
+//define CB_HOOK__OFF                                                                             
+//define CB_HOOK__ON                                                                              
+//define CB_HOOK__ON_OFF                                                                          
+//define CB_LG__OFF                                                                               
+//define CB_LG__ON                                                                                
+//define CB_LG__ON_OFF                                                                            
+
+//Right Console; INTR LT Control Panel
+
+//define CHART_Light_Dimmer_Control__CW_Increase                                                  
+//define CONSOLES_Lights_Dimmer_Control__CCW_Decrease                                             
+//define CONSOLES_Lights_Dimmer_Control__CW_Increase                                              
+//define FLOOD_Light_Dimmer_Control__CCW_Decrease                                                 
+//define FLOOD_Light_Dimmer_Control__CW_Increase                                                  
+//define INST_PNL_Dimmer_Control__CCW_Decrease                                                    
+//define INST_PNL_Dimmer_Control__CW_Increase                                                     
+//define Lights_Test_Switch__TEST_OFF                                                             
+//define MODE_Switch__DAY                                                                         
+//define MODE_Switch__Down                                                                        
+//define MODE_Switch__NITE                                                                        
+//define MODE_Switch__NVG                                                                         
+//define MODE_Switch__Up                                                                          
+//define WARN_CAUTION_Dimmer_Control__CCW_Decrease                                                
+//define WARN_CAUTION_Dimmer_Control__CW_Increase                                                 
+//define CHART_Light_Dimmer_Control                                                               
+//define CONSOLES_Lights_Dimmer_Control                                                           
+//define FLOOD_Light_Dimmer_Control                                                               
+//define INST_PNL_Dimmer_Control                                                                  
+//define WARN_CAUTION_Dimmer_Control                                                              
+
+//General
+
+define End_mission                                                                                Esc
+define Frame_rate_counter__Service_info                                                           R_CTL + USB_Break
+define Get_new_plane__respawn                                                                     R_CTL + R_SHIFT + USB_Tab
+define Info_bar_coordinate_units_toggle                                                           L_ALT + USB_Y
+define Info_bar_view_toggle                                                                       L_CTL + USB_Y
+define Jump_into_selected_aircraft                                                                R_ALT + USB_J
+define Pause                                                                                      USB_Break
+define Rearming_and_Refueling_Window                                                              L_ALT + USB_Apostrophe
+define Score_window                                                                               USB_Apostrophe
+define Screenshot                                                                                 USB_PrintScreen
+define Show_controls_indicator                                                                    R_CTL + USB_Return
+define Show_pilot_body                                                                            R_SHIFT + USB_P
+define Sound_On_Off                                                                               L_CTL + USB_S
+define Time_accelerate                                                                            L_CTL + USB_Z
+define Time_decelerate                                                                            L_ALT + USB_Z
+define Time_normal                                                                                L_SHIFT + USB_Z
+define View_briefing_on_off                                                                       L_ALT + USB_B
+
+//Special For Joystick; Left Console
+
+//define COMM_1_Antenna_Selector_Switch__UPPER_AUTO                                               
+//define IFF_Antenna_Selector_Switch__LOWER_BOTH                                                  
+//define IFF_Antenna_Selector_Switch__UPPER_BOTH                                                  
+
+//Special For Joystick; Left Console; Communication Control Panel
+
+//define COMM_G_XMT_Switch__COMM_2_OFF                                                            
+//define Comm_Relay_Switch__CIPHER_OFF                                                            
+//define Comm_Relay_Switch__PLAIN_OFF                                                             
+//define IFF_Mode_4_Switch__DIS_AUD_DIS                                                           
+//define IFF_Mode_4_Switch__OFF_DIS                                                               
+
+//Right Console
+
+//define Defog_Handle__Forward_HIGH                                                               
+//define Windshield_Anti_Ice_Rain_Switch__ANTI_ICE                                                
+//define Windshield_Anti_Ice_Rain_Switch__Down                                                    
+//define Windshield_Anti_Ice_Rain_Switch__OFF                                                     
+//define Windshield_Anti_Ice_Rain_Switch__RAIN                                                    
+//define Windshield_Anti_Ice_Rain_Switch__Up                                                      
+//define Defog_Handle                                                                             
+//define Utility_Light_BRT_Control                                                                
+
+//Instrument Panel; Dispenser
+
+//define DISPENSER_Switch__Down                                                                   
+//define DISPENSER_Switch__OFF                                                                    
+//define DISPENSER_Switch__ON                                                                     
+//define DISPENSER_Switch__Up                                                                     
+//define ECM_JETT_JETT_SEL_Pushbutton_Switch__OFF                                                 
+//define ECM_JETT_JETT_SEL_Pushbutton_Switch__ON                                                  
+//define ECM_JETT_JETT_SEL_Pushbutton_Switch__ON_OFF                                              
+
+//Special For Joystick; Instrument Panel; Dispenser
+
+//define DISPENSER_Switch__OFF_ON                                                                 
+
+//Left Wall; Dispenser
+
+
+//Systems
+
+define Wheel_Brake__ON_OFF                                                                        USB_W
+define Wheel_Brake_Left__ON_OFF                                                                   L_CTL + USB_W
+define Wheel_Brake_Right__ON_OFF                                                                  L_ALT + USB_W
+//define Wheel_Brake                                                                              
+//define Wheel_Brake_Left                                                                         
+//define Wheel_Brake_Right                                                                        
+
+//Ejection Seat
+
+//define Ejection_Seat_Manual_Override_Handle__PULL                                               
+//define Ejection_Seat_Manual_Override_Handle__PULL_PUSH                                          
+//define Ejection_Seat_Manual_Override_Handle__PUSH                                               
+//define Ejection_Seat_SAFE_ARMED_Handle__ARMED                                                   
+//define Ejection_Seat_SAFE_ARMED_Handle__SAFE                                                    
+//define Ejection_Seat_SAFE_ARMED_Handle__SAFE_ARMED                                              
+//define Seat_Height_Adjustment_Switch__DOWN_HOLD                                                 
+//define Seat_Height_Adjustment_Switch__UP_HOLD                                                   
+//define Shoulder_Harness_Control_Handle__LOCK                                                    
+//define Shoulder_Harness_Control_Handle__LOCK_UNLOCK                                             
+//define Shoulder_Harness_Control_Handle__UNLOCK                                                  
+
+//Left Console; Fuel Control Panel
+
+//define External_Centerline_Tank_Fuel_Control_Switch__NORM                                       
+//define External_Centerline_Tank_Fuel_Control_Switch__ORIDE                                      
+//define External_Centerline_Tank_Fuel_Control_Switch__STOP                                       
+//define External_Centerline_Tank_Fuel_Control_Switch__Up                                         
+//define External_Wing_Tanks_Fuel_Control_Switch__Down                                            
+//define External_Wing_Tanks_Fuel_Control_Switch__NORM                                            
+//define External_Wing_Tanks_Fuel_Control_Switch__ORIDE                                           
+//define External_Wing_Tanks_Fuel_Control_Switch__STOP                                            
+//define External_Wing_Tanks_Fuel_Control_Switch__Up                                              
+//define Fuel_Dump_Switch__ON_OFF                                                                 
+//define Probe_Control_Switch__Down                                                               
+//define Probe_Control_Switch__EMERG_EXTD                                                         
+//define Probe_Control_Switch__EXTEND                                                             
+//define Probe_Control_Switch__RETRACT                                                            
+//define Probe_Control_Switch__Up                                                                 
+
+//Special For Joystick; Left Console; Fuel Control Panel
+
+//define External_Centerline_Tank_Fuel_Control_Switch__STOP_NORM                                  
+//define External_Wing_Tanks_Fuel_Control_Switch__ORIDE_NORM                                      
+//define External_Wing_Tanks_Fuel_Control_Switch__STOP_NORM                                       
+//define Probe_Control_Switch__EMERG_EXTD_RETRACT                                                 
+//define Probe_Control_Switch__EXTEND_RETRACT                                                     
+
+//Left Console; Ground Power Panel
+
+//define External_Power_Switch__NORM                                                              
+//define External_Power_Switch__OFF                                                               
+//define External_Power_Switch__RESET                                                             
+//define External_Power_Switch__Up                                                                
+//define Ground_Power_Switch_1__A_ON                                                              
+//define Ground_Power_Switch_1__AUTO                                                              
+//define Ground_Power_Switch_1__B_ON                                                              
+//define Ground_Power_Switch_1__Down                                                              
+//define Ground_Power_Switch_1__Up                                                                
+//define Ground_Power_Switch_2__A_ON                                                              
+//define Ground_Power_Switch_2__AUTO                                                              
+//define Ground_Power_Switch_2__B_ON                                                              
+//define Ground_Power_Switch_2__Down                                                              
+//define Ground_Power_Switch_2__Up                                                                
+//define Ground_Power_Switch_3__A_ON                                                              
+//define Ground_Power_Switch_3__AUTO                                                              
+//define Ground_Power_Switch_3__B_ON                                                              
+//define Ground_Power_Switch_3__Down                                                              
+//define Ground_Power_Switch_3__Up                                                                
+//define Ground_Power_Switch_4__A_ON                                                              
+//define Ground_Power_Switch_4__AUTO                                                              
+//define Ground_Power_Switch_4__B_ON                                                              
+//define Ground_Power_Switch_4__Down                                                              
+//define Ground_Power_Switch_4__Up                                                                
+
+//Special For Joystick; Left Console; Ground Power Panel
+
+
+//View
+
+define F1_Head_shift_movement_on__off                                                             L_WIN + USB_F1
+define F1_HUD_only_view_switch                                                                    L_ALT + USB_F1
+define F1_Natural_head_movement_view                                                              L_CTL + USB_F1
+define F10_Jump_to_theater_map_view_over_current_point                                            L_CTL + USB_F10
+define F10_Theater_map_view                                                                       USB_F10
+define F11_Airport_free_camera                                                                    USB_F11
+define F11_Camera_moving_backward                                                                 L_ALT + USB_KPForwardSlash
+define F11_Camera_moving_forward                                                                  L_ALT + USB_KPAsterisk
+define F11_Jump_to_free_camera                                                                    L_CTL + USB_F11
+define F12_Civil_traffic_view                                                                     L_CTL + USB_F12
+define F12_Static_object_view                                                                     USB_F12
+define F12_Trains_cars_toggle                                                                     L_SHIFT + USB_F12
+define F2_Aircraft_view                                                                           USB_F2
+define F2_Toggle_camera_position                                                                  R_ALT + USB_F2
+define F2_Toggle_local_camera_control                                                             L_ALT + USB_F2
+define F2_View_own_aircraft                                                                       L_CTL + USB_F2
+define F3_Fly_By_jump_view                                                                        L_CTL + USB_F3
+define F3_Fly_By_view                                                                             USB_F3
+define F4_Arcade_Chase_view                                                                       L_SHIFT + USB_F4
+define F4_Chase_view                                                                              L_CTL + USB_F4
+define F4_Look_back_view                                                                          USB_F4
+define F5_Ground_hostile_view                                                                     L_CTL + USB_F5
+define F5_nearest_AC_view                                                                         USB_F5
+define F6_Released_weapon_view                                                                    USB_F6
+define F6_Weapon_to_target_view                                                                   L_CTL + USB_F6
+define F7_Ground_unit_view                                                                        USB_F7
+define F8_Player_targets_All_targets_filter                                                       R_CTL + USB_F8
+define F8_Target_view                                                                             USB_F8
+define F9_Landing_signal_officer_view                                                             L_ALT + USB_F9
+define F9_Ship_view                                                                               USB_F9
+define Keyboard_Rate_Fast                                                                         L_SHIFT + USB_RBracket
+define Keyboard_Rate_Normal                                                                       L_ALT + USB_RBracket
+define Keyboard_Rate_Slow                                                                         L_CTL + USB_RBracket
+define Mouse_Rate_Fast                                                                            L_SHIFT + USB_LBracket
+define Mouse_Rate_Normal                                                                          L_ALT + USB_LBracket
+define Mouse_Rate_Slow                                                                            L_CTL + USB_LBracket
+define View_Center                                                                                USB_KP5
+define View_Down_Left_slow                                                                        USB_KP1
+define View_Down_Right_slow                                                                       USB_KP3
+define View_Down_slow                                                                             USB_KP2
+define View_Left_slow                                                                             USB_KP4
+define View_Right_slow                                                                            USB_KP6
+define View_Up_Left_slow                                                                          USB_KP7
+define View_Up_Right_slow                                                                         USB_KP9
+define View_Up_slow                                                                               USB_KP8
+define Zoom_external_in                                                                           R_CTL + USB_KPAsterisk
+define Zoom_external_normal                                                                       R_CTL + USB_KPEnter
+define Zoom_external_out                                                                          R_CTL + USB_KPForwardSlash
+define Zoom_in_slow                                                                               USB_KPAsterisk
+define Zoom_normal                                                                                USB_KPEnter
+define Zoom_out_slow                                                                              USB_KPForwardSlash
+
+//Right Wall
+
+
+//Left Console; FCS Panel
+
+//define GAIN_Switch__NORM                                                                        
+//define GAIN_Switch__NORM_ORIDE                                                                  
+//define GAIN_Switch__ORIDE                                                                       
+//define GAIN_Switch_Cover__CLOSE                                                                 
+//define GAIN_Switch_Cover__OPEN                                                                  
+//define GAIN_Switch_Cover__OPEN_CLOSE                                                            
+//define RUD_TRIM_Control__CCW_Left                                                               
+//define RUD_TRIM_Control__CW_Right                                                               
+define T_O_TRIM_Button                                                                            USB_V
+//define RUD_TRIM_Control                                                                         
+
+//Left Console; Fire Test Panel
+
+//define Fire_and_Bleed_Air_Test_Switch__TEST_B                                                   
+
+//Instrument Panel; Master Arm Panel
+
+//define Master_Arm_Switch__ARM                                                                   
+define Master_Arm_Switch__ARM_SAFE                                                                USB_M
+//define Master_Arm_Switch__SAFE                                                                  
+define Master_Mode_Button__A_A                                                                    USB_1
+define Master_Mode_Button__A_G                                                                    USB_2
+
+//Special For Joystick; Left Vertical Panel
+
+//define FLAP_Switch__FULL_HALF                                                                   
+
+//View Cockpit; Right Console
+
+//define Flashlight_BRT_Control__Increase                                                         
+//define Flashlight_Color__Toggle_Green_White                                                     
+
+//Left Console; Exterior Lights Panel
+
+//define FORMATION_Lights_Dimmer_Control__CW_Right                                                
+//define Internal_Wing_Tank_Fuel_Control_Switch__INHIBIT                                          
+//define Internal_Wing_Tank_Fuel_Control_Switch__INHIBIT_NORM                                     
+//define Internal_Wing_Tank_Fuel_Control_Switch__NORM                                             
+//define POSITION_Lights_Dimmer_Control__CCW_Left                                                 
+//define POSITION_Lights_Dimmer_Control__CW_Right                                                 
+//define STROBE_Lights_Switch__BRT                                                                
+//define STROBE_Lights_Switch__DIM                                                                
+//define STROBE_Lights_Switch__Down                                                               
+//define STROBE_Lights_Switch__OFF                                                                
+//define STROBE_Lights_Switch__Up                                                                 
+//define FORMATION_Lights_Dimmer_Control                                                          
+//define POSITION_Lights_Dimmer_Control                                                           
+
+//Right Console; Sensor Panel
+
+//define INS_Switch__CV                                                                           
+//define INS_Switch__CW                                                                           
+//define INS_Switch__GB                                                                           
+//define INS_Switch__GND                                                                          
+//define INS_Switch__GYRO                                                                         
+//define INS_Switch__IFA                                                                          
+//define INS_Switch__NAV                                                                          
+//define INS_Switch__OFF                                                                          
+//define INS_Switch__TEST                                                                         
+//define RADAR_Switch__CCW                                                                        
+//define RADAR_Switch__CW                                                                         
+//define RADAR_Switch__EMERG                                                                      
+//define RADAR_Switch__OFF                                                                        
+//define RADAR_Switch__OPR                                                                        
+//define RADAR_Switch__PULL                                                                       
+//define RADAR_Switch__PULL_STOW                                                                  
+//define RADAR_Switch__STBY                                                                       
+//define RADAR_Switch__STOW                                                                       
+
+//Special For Joystick; Instrument Panel
+
+//define IR_Cooling_Switch__ORIDE_NORM                                                            
+
+//Kneeboard
+
+define Kneeboard_glance_view                                                                      USB_K
+//define Kneeboard_Jump_To_Shortcut_1                                                             
+//define Kneeboard_Jump_To_Shortcut_2                                                             
+//define Kneeboard_Jump_To_Shortcut_3                                                             
+//define Kneeboard_Jump_To_Shortcut_4                                                             
+//define Kneeboard_Jump_To_Shortcut_5                                                             
+//define Kneeboard_Jump_To_Shortcut_6                                                             
+//define Kneeboard_Jump_To_Shortcut_7                                                             
+//define Kneeboard_Jump_To_Shortcut_8                                                             
+//define Kneeboard_Jump_To_Shortcut_9                                                             
+//define Kneeboard_Jump_To_Shortcut_10                                                            
+//define Kneeboard_Make_Shortcut                                                                  
+define Kneeboard_Next_Page                                                                        USB_RBracket
+//define Kneeboard_Next_Shortcut                                                                  
+define Kneeboard_ON_OFF                                                                           R_SHIFT + USB_K
+define Kneeboard_Previous_Page                                                                    USB_LBracket
+//define Kneeboard_Previous_Shortcut                                                              
+
+//Right Console; KY-58 Control Panel
+
+//define KY_58_Fill_Select_Knob__2                                                                
+//define KY_58_Fill_Select_Knob__3                                                                
+//define KY_58_Fill_Select_Knob__4                                                                
+//define KY_58_Fill_Select_Knob__5                                                                
+//define KY_58_Fill_Select_Knob__6                                                                
+//define KY_58_Fill_Select_Knob__CCW                                                              
+//define KY_58_Fill_Select_Knob__CW                                                               
+//define KY_58_Mode_Select_Knob__C                                                                
+//define KY_58_Mode_Select_Knob__CCW                                                              
+//define KY_58_Mode_Select_Knob__CW                                                               
+//define KY_58_Mode_Select_Knob__LD                                                               
+//define KY_58_Mode_Select_Knob__P                                                                
+//define KY_58_Mode_Select_Knob__RV                                                               
+//define KY_58_Power_Select_Knob__CCW                                                             
+//define KY_58_Power_Select_Knob__CW                                                              
+//define KY_58_Power_Select_Knob__OFF                                                             
+//define KY_58_Power_Select_Knob__ON                                                              
+//define KY_58_Power_Select_Knob__TD                                                              
+//define KY_58_Volume_Control_Knob__CCW_Decrease                                                  
+//define KY_58_Volume_Control_Knob__CW_Increase                                                   
+//define KY_58_Volume_Control_Knob                                                                
+
+//Special For Joystick; Right Console; KY-58 Control Panel
+
+//define KY_58_Power_Select_Knob__TD_ON                                                           
+
+//Debug
+
+define Restart_Mission                                                                            L_SHIFT + USB_R
+define Toggle_Console                                                                             L_ALT + USB_Tilde
+
+//Instrument Panel; Left MDI
+
+//define Left_MDI_Brightness_Control_Knob__CW_Increase                                            
+//define Left_MDI_Brightness_Selector_Knob__CCW_Left                                              
+//define Left_MDI_Brightness_Selector_Knob__CW_Right                                              
+//define Left_MDI_Brightness_Selector_Knob__DAY                                                   
+//define Left_MDI_Brightness_Selector_Knob__NIGHT                                                 
+//define Left_MDI_Brightness_Selector_Knob__OFF                                                   
+//define Left_MDI_Contrast_Control_Knob__CCW_Decrease                                             
+//define Left_MDI_Contrast_Control_Knob__CW_Increase                                              
+//define Left_MDI_PB_1                                                                            
+//define Left_MDI_PB_10                                                                           
+//define Left_MDI_PB_11                                                                           
+//define Left_MDI_PB_12                                                                           
+//define Left_MDI_PB_13                                                                           
+//define Left_MDI_PB_14                                                                           
+//define Left_MDI_PB_15                                                                           
+//define Left_MDI_PB_16                                                                           
+//define Left_MDI_PB_17                                                                           
+//define Left_MDI_PB_18                                                                           
+//define Left_MDI_PB_19                                                                           
+//define Left_MDI_PB_2                                                                            
+//define Left_MDI_PB_20                                                                           
+//define Left_MDI_PB_3                                                                            
+//define Left_MDI_PB_4                                                                            
+//define Left_MDI_PB_5                                                                            
+//define Left_MDI_PB_6                                                                            
+//define Left_MDI_PB_7                                                                            
+//define Left_MDI_PB_8                                                                            
+//define Left_MDI_PB_9                                                                            
+//define Left_MDI_Brightness_Control_Knob                                                         
+//define Left_MDI_Contrast_Control_Knob                                                           
+
+//Special For Joystick; Instrument Panel; Left MDI
+
+//define Left_MDI_Brightness_Selector_Knob__OFF_NIGHT                                             
+
+//Special For Joystick; Right Console; INTR LT Control Panel
+
+//define MODE_Switch__NVG_NITE                                                                    
+
+//Instrument Panel; Right MDI
+
+//define Right_MDI_Brightness_Control_Knob__CW_Increase                                           
+//define Right_MDI_Brightness_Selector_Knob__CCW_Left                                             
+//define Right_MDI_Brightness_Selector_Knob__CW_Right                                             
+//define Right_MDI_Brightness_Selector_Knob__DAY                                                  
+//define Right_MDI_Brightness_Selector_Knob__NIGHT                                                
+//define Right_MDI_Brightness_Selector_Knob__OFF                                                  
+//define Right_MDI_Contrast_Control_Knob__CCW_Decrease                                            
+//define Right_MDI_Contrast_Control_Knob__CW_Increase                                             
+//define Right_MDI_PB_1                                                                           
+//define Right_MDI_PB_10                                                                          
+//define Right_MDI_PB_11                                                                          
+//define Right_MDI_PB_12                                                                          
+//define Right_MDI_PB_13                                                                          
+//define Right_MDI_PB_14                                                                          
+//define Right_MDI_PB_15                                                                          
+//define Right_MDI_PB_16                                                                          
+//define Right_MDI_PB_17                                                                          
+//define Right_MDI_PB_18                                                                          
+//define Right_MDI_PB_19                                                                          
+//define Right_MDI_PB_2                                                                           
+//define Right_MDI_PB_20                                                                          
+//define Right_MDI_PB_3                                                                           
+//define Right_MDI_PB_4                                                                           
+//define Right_MDI_PB_5                                                                           
+//define Right_MDI_PB_6                                                                           
+//define Right_MDI_PB_7                                                                           
+//define Right_MDI_PB_8                                                                           
+//define Right_MDI_PB_9                                                                           
+//define Right_MDI_Brightness_Control_Knob                                                        
+//define Right_MDI_Contrast_Control_Knob                                                          
+
+//Special For Joystick; Instrument Panel; Right MDI
+
+//define Right_MDI_Brightness_Selector_Knob__OFF_NIGHT                                            
+
+//Special For Joystick; Throttle Grip; HOTAS
+
+
+//Special For Joystick; Left Console; Exterior Lights Panel
+
+//define STROBE_Lights_Switch__DIM_OFF                                                            
+
+//Throttle Quadrant
+
+define Throttle_Left__OFF                                                                         R_ALT + USB_End
+define Throttle_Left__IDLE                                                                  	  R_ALT + USB_Home 
+define Throttle_Right__IDLE                                                                       R_SHIFT + USB_Home
+define Throttle_Right__OFF                                                                        R_SHIFT + USB_End
+//define Throttle_Right__OFF_IDLE                                                                 
+//define Throttles_Friction_Adjusting_Lever__Aft_Decrease                                         
+//define Throttles_Friction_Adjusting_Lever__Forward_Increase                                     
+//define Throttles_Friction_Adjusting_Lever                                                       
+
+//Throttle Quadrant; HOTAS
+
+define Throttle_Finger_Lift_Left__UP_DOWN                                                         USB_9
+define Throttle_Finger_Lift_Right__UP_DOWN                                                        USB_0
+
+//Throttle Quadrant; Flight Control
+
+define Throttle_Smoothly_Both__Increase                                                           USB_KPPlus
+define Throttle_Smoothly_Left__Decrease                                                           R_ALT + Num + 
+define Throttle_Smoothly_Left__Increase                                                           R_ALT + USB_KPPlus
+define Throttle_Smoothly_Right__Decrease                                                          R_SHIFT + Num + 
+define Throttle_Smoothly_Right__Increase                                                          R_SHIFT + USB_KPPlus
+define Throttle_Step_Both__Decrease                                                               USB_PageDown
+define Throttle_Step_Both__Increase                                                               USB_PageUp
+define Throttle_Step_Left__Decrease                                                               R_ALT + USB_PageDown
+define Throttle_Step_Left__Increase                                                               R_ALT + USB_PageUp
+define Throttle_Step_Right__Decrease                                                              R_SHIFT + USB_PageDown
+define Throttle_Step_Right__Increase                                                              R_SHIFT + USB_PageUp
+
+//Stick; Flight Control; HOTAS
+
+define Trimmer_Switch__PULL_CLIMB_                                                                R_CTL + USB_Period
+define Trimmer_Switch__PUSH_DESCEND_                                                              R_CTL + USB_SemiColon
+define Trimmer_Switch__RIGHT_WING_DOWN                                                            R_CTL + USB_ForwardSlash
+define Trimmer_Switch__LEFT_WING_DOWN                                                             R_CTL + USB_Comma
+
+//Instrument Panel; UFC
+
+//define UFC_ADF_Function_Select_Switch__2                                                        
+//define UFC_ADF_Function_Select_Switch__Down                                                     
+//define UFC_ADF_Function_Select_Switch__OFF                                                      
+//define UFC_ADF_Function_Select_Switch__Up                                                       
+//define UFC_Brightness_Control_Knob__CCW_Decrease                                                
+//define UFC_Brightness_Control_Knob__CW_Increase                                                 
+//define UFC_COMM_1_Channel_Selector_Knob__CCW_Decrease                                           
+//define UFC_COMM_1_Channel_Selector_Knob__CW_Increase                                            
+//define UFC_COMM_1_Channel_Selector_Knob__PULL                                                   
+//define UFC_COMM_1_Volume_Control_Knob__CCW_Decrease                                             
+//define UFC_COMM_1_Volume_Control_Knob__CW_Increase                                              
+//define UFC_COMM_2_Channel_Selector_Knob__CCW_Decrease                                           
+//define UFC_COMM_2_Channel_Selector_Knob__CW_Increase                                            
+//define UFC_COMM_2_Channel_Selector_Knob__PULL                                                   
+//define UFC_COMM_2_Volume_Control_Knob__CCW_Decrease                                             
+//define UFC_COMM_2_Volume_Control_Knob__CW_Increase                                              
+//define UFC_Emission_Control_Pushbutton                                                          
+//define UFC_Function_Selector_Pushbutton__A_P                                                    
+//define UFC_Function_Selector_Pushbutton__BCN                                                    
+//define UFC_Function_Selector_Pushbutton__D_L                                                    
+//define UFC_Function_Selector_Pushbutton__IFF                                                    
+//define UFC_Function_Selector_Pushbutton__ILS                                                    
+//define UFC_Function_Selector_Pushbutton__ON_OFF                                                 
+//define UFC_Function_Selector_Pushbutton__TCN                                                    
+//define UFC_I_P_Pushbutton                                                                       
+//define UFC_Keyboard_Pushbutton__0                                                               
+//define UFC_Keyboard_Pushbutton__1                                                               
+//define UFC_Keyboard_Pushbutton__2                                                               
+//define UFC_Keyboard_Pushbutton__3                                                               
+//define UFC_Keyboard_Pushbutton__4                                                               
+//define UFC_Keyboard_Pushbutton__5                                                               
+//define UFC_Keyboard_Pushbutton__6                                                               
+//define UFC_Keyboard_Pushbutton__7                                                               
+//define UFC_Keyboard_Pushbutton__8                                                               
+//define UFC_Keyboard_Pushbutton__9                                                               
+//define UFC_Keyboard_Pushbutton__CLR                                                             
+//define UFC_Keyboard_Pushbutton__ENT                                                             
+//define UFC_Option_Select_Pushbutton_1                                                           
+//define UFC_Option_Select_Pushbutton_2                                                           
+//define UFC_Option_Select_Pushbutton_3                                                           
+//define UFC_Option_Select_Pushbutton_4                                                           
+//define UFC_Option_Select_Pushbutton_5                                                           
+//define UFC_Brightness_Control_Knob                                                              
+//define UFC_COMM_1_Volume_Control_Knob                                                           
+//define UFC_COMM_2_Volume_Control_Knob                                                           
+
+//Special For Joystick; Instrument Panel; UFC
+
+//define UFC_ADF_Function_Select_Switch__2_OFF                                                    
+
+//Special For Joystick; Right Console
+
+//define Windshield_Anti_Ice_Rain_Switch__RAIN_OFF                                                
+
+//Special For Joystick; Right Vertical Panel
+
+//define Wing_Fold_Control_Handle__SPREAD_HOLD                                                    
+
+//Not Categorized
+
+//define Absolute_Camera_Vertical_View                                                            
+//define Absolute_Horizontal_Shift_Camera_View                                                    
+//define Absolute_Longitude_Shift_Camera_View                                                     
+//define Absolute_Roll_Shift_Camera_View                                                          
+//define Absolute_Vertical_Shift_Camera_View                                                      
+//define Camera_Horizontal_View                                                                   
+//define Camera_Vertical_View                                                                     
+//define Camera_Zoom_View                                                                         
+//define TDC_Slew_Horizontal_mouse_                                                               
+//define TDC_Slew_Vertical_mouse_                                                                 
+//define Zoom_View                                                                                

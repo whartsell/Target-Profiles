@@ -297,7 +297,7 @@ define Dispense_Switch__Forward_CHAFF_Center_OFF_                               
 //define Exterior_Lights_Switch__ON                                                               
 define Exterior_Lights_Switch__ON_OFF                                                             USB_L
 define RAID_FLIR_FOV_Select_Button                                                                USB_I
-define Radar_Elevation_Control__Down                                                               + 
+define Radar_Elevation_Control__Down                                                              USB_Minus
 define Radar_Elevation_Control__Up                                                                USB_Equals
 define Speed_Brake_Switch__EXTEND                                                                 L_SHIFT + USB_B
 define Speed_Brake_Switch__OFF                                                                    USB_B

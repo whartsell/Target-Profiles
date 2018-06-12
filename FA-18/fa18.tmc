@@ -93,8 +93,8 @@ int main()
 		KeyAxis(&Throttle, SCY, 0, AXMAP2(5, Throttle_Designator_Controller__UpDX, 0,0,0, Throttle_Designator_Controller__DownDX));		
 
 	//Coolie
-		//MapKey(&Throttle,CSD,);
-		//MapKey(&Throttle,CSU,);
+		MapKey(&Throttle,CSD,Radar_Elevation_Control__Down);
+		MapKey(&Throttle,CSU,Radar_Elevation_Control__Up);
 		MapKey(&Throttle,CSL,PULSE + Cage_Uncage_Button);
 		MapKey(&Throttle,CSR,PULSE + RAID_FLIR_FOV_Select_Button);
 	

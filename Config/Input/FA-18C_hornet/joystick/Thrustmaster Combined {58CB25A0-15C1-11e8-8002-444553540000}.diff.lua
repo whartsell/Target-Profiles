@@ -1,5 +1,23 @@
 local diff = {
 	["axisDiffs"] = {
+		["a2002cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0.01,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_X",
+				},
+			},
+			["name"] = "Roll",
+		},
 		["a2003cdnil"] = {
 			["name"] = "Rudder",
 			["removed"] = {
@@ -21,9 +39,9 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.08,
+							[1] = 0,
 						},
-						["deadzone"] = 0,
+						["deadzone"] = 0.07,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -39,9 +57,9 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0.08,
+							[1] = 0,
 						},
-						["deadzone"] = 0,
+						["deadzone"] = 0.07,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -157,22 +175,6 @@ local diff = {
 				},
 			},
 			["name"] = "Throttle Designator Controller - Depress",
-		},
-		["d3027pnilu3027cd38vd0.2vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN9",
-				},
-			},
-			["name"] = "COMM Switch - COMM 1",
-		},
-		["d3028pnilu3028cd38vd0.4vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN10",
-				},
-			},
-			["name"] = "COMM Switch - COMM 2",
 		},
 		["d3035pnilu3035cd38vd-1vpnilvu0"] = {
 			["added"] = {

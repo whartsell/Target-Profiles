@@ -293,8 +293,8 @@ define COMM_Switch__COMM_2                                                      
 //define COMM_Switch__MIDS_B                                                                      
 define Dispense_Switch__Aft_FLARE_Center_OFF_                                                     USB_D
 define Dispense_Switch__Forward_CHAFF_Center_OFF_                                                 USB_E
-//define Exterior_Lights_Switch__OFF                                                              
-//define Exterior_Lights_Switch__ON                                                               
+define Exterior_Lights_Switch__OFF                                                                L_CTL + USB_L
+define Exterior_Lights_Switch__ON                                                                 L_SHIFT + USB_L
 define Exterior_Lights_Switch__ON_OFF                                                             USB_L
 define RAID_FLIR_FOV_Select_Button                                                                USB_I
 define Radar_Elevation_Control__Down                                                              USB_Minus
@@ -807,9 +807,9 @@ define T_O_TRIM_Button                                                          
 
 //Instrument Panel; Master Arm Panel
 
-//define Master_Arm_Switch__ARM                                                                   
+define Master_Arm_Switch__ARM                                                                     L_SHIFT + USB_M
 define Master_Arm_Switch__ARM_SAFE                                                                USB_M
-//define Master_Arm_Switch__SAFE                                                                  
+define Master_Arm_Switch__SAFE                                                                    L_CTL + USB_M
 define Master_Mode_Button__A_A                                                                    USB_1
 define Master_Mode_Button__A_G                                                                    USB_2
 

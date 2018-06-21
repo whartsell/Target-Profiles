@@ -81,8 +81,8 @@ int main()
 
 	//Pinky
 		//MapKey(&Throttle,PSF,);
-		//MapKey(&Throttle,PSM,);
-		//MapKey(&Throttle,PSB,);
+		MapKey(&Throttle,PSM,PULSE + Exterior_Lights_Switch__ON);
+		MapKey(&Throttle,PSB,PULSE + Exterior_Lights_Switch__OFF);
 		
 	//Left Throttle Button
 		MapKey(&Throttle,LTB,PULSE + ATC_Engage_Disengage_Switch);
@@ -101,8 +101,8 @@ int main()
 	//Mic Switch
 		MapKey(&Throttle, MSD,FingerLiftsDX);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		MapKey(&Throttle, MSL,SRSRadio2);
-		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSL,CHAIN(PULSE + COMM_Switch__COMM_2,D(),SRSRadio2));
+		MapKey(&Throttle, MSR,CHAIN(PULSE + COMM_Switch__COMM_1,D(),SRSRadio1));
 		//MapKey(&Throttle, MSP,);	
 
 	//Speed Brake
@@ -127,8 +127,8 @@ int main()
 		//MapKey(&Throttle,EFLOVER,);
 		
 		//Right
-		//MapKey(&Throttle,EFRNORM,);
-		//MapKey(&Throttle,EFROVER,);
+		MapKey(&Throttle,EFRNORM,PULSE + Master_Arm_Switch__ARM);
+		MapKey(&Throttle,EFROVER,PULSE + Master_Arm_Switch__SAFE);
 	
 	//Engine Oper
 		//Left
@@ -172,7 +172,7 @@ int main()
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		//MapKey(&Throttle,APENG,);
+		MapKey(&Throttle,APENG,PULSE + MASTER_CAUTION_Reset_Button);
 
 	//AP Select Switch
 		//MapKey(&Throttle,APPAT,);

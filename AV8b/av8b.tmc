@@ -60,7 +60,7 @@ int main()
 			MapKey(&Joystick,TG2,Trigger_Fire_Gun_Launch_Sidewinder_SidearmDX);
 	
 	//DMS
-		//MapKey(&Joystick,H3D,); // reserved for VR Zoom
+		MapKey(&Joystick,H3D,VRZoomDX); // reserved for VR Zoom
 		MapKey(&Joystick,H3U,PULSE + WP_Increment);
 		MapKey(&Joystick,H3L,0);
 		MapKey(&Joystick,H3R,0);

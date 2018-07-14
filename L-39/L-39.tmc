@@ -59,7 +59,7 @@ int main()
 			MapKey(&Joystick,TG2,Weapon_Fire_Button);
 	
 	//DMS
-		//MapKey(&Joystick,H3D,);
+		MapKey(&Joystick,H3D,VRZoomDX);
 		//MapKey(&Joystick,H3U,);
 		//MapKey(&Joystick,H3L,);
 		//MapKey(&Joystick,H3R,);

@@ -55,7 +55,7 @@ int main()
 			MapKey(&Joystick,TG2,Fire_GunDX);
 	
 	//DMS
-		//MapKey(&Joystick,H3D,TEMPO(Kneeboard_On_Off,Kneeboard_Mark_Position));
+		MapKey(&Joystick,H3D,VRZoomDX);
 		MapKey(&Joystick,H3U,PULSE+ SAU__Recovery);
 		//MapKey(&Joystick,H3L,Kneeboard_Page_Minus);
 		//MapKey(&Joystick,H3R,Kneeboard_Page_Plus);

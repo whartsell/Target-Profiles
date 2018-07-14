@@ -70,7 +70,7 @@ int main()
 		//MapKey(&Joystick, S3,);
 	
 	//S4 Paddle Switch
-		//MapKey(&Joystick, S4,);
+		MapKey(&Joystick, S4,VRZoomDX);
 
 //THROTTLE
 

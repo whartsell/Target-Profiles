@@ -59,7 +59,7 @@ int main()
 		//TG2
 			MapKey(&Joystick,TG2,DX3);
 	//DMS
-		//MapKey(&Joystick,H3D,);
+		MapKey(&Joystick,H3D,VRZoomDX);
 		//MapKey(&Joystick,H3U,);
 		//MapKey(&Joystick,H3L,);
 		//MapKey(&Joystick,H3R,);

@@ -60,7 +60,7 @@ int main()
 			MapKey(&Joystick,TG2,Weapons_FIREBomb_Release); //DX1
 	
 	//DMS
-		MapKey(&Joystick,H3D,DX30);
+		MapKey(&Joystick,H3D,VRZoomDX);
 		MapKey(&Joystick,H3U,PULSE + Decoy_Program_release);
 		MapKey(&Joystick,H3L,0);
 		MapKey(&Joystick,H3R,0);

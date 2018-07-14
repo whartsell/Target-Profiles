@@ -72,7 +72,7 @@ int main()
 	//S4 Paddle Switch
 		//MapKey(&Joystick, S4,PULSE+ASC_Direct_Control_Cobra);
 		//MapKeyR(&Joystick,S4,PULSE+ASC_Direct_Control_Cobra);
-		//MapKey(&Joystick, S4, Wheel_Brake_On);
+		MapKey(&Joystick, S4,VRZoomDX);
 //THROTTLE
 
 	//Pinky

@@ -40,6 +40,12 @@ int main()
 	MapKey(&Joystick,H1L,Trim_Left);
 	MapKey(&Joystick,H1R,Trim_Right);
 	
+	//DMS
+	MapKey(&Joystick,H3D,VRZoomDX);
+	//MapKey(&Joystick,H3U,);
+	//MapKey(&Joystick,H3L,);
+	//MapKey(&Joystick,H3R,);
+	
 	//TMS
 	MapKey(&Joystick,H2D,Kneeboard_glance_view);
 	MapKey(&Joystick,H2U,TEMPO(PULSE+Kneeboard_ON_OFF,PULSE+Kneeboard_current_position_mark_point));

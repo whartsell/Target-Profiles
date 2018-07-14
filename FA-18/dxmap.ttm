@@ -17,5 +17,5 @@ define Throttle_Designator_Controller__LeftDX		DX15
 define Throttle_Designator_Controller__RightDX		DX16
 define Throttle_Designator_Controller__UpDX			DX17
 define FingerLiftsDX								DX18
-define VRZoomDX										DX32
+//define VRZoomDX										DX32
 

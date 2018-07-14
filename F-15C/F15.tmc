@@ -31,7 +31,7 @@ int main()
 	
 	//UTIL
 	
-	MapKey(&Joystick, S4,TEMPO(PULSE+TrackIRPause,PULSE+TrackIRCenter));	//TrackIR
+	MapKey(&Joystick, S4,VRZoomDX);
 	
 	
 	

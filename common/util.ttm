@@ -10,3 +10,4 @@ define	ThrottleBL_2	86
 define	ThrottleBL_3	129
 define	ThrottleBL_4	172
 define	ThrottleBL_5	215
+define VRZoomDX										DX32

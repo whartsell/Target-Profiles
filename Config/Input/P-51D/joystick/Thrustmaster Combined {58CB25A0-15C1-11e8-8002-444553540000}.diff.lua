@@ -7,7 +7,7 @@ local diff = {
 						["curvature"] = {
 							[1] = 0,
 						},
-						["deadzone"] = 0.01,
+						["deadzone"] = 0.02,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -44,129 +44,36 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["changed"] = {
+		["a3026cd5"] = {
+			["added"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0.17,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_Z",
+					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Thrust",
+			["name"] = "Engine RPM Setting",
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilunilcdnilvdnilvpnilvunil"] = {
-			["name"] = "STT/TWS Toggle (Target Lock)",
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon release",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
 				},
 			},
 		},
-		["d107pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN3",
-				},
-			},
-			["name"] = "Special Modes FWD",
-		},
-		["d109pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Special Modes AFT",
-		},
-		["d110pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "MAGIC SELECT",
-		},
-		["d1126pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "NAV Update/MAGIC unlock",
-		},
-		["d112pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "PCA SELECT",
-		},
-		["d276pnilunilcdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN9",
-				},
-			},
-			["name"] = "Magic Slave/AG Designate/INS Position Update",
-		},
-		["d3449pnilu3449cd16vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Police Lights OFF",
-		},
-		["d3449pnilu3449cd16vd1vpnilvunil"] = {
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-			["name"] = "Police Lights ON",
-		},
-		["d564pnilu563cdnilvdnilvpnilvunil"] = {
-			["name"] = "Nosewheel Steering/IFF Interrogate",
+			["name"] = "Gun fire",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN1",
 				},
 			},
-		},
-		["d74pnilu75cdnilvdnilvpnilvunil"] = {
-			["name"] = "Wheel Brakes",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-		},
-		["dnilp141u230cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-			["name"] = "Radar Antenna UP",
-		},
-		["dnilp142u230cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN10",
-				},
-			},
-			["name"] = "Radar Antenna DOWN",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

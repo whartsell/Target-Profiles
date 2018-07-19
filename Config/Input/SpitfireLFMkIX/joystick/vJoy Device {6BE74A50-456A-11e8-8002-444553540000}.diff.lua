@@ -24,8 +24,8 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
+		["a3005cd2"] = {
+			["name"] = "Throttle (analog)",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",
@@ -95,6 +95,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
 				},
 			},
 		},

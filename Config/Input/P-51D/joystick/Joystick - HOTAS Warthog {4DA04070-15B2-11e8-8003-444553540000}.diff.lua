@@ -24,8 +24,8 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
+		["a3025cd5"] = {
+			["name"] = "Throttle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",
@@ -34,6 +34,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon release",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["name"] = "Gun fire",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {

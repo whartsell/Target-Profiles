@@ -1,7 +1,7 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
-			["name"] = "Pitch",
+			["name"] = "Flight Control Cyclic Pitch",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Y",
@@ -9,7 +9,7 @@ local diff = {
 			},
 		},
 		["a2002cdnil"] = {
-			["name"] = "Roll",
+			["name"] = "Flight Control Cyclic Roll",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_X",
@@ -17,15 +17,15 @@ local diff = {
 			},
 		},
 		["a2003cdnil"] = {
-			["name"] = "Rudder",
+			["name"] = "Flight Control Rudder",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_RZ",
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
+		["a2087cdnil"] = {
+			["name"] = "Flight Control Collective",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",
@@ -34,6 +34,30 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3004pnilu3004cd41vd1vpnilvu0"] = {
+			["name"] = "Pilot Trimmer",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d3009pnilu3009cd21vd1vpnilvu0"] = {
+			["name"] = "Pilot's radio trigger RADIO",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
+		["d84pnilu84cdnilvd1vpnilvu0"] = {
+			["name"] = "Pilot weapon release/Machinegun fire",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {
@@ -95,6 +119,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Center View",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
 				},
 			},
 		},

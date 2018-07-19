@@ -16,16 +16,44 @@ local diff = {
 				},
 			},
 		},
-		["a2003cdnil"] = {
-			["name"] = "Rudder",
-			["removed"] = {
+		["a2112cdnil"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_RZ",
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_X",
 				},
 			},
+			["name"] = "Wheel Brake Left",
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
+		["a2113cdnil"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = true,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_Y",
+				},
+			},
+			["name"] = "Wheel Brake Right",
+		},
+		["a3025cd5"] = {
+			["name"] = "Throttle",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_Z",
@@ -34,6 +62,22 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d350pnilu351cdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon release",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+				},
+			},
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["name"] = "Gun fire",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {

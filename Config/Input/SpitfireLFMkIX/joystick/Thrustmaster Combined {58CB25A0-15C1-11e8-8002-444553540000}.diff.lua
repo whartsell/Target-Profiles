@@ -1,20 +1,40 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
-			["name"] = "Pitch",
-			["removed"] = {
+			["changed"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0.02,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
 					["key"] = "JOY_Y",
 				},
 			},
+			["name"] = "Pitch",
 		},
 		["a2002cdnil"] = {
-			["name"] = "Roll",
-			["removed"] = {
+			["changed"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0.01,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
 					["key"] = "JOY_X",
 				},
 			},
+			["name"] = "Roll",
 		},
 		["a2003cdnil"] = {
 			["name"] = "Rudder",
@@ -24,16 +44,24 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
-			["removed"] = {
+		["a3008cd2"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_Z",
+					["key"] = "JOY_SLIDER2",
 				},
 			},
+			["name"] = "Engine RPM (analog)",
 		},
 	},
 	["keyDiffs"] = {
+		["d74pnilu75cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Wheel Brakes",
+		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
 			["removed"] = {
@@ -95,6 +123,14 @@ local diff = {
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
+				},
+			},
+		},
+		["dnilp36unilcdnilvdnilvpnilvunil"] = {
+			["name"] = "View Center",
+			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
 				},
 			},
 		},

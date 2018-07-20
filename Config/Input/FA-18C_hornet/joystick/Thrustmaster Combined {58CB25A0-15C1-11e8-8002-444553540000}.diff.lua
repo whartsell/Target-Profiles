@@ -72,7 +72,7 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d3002pnilu3002cd38vd1vpnilvu0"] = {
+		["d3002pnilu3002cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN8",
@@ -80,7 +80,7 @@ local diff = {
 			},
 			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
 		},
-		["d3003pnilu3003cd38vd1vpnilvu0"] = {
+		["d3003pnilu3003cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -88,7 +88,7 @@ local diff = {
 			},
 			["name"] = "Weapon Release Button",
 		},
-		["d3005pnilu3005cd38vd1vpnilvu0"] = {
+		["d3005pnilu3005cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
@@ -96,7 +96,7 @@ local diff = {
 			},
 			["name"] = "Sensor Control Switch - Fwd",
 		},
-		["d3006pnilu3006cd38vd1vpnilvu0"] = {
+		["d3006pnilu3006cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN2",
@@ -104,7 +104,7 @@ local diff = {
 			},
 			["name"] = "Sensor Control Switch - Aft",
 		},
-		["d3007pnilu3007cd38vd1vpnilvu0"] = {
+		["d3007pnilu3007cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
@@ -112,7 +112,7 @@ local diff = {
 			},
 			["name"] = "Sensor Control Switch - Left",
 		},
-		["d3008pnilu3008cd38vd1vpnilvu0"] = {
+		["d3008pnilu3008cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
@@ -120,7 +120,7 @@ local diff = {
 			},
 			["name"] = "Sensor Control Switch - Right",
 		},
-		["d3013pnilu3013cd38vd1vpnilvu0"] = {
+		["d3013pnilu3013cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
@@ -128,7 +128,7 @@ local diff = {
 			},
 			["name"] = "Undesignate/Nose Wheel Steer Switch",
 		},
-		["d3018pnilu3018cd38vd1vpnilvu0"] = {
+		["d3018pnilu3018cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
@@ -136,7 +136,7 @@ local diff = {
 			},
 			["name"] = "Autopilot/Nosewheel Steering Disengage (Paddle) Switch",
 		},
-		["d3019pnilu3019cd38vd1vpnilvu0"] = {
+		["d3019pnilu3019cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN17",
@@ -144,7 +144,7 @@ local diff = {
 			},
 			["name"] = "Throttle Designator Controller - Up",
 		},
-		["d3020pnilu3020cd38vd1vpnilvu0"] = {
+		["d3020pnilu3020cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN14",
@@ -152,7 +152,7 @@ local diff = {
 			},
 			["name"] = "Throttle Designator Controller - Down",
 		},
-		["d3021pnilu3021cd38vd1vpnilvu0"] = {
+		["d3021pnilu3021cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN15",
@@ -160,7 +160,7 @@ local diff = {
 			},
 			["name"] = "Throttle Designator Controller - Left",
 		},
-		["d3022pnilu3022cd38vd1vpnilvu0"] = {
+		["d3022pnilu3022cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN16",
@@ -168,7 +168,7 @@ local diff = {
 			},
 			["name"] = "Throttle Designator Controller - Right",
 		},
-		["d3023pnilu3023cd38vd1vpnilvu0"] = {
+		["d3023pnilu3023cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN13",
@@ -176,7 +176,7 @@ local diff = {
 			},
 			["name"] = "Throttle Designator Controller - Depress",
 		},
-		["d3035pnilu3035cd38vd-1vpnilvu0"] = {
+		["d3035pnilu3035cd13vd-1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN12",
@@ -184,21 +184,13 @@ local diff = {
 			},
 			["name"] = "Speed Brake Switch - EXTEND",
 		},
-		["d3035pnilu3035cd38vd1vpnilvu0"] = {
+		["d3035pnilu3035cd13vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN11",
 				},
 			},
 			["name"] = "Speed Brake Switch - RETRACT/OFF",
-		},
-		["d3040pnilu3040cd38vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN18",
-				},
-			},
-			["name"] = "Throttle Finger Lift (Both) - UP/DOWN",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

@@ -115,8 +115,8 @@ int main()
 		//MapKey(&Throttle,BSB,);
 	
 	//China Hat
-		MapKey(&Throttle,CHF,PULSE + Dispense_Switch__Forward_CHAFF_Center_OFF_);
-		MapKey(&Throttle,CHB,PULSE + Dispense_Switch__Aft_FLARE_Center_OFF_);
+		MapKeyIO(&Throttle,CHF,Gain_goggles_up,PULSE + Dispense_Switch__Forward_CHAFF_Center_OFF_);
+		MapKeyIO(&Throttle,CHB,Gain_goggles_down,PULSE + Dispense_Switch__Aft_FLARE_Center_OFF_);
 	
 	
 //Throttle Panel

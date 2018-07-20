@@ -66,6 +66,11 @@ define MASTER_CAUTION_Reset_Button                                              
 //define IFEI_Brightness_Control_Knob                                                             
 //define RWR_Intensity_Knob                                                                       
 
+//Sensors
+define Toggle_goggles																					  R_SHIFT + USB_H
+define Gain_goggles_up																					  R_CTL + R_SHIFT + USB_H		
+define Gain_goggles_down																				  R_ALT + R_SHIFT + USB_H
+
 //Cheat
 
 define Auto_Start                                                                                 L_WIN + USB_Home

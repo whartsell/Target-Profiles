@@ -41,10 +41,10 @@ define Canopy_OPEN                                                              
 //define Pneumatics_Master_Valve_OPEN                                                                 
 //define Undercarriage_next_selection_                                                                
 //define Undercarriage_prev_selection_                                                                
-define Undercarriage_toggle_                                                                          USB_G
-//define Undercarriage_EXTEND                                                                         
-//define Undercarriage_NEUTRAL                                                                        
-//define Undercarriage_RETRACT                                                                        
+//define Undercarriage_toggle_                                                                          USB_G
+define Undercarriage_EXTEND                                                                           L_CTL + USB_G
+define Undercarriage_NEUTRAL                                                                          USB_G 
+define Undercarriage_RETRACT                                                                          L_SHIFT + USB_G
 //define Emergency_Valve_analog_                                                                      
 //define Pneumatics_Master_Valve_analog_                                                              
 
@@ -262,11 +262,11 @@ define Engine_RPM_INCREASE                                                      
 //define Ignition_Control_Switch_toggle_                                                              
 //define Ignition_Control_Switch_FORWARD_CABIN                                                        
 //define Ignition_Control_Switch_REAR_CABIN                                                           
-define Magnetos_next_selection_                                                                       L_SHIFT + USB_End
-define Magnetos_prev_selection_                                                                       L_CTL + USB_End
-//define Magnetos_0                                                                                   
+//define Magnetos_next_selection_                                                                       L_SHIFT + USB_End
+//define Magnetos_prev_selection_                                                                       L_CTL + USB_End
+define Magnetos_0                                                                                     L_CTL + USB_End
 //define Magnetos_1                                                                                   
-//define Magnetos_1_2                                                                                 
+define Magnetos_1_2                                                                                   L_SHIFT + USB_End
 //define Magnetos_2                                                                                   
 define Main_Fuel_Cock_toggle_                                                                         USB_T
 define Main_Fuel_Cock_OFF                                                                             L_CTL + USB_T
@@ -315,11 +315,11 @@ define Flight__Engage_Bandits                                                   
 
 //Flight Control
 
-define Flaps_prev_selection_                                                                          L_CTL + USB_F
-define Flaps_toggle_                                                                                  USB_F
-//define Flaps_EXTEND                                                                                 
-//define Flaps_NEUTRAL                                                                                
-//define Flaps_RETRACT                                                                                
+//define Flaps_prev_selection_                                                                          L_CTL + USB_F
+//define Flaps_toggle_                                                                                  USB_F
+define Flaps_EXTEND                                                                                   L_CTL + USB_F
+define Flaps_NEUTRAL                                                                                  USB_F 
+define Flaps_RETRACT                                                                                  L_SHIFT + USB_F
 define Flight_BANK_LEFT                                                                               USB_LeftArrow
 define Flight_BANK_RIGHT                                                                              USB_RightArrow
 define Flight_NOSE_DOWN                                                                               USB_UpArrow
@@ -436,7 +436,8 @@ define Toggle_Console                                                           
 
 //define Smoke_Apparatus_OFF                                                                          
 //define Smoke_Apparatus_ON                                                                           
-//define Wheel_Brake_Lock                                                                             
+define Smoke_Apparatus_TOGGLE																		  L_SHIFT + USB_S	
+define Wheel_Brake_Lock                                                                               L_SHIFT + USB_W
 //define Wheel_Brake_Purge                                                                            
 define Wheel_Brakes                                                                                   USB_W
 //define Wheel_Brakes_DECREASE                                                                        

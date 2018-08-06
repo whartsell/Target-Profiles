@@ -1,0 +1,8 @@
+// This file is for creating macros that contain DX buttons
+define Wheel_BrakesDX			DX1
+define Cooling_Louvers_CLOSEDX	DX2                                                                        
+define Cooling_Louvers_OPENDX   DX3    
+define StarterDX				DX4                                                                
+
+
+//DX32 reserved for VR_ZOOM in util.ttm

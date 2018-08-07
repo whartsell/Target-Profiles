@@ -59,7 +59,7 @@ int main()
 			MapKey(&Joystick,TG2,0);
 	
 	//DMS
-		MapKey(&Joystick,H3D,VRZoomDX)
+		MapKey(&Joystick,H3D,VRZoomDX);
 		MapKey(&Joystick,H3U,0);
 		MapKey(&Joystick,H3L,0);
 		MapKey(&Joystick,H3R,0);
@@ -131,9 +131,9 @@ int main()
 	
 	//Engine Oper
 		//Left
-		MapKey(&Throttle,EOLIGN,PULSE + Starter_Cover_toggle_);
-		MapKey(&Throttle,EOLNORM,0);
-		MapKey(&Throttle,EOLMOTOR,StarterDX);
+		MapKey(&Throttle,EOLIGN,StarterDX);
+		MapKey(&Throttle,EOLNORM,PULSE + Starter_Cover_toggle_);
+		MapKey(&Throttle,EOLMOTOR,0);
 		
 		//Right
 		MapKey(&Throttle,EORIGN,0);

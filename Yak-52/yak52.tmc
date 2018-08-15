@@ -14,7 +14,7 @@ int main()
 	Configure(&TWCSThrottle, MODE_EXCLUDED);
 	SetKBRate(50, 75);
     if(Init(&EventHandle)) return 1; // declare the event handler, return on error
-
+	int MagnetoSwitchChange = EXEC("MagnetoSwitch();");
 	//Initialize Backlights
     	//ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
 
@@ -23,7 +23,7 @@ int main()
 	MapAxis(&Joystick, JOYY, DX_Y_AXIS); //Pitch
 	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS); //Eng RPM
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); //Throttle
-	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS); //Trim
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS); //Radiator
 	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
 	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
 	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
@@ -40,8 +40,8 @@ int main()
 	//S1 Master Mode Control Button
 		MapKey(&Joystick, S1,0);
 	//Trim
-		MapKey(&Joystick,H1D,0);
-		MapKey(&Joystick,H1U,0);
+		MapKey(&Joystick,H1D,Trim_Stabilizer_NOSE_UP);
+		MapKey(&Joystick,H1U,Trim_Stabilizer_NOSE_DOWN);
 		MapKey(&Joystick,H1L,0);
 		MapKey(&Joystick,H1R,0);
 
@@ -81,8 +81,8 @@ int main()
 
 	//Pinky
 		//MapKey(&Throttle,PSF,);
-		MapKey(&Throttle,PSM,PULSE + Magnetos_1_2);
-		MapKey(&Throttle,PSB,PULSE + Magnetos_0);
+		//MapKey(&Throttle,PSM,PULSE + Magnetos_1_2);
+		//MapKey(&Throttle,PSB,PULSE + Magnetos_0);
 		
 	//Left Throttle Button
 		MapKey(&Throttle,LTB,0);
@@ -97,10 +97,10 @@ int main()
 		MapKey(&Throttle,CSR,0);
 	
 	//Mic Switch
-		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSD,SRSRadio2);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		//MapKey(&Throttle, MSL,);
-		//MapKey(&Throttle, MSR,);
+		MapKey(&Throttle, MSL,SRSRadio3);
+		MapKey(&Throttle, MSR,SRSRadio1);
 		//MapKey(&Throttle, MSP,);	
 
 	//Speed Brake
@@ -114,20 +114,20 @@ int main()
 		MapKey(&Throttle,BSB,0);
 	
 	//China Hat
-		MapKey(&Throttle,CHF,Cooling_Louvers_OPENDX);
-		MapKey(&Throttle,CHB,Cooling_Louvers_CLOSEDX);
+		MapKey(&Throttle,CHF,Oil_Cooler_Flap_CLOSE);
+		MapKey(&Throttle,CHB,Oil_Cooler_Flap_OPEN);
 	
 	
 //Throttle Panel
 
 	//Engine Fuel Flow
 		//Left
-		MapKey(&Throttle,EFLNORM,0);
-		MapKey(&Throttle,EFLOVER,0);
+		MapKey(&Throttle,EFLNORM,MagnetoSwitchChange);
+		MapKey(&Throttle,EFLOVER,MagnetoSwitchChange);
 		
 		//Right
-		MapKey(&Throttle,EFRNORM,0);
-		MapKey(&Throttle,EFROVER,0);
+		MapKey(&Throttle,EFRNORM,MagnetoSwitchChange);
+		MapKey(&Throttle,EFROVER,MagnetoSwitchChange);
 	
 	//Engine Oper
 		//Left
@@ -187,4 +187,12 @@ int EventHandle(int type, alias o, int x)
     DefaultMapping(&o, x);
 	
 	//add event handling code here
+}
+
+int MagnetoSwitch()
+{
+	if (Throttle[EFLNORM] & Throttle[EFRNORM]) ActKey(KEYON + PULSE + Magnetos_1_2);
+	else if (Throttle[EFLNORM]) ActKey(KEYON + PULSE + Magnetos_1);
+	else if (Throttle[EFRNORM]) ActKey(KEYON + PULSE + Magnetos_2);
+	else ActKey(KEYON + PULSE + Magnetos_0);	
 }

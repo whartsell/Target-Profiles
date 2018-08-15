@@ -264,15 +264,15 @@ define Engine_RPM_INCREASE                                                      
 //define Ignition_Control_Switch_REAR_CABIN                                                           
 //define Magnetos_next_selection_                                                                       L_SHIFT + USB_End
 //define Magnetos_prev_selection_                                                                       L_CTL + USB_End
-define Magnetos_0                                                                                     L_CTL + USB_End
-//define Magnetos_1                                                                                   
-define Magnetos_1_2                                                                                   L_SHIFT + USB_End
-//define Magnetos_2                                                                                   
+define Magnetos_0                                                                                     USB_End
+define Magnetos_1                                                                                     L_CTL + USB_End
+define Magnetos_2                                                                                     L_SHIFT + USB_End 
+define Magnetos_1_2                                                                                   L_ALT + USB_End
 define Main_Fuel_Cock_toggle_                                                                         USB_T
 define Main_Fuel_Cock_OFF                                                                             L_CTL + USB_T
 define Main_Fuel_Cock_ON                                                                              L_SHIFT + USB_T
-//define Oil_Cooler_Flap_CLOSE                                                                        
-//define Oil_Cooler_Flap_OPEN                                                                         
+define Oil_Cooler_Flap_CLOSE                                                                          L_SHIFT + USB_O
+define Oil_Cooler_Flap_OPEN                                                                           L_CTL + USB_O
 //define Primer__Pump                                                                                 
 //define Primer_Selector_next_selection_                                                              
 //define Primer_Selector_prev_selection_                                                              

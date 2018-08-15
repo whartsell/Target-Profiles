@@ -1,0 +1,198 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+include "dxmap.ttm"
+
+int main()
+{
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+	int MagnetoSwitchChange = EXEC("MagnetoSwitch();");
+	//Initialize Backlights
+    	//ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); //Roll
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS); //Pitch
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS); //Eng RPM
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); //Throttle
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS); //Radiator
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+
+//Layers&Modes
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,0);
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,0);
+	//Trim
+		MapKey(&Joystick,H1D,Trim_Stabilizer_NOSE_UP);
+		MapKey(&Joystick,H1U,Trim_Stabilizer_NOSE_DOWN);
+		MapKey(&Joystick,H1L,0);
+		MapKey(&Joystick,H1R,0);
+
+
+	//TMS
+		MapKey(&Joystick,H2D,0);
+		MapKey(&Joystick,H2U,PULSE + Request_Aircraft_Control);
+		MapKey(&Joystick,H2L,0);
+		MapKey(&Joystick,H2R,0);
+
+	//Trigger 
+		//TG1
+			MapKey(&Joystick,TG1,PULSE + Smoke_Apparatus_TOGGLE);
+		//TG2
+			MapKey(&Joystick,TG2,0);
+	
+	//DMS
+		MapKey(&Joystick,H3D,VRZoomDX);
+		MapKey(&Joystick,H3U,0);
+		MapKey(&Joystick,H3L,0);
+		MapKey(&Joystick,H3R,0);
+
+	//CMS
+		MapKey(&Joystick,H4D,0);
+		MapKey(&Joystick,H4U,0);
+		MapKey(&Joystick,H4L,0);
+		MapKey(&Joystick,H4R,0);
+		MapKey(&Joystick,H4P,0); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,PULSE + Wheel_Brake_Lock);
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4,Wheel_BrakesDX);
+
+//THROTTLE
+
+	//Pinky
+		//MapKey(&Throttle,PSF,);
+		//MapKey(&Throttle,PSM,PULSE + Magnetos_1_2);
+		//MapKey(&Throttle,PSB,PULSE + Magnetos_0);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,0);
+	
+	//Slew
+		MapKey(&Throttle,SC,0); 
+
+	//Coolie
+		MapKey(&Throttle,CSD,0);
+		MapKey(&Throttle,CSU,0);
+		MapKey(&Throttle,CSL,0);
+		MapKey(&Throttle,CSR,0);
+	
+	//Mic Switch
+		MapKey(&Throttle, MSD,SRSRadio2);
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		MapKey(&Throttle, MSL,SRSRadio3);
+		MapKey(&Throttle, MSR,SRSRadio1);
+		//MapKey(&Throttle, MSP,);	
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,0);
+		MapKey(&Throttle,SPDM,0);
+		MapKey(&Throttle,SPDB,0);
+	
+	//Boat
+		MapKey(&Throttle,BSF,0);
+		MapKey(&Throttle,BSM,0);
+		MapKey(&Throttle,BSB,0);
+	
+	//China Hat
+		MapKey(&Throttle,CHF,Oil_Cooler_Flap_CLOSE);
+		MapKey(&Throttle,CHB,Oil_Cooler_Flap_OPEN);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		MapKey(&Throttle,EFLNORM,MagnetoSwitchChange);
+		MapKey(&Throttle,EFLOVER,MagnetoSwitchChange);
+		
+		//Right
+		MapKey(&Throttle,EFRNORM,MagnetoSwitchChange);
+		MapKey(&Throttle,EFROVER,MagnetoSwitchChange);
+	
+	//Engine Oper
+		//Left
+		MapKey(&Throttle,EOLIGN,StarterDX);
+		MapKey(&Throttle,EOLNORM,PULSE + Starter_Cover_toggle_);
+		MapKey(&Throttle,EOLMOTOR,0);
+		
+		//Right
+		MapKey(&Throttle,EORIGN,0);
+		MapKey(&Throttle,EORNORM,0);
+		MapKey(&Throttle,EORMOTOR,0);
+				
+	//APU
+		MapKey(&Throttle,APUON,0);
+		MapKey(&Throttle,APUOFF,0);
+	
+	//Flaps
+		MapKey(&Throttle,FLAPU, PULSE + Flaps_RETRACT);
+		MapKey(&Throttle,FLAPM,PULSE + Flaps_NEUTRAL);
+		MapKey(&Throttle,FLAPD,PULSE + Flaps_EXTEND);
+	
+	//Idle Cutoff
+		//Left
+		MapKey(&Throttle,IDLELON,0);
+		MapKey(&Throttle,IDLELOFF,0);
+		
+		//Right
+		MapKey(&Throttle,IDLERON,0);
+		MapKey(&Throttle,IDLEROFF,0);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,0);
+
+	//EAC
+		MapKey(&Throttle,EACON,0);
+		MapKey(&Throttle,EACOFF,0);
+	//RDR Altm
+		MapKey(&Throttle,RDRNRM,0);
+		MapKey(&Throttle,RDRDIS,0);
+	//AP Engage/Disengage
+		MapKey(&Throttle,APENG,0);
+
+	//AP Select Switch
+		MapKey(&Throttle,APPAT,PULSE + Undercarriage_RETRACT);
+		MapKey(&Throttle,APAH,PULSE + Undercarriage_NEUTRAL);
+		MapKey(&Throttle,APALT,PULSE + Undercarriage_EXTEND);
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}
+
+int MagnetoSwitch()
+{
+	if (Throttle[EFLNORM] & Throttle[EFRNORM]) ActKey(KEYON + PULSE + Magnetos_1_2);
+	else if (Throttle[EFLNORM]) ActKey(KEYON + PULSE + Magnetos_1);
+	else if (Throttle[EFRNORM]) ActKey(KEYON + PULSE + Magnetos_2);
+	else ActKey(KEYON + PULSE + Magnetos_0);	
+}

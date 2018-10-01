@@ -1,56 +1,28 @@
 local diff = {
 	["axisDiffs"] = {
 		["a2001cdnil"] = {
-			["changed"] = {
+			["name"] = "Pitch",
+			["removed"] = {
 				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0.01,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = false,
-					},
 					["key"] = "JOY_Y",
 				},
 			},
-			["name"] = "Pitch",
 		},
-		["a2003cdnil"] = {
-			["name"] = "Rudder",
+		["a2002cdnil"] = {
+			["name"] = "Roll",
 			["removed"] = {
 				[1] = {
-					["key"] = "JOY_RZ",
+					["key"] = "JOY_X",
 				},
 			},
 		},
-		["a2012cdnil"] = {
-			["added"] = {
+		["a2004cdnil"] = {
+			["name"] = "Thrust",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_SLIDER2",
+					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Zoom View",
-		},
-		["a3213cd41"] = {
-			["added"] = {
-				[1] = {
-					["filter"] = {
-						["curvature"] = {
-							[1] = 0,
-						},
-						["deadzone"] = 0,
-						["invert"] = false,
-						["saturationX"] = 1,
-						["saturationY"] = 1,
-						["slider"] = true,
-					},
-					["key"] = "JOY_RY",
-				},
-			},
-			["name"] = "TDC Range / Pipper Span control",
 		},
 		["a73cdnil"] = {
 			["name"] = "Wheel Brakes Lever",
@@ -62,61 +34,13 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d3124pnilunilcd15vd1vpnilvunil"] = {
-			["added"] = {
+		["d3191pnilu3191cd42vd1vpnilvu0"] = {
+			["name"] = "Fire Gun",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Flaps 0",
-		},
-		["d3125pnilunilcd15vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Flaps 25",
-		},
-		["d3126pnilunilcd15vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN5",
-				},
-			},
-			["name"] = "Flaps 45",
-		},
-		["d3193pnilu3193cd42vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Weapon Release",
-		},
-		["d3331pnilunilcd46vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN7",
-				},
-			},
-			["name"] = "Landing Lights OFF",
-		},
-		["d3332pnilunilcd46vd0.5vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "Landing Lights TAXI",
-		},
-		["d3333pnilunilcd46vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Landing Lights LANDING",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

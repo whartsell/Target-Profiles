@@ -1,5 +1,23 @@
 local diff = {
 	["axisDiffs"] = {
+		["a2001cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0.01,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_Y",
+				},
+			},
+			["name"] = "Pitch",
+		},
 		["a2003cdnil"] = {
 			["name"] = "Rudder",
 			["removed"] = {
@@ -8,42 +26,44 @@ local diff = {
 				},
 			},
 		},
-		["a2004cdnil"] = {
-			["name"] = "Thrust",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_Z",
-				},
-			},
-		},
 	},
 	["keyDiffs"] = {
-		["d3005pnilu3006cd23vd1vpnilvu1"] = {
+		["d3001pnilunilcd28vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN1",
-					["reformers"] = {
-						[1] = "JOY_BTN3",
-					},
+					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "T0 Fix (three position switch)",
+			["name"] = "Fast countermeasure dispense",
 		},
-		["d3007pnilu3006cd23vd1vpnilvu1"] = {
+		["d3002pnilu3003cd23vd1vpnilvu1"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
-					["reformers"] = {
-						[1] = "JOY_BTN3",
-					},
 				},
 			},
-			["name"] = "TV Fix (Three position switch)",
+			["name"] = "A0 Mode (Three position switch)",
+		},
+		["d3004pnilu3003cd23vd1vpnilvu1"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "A2 Mode (Three position switch)",
+		},
+		["d3011pnilunilcd31vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "FR22 Push-to-talk",
 		},
 		["d3090pnilu3090cd22vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN11",
+					["key"] = "JOY_BTN3",
 				},
 			},
 			["name"] = "Reference button",
@@ -51,7 +71,7 @@ local diff = {
 		["d3300pnilunilcd2vd0vpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN2",
 				},
 			},
 			["name"] = "Trigger safety bracket SAFE",
@@ -64,20 +84,7 @@ local diff = {
 			},
 			["name"] = "Trigger safety bracket ARM",
 		},
-		["d3302pnilunilcd22vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Autopilot mode ATT (Attitude hold)",
-		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
 			["name"] = "Weapon Release",
 			["removed"] = {
 				[1] = {
@@ -148,38 +155,6 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
-		},
-		["dnilp93u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Trim: Left Wing Down",
-		},
-		["dnilp94u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Trim: Right Wing Down",
-		},
-		["dnilp95u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Trim: Nose Up",
-		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Trim: Nose Down",
 		},
 	},
 }

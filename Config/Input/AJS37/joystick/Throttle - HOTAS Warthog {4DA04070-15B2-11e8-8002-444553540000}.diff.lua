@@ -145,6 +145,14 @@ local diff = {
 			},
 			["name"] = "Autothrottle disconnect / IR-missile fast select",
 		},
+		["d3314pnilunilcd2vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+				},
+			},
+			["name"] = "IR-missile uncage",
+		},
 		["d3323pnilunilcd5vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {

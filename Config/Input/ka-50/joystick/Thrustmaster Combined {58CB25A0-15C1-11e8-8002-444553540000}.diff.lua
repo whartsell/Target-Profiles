@@ -8,15 +8,15 @@ local diff = {
 				},
 			},
 		},
-		["a2012cdnil"] = {
+		["a2004cdnil"] = {
 			["added"] = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = -0.22,
+							[1] = 0,
 						},
 						["deadzone"] = 0,
-						["invert"] = false,
+						["invert"] = true,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
 						["slider"] = true,
@@ -24,7 +24,7 @@ local diff = {
 					["key"] = "JOY_SLIDER2",
 				},
 			},
-			["name"] = "Zoom View",
+			["name"] = "Throttle",
 		},
 		["a2087cdnil"] = {
 			["added"] = {

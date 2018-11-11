@@ -1,0 +1,4 @@
+define Fire_Cannon__Rockets_B1_DX	DX1
+define Fire_Machineguns_A_DX		DX2
+define Flaps_RETRACTDX				DX3
+define Flaps_EXTENDDX				DX4

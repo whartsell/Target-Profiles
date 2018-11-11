@@ -1,6 +1,6 @@
 local diff = {
 	["axisDiffs"] = {
-		["a2002cdnil"] = {
+		["a2001cdnil"] = {
 			["changed"] = {
 				[1] = {
 					["filter"] = {
@@ -8,6 +8,24 @@ local diff = {
 							[1] = 0,
 						},
 						["deadzone"] = 0.01,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_Y",
+				},
+			},
+			["name"] = "Pitch",
+		},
+		["a2002cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0.02,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -37,6 +55,26 @@ local diff = {
 		["a2005cdnil"] = {
 			["added"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.19,
+							[3] = 0.37,
+							[4] = 0.4,
+							[5] = 0.48,
+							[6] = 0.57,
+							[7] = 0.65,
+							[8] = 0.74,
+							[9] = 0.82,
+							[10] = 0.91,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
 					["key"] = "JOY_RZ",
 				},
 			},
@@ -45,132 +83,96 @@ local diff = {
 		["a2006cdnil"] = {
 			["added"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.19,
+							[3] = 0.37,
+							[4] = 0.4,
+							[5] = 0.48,
+							[6] = 0.57,
+							[7] = 0.65,
+							[8] = 0.74,
+							[9] = 0.82,
+							[10] = 0.91,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
 					["key"] = "JOY_Z",
 				},
 			},
 			["name"] = "Thrust Right",
 		},
+		["a2033cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_RX",
+				},
+			},
+			["name"] = "TDC Slew Horizontal",
+		},
+		["a2034cdnil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_RY",
+				},
+			},
+			["name"] = "TDC Slew Vertical",
+		},
 	},
 	["keyDiffs"] = {
-		["d3002pnilu3002cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN8",
-				},
-			},
-			["name"] = "Gun Trigger - SECOND DETENT (Press to shoot)",
-		},
-		["d3003pnilu3003cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN1",
-				},
-			},
-			["name"] = "Weapon Release Button",
-		},
-		["d3005pnilu3005cd13vd1vpnilvu0"] = {
-			["added"] = {
+		["d100pnilu1627cdnilvdnilvpnilvunil"] = {
+			["name"] = "Target Lock",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Sensor Control Switch - Fwd",
 		},
-		["d3006pnilu3006cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Sensor Control Switch - Aft",
-		},
-		["d3007pnilu3007cd13vd1vpnilvu0"] = {
-			["added"] = {
+		["d101pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Weapon Change",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN4",
 				},
 			},
-			["name"] = "Sensor Control Switch - Left",
 		},
-		["d3008pnilu3008cd13vd1vpnilvu0"] = {
-			["added"] = {
+		["d113pnilunilcdnilvdnilvpnilvunil"] = {
+			["name"] = "Cannon",
+			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN5",
 				},
 			},
-			["name"] = "Sensor Control Switch - Right",
 		},
-		["d3013pnilu3013cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN6",
-				},
-			},
-			["name"] = "Undesignate/Nose Wheel Steer Switch",
-		},
-		["d3018pnilu3018cd13vd1vpnilvu0"] = {
+		["d1635pnilunilcdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
 				},
 			},
-			["name"] = "Autopilot/Nosewheel Steering Disengage (Paddle) Switch",
+			["name"] = "Return To Search",
 		},
-		["d3019pnilu3019cd13vd1vpnilvu0"] = {
+		["d571pnilu1557cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN17",
+					["key"] = "JOY_BTN8",
 				},
 			},
-			["name"] = "Throttle Designator Controller - Up",
+			["name"] = "Stick Deflection Limiter Override",
 		},
-		["d3020pnilu3020cd13vd1vpnilvu0"] = {
+		["d74pnilu75cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN14",
+					["key"] = "JOY_BTN2",
 				},
 			},
-			["name"] = "Throttle Designator Controller - Down",
-		},
-		["d3021pnilu3021cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN15",
-				},
-			},
-			["name"] = "Throttle Designator Controller - Left",
-		},
-		["d3022pnilu3022cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN16",
-				},
-			},
-			["name"] = "Throttle Designator Controller - Right",
-		},
-		["d3023pnilu3023cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN13",
-				},
-			},
-			["name"] = "Throttle Designator Controller - Depress",
-		},
-		["d3035pnilu3035cd13vd-1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN12",
-				},
-			},
-			["name"] = "Speed Brake Switch - EXTEND",
-		},
-		["d3035pnilu3035cd13vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-			["name"] = "Speed Brake Switch - RETRACT/OFF",
+			["name"] = "Wheel Brake On",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",
@@ -235,6 +237,38 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
+		},
+		["dnilp93u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Trim: Left Wing Down",
+		},
+		["dnilp94u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Trim: Right Wing Down",
+		},
+		["dnilp95u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+			["name"] = "Trim: Nose Up",
+		},
+		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Trim: Nose Down",
 		},
 	},
 }

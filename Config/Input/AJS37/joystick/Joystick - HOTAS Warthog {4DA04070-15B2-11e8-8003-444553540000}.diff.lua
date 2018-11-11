@@ -18,7 +18,18 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
-		["d3005pnilu3006cd23vd1vpnilvu1"] = {
+		["d3005pnilunilcd23vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
+				},
+			},
+			["name"] = "T0 Fix",
+		},
+		["d3006pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -27,9 +38,9 @@ local diff = {
 					},
 				},
 			},
-			["name"] = "T0 Fix (three position switch)",
+			["name"] = "T1 Fix",
 		},
-		["d3007pnilu3006cd23vd1vpnilvu1"] = {
+		["d3007pnilunilcd23vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
@@ -38,7 +49,7 @@ local diff = {
 					},
 				},
 			},
-			["name"] = "TV Fix (Three position switch)",
+			["name"] = "TV Fix",
 		},
 		["d3090pnilu3090cd22vd1vpnilvu0"] = {
 			["added"] = {

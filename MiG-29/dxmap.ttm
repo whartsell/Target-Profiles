@@ -1,0 +1,10 @@
+// This file is for creating macros that contain DX buttons
+define Weapon_FireDX						DX1
+define Wheel_Brake_OnDX						DX2
+define Trim_Nose_UpDX 						DX3
+define Trim_Nose_DownDX						DX4
+define Trim_Left_Wing_DownDX 				DX5
+define Trim_Right_Wing_DownDX				DX6
+define TargetUnlockDX						DX7
+define Stick_Deflection_Limiter_OverrideDX	DX8
+//DX32 reserved for VR_ZOOM in util.ttm

@@ -1,0 +1,8 @@
+// This file is for creating macros that contain DX buttons
+define MG131_151_fireDX			DX1
+define Weapon_releaseDX			DX2
+define Radiator_Flaps_CloseDX 	DX3
+define Radiator_Flaps_OpenDX  	DX4
+define MG131_fireDX			  	DX5	
+
+//DX32 reserved for VR_ZOOM in util.ttm

@@ -95,7 +95,7 @@ int main()
 	//Coolie
 		MapKey(&Throttle,CSD,Radar_Elevation_Control__Down);
 		MapKey(&Throttle,CSU,Radar_Elevation_Control__Up);
-		MapKey(&Throttle,CSL,PULSE + Cage_Uncage_Button);
+		MapKey(&Throttle,CSL,Cage_Uncage_Button);
 		MapKey(&Throttle,CSR,PULSE + RAID_FLIR_FOV_Select_Button);
 	
 	//Mic Switch

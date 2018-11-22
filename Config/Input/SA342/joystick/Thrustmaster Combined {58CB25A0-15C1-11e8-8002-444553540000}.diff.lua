@@ -75,6 +75,14 @@ local diff = {
 			},
 			["name"] = "Trimmer",
 		},
+		["d3008pnilu3009cd16vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN6",
+				},
+			},
+			["name"] = "Slew up",
+		},
 		["d3009pnilu3010cd8vd1vpnilvu0"] = {
 			["name"] = "Trim: Left Wing Down",
 			["removed"] = {
@@ -83,6 +91,14 @@ local diff = {
 				},
 			},
 		},
+		["d3010pnilu3011cd16vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Slew down",
+		},
 		["d3011pnilu3012cd8vd1vpnilvu0"] = {
 			["name"] = "Trim: Right Wing Down",
 			["removed"] = {
@@ -90,6 +106,22 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_R",
 				},
 			},
+		},
+		["d3012pnilu3013cd16vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Slew left",
+		},
+		["d3014pnilu3015cd16vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Slew right",
 		},
 		["d3029pnilu3030cd7vd1vpnilvu0"] = {
 			["added"] = {

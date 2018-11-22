@@ -50,28 +50,28 @@ int main()
 
 
 	//TMS
-		//MapKey(&Joystick,H2D,);
-		//MapKey(&Joystick,H2U,);
-		MapKeyIO(&Joystick,H2L,Gain_Decrease,0);
-		MapKeyIO(&Joystick,H2R,Gain_Increase,0);
+		MapKey(&Joystick,H2D,Slew_upDX);
+		MapKey(&Joystick,H2U,Slew_downDX);
+		MapKey(&Joystick,H2L,Slew_leftDX);
+		MapKey(&Joystick,H2R,Slew_rightDX);
 
 	//Trigger 
 		//TG1
-			//MapKey(&Joystick,TG1,);
+			MapKey(&Joystick,TG1,0);
 		//TG2
 			MapKey(&Joystick,TG2,Fire_Gun_or_RocketsDX);
 	
 	//DMS
 		MapKey(&Joystick,H3D,VRZoomDX);
-		//MapKey(&Joystick,H3U,);
-		//MapKey(&Joystick,H3L,);
-		//MapKey(&Joystick,H3R,);
+		MapKey(&Joystick,H3U,0);
+		MapKey(&Joystick,H3L,Gain_Decrease);
+		MapKey(&Joystick,H3R,Gain_Increase);
 
 	//CMS
 		MapKey(&Joystick,H4D,PULSE + Trimmer_reset);
 		MapKeyIO(&Joystick,H4U,PULSE + Lasing_Button_Cover,PULSE + Autopilot_MasterDX);
-		//MapKey(&Joystick,H4L,);
-		//MapKey(&Joystick,H4R,);
+		MapKey(&Joystick,H4L,0);
+		MapKey(&Joystick,H4R,0);
 		MapKeyIO(&Joystick,H4P,PULSE + Lasing_Button,TrimmerDX); 
 	
 	//S3 Pinky Switch
@@ -86,38 +86,38 @@ int main()
 //THROTTLE
 
 	//Pinky
-		//MapKey(&Throttle,PSF,);
-		//MapKey(&Throttle,PSM,);
-		//MapKey(&Throttle,PSB,);
+		MapKey(&Throttle,PSF,0);
+		MapKey(&Throttle,PSM,0);
+		MapKey(&Throttle,PSB,0);
 		
 	//Left Throttle Button
 		MapKey(&Throttle,LTB,Start_dispensing);
 	
 	//Slew
-		//MapKey(&Throttle,SC,); 
+		MapKey(&Throttle,SC,0); 
 
 	//Coolie
-		//MapKey(&Throttle,CSD,);
-		//MapKey(&Throttle,CSU,);
-		//MapKey(&Throttle,CSL,);
-		//MapKey(&Throttle,CSR,);
+		MapKey(&Throttle,CSD,0);
+		MapKey(&Throttle,CSU,0);
+		MapKey(&Throttle,CSL,0);
+		MapKey(&Throttle,CSR,0);
 	
 	//Mic Switch
-		//MapKey(&Throttle, MSD,);
+		MapKey(&Throttle, MSD,SRSRadio3);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		//MapKey(&Throttle, MSL,);
-		//MapKey(&Throttle, MSR,);
+		MapKey(&Throttle, MSL,SRSRadio2);
+		MapKey(&Throttle, MSR,SRSRadio1);
 		MapKey(&Throttle, MSP,PULSE + Radios_Communication_Menu_Toggle);	
 
 	//Speed Brake
-		//MapKey(&Throttle,SPDF,);
-		//MapKey(&Throttle,SPDM,);
+		MapKey(&Throttle,SPDF,0);
+		MapKey(&Throttle,SPDM,0);
 		MapKey(&Throttle,SPDB,PULSE + Auto_Collective_Toggle);
 	
 	//Boat
-		//MapKey(&Throttle,BSF,);
-		//MapKey(&Throttle,BSM,);
-		//MapKey(&Throttle,BSB,);
+		MapKey(&Throttle,BSF,0);
+		MapKey(&Throttle,BSM,0);
+		MapKey(&Throttle,BSB,0);
 	
 	//China Hat
 		MapKeyIO(&Throttle,CHF,PULSE + VCB_Zoom_In,0);
@@ -128,63 +128,63 @@ int main()
 
 	//Engine Fuel Flow
 		//Left
-		//MapKey(&Throttle,EFLNORM,);
-		//MapKey(&Throttle,EFLOVER,);
+		MapKey(&Throttle,EFLNORM,0);
+		MapKey(&Throttle,EFLOVER,0);
 		
 		//Right
-		//MapKey(&Throttle,EFRNORM,);
-		//MapKey(&Throttle,EFROVER,);
+		MapKey(&Throttle,EFRNORM,0);
+		MapKey(&Throttle,EFROVER,0);
 	
 	//Engine Oper
 		//Left
-		//MapKey(&Throttle,EOLIGN,);
-		//MapKey(&Throttle,EOLNORM,);
-		//MapKey(&Throttle,EOLMOTOR,);
+		MapKey(&Throttle,EOLIGN,0);
+		MapKey(&Throttle,EOLNORM,0);
+		MapKey(&Throttle,EOLMOTOR,0);
 		
 		//Right
-		//MapKey(&Throttle,EORIGN,);
-		//MapKey(&Throttle,EORNORM,);
-		//MapKey(&Throttle,EORMOTOR,);
+		MapKey(&Throttle,EORIGN,0);
+		MapKey(&Throttle,EORNORM,0);
+		MapKey(&Throttle,EORMOTOR,0);
 				
 	//APU
-		//MapKey(&Throttle,APUON,);
-		//MapKey(&Throttle,APUOFF,);
+		MapKey(&Throttle,APUON,0);
+		MapKey(&Throttle,APUOFF,0);
 	
 	//Flaps
 		MapKey(&Throttle,FLAPU,PULSE + Mode_Up);
 		MapKeyR(&Throttle,FLAPU,PULSE + Mode_Down);
-		//MapKey(&Throttle,FLAPM,);
+		MapKey(&Throttle,FLAPM,0);
 		MapKeyR(&Throttle,FLAPD,PULSE + Mode_Up);
 		MapKey(&Throttle,FLAPD,PULSE + Mode_Down);
 	
 	//Idle Cutoff
 		//Left
-		//MapKey(&Throttle,IDLELON,);
-		//MapKey(&Throttle,IDLELOFF,);
+		MapKey(&Throttle,IDLELON,0);
+		MapKey(&Throttle,IDLELOFF,0);
 		
 		//Right
-		//MapKey(&Throttle,IDLERON,);
-		//MapKey(&Throttle,IDLEROFF,);
+		MapKey(&Throttle,IDLERON,0);
+		MapKey(&Throttle,IDLEROFF,0);
 	
 	// Throttle Friction Control
 	
 	
 	//Landing Gear Horn Silence
-		//MapKey(&Throttle,LDGH,);
+		MapKey(&Throttle,LDGH,0);
 
 	//EAC
 		MapKey(&Throttle,EACON,PULSE + USB_2);
 		MapKey(&Throttle,EACOFF,PULSE + USB_1);
 	//RDR Altm
-		//MapKey(&Throttle,RDRNRM,);
-		//MapKey(&Throttle,RDRDIS,);
+		MapKey(&Throttle,RDRNRM,0);
+		MapKey(&Throttle,RDRDIS,0);
 	//AP Engage/Disengage
-		//MapKey(&Throttle,APENG,F14);
+		MapKey(&Throttle,APENG,F14);
 
 	//AP Select Switch
-		//MapKey(&Throttle,APPAT,);
-		//MapKey(&Throttle,APAH,);
-		//MapKey(&Throttle,APALT,);
+		MapKey(&Throttle,APPAT,0);
+		MapKey(&Throttle,APAH,0);
+		MapKey(&Throttle,APALT,0);
 
 
 }

@@ -54,6 +54,14 @@ local diff = {
 		},
 	},
 	["keyDiffs"] = {
+		["d3005pnilu3005cd5vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Fire Machineguns and Cannons",
+		},
 		["d74pnilu75cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {

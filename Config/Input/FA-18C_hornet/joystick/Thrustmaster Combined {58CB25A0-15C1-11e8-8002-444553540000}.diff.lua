@@ -50,6 +50,42 @@ local diff = {
 			},
 			["name"] = "Thrust Right",
 		},
+		["a3043cd13"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0.15,
+						},
+						["deadzone"] = 0.03,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_RY",
+				},
+			},
+			["name"] = "Throttle Designator Controller - Vertical Axis",
+		},
+		["a3044cd13"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0.15,
+						},
+						["deadzone"] = 0.03,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_RX",
+				},
+			},
+			["name"] = "Throttle Designator Controller - Horizontal Axis",
+		},
 	},
 	["keyDiffs"] = {
 		["d3002pnilu3002cd13vd1vpnilvu0"] = {

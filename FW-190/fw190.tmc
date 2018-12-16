@@ -100,8 +100,8 @@ int main()
 		MapKey(&Throttle, MSD,0);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,0);
-		MapKey(&Throttle, MSR,0);
-		MapKey(&Throttle, MSP,0);	
+		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSP,COMM_Communication_menu);	
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,0);

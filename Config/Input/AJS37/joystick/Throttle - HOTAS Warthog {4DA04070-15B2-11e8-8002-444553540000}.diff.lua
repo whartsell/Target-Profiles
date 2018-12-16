@@ -47,14 +47,6 @@ local diff = {
 				},
 			},
 		},
-		["a2012cdnil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_SLIDER1",
-				},
-			},
-			["name"] = "Zoom View",
-		},
 		["a3321cd5"] = {
 			["added"] = {
 				[1] = {
@@ -70,6 +62,24 @@ local diff = {
 				},
 			},
 			["name"] = "Radar stick vertical",
+		},
+		["a3327cd5"] = {
+			["added"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_SLIDER1",
+				},
+			},
+			["name"] = "Radar MKR Gain",
 		},
 	},
 	["keyDiffs"] = {
@@ -121,6 +131,14 @@ local diff = {
 			},
 			["name"] = "A2 Mode (Three position switch)",
 		},
+		["d3213pnilunilcd5vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+				},
+			},
+			["name"] = "Obstacle detection mode",
+		},
 		["d3302pnilunilcd22vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
@@ -169,28 +187,6 @@ local diff = {
 			},
 			["name"] = "Radar Range Decrease",
 		},
-		["d3325pnilunilcd5vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN12",
-					["reformers"] = {
-						[1] = "JOY_BTN3",
-					},
-				},
-			},
-			["name"] = "Radar MKR Gain increase",
-		},
-		["d3326pnilunilcd5vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-					["reformers"] = {
-						[1] = "JOY_BTN3",
-					},
-				},
-			},
-			["name"] = "Radar MKR Gain decrease",
-		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["name"] = "Weapon Release",
 			["removed"] = {
@@ -222,6 +218,28 @@ local diff = {
 				},
 			},
 			["name"] = "Landing Gear Up/Down",
+		},
+		["d3924pnilunilcd5vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
+				},
+			},
+			["name"] = "Radar Decrease Brightness",
+		},
+		["d3924pnilunilcd5vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
+				},
+			},
+			["name"] = "Radar Increase Brightness",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

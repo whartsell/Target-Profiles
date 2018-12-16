@@ -25,9 +25,9 @@ int main()
 	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
 	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
 	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	//SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
 	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
-	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+	//SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
 
 //Layers&Modes
 	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
@@ -89,8 +89,8 @@ int main()
 	
 	//Slew
 		MapKey(&Throttle,SC,Throttle_Designator_Controller__DepressDX);
-		KeyAxis(&Throttle, SCX, 0, AXMAP2(5, Throttle_Designator_Controller__LeftDX, 0,0,0, Throttle_Designator_Controller__RightDX));
-		KeyAxis(&Throttle, SCY, 0, AXMAP2(5, Throttle_Designator_Controller__UpDX, 0,0,0, Throttle_Designator_Controller__DownDX));		
+		//KeyAxis(&Throttle, SCX, 0, AXMAP2(5, Throttle_Designator_Controller__LeftDX, 0,0,0, Throttle_Designator_Controller__RightDX));
+		//KeyAxis(&Throttle, SCY, 0, AXMAP2(5, Throttle_Designator_Controller__UpDX, 0,0,0, Throttle_Designator_Controller__DownDX));		
 
 	//Coolie
 		MapKey(&Throttle,CSD,Radar_Elevation_Control__Down);

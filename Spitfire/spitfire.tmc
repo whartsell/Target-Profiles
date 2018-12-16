@@ -51,7 +51,7 @@ int main()
 		//TG1
 			//MapKey(&Joystick,TG1,);
 		//TG2
-			//MapKey(&Joystick,TG2,);
+			MapKey(&Joystick,TG2,DX1);
 	
 	//DMS
 		MapKey(&Joystick,H3D,VRZoomDX);
@@ -95,8 +95,8 @@ int main()
 		//MapKey(&Throttle, MSD,);
 		MapKey(&Throttle, MSU,TsPTT); //VAC push to talk
 		//MapKey(&Throttle, MSL,);
-		//MapKey(&Throttle, MSR,);
-		//MapKey(&Throttle, MSP,TsPTT);	// TeamSpeak
+		MapKey(&Throttle, MSR,SRSRadio1);
+		MapKey(&Throttle, MSP,COMM_Communication_menu);	// TeamSpeak
 
 	//Speed Brake
 		//MapKey(&Throttle,SPDF,);

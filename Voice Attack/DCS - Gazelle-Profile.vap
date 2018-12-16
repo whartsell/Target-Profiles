@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>9a88a0ad-7958-4f17-a7bb-8b494d4bbf07</Id>
+  <Id>0927e5aa-d2b3-47f6-9c2a-45d658038e5c</Id>
   <Name>DCS - Gazelle</Name>
   <Commands>
     <Command>
@@ -18,7 +18,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>2ef26157-7b2c-421c-9f1b-1baae9a64918</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>ba1f3941-c4e3-4e31-a4a6-54b41e5415b5</Id>
+      <Id>5ef38684-cbdf-403a-8860-170fbe6720d9</Id>
       <CommandString>Doors</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +30,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>319d37a2-b257-4a71-8e40-c331a06fc3e7</Id>
+          <Id>65fb5f66-fa11-4381-94de-7af2ba2575db</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -121,7 +121,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>dbb6e1f5-b618-470d-9895-15c43f1a0d67</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>75c2e33a-2e71-493e-938b-346ff9ae1c6f</Id>
+      <Id>e4c7450d-e33a-4c30-9d18-60ec6d685e51</Id>
       <CommandString>Goggles; IN Vee Gees</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -133,7 +133,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3a54341e-04de-4adf-acbb-47701b078da5</Id>
+          <Id>b672b197-55b6-4e15-a7e4-c71cccc08a9b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -224,7 +224,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>77640c25-2945-408a-838c-e4ec8725c2ce</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>c7a3516f-bb74-4952-a640-570a877aa231</Id>
+      <Id>2da3f412-e55f-4224-a5a0-bcabc21e1216</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -236,7 +236,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bc1440dc-97df-440d-bdb6-1966054ca100</Id>
+          <Id>16d74ed3-f70e-4dfa-a2fa-832702306d83</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -347,7 +347,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>c7a3516f-bb74-4952-a640-570a877aa231</InitializeCommandId>
+  <InitializeCommandId>2da3f412-e55f-4224-a5a0-bcabc21e1216</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>

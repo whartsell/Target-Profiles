@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>cdf45f8b-69f3-4a91-9f4d-b815fdeb3f6f</Id>
+  <Id>7a083815-4ebb-499f-9884-13e35012c1e4</Id>
   <Name>Master-Loader</Name>
   <Commands>
     <Command>
@@ -18,7 +18,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>58a60630-e78c-439d-be43-63e537d0038f</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>1aea0703-ce46-4bba-bbf7-20d5e198e983</Id>
+      <Id>35762475-a590-45ac-ba7f-42f268ba390a</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +30,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>8ee00af1-13d9-4bd1-bcc3-dc2ca662cbd1</Id>
+          <Id>58c82e5c-18b3-4f53-9578-3b53c34ff4dd</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -119,10 +119,11 @@
       <IsOverride>false</IsOverride>
       <BaseId>5fc8a204-faf5-4c1d-83a4-a52a40242940</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>766d4024-b1a7-47ff-ab02-4f3d5c2e57c3</Id>
-      <CommandString>Load DCS common; Load common</CommandString>
+      <Id>62a7d39e-3b7e-4ed1-9ebc-108420b22352</Id>
+      <CommandString>Load DCS common; Load DCS</CommandString>
       <ActionSequence>
         <CommandAction>
+          <_caption>Say, 'Loading DCS Common'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
           <Ordinal>0</Ordinal>
@@ -131,7 +132,8 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5a7fbdbf-55eb-462e-b180-b01ae18224f4</Id>
+          <Caption>Say, 'Loading DCS Common'</Caption>
+          <Id>dd302e58-ae39-4460-988e-46a3e64d6f33</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -156,15 +158,17 @@
           <RandomSounds />
         </CommandAction>
         <CommandAction>
+          <_caption>Switch to profile, 'DCS - Common'</_caption>
           <PairingSet>false</PairingSet>
           <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
+          <Ordinal>1</Ordinal>
           <ConditionMet xsi:nil="true" />
           <IndentLevel>0</IndentLevel>
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c271c68a-3bca-46a0-9c5b-50572e0898ed</Id>
+          <Caption>Switch to profile, 'DCS - Common'</Caption>
+          <Id>d5fc4680-a4d6-4c98-a335-5a60dcb41a53</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -253,7 +257,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>e0668fd8-5585-4cbb-b7ea-78506a3e4a45</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>11cc6ad4-89f8-4da4-b01d-f5bd16c16e34</Id>
+      <Id>555ef640-06ab-4273-8ecd-d84321d6ac6b</Id>
       <CommandString>Load FishBed</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -265,7 +269,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5bcdabfb-d96f-49aa-8ee5-809d81cd3c38</Id>
+          <Id>8e67594c-9d19-4f6f-bf99-b203187f7ce8</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -298,7 +302,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>93ab2437-6a7f-4097-9fb0-030c721079e1</Id>
+          <Id>41c895fd-7762-4c38-b459-a98dbfd45fcf</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -387,7 +391,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>60831a22-5d71-4c0d-aae0-a4d0293c3e84</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>fd593f85-e8be-48da-8175-08582c67bc1d</Id>
+      <Id>ad906368-62bf-4402-893a-b3494b99f39a</Id>
       <CommandString>Load FrogFoot T</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -399,7 +403,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>43d97893-266c-4b06-b264-1669d4db5111</Id>
+          <Id>c6bb8256-3020-4ec6-9dd2-074b6f65e277</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -432,7 +436,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>feb81913-ca0f-4c50-9da7-302f03ca9c62</Id>
+          <Id>52c5b28a-55ef-4d54-8fc8-bbcd029b8dd5</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -521,7 +525,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>f1b28d64-840a-4cf9-a749-ffd8c28ddec0</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>cfa3e929-69ec-4152-8fb1-f70d04931acc</Id>
+      <Id>e4fa7daf-2c16-4e9f-a710-44fd3ffdb334</Id>
       <CommandString>Load Fulcrum</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -533,7 +537,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>647a0b89-f92b-4543-ab0f-e0e7ad52d57c</Id>
+          <Id>7202658a-726a-48bf-a0f0-71eb7d2227d2</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -566,7 +570,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6a840ba6-30bd-4287-a5c7-e066029a1e30</Id>
+          <Id>f25e0292-6d68-43ba-8aa0-680898c27531</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -655,7 +659,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>f09ac877-fc31-41ee-9fd0-bd615c06f6e6</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5762a963-f0e8-4745-b43b-e5e33f6289f4</Id>
+      <Id>8631fe1a-500a-4b12-966f-eed492c11aff</Id>
       <CommandString>Load Gazelle</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -667,7 +671,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>cc5ecdda-c373-4e31-ba55-a5b1d79548e2</Id>
+          <Id>46ecda57-f05c-4702-ab55-4ff9e839ea8f</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -700,7 +704,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>71c9209c-02a1-4ecf-bd1c-4b9009792f1f</Id>
+          <Id>2829e14b-2285-49b4-a1d8-8950a9c3eb53</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -789,7 +793,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>becf2025-f205-4d71-84b9-10ab69225f8e</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>057ba0ec-8118-49b7-8986-5f8b8a1ec26c</Id>
+      <Id>3e3bd698-0e67-4337-84c8-73fe04a69db9</Id>
       <CommandString>Load Harrier</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -801,7 +805,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d23ff252-cfca-4825-b0fe-34880df604b9</Id>
+          <Id>4cec80ce-c558-4586-af94-19162a38faa5</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -834,7 +838,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0fc12f19-52c2-4bf0-9e43-a61ef87c3733</Id>
+          <Id>7ab38bb8-357b-4064-ab25-dc3b0858a735</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -923,7 +927,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>6c2cc784-f1ee-4fea-bf05-2e7437df6f8b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>d6842fc2-6977-4f49-a168-395f6a0f0391</Id>
+      <Id>7cf3c6ef-e6c8-4f2f-957c-c7f93ae2a55b</Id>
       <CommandString>Load Hornet</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -935,7 +939,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4261210f-8564-4bd7-966d-4ff9b7ee7f32</Id>
+          <Id>8dea480d-aa71-48af-8e37-f7136afa4a07</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -968,7 +972,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5a012c7d-c142-4e63-8fff-569aa7fd5a7b</Id>
+          <Id>d9540dab-73a1-4075-a28b-9d8d31775e09</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1057,7 +1061,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>11d96643-34cf-4c03-8077-7873420de0fb</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>c1835444-73a3-4ff9-a169-85c10b50c9d0</Id>
+      <Id>7ba651c0-4b1a-4675-9697-4426ae24d636</Id>
       <CommandString>Load X-plane</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1069,7 +1073,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6a281ee1-9bfc-4902-a896-ad141331f799</Id>
+          <Id>caf955cd-467b-45a0-a860-7ba3154ee28e</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1180,7 +1184,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>1aea0703-ce46-4bba-bbf7-20d5e198e983</InitializeCommandId>
+  <InitializeCommandId>35762475-a590-45ac-ba7f-42f268ba390a</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -1188,7 +1192,7 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>f1b28d64-840a-4cf9-a749-ffd8c28ddec0</LastEditedCommand>
+  <LastEditedCommand>5fc8a204-faf5-4c1d-83a4-a52a40242940</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
   <IP>0</IP>

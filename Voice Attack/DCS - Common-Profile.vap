@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>af5a0319-846b-4815-9d43-5955511b5da8</Id>
+  <Id>ecec13d2-3fb0-4e8a-bd84-528c627f6543</Id>
   <Name>DCS - Common</Name>
   <Commands>
     <Command>
@@ -18,7 +18,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>c9f20256-be03-4a4e-9b07-021f79ec9849</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b4b3af0c-fc11-4701-8105-cf71e723d308</Id>
+      <Id>c035c7a5-2a25-4845-a333-0e1827ba24b6</Id>
       <CommandString>Bort</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +30,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>aafd06f8-d682-4971-9397-4eb351e0953e</Id>
+          <Id>b95d3ab4-0e7b-4f1f-85c0-0ee834c15331</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -63,7 +63,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>11a7fc7c-c2f3-4455-957a-b0babe9deced</Id>
+          <Id>5982af2e-4eb0-4631-9520-2243b1b36a13</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -94,7 +94,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a621d917-4819-462c-b0f2-7aa83d5e5607</Id>
+          <Id>502da31a-13b8-48ad-8729-6695c7db3b3f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -127,7 +127,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0f68dcd7-1b6c-45ec-a32c-1a7fc5b36cf0</Id>
+          <Id>949af445-6011-40f9-a650-1df270b0f406</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -158,7 +158,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a41625f0-8eb7-4d1d-ab0c-b5ec38188e83</Id>
+          <Id>615400c2-7a54-4a68-86cc-494a115d4cbc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -247,7 +247,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>a5d11943-51ff-4186-b87a-77c20878df19</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>890b817e-1067-4680-b2b5-c71214f0b29e</Id>
+      <Id>81dff35a-f102-470a-a614-d301d9198618</Id>
       <CommandString>Briefing</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -259,7 +259,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>954f1df4-b3a5-471b-b82d-39a3844a61db</Id>
+          <Id>b83a8e30-171b-445a-966e-e6dedae68743</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -350,7 +350,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>b972d750-da79-40bf-a00e-6c906fec68a2</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>fd2724f6-583f-4699-8a49-91f95ddf912d</Id>
+      <Id>967a2f83-015c-4e6e-9113-a3bc4b9ee87d</Id>
       <CommandString>Canopy</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -362,7 +362,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>71a02ce7-5bd7-4c52-a98c-9b963acbc63f</Id>
+          <Id>44b1b985-1dc9-45a9-b92d-76b8e94ea587</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -454,7 +454,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>323981bc-ba22-4a17-944a-2215de65593c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5ba79e7d-5ed9-48b3-984f-cbe7e5b20fc8</Id>
+      <Id>44c73dd3-2b26-4c42-b8ea-d9a32dbc4fb6</Id>
       <CommandString>Center</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -466,7 +466,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b129051c-5acb-40c1-b05e-12639394c695</Id>
+          <Id>58be6534-b25e-44b3-9ca0-df2f9ec51b15</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -556,7 +556,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>256268f4-c92b-423d-b5dd-4833b6f2dd9d</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2c8fd9ca-901b-4d97-b430-f0d9af36971e</Id>
+      <Id>27f7a5b0-37b1-4a97-af49-767adeee8204</Id>
       <CommandString>Center It</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -568,7 +568,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5d4299b5-9591-4873-9ad2-66a720513d4c</Id>
+          <Id>b08c54ac-9b76-49a7-8553-9594defb6c71</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -660,7 +660,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>3f32dca5-dfed-413a-870f-7e4e5d98a0eb</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>bc062c72-390e-41c2-88e9-7ae08d3a7b43</Id>
+      <Id>915e0a45-fb1d-4d9a-930b-bc553cfd66b7</Id>
       <CommandString>Chat Window</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -672,7 +672,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>48436ad1-28d4-40e2-a80a-9e8847daf56f</Id>
+          <Id>500b19de-f4ac-48b6-a1c4-5d22a47520b7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -761,9 +761,112 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
+      <BaseId>a7811846-f89a-4878-88b4-57b6f230a52b</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>35fbfbfb-8382-488c-b96d-8abdf549ac59</Id>
+      <CommandString>Cheat Start</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>9621cb6f-9204-47cf-bf4c-69747960fda5</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>92</unsignedShort>
+            <unsignedShort>36</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>69535cab-c25d-48a7-80a8-0dffe3231977</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
       <BaseId>d473a9dd-c345-4190-816d-d577513b4517</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>03ab772f-2d8a-46d6-b77b-b1e6baeffc3e</Id>
+      <Id>82a765c4-cab3-41ae-bf82-c38edaa086b4</Id>
       <CommandString>Eject</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -775,7 +878,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>db65196a-de69-4e8d-8050-b9948fce2ff1</Id>
+          <Id>d841ff62-c44a-4de0-9032-44524a721f10</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -808,7 +911,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6c243b54-eb67-4f66-bb82-5f30e42e3a5c</Id>
+          <Id>88da6273-081b-47a4-a66e-885eabe99617</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -839,7 +942,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bc4afb56-f700-42ba-9af8-eed54808b4d8</Id>
+          <Id>6c04e8a2-a0db-466d-bee1-23f473ceca02</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -872,7 +975,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7e898e5c-7f6d-4831-a168-3a03be83368b</Id>
+          <Id>a9e829a6-9b65-42d6-bce8-58883c6433e1</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -903,7 +1006,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2ab8f9c9-f325-4cb4-a9fa-75ede7868bcc</Id>
+          <Id>4c84e8b3-d485-46ee-8917-39219f2bb7f4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -936,7 +1039,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>684586b5-935e-4c26-99a1-4e04e6137d17</Id>
+          <Id>347e1903-6474-4276-8b48-aeeba478aaa3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -967,7 +1070,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>dc19e73f-6dec-4214-a28e-ad64f8cfcdd7</Id>
+          <Id>e2fd3332-b744-41ea-b769-b69a85345b7f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1000,7 +1103,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>04971af6-f4d2-47a2-b42e-03efb228a14e</Id>
+          <Id>47ce0797-53b9-48e0-983e-1db4d3e7249d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1031,7 +1134,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fa68963e-1513-4d8b-86de-17949d5e06db</Id>
+          <Id>7f7c72d1-1bdd-49b1-91bb-7eb278bf93f7</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1120,7 +1223,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>bc33183a-0b8e-44e5-a41e-ef7cba4c7de7</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>1b75468e-0495-4a6b-be82-9b587b416f57</Id>
+      <Id>6a309a65-6498-4a8e-949b-b5723455811e</Id>
       <CommandString>End Stream</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1132,7 +1235,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7686b9a0-5e8f-468a-8aa5-20e3bfe97ba1</Id>
+          <Id>8781eab0-a3dc-4947-9ac6-a3bee0dcd1f7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1223,7 +1326,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>41f318e0-8b74-42e3-934b-dc668e7d3ed7</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>61bd04af-bdfc-4ace-a577-794cd86057aa</Id>
+      <Id>143b7996-46a3-409e-a90d-d3b7e4c459cc</Id>
       <CommandString>F1</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1235,7 +1338,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a3412a0e-25a8-40ac-b040-7ab7eff2e19e</Id>
+          <Id>390c45a0-8f5c-46c8-8295-e1208524b12b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1326,7 +1429,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>ecfb1cfb-3a36-4c38-b08d-48f1f967983e</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>f7ff0db9-9148-416f-8c1a-a1ddc657ffb5</Id>
+      <Id>29174422-be72-4f78-a503-81fe9a2b8636</Id>
       <CommandString>F10</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1338,7 +1441,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>421f4ee5-8713-40cd-b69f-9b2d72fb96e4</Id>
+          <Id>3f8361a7-e955-4bea-b127-5f2a3069a42f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1429,7 +1532,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>99799cf9-1cae-4a23-a10c-de0708113ee3</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>3d220572-86da-4624-92e6-8d01a1eb94f9</Id>
+      <Id>b32b8fe3-175f-48f1-856b-1bded26d5b34</Id>
       <CommandString>F11</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1441,7 +1544,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c7980e40-c2ec-420d-afcb-a02e09714f25</Id>
+          <Id>6508c36f-d8ea-4627-a94e-85ba1ef00431</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1532,7 +1635,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>b172a15e-925d-49bd-94ac-2d42d9b554f9</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>4012b65f-15f4-47f8-b51a-cf732b827326</Id>
+      <Id>5cf410a6-1567-46d9-ae28-a1115765858d</Id>
       <CommandString>F12</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1544,7 +1647,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6579a743-db23-42a7-ad34-bf504eb4f24a</Id>
+          <Id>96505d1f-5203-474c-81de-19c55074e2a2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1633,9 +1736,114 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
+      <BaseId>56f3efac-0c3f-497e-b239-5496f54348e3</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>7a0cc4bd-7e90-4d22-9cd5-07f4279a50e4</Id>
+      <CommandString>F14</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <_caption>Press F14 key and hold for 0.1 seconds and release</_caption>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Caption>Press F14 key and hold for 0.1 seconds and release</Caption>
+          <Id>d8337cba-139d-4598-a5d0-d784b5538b2f</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>F-Keys</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>0c1075e8-1535-45d6-b083-ceb02c2b9b9f</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
       <BaseId>1d0f0dab-87da-4e6a-a836-ee220ad559bc</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>8f7d25ec-c7b2-4fa7-a2ac-58dbf0c71f09</Id>
+      <Id>451ad952-c388-427b-a583-c4508e40ef5b</Id>
       <CommandString>F2</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1647,7 +1855,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0d5d0b38-a624-4ada-8b6b-563867906605</Id>
+          <Id>801b9af3-9fa9-4cfd-be29-2ccdf2dacbd3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1738,7 +1946,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>62738eeb-9425-4079-a86c-e2f40a1aed0a</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>848b7b0b-6d87-4b75-9dc4-bfffcdfef3ee</Id>
+      <Id>c9e9f38b-19f6-4d13-ab04-46f98bf26026</Id>
       <CommandString>F3</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1750,7 +1958,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9ac5a388-bad4-41b6-9d8f-6db9deafb79d</Id>
+          <Id>8aae3723-257b-4aeb-8670-d62b68bf7e4c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1841,7 +2049,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>16ea8eac-2a13-4592-973f-8891298baeb6</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>ac573ede-3a75-4db3-b409-ff07ce621940</Id>
+      <Id>e342e02f-825c-4356-a399-1a831e00fc41</Id>
       <CommandString>F4</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1853,7 +2061,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d662391b-23c4-476c-a042-9b42090264d3</Id>
+          <Id>1b41e61b-73a0-4d78-8b83-ab1faf0a0967</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1944,7 +2152,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>20faa501-7c51-4e74-a5a2-f4bcc6d1644d</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>78f6b16f-2338-4905-97a2-73dc2b73efa4</Id>
+      <Id>2ee0e994-1f89-4dae-94de-d24dab853257</Id>
       <CommandString>F5</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1956,7 +2164,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4a9c7e85-3917-4e8b-956a-94fa7076256c</Id>
+          <Id>92aef445-88b7-42ad-b0fb-52d30701163c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2047,7 +2255,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>ddbc28e2-7fe3-4d30-905e-86274dafdee6</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>4fe148ef-679b-40d0-a459-5626cc0725e3</Id>
+      <Id>d36cdb4a-637d-4e20-b404-c5cbdb528f9b</Id>
       <CommandString>F6</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2059,7 +2267,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c858cc28-473b-4cac-83ac-bde7739aa145</Id>
+          <Id>a3814e8a-fae0-4780-9066-656f1c71a8a7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2150,7 +2358,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>4e6c08f8-c85e-46cb-bd84-4389682ebda3</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>e6e3922d-842a-4989-853a-dc83bae2ceec</Id>
+      <Id>f8a2202a-6f01-4c53-8d37-3e38e3931156</Id>
       <CommandString>F7</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2162,7 +2370,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>46892420-38ce-4614-a16d-6b21f36f8036</Id>
+          <Id>f75b5a5f-2f72-4999-a7a9-1e11e329d4e5</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2253,7 +2461,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>97825910-49d8-41bc-ae42-71077d1c1689</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>feb6a8f1-55d6-41d7-8997-4f4643aab61e</Id>
+      <Id>c82dace8-8e23-4bf0-ac4a-8f74db172726</Id>
       <CommandString>F8</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2265,7 +2473,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6bd1f793-dc04-4628-bb7d-e55d1e00c67e</Id>
+          <Id>aa643dca-c8be-4e49-be52-b5fe721a6c82</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2356,7 +2564,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>ab84bbff-036c-4704-9af2-5ec754c2773f</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5e79bab4-de45-4a4b-b5cf-42681d021fed</Id>
+      <Id>cbeb4987-b78e-4e67-8218-221ee5fa5219</Id>
       <CommandString>F9</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2368,7 +2576,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>8db9ad25-7a19-4732-8880-119377344a86</Id>
+          <Id>de377650-5083-4d68-b9d1-9ff1eb9d8fcf</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2459,7 +2667,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>0713f58d-fd2e-4ecc-bc03-afc5beb5bf6c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>218de67c-4c8b-472b-baf4-ea1f61d18691</Id>
+      <Id>bbf1de72-babd-46b0-87b6-e5f7d9a332f7</Id>
       <CommandString>Flashlight</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2471,7 +2679,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b4b2a1d0-1c8b-41cf-aaa5-25d3aa6839f3</Id>
+          <Id>0b798270-724c-46eb-a862-f2e1aeb01953</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2562,7 +2770,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>68e8c67c-abef-4924-9631-1c6b0c79b627</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>3a5a00d0-8391-4825-877d-40a5f774f0ca</Id>
+      <Id>1792ebde-8580-4349-b080-b3e6589b6798</Id>
       <CommandString>Gear;Landing Gear</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2574,7 +2782,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6650257b-9033-48ec-8b39-0263ad145321</Id>
+          <Id>574f601e-e635-4c90-a6d8-f3f3f14be841</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2665,7 +2873,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>6fbb4369-c6df-4e22-ac2e-8731ec0ab24b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>a10f0fec-a907-4aa2-9a21-44f3e883fc34</Id>
+      <Id>ecb426e8-ed3e-49a4-aff8-307185c2e9af</Id>
       <CommandString>Goggles; IN Vee Gees</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2677,7 +2885,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b757ebac-e787-4a73-8910-73c1c4ed7e3d</Id>
+          <Id>7da898da-f67c-4389-9960-6f52b06cb99d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2769,7 +2977,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>482db837-c94c-4172-b563-0a650196c4ba</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>0a9c8228-be97-4e4e-8a30-626347ce9410</Id>
+      <Id>0e3ddc69-7ea2-4a62-8915-0f27cac0acfe</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2781,7 +2989,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9a784bfb-501f-42a5-bd6b-3bad3b0db056</Id>
+          <Id>88763ce6-5f63-4933-a3e6-f2de78e2c56c</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -2870,7 +3078,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>49aada82-a5d8-42a5-aacc-b935ac18bcb0</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>eb2a90f4-e79e-447c-a430-324028117ae7</Id>
+      <Id>d141b1bf-044d-492a-ac46-6e4ed78e4996</Id>
       <CommandString>Kneeboard</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2882,7 +3090,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>93f77216-be6e-4fab-8952-8f163c76834f</Id>
+          <Id>011c668a-aa98-4774-bff8-f35ba6f42425</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2974,7 +3182,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>20bace2f-df72-4929-9b08-5756af9b5711</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>f4f06637-e686-44ba-8a28-0e32b8495d01</Id>
+      <Id>bbcfa20d-fc64-4249-bee8-396837e87b12</Id>
       <CommandString>Lag Fix</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2986,7 +3194,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ea947306-97be-4f02-a13d-a53d92c2ae1a</Id>
+          <Id>f5db25d5-728d-48f8-8152-3492250110f4</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3019,7 +3227,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c23a98fd-b82c-4c46-a231-e973ebdc589c</Id>
+          <Id>51feb26a-4bda-4755-8009-a72f81640fcb</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3050,7 +3258,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ae6b91a5-53e6-47fc-9c6e-1ba4b0ecb6a7</Id>
+          <Id>fd37aafb-f6d9-4a5e-840e-24b1decf078d</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3083,7 +3291,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b32bdb1b-b3a5-4d25-bb2f-1a7134c4d55e</Id>
+          <Id>6c505dfc-d481-4829-803b-781d188bb3d3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3114,7 +3322,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3de08b3c-7df3-4bd8-8fd8-0274bffcdf70</Id>
+          <Id>889bd8ef-3d5c-442f-ba12-8bc418460533</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3147,7 +3355,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>388ecde9-ad80-489a-a09d-fd5f3b0eb81a</Id>
+          <Id>5068b1b4-34e6-4ae8-bdf8-a013befbffaa</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3178,7 +3386,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>24f68cd0-3d6e-4897-a16e-e8e049f04a61</Id>
+          <Id>08b039dd-9e46-4300-8ad8-6b89613eb3d1</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3211,7 +3419,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bff2db88-902f-4e9a-b66c-e79518fc0cae</Id>
+          <Id>ded193d5-8b04-428b-8bb0-87a1437fe505</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3242,7 +3450,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5b74feb6-5311-46c9-ab57-1f9743cb1c7c</Id>
+          <Id>9438adaa-38cc-4da0-8821-ad951701d58b</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3275,7 +3483,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>cb0e5000-fc8e-4533-9396-0f8777888eee</Id>
+          <Id>94fda6a6-26ce-4f06-830d-7c87a279ac5b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3306,7 +3514,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d12f96ea-89df-428a-80bc-2df335475543</Id>
+          <Id>75adc09f-114c-4b65-9e09-a1ff2e255ecc</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3373,7 +3581,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
+      <lastEditedAction>15451964-6819-49f8-a3b4-19b4637ce795</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -3395,7 +3603,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>6800235c-a4da-4b0f-b69b-2a9e858046ea</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>0cb84ba0-02fb-4964-8802-86f70a9842b3</Id>
+      <Id>b8ac8414-43c8-4709-b477-03b0a06ffeef</Id>
       <CommandString>Load Master</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3407,7 +3615,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7765b398-39f0-45a1-ae5a-578cb7496b11</Id>
+          <Id>38f9cdfe-63d4-45e5-93fa-fdec84413d93</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3496,7 +3704,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>1ac58d2f-307e-4bd5-a8f9-c9869d3e3cac</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>9686ccf3-6f14-4a66-a605-8f4994be513e</Id>
+      <Id>4d68653f-55d5-4683-b485-f719184ae596</Id>
       <CommandString>Menu</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3508,7 +3716,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c7cf9941-0ef9-4b51-9439-681f8a20100c</Id>
+          <Id>15f710ff-c3de-440d-b9db-5503a7bbf3c3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3598,7 +3806,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>36188d53-dd67-406d-9b2c-3606de1bbd96</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>23b9f381-36e0-49ea-b28d-e2a92c54934e</Id>
+      <Id>e30cd375-a316-4ab2-9f3d-cf63b447eb65</Id>
       <CommandString>Next Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3610,7 +3818,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e91c2d28-8061-4ddc-bf21-986df5ea5d61</Id>
+          <Id>2fe659a3-143a-494e-87be-1ae4d2871623</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3701,7 +3909,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>2e42cb8c-c578-401f-9b0e-f598ca0428cb</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>7111309c-dd8a-46a4-9585-e7c84678d478</Id>
+      <Id>6727b7fa-4ecf-48dd-afd3-87edcf9bd516</Id>
       <CommandString>Password</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3713,7 +3921,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b7651388-0b0a-48bf-aa33-2b6abe39ce28</Id>
+          <Id>15350bae-7e84-4008-b0fc-7a847bfd8187</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3746,7 +3954,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fa7e8190-5343-4b2a-81f6-afe6a82abb91</Id>
+          <Id>ad600f3b-58c9-48d2-970f-810f26c267d3</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3777,7 +3985,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3c727c3f-0a83-41df-a11e-1373fa5b7d9c</Id>
+          <Id>bae30cf8-f57d-4482-bb7c-a60592e0ca3b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3866,7 +4074,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>f999cdfc-66be-4194-aaeb-8f07ceaa9178</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>36d8524e-593d-471a-aff9-d112126bea8e</Id>
+      <Id>8dcb3fdf-4177-4d67-bf20-c98d86c11d23</Id>
       <CommandString>Players</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3878,7 +4086,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b3138082-13f1-45a1-a5ed-43966358046a</Id>
+          <Id>d0da6d7c-b898-47ac-877a-33f7550f4820</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3968,7 +4176,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>31e71272-8e1d-40de-890a-dbb2c112a442</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2e76ac97-d88d-40e3-a3a1-ae6be60414c0</Id>
+      <Id>d077ca86-6107-4929-8f08-76afe9566d12</Id>
       <CommandString>Previous Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3980,7 +4188,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e16b7d45-cd85-4fde-b771-924fb79c0470</Id>
+          <Id>02a10792-e62a-49f5-8852-737e9a684dde</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4071,7 +4279,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>408c6bd0-a5a6-4576-9d3b-1b2a049ac7d9</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>71f6ba04-8ddf-4132-baec-c283c8308155</Id>
+      <Id>d0926af1-795a-4fc9-9da5-21db3d86621b</Id>
       <CommandString>Radio Overlay;Radio</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4083,7 +4291,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>236b8e89-eaca-4ff2-ade1-71b545605a6b</Id>
+          <Id>0a56cf9c-323a-4c20-9803-f98b886b4577</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4176,7 +4384,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>811ae1e3-c41e-44da-b5ed-331aaef75d74</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>a86ce6e0-f5c8-4a90-9b01-015eb20b78f3</Id>
+      <Id>95d22a6a-2df0-43c3-ab18-ab97ba8e3093</Id>
       <CommandString>Rearm</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4188,7 +4396,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3ad37ad8-207e-483b-96d9-88d2021b9ce0</Id>
+          <Id>4f895b54-cb93-4482-9a73-9babf4ada992</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4279,7 +4487,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>0d1b4086-08ab-45ba-8862-87027094739c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>f5f05cbb-dd15-4a09-8922-9fd6f7d5461f</Id>
+      <Id>b0ca5ff7-dba7-4192-998e-410caa6a7fb5</Id>
       <CommandString>Record</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4291,7 +4499,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4029758c-6274-4395-9915-1a69e0b0ef1d</Id>
+          <Id>ed2a766a-ff78-46e0-99aa-c34764ae1cf2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4383,7 +4591,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>2b2c673e-56e7-40c9-846d-31d8dd535d69</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>4292d368-6086-4b66-a722-d4b99e2d3a8b</Id>
+      <Id>6193f877-2050-47cc-9649-2aa80047ff19</Id>
       <CommandString>Replay</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4395,7 +4603,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e9fdbe14-805f-456e-80d4-38406642ffdb</Id>
+          <Id>8360c2e1-70b6-4de3-90d5-c0f765e75dc6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4487,7 +4695,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>b9577bf4-adf9-439e-84b7-d6817e3a3ecb</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>055beb14-176b-4dfa-973b-d7b958faba05</Id>
+      <Id>34074014-2790-4361-a205-cf90947833ab</Id>
       <CommandString>Screenshot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4499,7 +4707,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>58652121-b5a0-4e8e-912c-4c9d932aa48c</Id>
+          <Id>7a98c905-4356-44cd-8c5e-f4734b3c84b3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4590,7 +4798,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>b251f8cd-3766-4205-b180-8ea3884d6080</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>261c85f0-a48d-4b24-98f2-1a6263c7dc66</Id>
+      <Id>cdaf5a7c-7e99-423f-832b-c37587829fdc</Id>
       <CommandString>Start Stream</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4602,7 +4810,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>79417de2-2d20-438d-94e0-e7fa36c97589</Id>
+          <Id>faff7291-336c-42ab-b645-f1c5421d3c3a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4693,7 +4901,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>2b91f1cd-0975-4811-b1d6-4333742c683b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>417fb7be-c4da-4950-8861-6a6fa6e4f4b3</Id>
+      <Id>544e8adb-95ea-4dc9-ae1c-af00ec279797</Id>
       <CommandString>Stats</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4705,7 +4913,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>25a15c49-b4f8-493d-a2ff-8f1c013dbfd3</Id>
+          <Id>7d402b6a-d7a6-4980-afb7-894629e21bd7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4795,7 +5003,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>8d052dd5-ea7b-4b89-93fd-b0db17094b42</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>9288a8c7-a763-42e0-b3eb-91773444f984</Id>
+      <Id>e550b40e-8210-453f-a8c3-bdec30328b1e</Id>
       <CommandString>Toggle Pilot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4807,7 +5015,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>72228f35-c3af-49b8-8268-dd67c5bea1c6</Id>
+          <Id>913bf4cf-bc13-47e7-94e4-1d55be77e141</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4898,7 +5106,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>545b68b8-c474-4556-ac2f-4fef5d27f2c4</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>76b7269e-fd5f-4922-a7b3-3320d1a3e37a</Id>
+      <Id>d6b01ac1-fc67-43a9-b688-11979528b5a0</Id>
       <CommandString>Toggle Replay</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4910,7 +5118,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e0519979-4a4d-486c-917b-765a9275c404</Id>
+          <Id>c3667363-1073-4d0c-a0b4-5209c9f2beb1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5025,7 +5233,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>0a9c8228-be97-4e4e-8a30-626347ce9410</InitializeCommandId>
+  <InitializeCommandId>0e3ddc69-7ea2-4a62-8915-0f27cac0acfe</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -5033,7 +5241,7 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>20bace2f-df72-4929-9b08-5756af9b5711</LastEditedCommand>
+  <LastEditedCommand>56f3efac-0c3f-497e-b239-5496f54348e3</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
   <ReferencedProfiles />

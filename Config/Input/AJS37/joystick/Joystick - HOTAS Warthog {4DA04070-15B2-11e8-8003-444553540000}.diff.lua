@@ -51,6 +51,28 @@ local diff = {
 			},
 			["name"] = "TV Fix",
 		},
+		["d3010pnilunilcd23vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
+				},
+			},
+			["name"] = "Select Data Cartridge - Down",
+		},
+		["d3010pnilunilcd23vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+					["reformers"] = {
+						[1] = "JOY_BTN3",
+					},
+				},
+			},
+			["name"] = "Select Data Cartridge - Up",
+		},
 		["d3090pnilu3090cd22vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -82,6 +104,38 @@ local diff = {
 				},
 			},
 			["name"] = "Autopilot mode ATT (Attitude hold)",
+		},
+		["d3321pnilu3321cd2vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Rb05 stick yaw left",
+		},
+		["d3321pnilu3321cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Rb05 stick yaw right",
+		},
+		["d3322pnilu3322cd2vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "Rb05 stick pitch down",
+		},
+		["d3322pnilu3322cd2vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "Rb05 stick pitch up",
 		},
 		["d350pnilu351cdnilvdnilvpnilvunil"] = {
 			["added"] = {

@@ -114,8 +114,8 @@ int main()
 		MapKey(&Throttle,BSB,PULSE + Flap_Switch__AUTO);
 	
 	//China Hat
-		//MapKey(&Throttle,CHF,);
-		//MapKey(&Throttle,CHB,);
+		MapKey(&Throttle,CHF,PULSE + ANASG31_Sight_Mode_Selector__CWRight);
+		MapKey(&Throttle,CHB,PULSE + ANASG31_Sight_Mode_Selector__CCWLeft);
 	
 	
 //Throttle Panel

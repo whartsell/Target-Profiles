@@ -697,9 +697,9 @@ define ANASG31_Sight_Panel_Light_Button__ONOFF           	R_CTL + USB_I
 define ANASG31_Sight_Reticle_Intensity_Knob__CWIncrease  	R_CTL + USB_Equals                      
 define ANASG31_Sight_BIT_Switch__OFF                     	                                        
 define ANASG31_Sight_BIT_Switch__Up                      	R_CTL + USB_T                           
-define ANASG31_Sight_Mode_Selector__CCWLeft              	                                        
+define ANASG31_Sight_Mode_Selector__CCWLeft              	R_SHIFT + USB_1                         
 define ANASG31_Sight_Mode_Selector__MAN                  	USB_4                                   
-define ANASG31_Sight_Mode_Selector__CWRight              	                                        
+define ANASG31_Sight_Mode_Selector__CWRight              	R_SHIFT + USB_2                                
 define ANASG31_Sight_Reticle_Intensity_Knob__CCWDecrease 	R_CTL + USB_Minus                       
 define ANASG31_Sight_Mode_Selector__MSL                  	USB_1                                   
 define ANASG31_Sight_Mode_Selector__AA1_GUNS             	USB_2                                   

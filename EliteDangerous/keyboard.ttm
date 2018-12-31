@@ -13,10 +13,10 @@ define QuickCommsPanel								USB_Return
 define ShowPGScoreSummaryInput						USB_F1
 define UIBack										USB_BackSpace
 define UIToggle										OrbitLinesToggle
-define CycleNextPanel								USB_E
-define CyclePreviousPanel							USB_Q
-define CycleNextPage								USB_C
-define CyclePreviousPage							USB_Z
+//define CycleNextPanel								USB_E
+//define CyclePreviousPanel							USB_Q
+//define CycleNextPage								USB_C
+//define CyclePreviousPage							USB_Z
 define OrderRequestDock								USB_KP0
 // Vanity camera 1-9 also kps1-9
 define VanityCameraOne								OrderDefensiveBehaviour
@@ -36,7 +36,7 @@ define OrderHoldPosition							USB_KP5
 define OrderFollow									USB_KP6
 
 define CommanderCreatorUndo							CyclePreviousPage
-define CommanderCreatorRedo							USB_X
+define CommanderCreatorRedo							CycleNextPage
 
 // Analysis Mode and DSS/FSS
 define PlayerHUDModeToggle							USB_M
@@ -44,85 +44,93 @@ define OpenCodexGoToDiscovery						USB_O
 define ExplorationFSSEnter							USB_Apostrophe
 define ExplorationFSSQuit							ExplorationFSSEnter
 //should be moved to DX
-define LeftThrustButton
-define RightThrustButton
-define UpThrustButton
-define DownThrustButton
-define ForwardThrustButton
-define BackwardThrustButton
-define ToggleReverseThrottleInput
-define ToggleFlightAssist
-define UseBoostJuice
-define HyperSuperCombination
-define SelectTarget
-define CycleNextTarget
-define CyclePreviousTarget
-define CycleNextHostileTarget
-define CyclePreviousHostileTarget
-define CycleNextSubSystem
-define CyclePreviousSubSystem
-define PrimaryFire
-define SecondaryFire
-define CycleFireGroupNext
-define CycleFireGroupPrevious
-define DeployHardpointToggle
-define ToggleButtonUpInput_SilentRunning
-define DeployHeatSink
-define ShipSpotLightToggle
-define IncreaseEnginesPower
-define IncreaseWeaponsPower
-define IncreaseSystemsPower
-define ResetPowerDistribution
-define ToggleCargoScoop
-define LandingGearToggle
-define UseShieldCell
-define FireChaffLauncher
-define UIFocus
-define FocusLeftPanel
-define FocusCommsPanel
-define FocusRadarPanel
-define FocusRightPanel
-define UIUP
-define UIDown
-define UILeft
-define UIRight
-define UISelect
-define CycleNextPanel
-define CyclePreviousPanel
+define PrimaryFire									DX1
+define BuggyPrimaryFireButton						PrimaryFire
+define ExplorationFSSZoomIn							PrimaryFire
+
+define SecondaryFire								DX2
+define BuggySecondaryFireButton						SecondaryFire
+define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
+define ExplorationFSSZoomOut						SecondaryFire
+
+define LeftThrustButton								DX3
+define UI_Left										LeftThrustButton
+
+define RightThrustButton							DX4
+define UI_Right										RightThrustButton
+
+define UpThrustButton								DX5
+define UI_Up										UpThrustButton
+define VerticalThrusterButton						UpThrustButton
+
+define DownThrustButton								DX6
+define UI_Down										DownThrustButton
+
+define ForwardThrustButton							DX7
+define CycleNextPanel								ForwardThrustButton
+
+define BackwardThrustButton							DX8
+define CyclePreviousPanel							BackwardThrustButton
+
+define ToggleReverseThrottleInput					DX9
+define UI_Select									ToggleReverseThrottleInput
+define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
+
+define ToggleFlightAssist							DX10
+define ToggleDriveAssist							ToggleFlightAssist
+
+
+define UseBoostJuice								0
+define HyperSuperCombination						0
+define SelectTarget									0	
+define CycleNextTarget								0
+define CyclePreviousTarget							0
+define CycleNextHostileTarget						0
+define CyclePreviousHostileTarget					0
+define CycleNextSubSystem							0
+define CyclePreviousSubSystem						0
+define CycleFireGroupNext							0
+define CycleFireGroupPrevious						0
+define DeployHardpointToggle						0
+define ToggleButtonUpInput_SilentRunning			0
+define DeployHeatSink								0
+define ShipSpotLightToggle							0
+define IncreaseEnginesPower							0
+define IncreaseWeaponsPower							0
+define IncreaseSystemsPower							0
+define ResetPowerDistribution						0
+define ToggleCargoScoop								0
+define LandingGearToggle							0
+define UseShieldCell								0
+define FireChaffLauncher							0
+define UIFocus										0
+define FocusLeftPanel								0
+define FocusCommsPanel								0
+define FocusRadarPanel								0
+define FocusRightPanel								0
+
+
 define CycleNextPage								IncreaseWeaponsPower
 define CyclePreviousPage							IncreaseSystemsPower
-define ToggleDriveAssist							ToggleFlightAssist
-define VerticalThrusterButton						UpThrustButton
-define BuggyPrimaryFireButton						PrimaryFire
-define BuggySecondaryFireButton						SecondaryFire
 define AutoBreakBuggyButton							UseBoostJuice
 define HeadlightsBuggyButton						UseShieldCell
 define ToggleBuggyTurretButton						DeployHardpointToggle
-define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
-define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
-define PlayerHUDModeToggle
-define ExplorationFSSZoomIn							PrimaryFire
-define ExplorationFSSZoomOut						FocusRadarPanel
+//define PlayerHUDModeToggle							0
+define ExplorationFSSMiniZoomOut					FocusRadarPanel
 define ExplorationFSSMiniZoomIn						FocusCommsPanel
-define ExplorationFSSMiniZoomOut					SecondaryFire
 define ExplorationFSSRadioTuningX // could be this for an axis or use buttons _Increase _Decrease
 define ExplorationFSSDiscoveryScan					ToggleFlightAssist
 define ExplorationFSSTarget							SelectTarget
-define ExplorationFSSShowHelp
+define ExplorationFSSShowHelp						0
 define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
 define ExplorationSAAExitThirdPerson				UIFocus
-define ChargeECM
-define TargetNextRouteSystem
-define EjectAllCargo
-define DisableRotationCorrectToggle
-define GalaxyMapOpen
+define ChargeECM									0
+define TargetNextRouteSystem						0	
+define EjectAllCargo								0
+define DisableRotationCorrectToggle					0	
+define GalaxyMapOpen								0
 define GalaxyMapOpenBuggy							GalaxyMapOpen
-define SystemMapOpen
+define SystemMapOpen								0
 define SystemMapOpen_Buggy							SystemMapOpen
-define RadarIncreaseRange
-define RadarDecreaseRange
-
-
-
-
-
+define RadarIncreaseRange							0
+define RadarDecreaseRange							0

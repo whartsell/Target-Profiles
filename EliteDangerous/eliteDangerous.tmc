@@ -65,17 +65,17 @@ int main()
 		MapKey(&Joystick,H3R,0);
 
 	//CMS
-		MapKey(&Joystick,H4D,0);
-		MapKey(&Joystick,H4U,0);
-		MapKey(&Joystick,H4L,0);
-		MapKey(&Joystick,H4R,0);
-		MapKey(&Joystick,H4P,0); 
+		MapKey(&Joystick,H4D,UI_Down);
+		MapKey(&Joystick,H4U,UI_Up);
+		MapKey(&Joystick,H4L,UI_Left);
+		MapKey(&Joystick,H4R,UI_Right);
+		MapKey(&Joystick,H4P,UI_Select); 
 	
 	//S3 Pinky Switch
 		MapKey(&Joystick, S3,0);
 	
 	//S4 Paddle Switch
-		MapKey(&Joystick, S4,0);
+		MapKey(&Joystick, S4,ToggleFlightAssist);
 
 //THROTTLE
 
@@ -88,19 +88,19 @@ int main()
 		MapKey(&Throttle,LTB,0);
 	
 	//Slew
-		MapKey(&Throttle,SC,0); 
+		MapKey(&Throttle,SC,ToggleReverseThrottleInput); 
 
 	//Coolie
-		MapKey(&Throttle,CSD,0);
-		MapKey(&Throttle,CSU,0);
-		MapKey(&Throttle,CSL,0);
-		MapKey(&Throttle,CSR,0);
+		MapKey(&Throttle,CSD,DownThrustButton);
+		MapKey(&Throttle,CSU,UpThrustButton);
+		MapKey(&Throttle,CSL,LeftThrustButton);
+		MapKey(&Throttle,CSR,RightThrustButton);
 	
 	//Mic Switch
 		MapKey(&Throttle, MSD,0);
-		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		MapKey(&Throttle, MSL,0);
-		MapKey(&Throttle, MSR,0);
+		//MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		MapKey(&Throttle, MSL,BackwardThrustButton);
+		MapKey(&Throttle, MSR,ForwardThrustButton);
 		MapKey(&Throttle, MSP,0);	
 
 	//Speed Brake

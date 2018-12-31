@@ -1,0 +1,128 @@
+include "usbkeys.ttm"
+
+define TargetWingman0								USB_7
+define TargetWingman1								USB_8
+define TargetWingman2								USB_9
+define SelectTargetsTarget							USB_0
+define WingNavLock									USB_Minus
+define OrbitLinesToggle								USB_Equals
+define HMDReset										USB_F12
+define MicrophoneMute								USB_BackSlash
+define PhotoCameraToggle							L_CTRL + L_ALT + USB_Space
+define QuickCommsPanel								USB_Return
+define ShowPGScoreSummaryInput						USB_F1
+define UIBack										USB_BackSpace
+define UIToggle										OrbitLinesToggle
+define CycleNextPanel								USB_E
+define CyclePreviousPanel							USB_Q
+define CycleNextPage								USB_C
+define CyclePreviousPage							USB_Z
+define OrderRequestDock								USB_KP0
+// Vanity camera 1-9 also kps1-9
+define VanityCameraOne								OrderDefensiveBehaviour
+define VanityCameraTwo								OrderAgressiveBehavious
+define VanityCameraThree							OrderFocusTarget
+define VanityCameraFour								OrderHoldFire
+define VanityCameraFive								OrderHoldPosition
+define VanityCameraSix								OrderFollow
+define VanityCameraSeven							USB_KP7	
+define VanityCameraEight							USB_KP8
+define VanityCameraNine								USB_KP9
+define OrderDefensiveBehaviour						USB_KP1
+define OrderAgressiveBehavious						USB_KP2
+define OrderFocusTarget								USB_KP3
+define OrderHoldFire								USB_KP4
+define OrderHoldPosition							USB_KP5
+define OrderFollow									USB_KP6
+
+define CommanderCreatorUndo							CyclePreviousPage
+define CommanderCreatorRedo							USB_X
+
+// Analysis Mode and DSS/FSS
+define PlayerHUDModeToggle							USB_M
+define OpenCodexGoToDiscovery						USB_O
+define ExplorationFSSEnter							USB_Apostrophe
+define ExplorationFSSQuit							ExplorationFSSEnter
+//should be moved to DX
+define LeftThrustButton
+define RightThrustButton
+define UpThrustButton
+define DownThrustButton
+define ForwardThrustButton
+define BackwardThrustButton
+define ToggleReverseThrottleInput
+define ToggleFlightAssist
+define UseBoostJuice
+define HyperSuperCombination
+define SelectTarget
+define CycleNextTarget
+define CyclePreviousTarget
+define CycleNextHostileTarget
+define CyclePreviousHostileTarget
+define CycleNextSubSystem
+define CyclePreviousSubSystem
+define PrimaryFire
+define SecondaryFire
+define CycleFireGroupNext
+define CycleFireGroupPrevious
+define DeployHardpointToggle
+define ToggleButtonUpInput_SilentRunning
+define DeployHeatSink
+define ShipSpotLightToggle
+define IncreaseEnginesPower
+define IncreaseWeaponsPower
+define IncreaseSystemsPower
+define ResetPowerDistribution
+define ToggleCargoScoop
+define LandingGearToggle
+define UseShieldCell
+define FireChaffLauncher
+define UIFocus
+define FocusLeftPanel
+define FocusCommsPanel
+define FocusRadarPanel
+define FocusRightPanel
+define UIUP
+define UIDown
+define UILeft
+define UIRight
+define UISelect
+define CycleNextPanel
+define CyclePreviousPanel
+define CycleNextPage								IncreaseWeaponsPower
+define CyclePreviousPage							IncreaseSystemsPower
+define ToggleDriveAssist							ToggleFlightAssist
+define VerticalThrusterButton						UpThrustButton
+define BuggyPrimaryFireButton						PrimaryFire
+define BuggySecondaryFireButton						SecondaryFire
+define AutoBreakBuggyButton							UseBoostJuice
+define HeadlightsBuggyButton						UseShieldCell
+define ToggleBuggyTurretButton						DeployHardpointToggle
+define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
+define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
+define PlayerHUDModeToggle
+define ExplorationFSSZoomIn							PrimaryFire
+define ExplorationFSSZoomOut						FocusRadarPanel
+define ExplorationFSSMiniZoomIn						FocusCommsPanel
+define ExplorationFSSMiniZoomOut					SecondaryFire
+define ExplorationFSSRadioTuningX // could be this for an axis or use buttons _Increase _Decrease
+define ExplorationFSSDiscoveryScan					ToggleFlightAssist
+define ExplorationFSSTarget							SelectTarget
+define ExplorationFSSShowHelp
+define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
+define ExplorationSAAExitThirdPerson				UIFocus
+define ChargeECM
+define TargetNextRouteSystem
+define EjectAllCargo
+define DisableRotationCorrectToggle
+define GalaxyMapOpen
+define GalaxyMapOpenBuggy							GalaxyMapOpen
+define SystemMapOpen
+define SystemMapOpen_Buggy							SystemMapOpen
+define RadarIncreaseRange
+define RadarDecreaseRange
+
+
+
+
+

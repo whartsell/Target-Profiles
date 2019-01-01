@@ -43,10 +43,10 @@ int main()
 	//S1 Master Mode Control Button
 		MapKey(&Joystick, S1,TEMPO(CycleFireGroupNext,DeployHardpointToggle));
 	//Trim
-		MapKey(&Joystick,H1D,0);
-		MapKey(&Joystick,H1U,0);
-		MapKey(&Joystick,H1L,0);
-		MapKey(&Joystick,H1R,0);
+		MapKey(&Joystick,H1D,ResetPowerDistribution);
+		MapKey(&Joystick,H1U,IncreaseEnginesPower);
+		MapKey(&Joystick,H1L,IncreaseSystemsPower);
+		MapKey(&Joystick,H1R,IncreaseWeaponsPower);
 
 
 	//TMS
@@ -75,7 +75,7 @@ int main()
 		MapKey(&Joystick,H4P,UI_Select); 
 	
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,0);
+		MapKey(&Joystick, S3,TEMPO(DeployHeatSink,0));
 	
 	//S4 Paddle Switch
 		MapKey(&Joystick, S4,ToggleFlightAssist);
@@ -100,7 +100,7 @@ int main()
 		MapKey(&Throttle,CSR,RightThrustButton);
 	
 	//Mic Switch
-		MapKey(&Throttle, MSD,0);
+		MapKey(&Throttle, MSD,MicrophoneMute);
 		//MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,BackwardThrustButton);
 		MapKey(&Throttle, MSR,ForwardThrustButton);
@@ -125,7 +125,7 @@ int main()
 
 	//Engine Fuel Flow
 		//Left
-		MapKey(&Throttle,EFLNORM,0);
+		MapKey(&Throttle,EFLNORM,SilentRunning);
 		MapKey(&Throttle,EFLOVER,0);
 		
 		//Right
@@ -165,7 +165,7 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,0);
+		MapKey(&Throttle,LDGH,LandingGearToggle);
 
 	//EAC
 		MapKey(&Throttle,EACON,0);

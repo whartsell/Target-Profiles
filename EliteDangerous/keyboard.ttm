@@ -1,4 +1,5 @@
 include "usbkeys.ttm"
+//DX16
 //Flight
 
 //	Rotation
@@ -51,10 +52,30 @@ define CycleFireGroupPrevious	PULSE + L_CTL + USB_G
 define DeployHardpointToggle	PULSE + USB_D
 
 //	Cooling
-define ToggleButtonUpInput_SilentRunning	0
-define DeployHeatSink						0
+define SilentRunning			DX16	// ToggleButtonUpInput
+define DeployHeatSink						PULSE + L_ALT + USB_H
 
 //	Miscellaneous
+define ShipSpotLightToggle		PULSE + USB_L		
+define IncreaseEnginesPower		DX11			// Divert Power To Engines
+define IncreaseWeaponsPower		DX12			// Divert Power To Weapons
+define IncreaseSystemsPower		DX13			// Divert Power to Systems
+define ResetPowerDistribution	DX14			// Balance Power Distribution
+define HMDReset					PULSE + USB_F12	// Reset HMD Orientation
+define ToggleCargoScoop			0
+define EjectAllCargo			0				// Jettison All Cargo
+define LandingGearToggle		PULSE + USB_G
+define MicrophoneMute			DX15			//USB_BackSlash 
+define UseShieldCell			0
+define FireChaffLauncher		0
+define ChargeECM				0
+define WeaponColourToggle		PULSE + L_SHIFT + USB_C				// Weapon Color
+define EngineColourToggle		PULSE + L_CTL + USB_C				// Engine Color
+define NightVisionToggle		PULSE + USB_V				// Night Vision
+
+
+//Mode Switches
+
 
 
 define UIToggle		OrbitLinesToggle
@@ -117,17 +138,14 @@ define ExplorationFSSTarget							SelectTarget
 
 define ToggleBuggyTurretButton						DeployHardpointToggle
 
-define IncreaseWeaponsPower							0
 define CycleNextPage								IncreaseWeaponsPower
 //define CycleNextPage								USB_C
 define CommanderCreatorRedo							CycleNextPage
 
-define IncreaseSystemsPower							0
 define CyclePreviousPage							IncreaseSystemsPower
 //define CyclePreviousPage							USB_Z
 define CommanderCreatorUndo							CyclePreviousPage
 
-define UseShieldCell								0
 define HeadlightsBuggyButton						UseShieldCell
 
 define UIFocus										0
@@ -146,8 +164,6 @@ define SystemMapOpen								0
 define SystemMapOpen_Buggy							SystemMapOpen
 
 
-define HMDReset										USB_F12
-define MicrophoneMute								USB_BackSlash
 define PhotoCameraToggle							L_CTRL + L_ALT + USB_Space
 define QuickCommsPanel								USB_Return
 define ShowPGScoreSummaryInput						USB_F1
@@ -169,16 +185,8 @@ define OpenCodexGoToDiscovery						USB_O
 
 
 
-define ShipSpotLightToggle							0
-define IncreaseEnginesPower							0
-define ResetPowerDistribution						0
-define ToggleCargoScoop								0
-define LandingGearToggle							0
-define FireChaffLauncher							0
 define FocusLeftPanel								0
 define FocusRightPanel								0
 define ExplorationFSSShowHelp						0
-define ChargeECM									0
-define EjectAllCargo								0
 define RadarIncreaseRange							0
 define RadarDecreaseRange							0

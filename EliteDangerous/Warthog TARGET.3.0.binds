@@ -393,20 +393,22 @@
 	</DeployHardpointToggle>
 	<DeployHardpointsOnFire Value="1" />
 	<ToggleButtonUpInput>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_17" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_16" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</ToggleButtonUpInput>
 	<DeployHeatSink>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_32" />
+		<Primary Device="Keyboard" Key="Key_LeftAlt">
+			<Modifier Device="Keyboard" Key="Key_H" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</DeployHeatSink>
 	<ShipSpotLightToggle>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_13" />
+		<Primary Device="Keyboard" Key="Key_L" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ShipSpotLightToggle>
 	<RadarRangeAxis>
-		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_UAxis" />
+		<Binding Device="ThrustMasterWarthogCombined" Key="Joy_VAxis" />
 		<Inverted Value="1" />
 		<Deadzone Value="0.00000000" />
 	</RadarRangeAxis>
@@ -427,11 +429,11 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</IncreaseWeaponsPower>
 	<IncreaseSystemsPower>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_14" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_13" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</IncreaseSystemsPower>
 	<ResetPowerDistribution>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_13" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_14" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</ResetPowerDistribution>
 	<HMDReset>
@@ -439,7 +441,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HMDReset>
 	<ToggleCargoScoop>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_24" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</ToggleCargoScoop>
@@ -448,22 +450,22 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</EjectAllCargo>
 	<LandingGearToggle>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_25" />
+		<Primary Device="Keyboard" Key="Key_G" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</LandingGearToggle>
 	<MicrophoneMute>
-		<Primary Device="Keyboard" Key="Key_BackSlash" />
+		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_15" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</MicrophoneMute>
 	<MuteButtonMode Value="mute_toggle" />
 	<CqcMuteButtonMode Value="mute_pushToTalk" />
 	<UseShieldCell>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_27" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</UseShieldCell>
 	<FireChaffLauncher>
-		<Primary Device="ThrustMasterWarthogCombined" Key="Joy_28" />
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</FireChaffLauncher>
 	<ChargeECM>
@@ -474,15 +476,19 @@
 	<EnableMenuGroups Value="0" />
 	<MouseGUI Value="0" />
 	<WeaponColourToggle>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_C">
+			<Modifier Device="Keyboard" Key="Key_LeftShift" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</WeaponColourToggle>
 	<EngineColourToggle>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_C">
+			<Modifier Device="Keyboard" Key="Key_LeftControl" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</EngineColourToggle>
 	<NightVisionToggle>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_V" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</NightVisionToggle>
 	<UIFocus>

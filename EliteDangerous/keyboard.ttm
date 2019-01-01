@@ -125,7 +125,7 @@ define CycleNextPanel								ForwardThrustButton
 define CyclePreviousPanel							BackwardThrustButton
 //define CyclePreviousPanel							USB_Q
 
-define UI_Select									ToggleReverseThrottleInput
+define UI_Select									ToggleReverseThrottleInput // thinking of using this with chaff or shield cell
 define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
 
 define ToggleDriveAssist							ToggleFlightAssist

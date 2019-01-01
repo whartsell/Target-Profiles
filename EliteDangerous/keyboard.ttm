@@ -1,136 +1,184 @@
 include "usbkeys.ttm"
+//Flight
 
-define TargetWingman0								USB_7
-define TargetWingman1								USB_8
-define TargetWingman2								USB_9
-define SelectTargetsTarget							USB_0
-define WingNavLock									USB_Minus
-define OrbitLinesToggle								USB_Equals
+//	Rotation
+
+//	Thrust
+define LeftThrustButton		DX3	// Thrust Left
+define RightThrustButton	DX4	// Thrust Right
+define UpThrustButton		DX5	// Thrust Up
+define DownThrustButton		DX6	// Thrust Down
+define ForwardThrustButton	DX7	// Thrust Forward
+define BackwardThrustButton	DX8	// Thrust Backward
+
+//	Alternate Flight Controls
+
+//	Throttle
+define ToggleReverseThrottleInput	DX9	// Forward Only Throttle Reverse
+
+//	Landing Override
+
+// Miscellaneous
+define ToggleFlightAssist			DX10
+define UseBoostJuice				PULSE + USB_Tab			// Engine Boost
+define HyperSuperCombination		USB_J			// Toggle Frame Shift Drive
+define Supercruise					PULSE + L_CTL + USB_J	// Supercruise
+define Hyperspace					PULSE + L_SHIFT + USB_J	// Hyperspace Jump
+define OrbitLinesToggle				USB_Equals
+define DisableRotationCorrectToggle	0	
+
+//	Targeting
+define SelectTarget					PULSE + USB_T			// Select Target Ahead	
+define CycleNextTarget				PULSE + L_SHIFT + USB_T	
+define CyclePreviousTarget			PULSE + L_CTL + USB_T
+define SelectHighestThreat			PULSE + USB_H			// Select Highest Threat
+define CycleNextHostileTarget		PULSE + L_SHIFT + USB_H
+define CyclePreviousHostileTarget	PULSE + L_CTL + USB_H
+define TargetWingman0				PULSE + USB_7					// Target Wingman 1
+define TargetWingman1				PULSE + USB_8					// Target Wingman 2
+define TargetWingman2				PULSE + USB_9					// Target Wingman 1
+define SelectTargetsTarget			PULSE + USB_0					// Target Wingmans Target
+define WingNavLock					PULSE + USB_Minus
+define CycleNextSubSystem			PULSE + L_SHIFT + USB_S	// Cycle Next Subsystem
+define CyclePreviousSubSystem		PULSE + L_CTL + USB_S	// Cycle Previous Subsystem
+define TargetNextRouteSystem		PULSE + USB_N			// Target Next System In Route
+
+//	Weapons
+define PrimaryFire				DX1
+define SecondaryFire			DX2
+define CycleFireGroupNext		PULSE + L_SHIFT + USB_G
+define CycleFireGroupPrevious	PULSE + L_CTL + USB_G
+define DeployHardpointToggle	PULSE + USB_D
+
+//	Cooling
+define ToggleButtonUpInput_SilentRunning	0
+define DeployHeatSink						0
+
+//	Miscellaneous
+
+
+define UIToggle		OrbitLinesToggle
+
+
+define OrderDefensiveBehaviour						USB_KP1
+define VanityCameraOne								OrderDefensiveBehaviour
+
+define OrderAgressiveBehaviour						USB_KP2
+define VanityCameraTwo								OrderAgressiveBehaviour
+
+define OrderFocusTarget								USB_KP3
+define VanityCameraThree							OrderFocusTarget
+
+define OrderHoldFire								USB_KP4
+define VanityCameraFour								OrderHoldFire
+
+define OrderHoldPosition							USB_KP5
+define VanityCameraFive								OrderHoldPosition
+
+define OrderFollow									USB_KP6
+define VanityCameraSix								OrderFollow
+
+define ExplorationFSSEnter							USB_Apostrophe
+define ExplorationFSSQuit							ExplorationFSSEnter
+
+//should be moved to DX
+define BuggyPrimaryFireButton						PrimaryFire
+define ExplorationFSSZoomIn							PrimaryFire
+
+define BuggySecondaryFireButton						SecondaryFire
+define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
+define ExplorationFSSZoomOut						SecondaryFire
+
+define UI_Left										LeftThrustButton
+
+define UI_Right										RightThrustButton
+
+define UI_Up										UpThrustButton
+define VerticalThrusterButton						UpThrustButton
+
+define UI_Down										DownThrustButton
+
+define CycleNextPanel								ForwardThrustButton
+//define CycleNextPanel								USB_E
+
+define CyclePreviousPanel							BackwardThrustButton
+//define CyclePreviousPanel							USB_Q
+
+define UI_Select									ToggleReverseThrottleInput
+define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
+
+define ToggleDriveAssist							ToggleFlightAssist
+define ExplorationFSSDiscoveryScan					ToggleFlightAssist
+define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
+
+define AutoBreakBuggyButton							UseBoostJuice
+
+define ExplorationFSSTarget							SelectTarget
+
+define ToggleBuggyTurretButton						DeployHardpointToggle
+
+define IncreaseWeaponsPower							0
+define CycleNextPage								IncreaseWeaponsPower
+//define CycleNextPage								USB_C
+define CommanderCreatorRedo							CycleNextPage
+
+define IncreaseSystemsPower							0
+define CyclePreviousPage							IncreaseSystemsPower
+//define CyclePreviousPage							USB_Z
+define CommanderCreatorUndo							CyclePreviousPage
+
+define UseShieldCell								0
+define HeadlightsBuggyButton						UseShieldCell
+
+define UIFocus										0
+define ExplorationSAAExitThirdPerson				UIFocus
+
+define FocusCommsPanel								0
+define ExplorationFSSMiniZoomIn						FocusCommsPanel
+
+define FocusRadarPanel								0
+define ExplorationFSSMiniZoomOut					FocusRadarPanel
+
+define GalaxyMapOpen								0
+define GalaxyMapOpenBuggy							GalaxyMapOpen
+
+define SystemMapOpen								0
+define SystemMapOpen_Buggy							SystemMapOpen
+
+
 define HMDReset										USB_F12
 define MicrophoneMute								USB_BackSlash
 define PhotoCameraToggle							L_CTRL + L_ALT + USB_Space
 define QuickCommsPanel								USB_Return
 define ShowPGScoreSummaryInput						USB_F1
 define UIBack										USB_BackSpace
-define UIToggle										OrbitLinesToggle
-//define CycleNextPanel								USB_E
-//define CyclePreviousPanel							USB_Q
-//define CycleNextPage								USB_C
-//define CyclePreviousPage							USB_Z
+
 define OrderRequestDock								USB_KP0
-// Vanity camera 1-9 also kps1-9
-define VanityCameraOne								OrderDefensiveBehaviour
-define VanityCameraTwo								OrderAgressiveBehavious
-define VanityCameraThree							OrderFocusTarget
-define VanityCameraFour								OrderHoldFire
-define VanityCameraFive								OrderHoldPosition
-define VanityCameraSix								OrderFollow
 define VanityCameraSeven							USB_KP7	
 define VanityCameraEight							USB_KP8
 define VanityCameraNine								USB_KP9
-define OrderDefensiveBehaviour						USB_KP1
-define OrderAgressiveBehavious						USB_KP2
-define OrderFocusTarget								USB_KP3
-define OrderHoldFire								USB_KP4
-define OrderHoldPosition							USB_KP5
-define OrderFollow									USB_KP6
-
-define CommanderCreatorUndo							CyclePreviousPage
-define CommanderCreatorRedo							CycleNextPage
-
 // Analysis Mode and DSS/FSS
 define PlayerHUDModeToggle							USB_M
 define OpenCodexGoToDiscovery						USB_O
-define ExplorationFSSEnter							USB_Apostrophe
-define ExplorationFSSQuit							ExplorationFSSEnter
-//should be moved to DX
-define PrimaryFire									DX1
-define BuggyPrimaryFireButton						PrimaryFire
-define ExplorationFSSZoomIn							PrimaryFire
-
-define SecondaryFire								DX2
-define BuggySecondaryFireButton						SecondaryFire
-define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
-define ExplorationFSSZoomOut						SecondaryFire
-
-define LeftThrustButton								DX3
-define UI_Left										LeftThrustButton
-
-define RightThrustButton							DX4
-define UI_Right										RightThrustButton
-
-define UpThrustButton								DX5
-define UI_Up										UpThrustButton
-define VerticalThrusterButton						UpThrustButton
-
-define DownThrustButton								DX6
-define UI_Down										DownThrustButton
-
-define ForwardThrustButton							DX7
-define CycleNextPanel								ForwardThrustButton
-
-define BackwardThrustButton							DX8
-define CyclePreviousPanel							BackwardThrustButton
-
-define ToggleReverseThrottleInput					DX9
-define UI_Select									ToggleReverseThrottleInput
-define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
-
-define ToggleFlightAssist							DX10
-define ToggleDriveAssist							ToggleFlightAssist
 
 
-define UseBoostJuice								0
-define HyperSuperCombination						0
-define SelectTarget									0	
-define CycleNextTarget								0
-define CyclePreviousTarget							0
-define CycleNextHostileTarget						0
-define CyclePreviousHostileTarget					0
-define CycleNextSubSystem							0
-define CyclePreviousSubSystem						0
-define CycleFireGroupNext							0
-define CycleFireGroupPrevious						0
-define DeployHardpointToggle						0
-define ToggleButtonUpInput_SilentRunning			0
-define DeployHeatSink								0
+
+
+
+
+
+
+
 define ShipSpotLightToggle							0
 define IncreaseEnginesPower							0
-define IncreaseWeaponsPower							0
-define IncreaseSystemsPower							0
 define ResetPowerDistribution						0
 define ToggleCargoScoop								0
 define LandingGearToggle							0
-define UseShieldCell								0
 define FireChaffLauncher							0
-define UIFocus										0
 define FocusLeftPanel								0
-define FocusCommsPanel								0
-define FocusRadarPanel								0
 define FocusRightPanel								0
-
-
-define CycleNextPage								IncreaseWeaponsPower
-define CyclePreviousPage							IncreaseSystemsPower
-define AutoBreakBuggyButton							UseBoostJuice
-define HeadlightsBuggyButton						UseShieldCell
-define ToggleBuggyTurretButton						DeployHardpointToggle
-//define PlayerHUDModeToggle							0
-define ExplorationFSSMiniZoomOut					FocusRadarPanel
-define ExplorationFSSMiniZoomIn						FocusCommsPanel
-define ExplorationFSSRadioTuningX // could be this for an axis or use buttons _Increase _Decrease
-define ExplorationFSSDiscoveryScan					ToggleFlightAssist
-define ExplorationFSSTarget							SelectTarget
 define ExplorationFSSShowHelp						0
-define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
-define ExplorationSAAExitThirdPerson				UIFocus
 define ChargeECM									0
-define TargetNextRouteSystem						0	
 define EjectAllCargo								0
-define DisableRotationCorrectToggle					0	
-define GalaxyMapOpen								0
-define GalaxyMapOpenBuggy							GalaxyMapOpen
-define SystemMapOpen								0
-define SystemMapOpen_Buggy							SystemMapOpen
 define RadarIncreaseRange							0
 define RadarDecreaseRange							0

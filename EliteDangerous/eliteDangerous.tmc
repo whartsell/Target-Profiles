@@ -30,6 +30,9 @@ int main()
 	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
 
 //Layers&Modes
+// BSF - UP: Enemy Targeting
+// Middle: Wing Targeting
+// BSB - Down: All Targeting
 	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
 	
 //STICK
@@ -38,7 +41,7 @@ int main()
 		MapKey(&Joystick, S2,0);
 
 	//S1 Master Mode Control Button
-		MapKey(&Joystick, S1,0);
+		MapKey(&Joystick, S1,TEMPO(CycleFireGroupNext,DeployHardpointToggle));
 	//Trim
 		MapKey(&Joystick,H1D,0);
 		MapKey(&Joystick,H1U,0);
@@ -47,16 +50,16 @@ int main()
 
 
 	//TMS
-		MapKey(&Joystick,H2D,0);
-		MapKey(&Joystick,H2U,0);
-		MapKey(&Joystick,H2L,0);
-		MapKey(&Joystick,H2R,0);
+		MapKeyUMD(&Joystick,H2D,TEMPO(CyclePreviousSubSystem,SelectHighestThreat),TEMPO(SelectTargetsTarget,TargetNextRouteSystem),TEMPO(CyclePreviousSubSystem,TargetNextRouteSystem));
+		MapKeyUMD(&Joystick,H2U,TEMPO(CycleNextSubSystem,SelectTarget),TEMPO(TargetWingman1,SelectTarget),TEMPO(CycleNextSubSystem,SelectTarget));
+		MapKeyUMD(&Joystick,H2L,CyclePreviousHostileTarget,TargetWingman0,CyclePreviousTarget);
+		MapKeyUMD(&Joystick,H2R,CycleNextHostileTarget,TargetWingman2,CycleNextTarget);
 
 	//Trigger 
 		//TG1
-			MapKey(&Joystick,TG1,0);
+			MapKey(&Joystick,TG1,PrimaryFire);
 		//TG2
-			MapKey(&Joystick,TG2,0);
+			MapKey(&Joystick,TG2,SecondaryFire);
 	
 	//DMS
 		MapKey(&Joystick,H3D,0);
@@ -85,7 +88,7 @@ int main()
 		MapKey(&Throttle,PSB,0);
 		
 	//Left Throttle Button
-		MapKey(&Throttle,LTB,0);
+		MapKey(&Throttle,LTB,TEMPO(Supercruise,Hyperspace));
 	
 	//Slew
 		MapKey(&Throttle,SC,ToggleReverseThrottleInput); 
@@ -106,7 +109,7 @@ int main()
 	//Speed Brake
 		MapKey(&Throttle,SPDF,0);
 		MapKey(&Throttle,SPDM,0);
-		MapKey(&Throttle,SPDB,0);
+		MapKey(&Throttle,SPDB,UseBoostJuice);
 	
 	//Boat
 		MapKey(&Throttle,BSF,0);

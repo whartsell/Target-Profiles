@@ -38,7 +38,7 @@ int main()
 //STICK
 
 	//S2 Weapon Release
-		MapKey(&Joystick, S2,0);
+		MapKey(&Joystick, S2,SecondaryFire);
 
 	//S1 Master Mode Control Button
 		MapKey(&Joystick, S1,TEMPO(CycleFireGroupNext,DeployHardpointToggle));
@@ -62,8 +62,8 @@ int main()
 			MapKey(&Joystick,TG2,SecondaryFire);
 	
 	//DMS
-		MapKey(&Joystick,H3D,0);
-		MapKey(&Joystick,H3U,0);
+		MapKey(&Joystick,H3D,FocusRadarPanel);
+		MapKey(&Joystick,H3U,FocusCommsPanel);
 		MapKey(&Joystick,H3L,0);
 		MapKey(&Joystick,H3R,0);
 
@@ -75,7 +75,7 @@ int main()
 		MapKey(&Joystick,H4P,UI_Select); 
 	
 	//S3 Pinky Switch
-		MapKey(&Joystick, S3,TEMPO(DeployHeatSink,0));
+		MapKey(&Joystick, S3,TEMPO(DeployHeatSink,UseShieldCell));
 	
 	//S4 Paddle Switch
 		MapKey(&Joystick, S4,ToggleFlightAssist);
@@ -101,7 +101,7 @@ int main()
 	
 	//Mic Switch
 		MapKey(&Throttle, MSD,MicrophoneMute);
-		//MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,BackwardThrustButton);
 		MapKey(&Throttle, MSR,ForwardThrustButton);
 		MapKey(&Throttle, MSP,0);	
@@ -134,12 +134,12 @@ int main()
 	
 	//Engine Oper
 		//Left
-		MapKey(&Throttle,EOLIGN,0);
-		MapKey(&Throttle,EOLNORM,0);
+		MapKey(&Throttle,EOLIGN,TEMPO(0,EjectAllCargo,2000));
+		MapKey(&Throttle,EOLNORM,ToggleCargoScoop);
 		MapKey(&Throttle,EOLMOTOR,0);
 		
 		//Right
-		MapKey(&Throttle,EORIGN,0);
+		MapKey(&Throttle,EORIGN,ShipSpotLightToggle);
 		MapKey(&Throttle,EORNORM,0);
 		MapKey(&Throttle,EORMOTOR,0);
 				

@@ -1,5 +1,5 @@
 include "usbkeys.ttm"
-//DX16
+//DX17
 //Flight
 
 //	Rotation
@@ -62,23 +62,58 @@ define IncreaseWeaponsPower		DX12			// Divert Power To Weapons
 define IncreaseSystemsPower		DX13			// Divert Power to Systems
 define ResetPowerDistribution	DX14			// Balance Power Distribution
 define HMDReset					PULSE + USB_F12	// Reset HMD Orientation
-define ToggleCargoScoop			0
-define EjectAllCargo			0				// Jettison All Cargo
+define ToggleCargoScoop			DX17
+define EjectAllCargo			L_SHIFT + L_CTL + DX17				// Jettison All Cargo
 define LandingGearToggle		PULSE + USB_G
 define MicrophoneMute			DX15			//USB_BackSlash 
-define UseShieldCell			0
-define FireChaffLauncher		0
-define ChargeECM				0
+define UseShieldCell			PULSE + USB_S
+define FireChaffLauncher		PULSE + USB_C
+define ChargeECM				PULSE + USB_E
 define WeaponColourToggle		PULSE + L_SHIFT + USB_C				// Weapon Color
 define EngineColourToggle		PULSE + L_CTL + USB_C				// Engine Color
 define NightVisionToggle		PULSE + USB_V				// Night Vision
 
 
 //Mode Switches
+define UIFocus										0
+define FocusLeftPanel								0
+define FocusRightPanel								0
+define FocusCommsPanel	PULSE + R_SHIFT + USB_UpArrow
+define FocusRadarPanel	PULSE + R_SHIFT + USB_DownArrow
+define GalaxyMapOpen	PULSE + L_SHIFT + USB_M
+define SystemMapOpen	PULSE + L_CTL + USB_M
+define Friends			PULSE + USB_F
+define PlayerHUDModeToggle							USB_M
+
+//Interface Mode
+define UI_Up				UpThrustButton			// UI Panel Up
+define UI_Down				DownThrustButton		// UI Panel Down
+define UI_Left				LeftThrustButton		// UI Panel	Left
+define UI_Right				RightThrustButton		// UI Panel Right
+define UI_Select			FireChaffLauncher		// UI Panel Select
+define UIBack				CycleFireGroupNext		// UI Back
+define UIToggle				OrbitLinesToggle		// UI Nested Toggle
+define CycleNextPanel		ForwardThrustButton		// Next Panel Tab
+//define CycleNextPanel		USB_E					// Next Panel Tab
+define CyclePreviousPanel	BackwardThrustButton	// Previous Panel Tab
+//define CyclePreviousPanel	USB_Q					// Previous Panel Tab
+define CycleNextPage		IncreaseWeaponsPower
+//define CycleNextPage		USB_C
+define CyclePreviousPage	IncreaseSystemsPower
+//define CyclePreviousPage	USB_Z
+
+//Full Spectrum System Scanner
+define ExplorationFSSEnter							USB_Apostrophe
+define ExplorationFSSQuit							ExplorationFSSEnter
+define ExplorationFSSTarget							SelectTarget
+define ExplorationFSSZoomIn							PrimaryFire
+define ExplorationFSSZoomOut						SecondaryFire
+define ExplorationFSSDiscoveryScan					ToggleFlightAssist
+define ExplorationFSSMiniZoomIn						FocusCommsPanel
+define ExplorationFSSMiniZoomOut					FocusRadarPanel
+define ExplorationFSSShowHelp						PULSE + R_SHIFT + USB_H
 
 
-
-define UIToggle		OrbitLinesToggle
 
 
 define OrderDefensiveBehaviour						USB_KP1
@@ -99,94 +134,52 @@ define VanityCameraFive								OrderHoldPosition
 define OrderFollow									USB_KP6
 define VanityCameraSix								OrderFollow
 
-define ExplorationFSSEnter							USB_Apostrophe
-define ExplorationFSSQuit							ExplorationFSSEnter
-
 //should be moved to DX
 define BuggyPrimaryFireButton						PrimaryFire
-define ExplorationFSSZoomIn							PrimaryFire
 
 define BuggySecondaryFireButton						SecondaryFire
 define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
-define ExplorationFSSZoomOut						SecondaryFire
 
-define UI_Left										LeftThrustButton
 
-define UI_Right										RightThrustButton
-
-define UI_Up										UpThrustButton
 define VerticalThrusterButton						UpThrustButton
 
-define UI_Down										DownThrustButton
 
-define CycleNextPanel								ForwardThrustButton
-//define CycleNextPanel								USB_E
-
-define CyclePreviousPanel							BackwardThrustButton
-//define CyclePreviousPanel							USB_Q
-
-define UI_Select									ToggleReverseThrottleInput // thinking of using this with chaff or shield cell
 define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
 
 define ToggleDriveAssist							ToggleFlightAssist
-define ExplorationFSSDiscoveryScan					ToggleFlightAssist
 define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
 
 define AutoBreakBuggyButton							UseBoostJuice
 
-define ExplorationFSSTarget							SelectTarget
 
 define ToggleBuggyTurretButton						DeployHardpointToggle
 
-define CycleNextPage								IncreaseWeaponsPower
-//define CycleNextPage								USB_C
+
 define CommanderCreatorRedo							CycleNextPage
 
-define CyclePreviousPage							IncreaseSystemsPower
-//define CyclePreviousPage							USB_Z
+
 define CommanderCreatorUndo							CyclePreviousPage
 
 define HeadlightsBuggyButton						UseShieldCell
 
-define UIFocus										0
 define ExplorationSAAExitThirdPerson				UIFocus
 
-define FocusCommsPanel								0
-define ExplorationFSSMiniZoomIn						FocusCommsPanel
 
-define FocusRadarPanel								0
-define ExplorationFSSMiniZoomOut					FocusRadarPanel
-
-define GalaxyMapOpen								0
 define GalaxyMapOpenBuggy							GalaxyMapOpen
 
-define SystemMapOpen								0
 define SystemMapOpen_Buggy							SystemMapOpen
 
 
 define PhotoCameraToggle							L_CTRL + L_ALT + USB_Space
 define QuickCommsPanel								USB_Return
 define ShowPGScoreSummaryInput						USB_F1
-define UIBack										USB_BackSpace
 
 define OrderRequestDock								USB_KP0
 define VanityCameraSeven							USB_KP7	
 define VanityCameraEight							USB_KP8
 define VanityCameraNine								USB_KP9
 // Analysis Mode and DSS/FSS
-define PlayerHUDModeToggle							USB_M
 define OpenCodexGoToDiscovery						USB_O
 
-
-
-
-
-
-
-
-
-define FocusLeftPanel								0
-define FocusRightPanel								0
-define ExplorationFSSShowHelp						0
 define RadarIncreaseRange							0
 define RadarDecreaseRange							0

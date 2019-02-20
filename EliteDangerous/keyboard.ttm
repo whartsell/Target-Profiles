@@ -1,0 +1,185 @@
+include "usbkeys.ttm"
+//DX17
+//Flight
+
+//	Rotation
+
+//	Thrust
+define LeftThrustButton		DX3	// Thrust Left
+define RightThrustButton	DX4	// Thrust Right
+define UpThrustButton		DX5	// Thrust Up
+define DownThrustButton		DX6	// Thrust Down
+define ForwardThrustButton	DX7	// Thrust Forward
+define BackwardThrustButton	DX8	// Thrust Backward
+
+//	Alternate Flight Controls
+
+//	Throttle
+define ToggleReverseThrottleInput	DX9	// Forward Only Throttle Reverse
+
+//	Landing Override
+
+// Miscellaneous
+define ToggleFlightAssist			DX10
+define UseBoostJuice				PULSE + USB_Tab			// Engine Boost
+define HyperSuperCombination		USB_J			// Toggle Frame Shift Drive
+define Supercruise					PULSE + L_CTL + USB_J	// Supercruise
+define Hyperspace					PULSE + L_SHIFT + USB_J	// Hyperspace Jump
+define OrbitLinesToggle				USB_Equals
+define DisableRotationCorrectToggle	0	
+
+//	Targeting
+define SelectTarget					PULSE + USB_T			// Select Target Ahead	
+define CycleNextTarget				PULSE + L_SHIFT + USB_T	
+define CyclePreviousTarget			PULSE + L_CTL + USB_T
+define SelectHighestThreat			PULSE + USB_H			// Select Highest Threat
+define CycleNextHostileTarget		PULSE + L_SHIFT + USB_H
+define CyclePreviousHostileTarget	PULSE + L_CTL + USB_H
+define TargetWingman0				PULSE + USB_7					// Target Wingman 1
+define TargetWingman1				PULSE + USB_8					// Target Wingman 2
+define TargetWingman2				PULSE + USB_9					// Target Wingman 1
+define SelectTargetsTarget			PULSE + USB_0					// Target Wingmans Target
+define WingNavLock					PULSE + USB_Minus
+define CycleNextSubSystem			PULSE + L_SHIFT + USB_S	// Cycle Next Subsystem
+define CyclePreviousSubSystem		PULSE + L_CTL + USB_S	// Cycle Previous Subsystem
+define TargetNextRouteSystem		PULSE + USB_N			// Target Next System In Route
+
+//	Weapons
+define PrimaryFire				DX1
+define SecondaryFire			DX2
+define CycleFireGroupNext		PULSE + L_SHIFT + USB_G
+define CycleFireGroupPrevious	PULSE + L_CTL + USB_G
+define DeployHardpointToggle	PULSE + USB_D
+
+//	Cooling
+define SilentRunning			DX16	// ToggleButtonUpInput
+define DeployHeatSink						PULSE + L_ALT + USB_H
+
+//	Miscellaneous
+define ShipSpotLightToggle		PULSE + USB_L		
+define IncreaseEnginesPower		DX11			// Divert Power To Engines
+define IncreaseWeaponsPower		DX12			// Divert Power To Weapons
+define IncreaseSystemsPower		DX13			// Divert Power to Systems
+define ResetPowerDistribution	DX14			// Balance Power Distribution
+define HMDReset					PULSE + USB_F12	// Reset HMD Orientation
+define ToggleCargoScoop			DX17
+define EjectAllCargo			L_SHIFT + L_CTL + DX17				// Jettison All Cargo
+define LandingGearToggle		PULSE + USB_G
+define MicrophoneMute			DX15			//USB_BackSlash 
+define UseShieldCell			PULSE + USB_S
+define FireChaffLauncher		PULSE + USB_C
+define ChargeECM				PULSE + USB_E
+define WeaponColourToggle		PULSE + L_SHIFT + USB_C				// Weapon Color
+define EngineColourToggle		PULSE + L_CTL + USB_C				// Engine Color
+define NightVisionToggle		PULSE + USB_V				// Night Vision
+
+
+//Mode Switches
+define UIFocus										0
+define FocusLeftPanel								0
+define FocusRightPanel								0
+define FocusCommsPanel	PULSE + R_SHIFT + USB_UpArrow
+define FocusRadarPanel	PULSE + R_SHIFT + USB_DownArrow
+define GalaxyMapOpen	PULSE + L_SHIFT + USB_M
+define SystemMapOpen	PULSE + L_CTL + USB_M
+define Friends			PULSE + USB_F
+define PlayerHUDModeToggle							USB_M
+
+//Interface Mode
+define UI_Up				UpThrustButton			// UI Panel Up
+define UI_Down				DownThrustButton		// UI Panel Down
+define UI_Left				LeftThrustButton		// UI Panel	Left
+define UI_Right				RightThrustButton		// UI Panel Right
+define UI_Select			FireChaffLauncher		// UI Panel Select
+define UIBack				CycleFireGroupNext		// UI Back
+define UIToggle				OrbitLinesToggle		// UI Nested Toggle
+define CycleNextPanel		ForwardThrustButton		// Next Panel Tab
+//define CycleNextPanel		USB_E					// Next Panel Tab
+define CyclePreviousPanel	BackwardThrustButton	// Previous Panel Tab
+//define CyclePreviousPanel	USB_Q					// Previous Panel Tab
+define CycleNextPage		IncreaseWeaponsPower
+//define CycleNextPage		USB_C
+define CyclePreviousPage	IncreaseSystemsPower
+//define CyclePreviousPage	USB_Z
+
+//Full Spectrum System Scanner
+define ExplorationFSSEnter							USB_Apostrophe
+define ExplorationFSSQuit							ExplorationFSSEnter
+define ExplorationFSSTarget							SelectTarget
+define ExplorationFSSZoomIn							PrimaryFire
+define ExplorationFSSZoomOut						SecondaryFire
+define ExplorationFSSDiscoveryScan					ToggleFlightAssist
+define ExplorationFSSMiniZoomIn						FocusCommsPanel
+define ExplorationFSSMiniZoomOut					FocusRadarPanel
+define ExplorationFSSShowHelp						PULSE + R_SHIFT + USB_H
+
+
+
+
+define OrderDefensiveBehaviour						USB_KP1
+define VanityCameraOne								OrderDefensiveBehaviour
+
+define OrderAgressiveBehaviour						USB_KP2
+define VanityCameraTwo								OrderAgressiveBehaviour
+
+define OrderFocusTarget								USB_KP3
+define VanityCameraThree							OrderFocusTarget
+
+define OrderHoldFire								USB_KP4
+define VanityCameraFour								OrderHoldFire
+
+define OrderHoldPosition							USB_KP5
+define VanityCameraFive								OrderHoldPosition
+
+define OrderFollow									USB_KP6
+define VanityCameraSix								OrderFollow
+
+//should be moved to DX
+define BuggyPrimaryFireButton						PrimaryFire
+
+define BuggySecondaryFireButton						SecondaryFire
+define SelectTargetBuggy							SecondaryFire // is this right? its whats in the doc
+
+
+define VerticalThrusterButton						UpThrustButton
+
+
+define BuggyToggleReverseThrottleInput				ToggleReverseThrottleInput
+
+define ToggleDriveAssist							ToggleFlightAssist
+define ExplorationSAAChangeScannedAreaViewToggle	ToggleFlightAssist
+
+define AutoBreakBuggyButton							UseBoostJuice
+
+
+define ToggleBuggyTurretButton						DeployHardpointToggle
+
+
+define CommanderCreatorRedo							CycleNextPage
+
+
+define CommanderCreatorUndo							CyclePreviousPage
+
+define HeadlightsBuggyButton						UseShieldCell
+
+define ExplorationSAAExitThirdPerson				UIFocus
+
+
+define GalaxyMapOpenBuggy							GalaxyMapOpen
+
+define SystemMapOpen_Buggy							SystemMapOpen
+
+
+define PhotoCameraToggle							L_CTRL + L_ALT + USB_Space
+define QuickCommsPanel								USB_Return
+define ShowPGScoreSummaryInput						USB_F1
+
+define OrderRequestDock								USB_KP0
+define VanityCameraSeven							USB_KP7	
+define VanityCameraEight							USB_KP8
+define VanityCameraNine								USB_KP9
+// Analysis Mode and DSS/FSS
+define OpenCodexGoToDiscovery						USB_O
+
+define RadarIncreaseRange							0
+define RadarDecreaseRange							0

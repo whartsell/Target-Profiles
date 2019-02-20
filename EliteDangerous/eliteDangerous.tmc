@@ -1,0 +1,193 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+include "dxmap.ttm"
+
+int main()
+{
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	//Initialize Backlights
+    	//ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+
+//Layers&Modes
+// BSF - UP: Enemy Targeting
+// Middle: Wing Targeting
+// BSB - Down: All Targeting
+	SetShiftButton(&Joystick,S3,&Throttle,BSF,BSB);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKey(&Joystick, S2,SecondaryFire);
+
+	//S1 Master Mode Control Button
+		MapKey(&Joystick, S1,TEMPO(CycleFireGroupNext,DeployHardpointToggle));
+	//Trim
+		MapKey(&Joystick,H1D,ResetPowerDistribution);
+		MapKey(&Joystick,H1U,IncreaseEnginesPower);
+		MapKey(&Joystick,H1L,IncreaseSystemsPower);
+		MapKey(&Joystick,H1R,IncreaseWeaponsPower);
+
+
+	//TMS
+		MapKeyUMD(&Joystick,H2D,TEMPO(CyclePreviousSubSystem,SelectHighestThreat),TEMPO(SelectTargetsTarget,TargetNextRouteSystem),TEMPO(CyclePreviousSubSystem,TargetNextRouteSystem));
+		MapKeyUMD(&Joystick,H2U,TEMPO(CycleNextSubSystem,SelectTarget),TEMPO(TargetWingman1,SelectTarget),TEMPO(CycleNextSubSystem,SelectTarget));
+		MapKeyUMD(&Joystick,H2L,CyclePreviousHostileTarget,TargetWingman0,CyclePreviousTarget);
+		MapKeyUMD(&Joystick,H2R,CycleNextHostileTarget,TargetWingman2,CycleNextTarget);
+
+	//Trigger 
+		//TG1
+			MapKey(&Joystick,TG1,PrimaryFire);
+		//TG2
+			MapKey(&Joystick,TG2,SecondaryFire);
+	
+	//DMS
+		MapKey(&Joystick,H3D,FocusRadarPanel);
+		MapKey(&Joystick,H3U,FocusCommsPanel);
+		MapKey(&Joystick,H3L,0);
+		MapKey(&Joystick,H3R,0);
+
+	//CMS
+		MapKey(&Joystick,H4D,UI_Down);
+		MapKey(&Joystick,H4U,UI_Up);
+		MapKey(&Joystick,H4L,UI_Left);
+		MapKey(&Joystick,H4R,UI_Right);
+		MapKey(&Joystick,H4P,UI_Select); 
+	
+	//S3 Pinky Switch
+		MapKey(&Joystick, S3,TEMPO(DeployHeatSink,UseShieldCell));
+	
+	//S4 Paddle Switch
+		MapKey(&Joystick, S4,ToggleFlightAssist);
+
+//THROTTLE
+
+	//Pinky
+		MapKey(&Throttle,PSF,0);
+		MapKey(&Throttle,PSM,0);
+		MapKey(&Throttle,PSB,0);
+		
+	//Left Throttle Button
+		MapKey(&Throttle,LTB,TEMPO(Supercruise,Hyperspace));
+	
+	//Slew
+		MapKey(&Throttle,SC,ToggleReverseThrottleInput); 
+
+	//Coolie
+		MapKey(&Throttle,CSD,DownThrustButton);
+		MapKey(&Throttle,CSU,UpThrustButton);
+		MapKey(&Throttle,CSL,LeftThrustButton);
+		MapKey(&Throttle,CSR,RightThrustButton);
+	
+	//Mic Switch
+		MapKey(&Throttle, MSD,MicrophoneMute);
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		MapKey(&Throttle, MSL,BackwardThrustButton);
+		MapKey(&Throttle, MSR,ForwardThrustButton);
+		MapKey(&Throttle, MSP,0);	
+
+	//Speed Brake
+		MapKey(&Throttle,SPDF,0);
+		MapKey(&Throttle,SPDM,0);
+		MapKey(&Throttle,SPDB,UseBoostJuice);
+	
+	//Boat
+		MapKey(&Throttle,BSF,0);
+		MapKey(&Throttle,BSM,0);
+		MapKey(&Throttle,BSB,0);
+	
+	//China Hat
+		MapKey(&Throttle,CHF,0);
+		MapKey(&Throttle,CHB,0);
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		MapKey(&Throttle,EFLNORM,SilentRunning);
+		MapKey(&Throttle,EFLOVER,0);
+		
+		//Right
+		MapKey(&Throttle,EFRNORM,0);
+		MapKey(&Throttle,EFROVER,0);
+	
+	//Engine Oper
+		//Left
+		MapKey(&Throttle,EOLIGN,TEMPO(0,EjectAllCargo,2000));
+		MapKey(&Throttle,EOLNORM,ToggleCargoScoop);
+		MapKey(&Throttle,EOLMOTOR,0);
+		
+		//Right
+		MapKey(&Throttle,EORIGN,ShipSpotLightToggle);
+		MapKey(&Throttle,EORNORM,0);
+		MapKey(&Throttle,EORMOTOR,0);
+				
+	//APU
+		MapKey(&Throttle,APUON,0);
+		MapKey(&Throttle,APUOFF,0);
+	
+	//Flaps
+		MapKey(&Throttle,FLAPU,0);
+		MapKey(&Throttle,FLAPM,0);
+		MapKey(&Throttle,FLAPD,0);
+	
+	//Idle Cutoff
+		//Left
+		MapKey(&Throttle,IDLELON,0);
+		MapKey(&Throttle,IDLELOFF,0);
+		
+		//Right
+		MapKey(&Throttle,IDLERON,0);
+		MapKey(&Throttle,IDLEROFF,0);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKey(&Throttle,LDGH,LandingGearToggle);
+
+	//EAC
+		MapKey(&Throttle,EACON,0);
+		MapKey(&Throttle,EACOFF,0);
+	//RDR Altm
+		MapKey(&Throttle,RDRNRM,0);
+		MapKey(&Throttle,RDRDIS,0);
+	//AP Engage/Disengage
+		MapKey(&Throttle,APENG,0);
+
+	//AP Select Switch
+		MapKey(&Throttle,APPAT,0);
+		MapKey(&Throttle,APAH,0);
+		MapKey(&Throttle,APALT,0);
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

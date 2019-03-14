@@ -40,10 +40,10 @@ int main()
 	//S1 Master Mode Control Button
 		MapKey(&Joystick, S1,JesterMenu);
 	//Trim
-		MapKey(&Joystick,H1D,0);
-		MapKey(&Joystick,H1U,0);
-		MapKey(&Joystick,H1L,0);
-		MapKey(&Joystick,H1R,0);
+		MapKey(&Joystick,H1D,TrimPitchUpDX);
+		MapKey(&Joystick,H1U,TrimPitchDownDX);
+		MapKey(&Joystick,H1L,TrimLWDown);
+		MapKey(&Joystick,H1R,TrimRWDown);
 
 
 	//TMS
@@ -59,7 +59,7 @@ int main()
 			MapKey(&Joystick,TG2,TrgSecondDetentDX);
 	
 	//DMS
-		MapKey(&Joystick,H3D,VR_ZOOM);
+		MapKey(&Joystick,H3D,VRZoomDX);
 		MapKey(&Joystick,H3U,0);
 		MapKey(&Joystick,H3L,0);
 		MapKey(&Joystick,H3R,0);
@@ -97,16 +97,16 @@ int main()
 		MapKey(&Throttle,CSR,SweepBomb);
 	
 	//Mic Switch
-		MapKey(&Throttle, MSD,0);
+		MapKey(&Throttle, MSD,MicButtonUHF2);
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
-		MapKey(&Throttle, MSL,0);
-		MapKey(&Throttle, MSR,0);
+		MapKey(&Throttle, MSL,MicButtonICS);
+		MapKey(&Throttle, MSR,MicButtonUHF1);
 		MapKey(&Throttle, MSP,0);	
 
 	//Speed Brake
-		MapKey(&Throttle,SPDF,0);
+		MapKey(&Throttle,SPDF,SpeedBrakeRetract);
 		MapKey(&Throttle,SPDM,0);
-		MapKey(&Throttle,SPDB,0);
+		MapKey(&Throttle,SPDB,SpeedBrakeExtend);
 	
 	//Boat
 		MapKey(&Throttle,BSF,0);
@@ -136,7 +136,7 @@ int main()
 		MapKey(&Throttle,EOLMOTOR,0);
 		
 		//Right
-		MapKey(&Throttle,EORIGN,0);
+		MapKey(&Throttle,EORIGN,MasterReset);
 		MapKey(&Throttle,EORNORM,0);
 		MapKey(&Throttle,EORMOTOR,0);
 				
@@ -145,9 +145,9 @@ int main()
 		MapKey(&Throttle,APUOFF,0);
 	
 	//Flaps
-		MapKey(&Throttle,FLAPU,0);
+		MapKey(&Throttle,FLAPU,PULSE + FlapsUp);
 		MapKey(&Throttle,FLAPM,0);
-		MapKey(&Throttle,FLAPD,0);
+		MapKey(&Throttle,FLAPD,PULSE + FlapsDown);
 	
 	//Idle Cutoff
 		//Left
@@ -162,7 +162,7 @@ int main()
 	
 	
 	//Landing Gear Horn Silence
-		MapKey(&Throttle,LDGH,0);
+		MapKey(&Throttle,LDGH,PULSE + LandingGearToggle);
 
 	//EAC
 		MapKey(&Throttle,EACON,0);
@@ -171,7 +171,7 @@ int main()
 		MapKey(&Throttle,RDRNRM,0);
 		MapKey(&Throttle,RDRDIS,0);
 	//AP Engage/Disengage
-		MapKey(&Throttle,APENG,0);
+		MapKey(&Throttle,APENG,MasterCautionReset);
 
 	//AP Select Switch
 		MapKey(&Throttle,APPAT,0);

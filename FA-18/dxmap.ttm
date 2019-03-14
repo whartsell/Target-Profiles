@@ -4,6 +4,7 @@ define Sensor_Control_Switch__AftDX					DX2
 define Sensor_Control_Switch__FwdDX					DX3
 define Sensor_Control_Switch__LeftDX				DX4
 define Sensor_Control_Switch__RightDX				DX5
+define Sensor_Control_Switch__DownDX				DX19
 define Undesignate_Nose_Wheel_Steer_SwitchDX		DX6
 define Autopilot_NWS_Disengage_Paddle_SwitchDX		DX7
 define Gun_Trigger__SECOND_DETENTDX					DX8

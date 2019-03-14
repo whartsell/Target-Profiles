@@ -38,7 +38,7 @@ int main()
 		MapKey(&Joystick, S2,Weapon_Release_ButtonDX);
 
 	//S1 Master Mode Control Button
-		MapKey(&Joystick, S1,0);
+		MapKey(&Joystick, S1,Sensor_Control_Switch__DownDX);
 	//Trim
 		MapKey(&Joystick,H1D,Trimmer_Switch__PULL_CLIMB_);
 		MapKey(&Joystick,H1U,Trimmer_Switch__PUSH_DESCEND_);
@@ -172,7 +172,7 @@ int main()
 		//MapKey(&Throttle,RDRNRM,);
 		//MapKey(&Throttle,RDRDIS,);
 	//AP Engage/Disengage
-		MapKey(&Throttle,APENG,PULSE + MASTER_CAUTION_Reset_Button);
+		MapKey(&Throttle,APENG,MASTER_CAUTION_Reset_Button);
 
 	//AP Select Switch
 		//MapKey(&Throttle,APPAT,);

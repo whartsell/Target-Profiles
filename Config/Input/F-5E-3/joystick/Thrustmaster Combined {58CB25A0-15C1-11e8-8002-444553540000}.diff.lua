@@ -58,8 +58,18 @@ local diff = {
 					["filter"] = {
 						["curvature"] = {
 							[1] = 0,
+							[2] = 0.07,
+							[3] = 0.14,
+							[4] = 0.21,
+							[5] = 0.32,
+							[6] = 0.43,
+							[7] = 0.54,
+							[8] = 0.66,
+							[9] = 0.77,
+							[10] = 0.89,
+							[11] = 1,
 						},
-						["deadzone"] = 0.1,
+						["deadzone"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -76,8 +86,18 @@ local diff = {
 					["filter"] = {
 						["curvature"] = {
 							[1] = 0,
+							[2] = 0.07,
+							[3] = 0.14,
+							[4] = 0.21,
+							[5] = 0.32,
+							[6] = 0.43,
+							[7] = 0.54,
+							[8] = 0.66,
+							[9] = 0.77,
+							[10] = 0.89,
+							[11] = 1,
 						},
-						["deadzone"] = 0.1,
+						["deadzone"] = 0,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -237,18 +257,18 @@ local diff = {
 		["dnilp95u215cdnilvdnilvpnilvunil"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN_POV1_U",
-				},
-			},
-			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
-		},
-		["dnilp96u215cdnilvdnilvpnilvunil"] = {
-			["added"] = {
-				[1] = {
 					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
 			["name"] = "Elevator Trimmer Switch - PULL(CLIMB)",
+		},
+		["dnilp96u215cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+				},
+			},
+			["name"] = "Elevator Trimmer Switch - PUSH(DESCEND)",
 		},
 	},
 }

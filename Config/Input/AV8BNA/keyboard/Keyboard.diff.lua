@@ -44,6 +44,26 @@ local diff = {
 				},
 			},
 		},
+		["d835pnilunilcdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "P",
+					["reformers"] = {
+						[1] = "RShift",
+					},
+				},
+			},
+			["name"] = "Hide/Show Pilot Body",
+			["removed"] = {
+				[1] = {
+					["key"] = "P",
+					["reformers"] = {
+						[1] = "RCtrl",
+						[2] = "RWin",
+					},
+				},
+			},
+		},
 	},
 }
 return diff

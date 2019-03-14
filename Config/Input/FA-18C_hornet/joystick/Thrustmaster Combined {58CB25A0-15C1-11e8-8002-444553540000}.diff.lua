@@ -37,6 +37,26 @@ local diff = {
 		["a2005cdnil"] = {
 			["added"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.08,
+							[3] = 0.16,
+							[4] = 0.24,
+							[5] = 0.37,
+							[6] = 0.47,
+							[7] = 0.58,
+							[8] = 0.68,
+							[9] = 0.79,
+							[10] = 0.89,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
 					["key"] = "JOY_RZ",
 				},
 			},
@@ -45,6 +65,26 @@ local diff = {
 		["a2006cdnil"] = {
 			["added"] = {
 				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.08,
+							[3] = 0.16,
+							[4] = 0.24,
+							[5] = 0.37,
+							[6] = 0.47,
+							[7] = 0.58,
+							[8] = 0.68,
+							[9] = 0.79,
+							[10] = 0.89,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
 					["key"] = "JOY_Z",
 				},
 			},
@@ -207,6 +247,14 @@ local diff = {
 				},
 			},
 			["name"] = "Speed Brake Switch - RETRACT/OFF",
+		},
+		["d3045pnilu3045cd13vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN19",
+				},
+			},
+			["name"] = "Sensor Control Switch - Depress",
 		},
 		["dnilp210u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Up Right slow",

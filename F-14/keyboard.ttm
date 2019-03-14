@@ -1,0 +1,34 @@
+include "usbkeys.ttm"
+
+//DX Macros Here
+//DX32 reserved for VR_ZOOM in util.ttm
+
+define ApDisconnectPaddleDX		DX1
+define ApReference_NWSDX		DX2
+define DLCToggle_CMDispenseDX	DX3
+define DLCThumbAftDX			DX4
+define DLCThumbForwardDX		DX5
+define StoreReleaseDX			DX6
+define TrgFirstDetentDX			DX7
+define TrgSecondDetentDX		DX8
+define WeaponSelectorDownDX		DX9
+define WeaponSelectorUpDX		DX10
+define WeaponSelectorPressDX	DX11
+
+define CageSEAMDX				DX12
+define ExtLightMasterOff		DX13
+define ExtLightMasterOn			DX14
+define LeftEngineCutoffDX		DX15
+define RightEngineCutoffDX		DX16
+define PLMButtonDX				DX17
+define SweepAftDX				DX18
+define SweepAuto				DX19
+define SweepBomb				DX20
+define SweepForwardDX			DX21
+
+
+define JesterMenu				USB_A
+
+
+
+

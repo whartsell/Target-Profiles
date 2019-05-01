@@ -42,101 +42,101 @@ int main()
 		MapKeyUMD(&Joystick, S2,
 			StoreReleaseDX, 	//Pilot
 			HcuOffset,			//RIO
-			Lantirn_FOV);					//LANTIRN
+			Lantirn_FOV);		//LANTIRN
 
 	//S1 Master Mode Control Button
 		MapKeyUMD(&Joystick, S1,
-			JesterMenu,			//Pilot
-			HcuMrl,				//RIO
-			Lantirn_ToggleWhotBhot);					//LANTIRN
+			JesterMenu,					//Pilot
+			HcuMrl,						//RIO
+			Lantirn_ToggleWhotBhot);	//LANTIRN
 		
 	//Trim
 		MapKeyUMD(&Joystick,H1D,
 			TrimPitchUpDX,		//Pilot
 			RadarElUp,			//RIO
-			Lantirn_SlewUp);					//LANTIRN
+			Lantirn_SlewUp);	//LANTIRN
 		
 		MapKeyUMD(&Joystick,H1U,
 			TrimPitchDownDX,	//Pilot
 			RadarElDown,		//RIO
-			Lantirn_SlewDown);					//LANTIRN
+			Lantirn_SlewDown);	//LANTIRN
 			
 		MapKeyUMD(&Joystick,H1L,
 			TrimLWDown,			//Pilot
 			RadarAzLeft,		//RIO
-			Lantirn_SlewLeft);					//LANTIRN
+			Lantirn_SlewLeft);	//LANTIRN
 		
 		MapKeyUMD(&Joystick,H1R,
 			TrimRWDown,			//Pilot
 			RadarAzRight,		//RIO
-			Lantirn_SlewRight);					//LANTIRN
+			Lantirn_SlewRight);	//LANTIRN
 
 
 	//TMS
 		MapKeyUMD(&Joystick,H2D,
 			WeaponSelectorDownDX,	//Pilot
-			0,					//RIO
-			Lantirn_AreaTrack);						//LANTIRN
+			0,						//RIO
+			Lantirn_AreaTrack);		//LANTIRN
 		
 		MapKeyUMD(&Joystick,H2U,
 			WeaponSelectorUpDX,		//Pilot
-			0,				//RIO
-			Lantirn_PointTrack);						//LANTIRN
+			0,						//RIO
+			Lantirn_PointTrack);	//LANTIRN
 		
 		MapKeyUMD(&Joystick,H2L,
 			WeaponSelectorPressDX,	//Pilot
 			TcsFovNarrow,			//RIO
-			Lantirn_QWPMinus);						//LANTIRN
+			Lantirn_QWPMinus);		//LANTIRN
 			
 		MapKeyUMD(&Joystick,H2R,
 			0,					//Pilot
 			TcsFovWide,			//RIO
-			Lantirn_QWPPlus);					//LANTIRN
+			Lantirn_QWPPlus);	//LANTIRN
 
 	//Trigger 
 		//TG1
 			MapKeyUMD(&Joystick,TG1,
-			TrgFirstDetentDX,		//Pilot
-			HcuHalfAction,			//RIO
-			Lantirn_HalfAction);				//LANTIRN
+				TrgFirstDetentDX,		//Pilot
+				HcuHalfAction,			//RIO
+				Lantirn_HalfAction);	//LANTIRN
 			
 		//TG2
 			MapKeyUMD(&Joystick,TG2,
-			TrgSecondDetentDX,		//Pilot
-			HcuFullAction,			//RIO
-			Lantirn_FullAction);				//LANTIRN
+				TrgSecondDetentDX,		//Pilot
+				HcuFullAction,			//RIO
+				Lantirn_FullAction);	//LANTIRN
 	
 	//DMS
 		MapKeyUMD(&Joystick,H3D,
-		VRZoomDX,				//Pilot
+			VRZoomDX,			//Pilot
 			HcuTidMode,			//RIO
-			Lantirn_S4Down);					//LANTIRN
+			Lantirn_S4Down);	//LANTIRN
 		
 		MapKeyUMD(&Joystick,H3U,
 			PilotPAL,			//Pilot
 			HcuDddMode,			//RIO
-			Lantirn_S4Up);					//LANTIRN
+			Lantirn_S4Up);		//LANTIRN
 		
 		MapKeyUMD(&Joystick,H3L,
-			PilotVslLow,					//Pilot
+			PilotVslLow,		//Pilot
 			HcuRadarMode,		//RIO
-			Lantirn_S4Left);					//LANTIRN
+			Lantirn_S4Left);	//LANTIRN
 		
 		MapKeyUMD(&Joystick,H3R,
-			PilotVslHigh,					//Pilot
+			PilotVslHigh,		//Pilot
 			HcuTcsMode,			//RIO
-			Lantirn_S4Right);					//LANTIRN
+			Lantirn_S4Right);	//LANTIRN
 
 	//CMS
 		MapKeyUMD(&Joystick,H4D,
 			DLCThumbAftDX,		//Pilot
 			HcuThumbDown,		//RIO
-			Lantirn_A2GMode);					//LANTIRN
+			Lantirn_A2GMode);	//LANTIRN
 			
 		MapKeyUMD(&Joystick,H4U,
 			DLCThumbForwardDX,	//Pilot
 			HcuThumbUp,			//RIO
-			Lantirn_A2AMode);					//LANTIRN
+			Lantirn_A2AMode);	//LANTIRN
 			
 		MapKeyUMD(&Joystick,H4L,
 			0,					//Pilot
@@ -151,13 +151,13 @@ int main()
 		MapKeyUMD(&Joystick,H4P,
 			DLCToggle_CMDispenseDX,	//Pilot
 			JesterMenu,				//RIO
-			Lantirn_S4Press);						//LANTIRN
+			Lantirn_S4Press);		//LANTIRN
 	
 	//S3 Pinky Switch
 		MapKeyUMD(&Joystick, S3,
 			ApReference_NWSDX,	//Pilot
 			DddIff,				//RIO
-			Lantirn_LatchLaser);					//LANTIRN
+			Lantirn_LatchLaser);//LANTIRN
 	
 	//S4 Paddle Switch
 		MapKeyUMD(&Joystick, S4,
@@ -199,12 +199,12 @@ int main()
 		MapKeyUMD(&Throttle,CSD,
 			SweepAftDX,		//Pilot
 			ChaffSgl,		//RIO
-			0);				//LANTIRN
+			ChaffSgl);				//LANTIRN
 			
 		MapKeyUMD(&Throttle,CSU,
 			SweepForwardDX,		//Pilot
 			FlareSgl,				//RIO
-			0);				//LANTIRN
+			FlareSgl);				//LANTIRN
 			
 		MapKeyUMD(&Throttle,CSL,
 			SweepAuto,		//Pilot
@@ -227,7 +227,7 @@ int main()
 		MapKeyUMD(&Throttle,SPDF,
 			SpeedBrakeRetract,		//Pilot
 			VRZoomDX,				//RIO
-			0);				//LANTIRN
+			VRZoomDX);				//LANTIRN
 			
 		MapKeyUMD(&Throttle,SPDM,
 			0,		//Pilot
@@ -237,7 +237,7 @@ int main()
 		MapKeyUMD(&Throttle,SPDB,
 			SpeedBrakeExtend,		//Pilot
 			VRZoomDX,				//RIO
-			0);				//LANTIRN
+			VRZoomDX);				//LANTIRN
 	
 	//Boat
 		MapKeyUMD(&Throttle,BSF,

@@ -46,22 +46,22 @@ define MasterCautionReset		L_ALT + USB_M
 define MasterReset				R_CTL + USB_M
 
 //RIO
-define RadarAzLeft				DX1
-define RadarAzRight				DX2
-define RadarElDown				DX3
-define RadarElUp				DX4
+define RadarAzLeft				DX1 //K
+define RadarAzRight				DX2 //K
+define RadarElDown				DX3 //K
+define RadarElUp				DX4 //K
 define HcuDddMode				DX5
-define HcuFullAction			DX6
-define HcuHalfAction			DX7
+define HcuFullAction			DX6 //K
+define HcuHalfAction			DX7 //K
 define HcuMrl					DX8
 define HcuOffset				DX9
 define HcuRadarMode				DX10
 define HcuTcsMode				DX11
 define HcuTidMode				DX12
-define HcuThumbDown				DX13
-define HcuThumbUp				DX14
+define HcuThumbDown				DX13 //K
+define HcuThumbUp				DX14 //K
 define HcuThumbCenter			DX15
-define DddIff					DX16
+define DddIff					DX16 //K
 define TcsFovNarrow				DX17
 define TcsFovWide				DX18
 define VslHigh					DX19

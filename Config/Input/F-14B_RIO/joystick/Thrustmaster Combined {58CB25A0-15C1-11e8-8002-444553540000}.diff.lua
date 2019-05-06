@@ -168,6 +168,153 @@ local diff = {
 			},
 			["name"] = "TCS FOV wide",
 		},
+		["d3501pnilu3501cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN25",
+				},
+			},
+			["name"] = "LANTIRN Trigger Half Action",
+		},
+		["d3502pnilu3502cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN26",
+				},
+			},
+			["name"] = "LANTIRN Trigger Full Action",
+		},
+		["d3503pnilunilcd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN27",
+				},
+			},
+			["name"] = "LANTIRN Laser Latched",
+		},
+		["d3505pnilu3505cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN Point Track",
+		},
+		["d3506pnilu3506cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN Area Track",
+		},
+		["d3507pnilu3507cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN S4 HAT Up (QADL/QHUD/Code +/Gain+)",
+		},
+		["d3508pnilu3508cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN12",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN S4 HAT Right (QDES/Digit Right/Level+)",
+		},
+		["d3509pnilu3509cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN11",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN S4 HAT Down (QSNO/Code -/Gain-)",
+		},
+		["d3510pnilunilcd38vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN2",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN QWP-",
+		},
+		["d3511pnilunilcd38vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN1",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN QWP+",
+		},
+		["d3512pnilunilcd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN30",
+				},
+			},
+			["name"] = "LANTIRN Toggle FOV",
+		},
+		["d3513pnilu3513cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN Toggle WHOT / BHOT",
+		},
+		["d3514pnilu3514cd38vd-1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN29",
+				},
+			},
+			["name"] = "LANTIRN Slider Laser/Focus",
+		},
+		["d3514pnilu3514cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN28",
+				},
+			},
+			["name"] = "LANTIRN Slider AGC/MGC",
+		},
+		["d3515pnilu3515cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN13",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN S4 HAT Left (Digit Left/Level-)",
+		},
 		["d3667pnilu3667cd39vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
@@ -175,6 +322,39 @@ local diff = {
 				},
 			},
 			["name"] = "HCU thumb re-center",
+		},
+		["d3670pnilu3670cd38vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN14",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN S4 HAT Press (Declutter/Lase Auto-Man/MGC)",
+		},
+		["d3672pnilunilcd38vd0vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN16",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN Mode NAV - A/A ",
+		},
+		["d3672pnilunilcd38vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN15",
+					["reformers"] = {
+						[1] = "RAlt",
+					},
+				},
+			},
+			["name"] = "LANTIRN Mode A/G",
 		},
 		["d3682pnilu3682cd38vd-1vpnilvu0"] = {
 			["added"] = {

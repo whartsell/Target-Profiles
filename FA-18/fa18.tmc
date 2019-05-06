@@ -61,8 +61,8 @@ int main()
 	//DMS
 		MapKey(&Joystick,H3D,VRZoomDX);
 		MapKey(&Joystick,H3U,PULSE + RECCE_Event_Mark_Switch);
-		//MapKey(&Joystick,H3L,);
-		//MapKey(&Joystick,H3R,);
+		MapKey(&Joystick,H3L,0);
+		MapKey(&Joystick,H3R,0);
 
 	//CMS
 		MapKey(&Joystick,H4D,PULSE + Select_Gun);
@@ -103,16 +103,16 @@ int main()
 		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
 		MapKey(&Throttle, MSL,CHAIN(PULSE + COMM_Switch__COMM_2,D(),SRSRadio2));
 		MapKey(&Throttle, MSR,CHAIN(PULSE + COMM_Switch__COMM_1,D(),SRSRadio1));
-		//MapKey(&Throttle, MSP,);	
+		MapKey(&Throttle, MSP,0);	
 
 	//Speed Brake
 		MapKey(&Throttle,SPDF,Speed_Brake_Switch__RETRACT_OffDX); //may need to change this
 		MapKey(&Throttle,SPDB,Speed_Brake_Switch__EXTEND_OffDX);
 	
 	//Boat
-		//MapKey(&Throttle,BSF,);
-		//MapKey(&Throttle,BSM,);
-		//MapKey(&Throttle,BSB,);
+		MapKey(&Throttle,BSF,0);
+		MapKey(&Throttle,BSM,0);
+		MapKey(&Throttle,BSB,0);
 	
 	//China Hat
 		MapKeyIO(&Throttle,CHF,Gain_goggles_up,PULSE + Dispense_Switch__Forward_CHAFF_Center_OFF_);

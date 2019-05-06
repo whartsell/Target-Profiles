@@ -82,11 +82,11 @@ int main()
 	//MapKey(&Throttle,APUOFF,PULSE+GearDown);
 	
 	//Mic Switch
-	//MapKey(&Throttle, MSP,);	
+	MapKey(&Throttle, MSP,0);	
 	MapKey(&Throttle, MSU,TsPTT);
 	MapKey(&Throttle,MSR,Microphone_Button);
-	MapKey(&Throttle,MSD,0);
-	MapKey(&Throttle,MSL,0);
+	MapKey(&Throttle,MSD,SRSRadio2);
+	MapKey(&Throttle,MSL,SRSRadio3);
 	
 	//China Hat
 	MapKey(&Throttle,CHB,PULSE+Throttle__Start_Engine);

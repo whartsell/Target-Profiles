@@ -5,9 +5,9 @@ local diff = {
 				[1] = {
 					["filter"] = {
 						["curvature"] = {
-							[1] = 0,
+							[1] = 0.15,
 						},
-						["deadzone"] = 0.01,
+						["deadzone"] = 0.03,
 						["invert"] = false,
 						["saturationX"] = 1,
 						["saturationY"] = 1,
@@ -18,6 +18,24 @@ local diff = {
 			},
 			["name"] = "Pitch",
 		},
+		["a2002cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0.15,
+						},
+						["deadzone"] = 0.03,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = false,
+					},
+					["key"] = "JOY_X",
+				},
+			},
+			["name"] = "Roll",
+		},
 		["a2003cdnil"] = {
 			["name"] = "Rudder",
 			["removed"] = {
@@ -26,79 +44,76 @@ local diff = {
 				},
 			},
 		},
-		["a2041cdnil"] = {
-			["added"] = {
+		["a3003cd2"] = {
+			["name"] = "Throttle",
+			["removed"] = {
 				[1] = {
-					["key"] = "JOY_SLIDER2",
+					["key"] = "JOY_Z",
 				},
 			},
-			["name"] = "Wing Span",
 		},
 	},
 	["keyDiffs"] = {
-		["d100pnilu1627cdnilvdnilvpnilvunil"] = {
-			["name"] = "A-4 Sight Radar Target Selector Button",
-			["removed"] = {
+		["d3012pnilu3012cd8vd-1vpnilvu0"] = {
+			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN3",
+					["key"] = "JOY_BTN_POV1_D",
 				},
 			},
+			["name"] = "Trim Elevator Up",
 		},
-		["d3005pnilunilcd2vd-1vpnilvunil"] = {
+		["d3012pnilu3012cd8vd1vpnilvu0"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN_POV1_U",
+				},
+			},
+			["name"] = "Trim Elevator Down",
+		},
+		["d3013pnilunilcd20vd1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN5",
+				},
+			},
+			["name"] = "Master Arm ON/OFF",
+		},
+		["d3016pnilunilcd2vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN3",
 				},
 			},
-			["name"] = "Speed Brake Switch - OUT",
+			["name"] = "MW-50 Switch",
 		},
-		["d3005pnilunilcd2vd0vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-			["name"] = "Speed Brake Switch - HOLD",
-		},
-		["d3005pnilunilcd2vd1vpnilvunil"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-			["name"] = "Speed Brake Switch - IN",
-		},
-		["d350pnilu351cdnilvdnilvpnilvunil"] = {
-			["name"] = "Weapon Release",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN2",
-				},
-			},
-		},
-		["d439pnilu440cdnilvdnilvpnilvunil"] = {
-			["name"] = "A-4 Sight Electrical Caging Button (On Throttle)",
-			["removed"] = {
-				[1] = {
-					["key"] = "JOY_BTN4",
-				},
-			},
-		},
-		["d562pnilu606cdnilvdnilvpnilvunil"] = {
+		["d3019pnilu3019cd20vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
 				},
 			},
-			["name"] = "Nosewheel Steering Button",
+			["name"] = "MG131 fire",
 			["removed"] = {
+				[1] = {
+					["key"] = "JOY_BTN3",
+				},
+			},
+		},
+		["d74pnilu75cdnilvdnilvpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN4",
+				},
+			},
+			["name"] = "Wheel brake Both",
+		},
+		["d84pnilu85cdnilvdnilvpnilvunil"] = {
+			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN6",
 				},
 			},
-		},
-		["d84pnilu85cdnilvdnilvpnilvunil"] = {
-			["name"] = "Trigger - SECOND DETENT(Gun Fire)",
+			["name"] = "MG131/151 fire",
 			["removed"] = {
 				[1] = {
 					["key"] = "JOY_BTN1",
@@ -136,6 +151,22 @@ local diff = {
 					["key"] = "JOY_BTN_POV1_UL",
 				},
 			},
+		},
+		["dnilp3010unilcd21vdnilvp-0.5vunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN9",
+				},
+			},
+			["name"] = "EZ42 Gunsight Target Wingspan Knob - CCW/Decrease",
+		},
+		["dnilp3010unilcd21vdnilvp0.5vunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN7",
+				},
+			},
+			["name"] = "EZ42 Gunsight Target Wingspan Knob - CW/Increase",
 		},
 		["dnilp32u214cdnilvdnilvpnilvunil"] = {
 			["name"] = "View Left slow",

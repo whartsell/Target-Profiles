@@ -1,0 +1,104 @@
+include "usbkeys.ttm"
+
+//DX Macros Here
+//DX32 reserved for VR_ZOOM in util.ttm
+
+define ApDisconnectPaddleDX		DX1
+define ApReference_NWSDX		DX2
+define DLCToggle_CMDispenseDX	DX3
+define DLCThumbAftDX			DX4
+define DLCThumbForwardDX		DX5
+define StoreReleaseDX			DX6
+define TrgFirstDetentDX			DX7
+define TrgSecondDetentDX		DX8
+define WeaponSelectorDownDX		DX9
+define WeaponSelectorUpDX		DX10
+define WeaponSelectorPressDX	DX11
+
+define CageSEAMDX				DX12
+define ExtLightMasterOff		DX13
+define ExtLightMasterOn			DX14
+define LeftEngineCutoffDX		DX15
+define RightEngineCutoffDX		DX16
+define PLMButtonDX				DX17
+define SweepAftDX				DX18
+define SweepAuto				DX19
+define SweepBomb				DX20
+define SweepForwardDX			DX21
+define TrimPitchDownDX			DX22
+define TrimPitchUpDX			DX23
+define TrimLWDown				DX24
+define TrimRWDown				DX25
+define SpeedBrakeExtend			DX26
+define SpeedBrakeRetract		DX27
+define PilotVslLow				DX28
+define PilotVslHigh				DX29
+define PilotPAL					DX30
+
+define JesterMenu				USB_A
+define FlapsDown				USB_F
+define FlapsUp					L_SHIFT + USB_F
+define LandingGearToggle		USB_G
+define MicButtonICS				R_SHIFT + USB_BackSlash
+define MicButtonUHF1			R_ALT + USB_BackSlash
+define MicButtonUHF2			R_CTL + USB_BackSlash
+define MasterCautionReset		L_ALT + USB_M
+define MasterReset				R_CTL + USB_M
+
+//RIO
+define RadarAzLeft				DX1 //K
+define RadarAzRight				DX2 //K
+define RadarElDown				DX3 //K
+define RadarElUp				DX4 //K
+define HcuDddMode				DX5
+define HcuFullAction			DX6 //K
+define HcuHalfAction			DX7 //K
+define HcuMrl					DX8
+define HcuOffset				DX9
+define HcuRadarMode				DX10
+define HcuTcsMode				DX11
+define HcuTidMode				DX12
+define HcuThumbDown				DX13 //K
+define HcuThumbUp				DX14 //K
+define HcuThumbCenter			DX15
+define DddIff					DX16 //K
+define TcsFovNarrow				DX17
+define TcsFovWide				DX18
+define VslHigh					DX19
+define VslLow					DX20
+define ChaffSgl					DX21
+define ChaffPrgm				DX22
+define FlareSgl					DX23
+define FlarePrgm				DX24
+// Lantirn
+//left
+define Lantirn_QWPPlus			R_ALT + DX1
+define Lantirn_QWPMinus			R_ALT + DX2
+define Lantirn_PointTrack		R_ALT + DX3
+define Lantirn_AreaTrack		R_ALT + DX4
+//center
+define Lantirn_SlewLeft			R_ALT + DX5
+define Lantirn_SlewRight		R_ALT + DX6
+define Lantirn_SlewUp			R_ALT + DX7
+define Lantirn_SlewDown			R_ALT + DX8
+define Lantirn_ToggleWhotBhot	R_ALT + DX9
+//right
+define Lantirn_S4Up				R_ALT + DX10
+define Lantirn_S4Down			R_ALT + DX11
+define Lantirn_S4Right			R_ALT + DX12
+define Lantirn_S4Left			R_ALT + DX13
+define Lantirn_S4Press			R_ALT + DX14		
+//button
+define Lantirn_FOV				DX30
+//twoWay
+define Lantirn_A2GMode			R_ALT + DX15
+define Lantirn_A2AMode			R_ALT + DX16
+//slider
+define Lantirn_AgcMgc			DX28
+define Lantirn_LaserFocus		DX29
+//trigger
+define Lantirn_HalfAction		DX25
+define Lantirn_FullAction		DX26
+// laser latch
+define Lantirn_LatchLaser		DX27
+

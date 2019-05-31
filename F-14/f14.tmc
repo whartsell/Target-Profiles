@@ -1,0 +1,363 @@
+include "target.tmh"
+include "util.ttm"
+include "keyboard.ttm"
+include "dxmap.ttm"
+
+int main()
+{
+	Configure(&HCougar, MODE_EXCLUDED);
+	Configure(&T16000, MODE_EXCLUDED);
+	Configure(&T16000L, MODE_EXCLUDED);
+	Configure(&LMFD, MODE_EXCLUDED);
+	Configure(&RMFD, MODE_EXCLUDED);
+	Configure(&TFRPRudder, MODE_EXCLUDED);
+	Configure(&TWCSThrottle, MODE_EXCLUDED);
+	SetKBRate(50, 75);
+    if(Init(&EventHandle)) return 1; // declare the event handler, return on error
+
+	//Initialize Backlights
+    	//ActKey(PULSE+KEYON+LED(&Throttle, LED_INTENSITY, ThrottleBL_OFF));
+
+	//AXIS Assignment
+	MapAxis(&Joystick, JOYX, DX_X_AXIS); 
+	MapAxis(&Joystick, JOYY, DX_Y_AXIS);
+	MapAxis(&Throttle, THR_LEFT, DX_ZROT_AXIS);
+	MapAxis(&Throttle, THR_RIGHT, DX_Z_AXIS); 
+	MapAxis(&Throttle, THR_FC, DX_SLIDER_AXIS);
+	MapAxis(&Throttle, SCY, DX_YROT_AXIS, AXIS_REVERSED, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCY, 0, 20, 0, 10, -4); 
+	MapAxis(&Throttle, SCX, DX_XROT_AXIS, AXIS_NORMAL, MAP_ABSOLUTE); 
+	SetSCurve(&Throttle, SCX, 0, 20, 0, 10, -4);
+
+//Layers&Modes
+	//AP Path: Pilot 'U'
+	//AP Alt/Hdg: Rio 'M'
+	//Ap Alt: Rio Lantirn 'D'
+	
+	SetShiftButton(&Joystick,S3,&Throttle,APPAT,APALT);
+	
+//STICK
+
+	//S2 Weapon Release
+		MapKeyUMD(&Joystick, S2,
+			StoreReleaseDX, 	//Pilot
+			HcuOffset,			//RIO
+			Lantirn_FOV);		//LANTIRN
+
+	//S1 Master Mode Control Button
+		MapKeyUMD(&Joystick, S1,
+			JesterMenu,					//Pilot
+			HcuMrl,						//RIO
+			Lantirn_ToggleWhotBhot);	//LANTIRN
+		
+	//Trim
+		MapKeyUMD(&Joystick,H1D,
+			TrimPitchUpDX,		//Pilot
+			RadarElUp,			//RIO
+			Lantirn_SlewUp);	//LANTIRN
+		
+		MapKeyUMD(&Joystick,H1U,
+			TrimPitchDownDX,	//Pilot
+			RadarElDown,		//RIO
+			Lantirn_SlewDown);	//LANTIRN
+			
+		MapKeyUMD(&Joystick,H1L,
+			TrimLWDown,			//Pilot
+			RadarAzLeft,		//RIO
+			Lantirn_SlewLeft);	//LANTIRN
+		
+		MapKeyUMD(&Joystick,H1R,
+			TrimRWDown,			//Pilot
+			RadarAzRight,		//RIO
+			Lantirn_SlewRight);	//LANTIRN
+
+
+	//TMS
+		MapKeyUMD(&Joystick,H2D,
+			WeaponSelectorDownDX,	//Pilot
+			0,						//RIO
+			Lantirn_AreaTrack);		//LANTIRN
+		
+		MapKeyUMD(&Joystick,H2U,
+			WeaponSelectorUpDX,		//Pilot
+			0,						//RIO
+			Lantirn_PointTrack);	//LANTIRN
+		
+		MapKeyUMD(&Joystick,H2L,
+			WeaponSelectorPressDX,	//Pilot
+			TcsFovNarrow,			//RIO
+			Lantirn_QWPMinus);		//LANTIRN
+			
+		MapKeyUMD(&Joystick,H2R,
+			0,					//Pilot
+			TcsFovWide,			//RIO
+			Lantirn_QWPPlus);	//LANTIRN
+
+	//Trigger 
+		//TG1
+			MapKeyUMD(&Joystick,TG1,
+				TrgFirstDetentDX,		//Pilot
+				HcuHalfAction,			//RIO
+				Lantirn_HalfAction);	//LANTIRN
+			
+		//TG2
+			MapKeyUMD(&Joystick,TG2,
+				TrgSecondDetentDX,		//Pilot
+				HcuFullAction,			//RIO
+				Lantirn_FullAction);	//LANTIRN
+	
+	//DMS
+		MapKeyUMD(&Joystick,H3D,
+			VRZoomDX,			//Pilot
+			HcuTidMode,			//RIO
+			Lantirn_S4Down);	//LANTIRN
+		
+		MapKeyUMD(&Joystick,H3U,
+			PilotPAL,			//Pilot
+			HcuDddMode,			//RIO
+			Lantirn_S4Up);		//LANTIRN
+		
+		MapKeyUMD(&Joystick,H3L,
+			PilotVslLow,		//Pilot
+			HcuRadarMode,		//RIO
+			Lantirn_S4Left);	//LANTIRN
+		
+		MapKeyUMD(&Joystick,H3R,
+			PilotVslHigh,		//Pilot
+			HcuTcsMode,			//RIO
+			Lantirn_S4Right);	//LANTIRN
+
+	//CMS
+		MapKeyUMD(&Joystick,H4D,
+			DLCThumbAftDX,		//Pilot
+			HcuThumbDown,		//RIO
+			Lantirn_A2GMode);	//LANTIRN
+			
+		MapKeyUMD(&Joystick,H4U,
+			DLCThumbForwardDX,	//Pilot
+			HcuThumbUp,			//RIO
+			Lantirn_A2AMode);	//LANTIRN
+			
+		MapKeyUMD(&Joystick,H4L,
+			0,					//Pilot
+			HcuThumbCenter,		//RIO
+			0);					//LANTIRN
+			
+		MapKeyUMD(&Joystick,H4R,
+			0,					//Pilot
+			HcuThumbCenter,		//RIO
+			0);					//LANTIRN
+			
+		MapKeyUMD(&Joystick,H4P,
+			DLCToggle_CMDispenseDX,	//Pilot
+			JesterMenu,				//RIO
+			Lantirn_S4Press);		//LANTIRN
+	
+	//S3 Pinky Switch
+		MapKeyUMD(&Joystick, S3,
+			ApReference_NWSDX,	//Pilot
+			DddIff,				//RIO
+			Lantirn_LatchLaser);//LANTIRN
+	
+	//S4 Paddle Switch
+		MapKeyUMD(&Joystick, S4,
+			ApDisconnectPaddleDX,	//Pilot
+			0,						//RIO
+			0);						//LANTIRN
+
+//THROTTLE
+
+	//Pinky
+		MapKeyUMD(&Throttle,PSF,
+			0,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+		
+		MapKeyUMD(&Throttle,PSM,
+			ExtLightMasterOn,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,PSB,
+			ExtLightMasterOff,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+		
+	//Left Throttle Button
+		MapKeyUMD(&Throttle,LTB,
+			CageSEAMDX,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+	
+	//Slew
+		MapKeyUMD(&Throttle,SC,
+			PLMButtonDX,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+
+	//Coolie
+		MapKeyUMD(&Throttle,CSD,
+			SweepAftDX,		//Pilot
+			ChaffSgl,		//RIO
+			ChaffSgl);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,CSU,
+			SweepForwardDX,		//Pilot
+			FlareSgl,				//RIO
+			FlareSgl);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,CSL,
+			SweepAuto,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,CSR,
+			SweepBomb,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+	
+	//Mic Switch
+		MapKey(&Throttle, MSD,MicButtonUHF2);
+		MapKey(&Throttle, MSU,TsPTT); // TeamSpeak
+		MapKey(&Throttle, MSL,MicButtonICS);
+		MapKey(&Throttle, MSR,MicButtonUHF1);
+		MapKey(&Throttle, MSP,0);	
+
+	//Speed Brake
+		MapKeyUMD(&Throttle,SPDF,
+			SpeedBrakeRetract,		//Pilot
+			VRZoomDX,				//RIO
+			VRZoomDX);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,SPDM,
+			0,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,SPDB,
+			SpeedBrakeExtend,		//Pilot
+			VRZoomDX,				//RIO
+			VRZoomDX);				//LANTIRN
+	
+	//Boat
+		MapKeyUMD(&Throttle,BSF,
+			0,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,BSM,
+			0,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,BSB,
+			0,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+	
+	//China Hat
+		MapKeyUMD(&Throttle,CHF,
+			PilotVslHigh,		//Pilot
+			VslHigh,				//RIO
+			Lantirn_AgcMgc);				//LANTIRN
+			
+		MapKeyUMD(&Throttle,CHB,
+			PilotVslLow,		//Pilot
+			VslLow,				//RIO
+			Lantirn_LaserFocus);				//LANTIRN
+	
+	
+//Throttle Panel
+
+	//Engine Fuel Flow
+		//Left
+		MapKey(&Throttle,EFLNORM,0);
+		MapKey(&Throttle,EFLOVER,0);
+		
+		//Right
+		MapKey(&Throttle,EFRNORM,0);
+		MapKey(&Throttle,EFROVER,0);
+	
+	//Engine Oper
+		//Left
+		MapKey(&Throttle,EOLIGN,0);
+		MapKey(&Throttle,EOLNORM,0);
+		MapKey(&Throttle,EOLMOTOR,0);
+		
+		//Right
+		MapKeyUMD(&Throttle,EORIGN,
+			MasterReset,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKey(&Throttle,EORNORM,0);
+		MapKey(&Throttle,EORMOTOR,0);
+				
+	//APU
+		MapKey(&Throttle,APUON,0);
+		MapKey(&Throttle,APUOFF,0);
+	
+	//Flaps
+		MapKeyUMD(&Throttle,FLAPU,
+			PULSE + FlapsUp,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKey(&Throttle,FLAPM,0);
+		MapKeyUMD(&Throttle,FLAPD,
+			PULSE + FlapsDown,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+	
+	//Idle Cutoff
+		//Left
+		MapKeyUMD(&Throttle,IDLELON,
+			LeftEngineCutoffDX,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKey(&Throttle,IDLELOFF,0);
+		
+		//Right
+		MapKeyUMD(&Throttle,IDLERON,
+			RightEngineCutoffDX,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+			
+		MapKey(&Throttle,IDLEROFF,0);
+	
+	// Throttle Friction Control
+	
+	
+	//Landing Gear Horn Silence
+		MapKeyUMD(&Throttle,LDGH,
+			PULSE + LandingGearToggle,		//Pilot
+			0,				//RIO
+			0);				//LANTIRN
+
+	//EAC
+		MapKey(&Throttle,EACON,0);
+		MapKey(&Throttle,EACOFF,0);
+	
+	//RDR Altm
+		MapKey(&Throttle,RDRNRM,0);
+		MapKey(&Throttle,RDRDIS,0);
+	
+	//AP Engage/Disengage
+		MapKeyUMD(&Throttle,APENG,MasterCautionReset);
+
+	//AP Select Switch 
+		MapKey(&Throttle,APPAT,0);	//Reserved for UMD
+		MapKey(&Throttle,APAH,0);	//Reserved for UMD
+		MapKey(&Throttle,APALT,0);	//Reserved for UMD
+
+
+}
+
+
+int EventHandle(int type, alias o, int x)
+{
+    DefaultMapping(&o, x);
+	
+	//add event handling code here
+}

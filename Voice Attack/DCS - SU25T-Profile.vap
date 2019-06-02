@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>dc8208fc-e630-4b4e-b230-c97791af6b2d</Id>
+  <Id>b94d7ef7-0ef3-41d8-8b2d-0f8a803e4a69</Id>
   <Name>DCS - SU25T</Name>
   <Commands>
     <Command>
@@ -18,7 +18,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>7a7ba853-511e-4934-9ce1-5c14ebcdac36</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>330894c4-2b3c-4a15-b08b-fab46bd90b35</Id>
+      <Id>6d33f75d-e6c7-4025-b98e-93e77d674cb0</Id>
       <CommandString>Cockpit Lights</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +30,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b620e284-48de-44db-bf8f-1eae1abb1f0d</Id>
+          <Id>e9ec13bc-4337-430a-aafe-7282b09bc589</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -120,7 +120,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>c1a0ddfa-2b0d-4b22-9dd0-211137704c36</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>4deafa55-dc0a-4934-9792-17dab2fdffcc</Id>
+      <Id>1a405925-e54f-4798-8be4-89cb81c455e5</Id>
       <CommandString>Droge Chute;Drogue;Chute;Shoot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -132,7 +132,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fd36012c-880d-4c5f-8d12-f3ac7a1bca7b</Id>
+          <Id>b47890a4-fb1e-42b7-8e5e-5e312506d642</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -222,7 +222,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>6ab2478d-72be-43d3-bc2e-6a81cb7531c6</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>0d353d21-252b-4516-88f3-e3f664c9ad54</Id>
+      <Id>a5957d86-5dcb-4d7e-938a-b82ccc0be6ba</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -234,7 +234,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>30523d19-1811-4a47-ae09-3b03fb7d2b20</Id>
+          <Id>ddfe855d-40a0-4bc9-b620-585c4ffb7b63</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -323,7 +323,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>2b4f09c5-f151-45e5-9ac8-a6d73e6fec61</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>196de100-5461-46bd-ab9e-3c4f9f508226</Id>
+      <Id>01c32a9c-cbfb-4585-bf68-913a95f63f76</Id>
       <CommandString>Nav Lights</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -335,7 +335,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7b3191d1-8ff5-48ed-9064-73f7e7c5f41f</Id>
+          <Id>6bdd0e0b-e712-4e35-8ef0-198e36f00af4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -426,7 +426,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>5b95058f-26a3-40a7-be10-ba93788acdf1</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>72c76f48-9e4a-49a4-90ff-7b7a7c40db5d</Id>
+      <Id>1d405916-0c12-4861-b5e6-3a11861f4f1c</Id>
       <CommandString>Tank Jettison</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -438,7 +438,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4e46f177-885d-4fe3-9d9c-aed2d2ea5af7</Id>
+          <Id>7a8f0fa1-e62f-4c6b-bfb5-9ae27129adc4</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -529,7 +529,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>ac3a9f5a-de2f-451d-967c-bbde4e21cb7b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>8fb4ced2-a481-4ca8-bb53-2436ae3fa201</Id>
+      <Id>57fec86a-3d02-4338-bbe0-7ed7609821ac</Id>
       <CommandString>Weapon Jettison</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -541,7 +541,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bfa40dbe-d82f-445e-bfcc-34006a079898</Id>
+          <Id>c3b6db8c-c0a4-432b-bc43-e713d2f4cda2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -654,7 +654,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>0d353d21-252b-4516-88f3-e3f664c9ad54</InitializeCommandId>
+  <InitializeCommandId>a5957d86-5dcb-4d7e-938a-b82ccc0be6ba</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>

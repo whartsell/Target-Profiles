@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>181bf8e1-d6b2-44f8-86f3-36cfd6d43f99</Id>
-  <Name>Master-Loader</Name>
+  <Id>bf66bfa1-a619-435f-933e-056c0525084c</Id>
+  <Name>Elite Dangerous</Name>
   <Commands>
     <Command>
       <Referrer xsi:nil="true" />
@@ -16,9 +16,113 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>1a608ef1-58bc-4a47-9ac2-b42379e8ffd7</BaseId>
+      <BaseId>f656a112-53f5-4358-9cba-957b1ee9dadd</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5e1ab194-4fdd-4e5a-8b75-e11c90d5b244</Id>
+      <Id>78cefd99-80ce-4b89-a4e5-b8844e6d6f47</Id>
+      <CommandString>Camera</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>4ec56176-89b6-4d90-9b5a-059e2531e1de</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>162</unsignedShort>
+            <unsignedShort>164</unsignedShort>
+            <unsignedShort>32</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>0b8b9a3d-2254-4774-9b8f-56c8398d9340</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>e6717a45-a0e6-4076-9790-0354d5674cf1</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>d68a1897-154f-4002-b9f9-93ad238fbc5e</Id>
       <CommandString>Center</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,13 +134,420 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ba55dbac-10ec-4c70-9ac4-96c253a22d54</Id>
+          <Id>1cfb83e8-739f-4300-9dba-7249828d441d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
           <KeyCodes>
-            <unsignedShort>160</unsignedShort>
-            <unsignedShort>135</unsignedShort>
+            <unsignedShort>123</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>7b7db7d3-edc2-482b-abe0-87da9505c9da</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>1df2c592-8c73-4f09-a0cc-8eb47958ced2</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>904d82f0-9fbd-4859-8ca8-0261790286bb</Id>
+      <CommandString>FSS</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>1c92ef64-9474-4239-9762-31dd06151dff</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>222</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>d6b13c06-727f-4e89-8922-8b4592f248a5</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>631e413b-0585-4120-ad83-7edd73107de0</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>668ce4ee-bf08-4a9d-9d8b-f9f4bdff0ab5</Id>
+      <CommandString>Hud Mode</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>ab7588f8-dbd8-4638-a081-28d072973382</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>77</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>5720d0b4-3d7a-4457-8b28-39e9e7780310</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>b5d24295-dc55-4836-945c-d4ee9e96995b</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>10893552-656b-4436-90a7-93b1813f76ee</Id>
+      <CommandString>Init</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>9a57f146-e6ce-45d3-b418-8b644b5056b4</Id>
+          <ActionType>Say</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Elite Dangerous Loaded</Context>
+          <Context2 xml:space="preserve">Microsoft Zira Desktop</Context2>
+          <X>100</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>dd2ee5bf-3a8f-4fb3-9eae-d906a0f15f92</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>3bb6ec90-f63c-4fd1-8714-8beb8802e43e</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>6e04b4d6-9ca2-45d5-bb81-b9982877d80f</Id>
+      <CommandString>Replay</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>0667b11a-b78f-4fdc-b496-a4cae7cda460</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>164</unsignedShort>
+            <unsignedShort>121</unsignedShort>
           </KeyCodes>
           <Context />
           <X>0</X>
@@ -100,7 +611,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>902bbce6-5115-45bb-937f-404a0771bb2d</lastEditedAction>
+      <lastEditedAction>043f21eb-e72c-42db-a3e6-32f5e4653849</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -120,10 +631,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>58a60630-e78c-439d-be43-63e537d0038f</BaseId>
+      <BaseId>1fac584d-fe2d-4bcf-9619-5a5099685ab9</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>456bc83a-1227-473d-a87d-1d2150199f00</Id>
-      <CommandString>Init</CommandString>
+      <Id>6c77c2f8-7cc0-4723-8ba0-7f5c580e38b2</Id>
+      <CommandString>Screenshot</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -134,652 +645,118 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>52673165-536a-49f8-b9f8-ea81b69e7624</Id>
-          <ActionType>Say</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>Master Loaded</Context>
-          <Context2 xml:space="preserve">Microsoft Zira Desktop</Context2>
-          <X>100</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>false</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>5fc8a204-faf5-4c1d-83a4-a52a40242940</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>7021e428-8531-4ec6-bde8-f00d1242ab31</Id>
-      <CommandString>Load DCS common; Load DCS</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>7ff2e5f2-45c2-4b34-a2c1-186df1115ce4</Id>
-          <ActionType>Say</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>Loading DCS Common</Context>
-          <Context2 xml:space="preserve">Microsoft Zira Desktop</Context2>
-          <X>100</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>23546820-9bed-4e98-8a92-d28784445e1f</Id>
-          <ActionType>ChangeProfile</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>982bd564-f8d6-4eb5-9ec5-66d0595f1882</Context>
-          <Context2 />
-          <X>0</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>27b581a3-e2d8-4f2e-b4f5-6121f4ab4cbe</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>3932ae74-01e2-46ab-9c0a-f4a43de58018</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>002f2e5e-5300-402b-9410-5e4be645ce68</Id>
-      <CommandString>Load Elite Dangerous</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>d23d4185-6531-4a06-b8de-c57d352c019a</Id>
-          <ActionType>ChangeProfile</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>585fee60-b9ef-40d9-b69c-5bbf682ca627</Context>
-          <Context2 />
-          <X>0</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>c7d35322-8a06-405b-a891-d5fe208db086</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>48531af9-95f0-42f1-b0ff-d711a13aaa26</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>4ee8c223-9ff9-40c2-bd2a-30ea865dda15</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>d19f5f26-42fe-4465-b916-267264653060</Id>
-      <CommandString>Load Master</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>802b0420-4a95-445b-b53d-073e6473fa89</Id>
-          <ActionType>ChangeProfile</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>c7d35322-8a06-405b-a891-d5fe208db086</Context>
-          <Context2 />
-          <X>0</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>f7da4392-95b9-40d2-85f7-e408ef5e35a4</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>fd3d6ffa-e788-4cf4-902f-828f143df598</Id>
-      <CommandString>Load Star Citizen</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>f9293f57-179a-41bc-9405-a950404ce5c8</Id>
-          <ActionType>ChangeProfile</ActionType>
-          <Duration>0</Duration>
-          <Delay>1</Delay>
-          <KeyCodes />
-          <Context />
-          <Context2 xml:space="preserve">Star Citizen</Context2>
-          <X>0</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>c7d35322-8a06-405b-a891-d5fe208db086</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>7b11224d-79fc-4924-a89f-71c876588ceb</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>11d96643-34cf-4c03-8077-7873420de0fb</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>9418d0b3-876c-4b0a-b326-a10281183f50</Id>
-      <CommandString>Load X-plane</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>1e957663-25c2-4bf8-b14d-f1941f50501c</Id>
-          <ActionType>ChangeProfile</ActionType>
-          <Duration>0</Duration>
-          <Delay>0</Delay>
-          <KeyCodes />
-          <Context>5c3c3511-52a7-452d-9ea9-c6327c0b6e65</Context>
-          <Context2 />
-          <X>0</X>
-          <Y>0</Y>
-          <Z>0</Z>
-          <InputMode>0</InputMode>
-          <ConditionPairing>0</ConditionPairing>
-          <ConditionGroup>0</ConditionGroup>
-          <ConditionStartOperator>0</ConditionStartOperator>
-          <ConditionStartValue>0</ConditionStartValue>
-          <ConditionStartValueType>0</ConditionStartValueType>
-          <ConditionStartType>0</ConditionStartType>
-          <DecimalContext1>0</DecimalContext1>
-          <DecimalContext2>0</DecimalContext2>
-          <DateContext1>0001-01-01T00:00:00</DateContext1>
-          <DateContext2>0001-01-01T00:00:00</DateContext2>
-          <Disabled>false</Disabled>
-          <RandomSounds />
-        </CommandAction>
-      </ActionSequence>
-      <Async>true</Async>
-      <Enabled>true</Enabled>
-      <UseShortcut>false</UseShortcut>
-      <keyValue>0</keyValue>
-      <keyShift>0</keyShift>
-      <keyAlt>0</keyAlt>
-      <keyCtrl>0</keyCtrl>
-      <keyWin>0</keyWin>
-      <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
-      <onlyKeyUp>false</onlyKeyUp>
-      <RepeatNumber>2</RepeatNumber>
-      <RepeatType>0</RepeatType>
-      <CommandType>0</CommandType>
-      <SourceProfile>c7d35322-8a06-405b-a891-d5fe208db086</SourceProfile>
-      <UseConfidence>false</UseConfidence>
-      <minimumConfidenceLevel>0</minimumConfidenceLevel>
-      <UseJoystick>false</UseJoystick>
-      <joystickNumber>0</joystickNumber>
-      <joystickButton>0</joystickButton>
-      <joystickNumber2>0</joystickNumber2>
-      <joystickButton2>0</joystickButton2>
-      <joystickUp>false</joystickUp>
-      <KeepRepeating>false</KeepRepeating>
-      <UseProcessOverride>false</UseProcessOverride>
-      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
-      <LostFocusStop>false</LostFocusStop>
-      <PauseLostFocus>false</PauseLostFocus>
-      <LostFocusBackCompat>true</LostFocusBackCompat>
-      <UseMouse>false</UseMouse>
-      <Mouse1>false</Mouse1>
-      <Mouse2>false</Mouse2>
-      <Mouse3>false</Mouse3>
-      <Mouse4>false</Mouse4>
-      <Mouse5>false</Mouse5>
-      <Mouse6>false</Mouse6>
-      <Mouse7>false</Mouse7>
-      <Mouse8>false</Mouse8>
-      <Mouse9>false</Mouse9>
-      <MouseUpOnly>false</MouseUpOnly>
-      <MousePassThru>true</MousePassThru>
-      <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
-      <UseProfileProcessOverride>false</UseProfileProcessOverride>
-      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
-      <RepeatIfKeysDown>false</RepeatIfKeysDown>
-      <RepeatIfMouseDown>false</RepeatIfMouseDown>
-      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
-    </Command>
-    <Command>
-      <Referrer xsi:nil="true" />
-      <ExecType>3</ExecType>
-      <Confidence>0</Confidence>
-      <PrefixActionCount>0</PrefixActionCount>
-      <IsDynamicallyCreated>false</IsDynamicallyCreated>
-      <TargetProcessSet>false</TargetProcessSet>
-      <TargetProcessType>0</TargetProcessType>
-      <TargetProcessLevel>0</TargetProcessLevel>
-      <CompareType>0</CompareType>
-      <ExecFromWildcard>false</ExecFromWildcard>
-      <IsSubCommand>false</IsSubCommand>
-      <IsOverride>false</IsOverride>
-      <BaseId>a6a1428b-a791-4026-930d-2483bcc293e9</BaseId>
-      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b1bcc239-feb3-4c19-a068-061594ec192c</Id>
-      <CommandString>Pause</CommandString>
-      <ActionSequence>
-        <CommandAction>
-          <PairingSet>false</PairingSet>
-          <PairingSetElse>false</PairingSetElse>
-          <Ordinal>0</Ordinal>
-          <ConditionMet xsi:nil="true" />
-          <IndentLevel>0</IndentLevel>
-          <ConditionSkip>false</ConditionSkip>
-          <IsSuffixAction>false</IsSuffixAction>
-          <DecimalTransient1>0</DecimalTransient1>
-          <Id>0609a8dd-b295-4820-9672-690ae1f9d3de</Id>
+          <Id>178db9c8-5c76-4086-a09d-d6f2fd9ad3c7</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
           <KeyCodes>
             <unsignedShort>164</unsignedShort>
-            <unsignedShort>135</unsignedShort>
+            <unsignedShort>112</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>Util</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>e84b364c-dd51-4360-b024-35edb4628967</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>a735a3f5-1c33-406c-b143-092f2557eaea</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <Id>fbfc8fda-f5e8-48c8-9ced-d1e15355e97d</Id>
+      <CommandString>Start Stream</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>d1385d8a-e880-4907-9750-d7cec8216e0f</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>160</unsignedShort>
+            <unsignedShort>131</unsignedShort>
           </KeyCodes>
           <Context />
           <X>0</X>
@@ -842,7 +819,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>ef0616da-5bf1-4665-83cb-1c80e78d8a51</lastEditedAction>
+      <lastEditedAction>10186bd7-9023-4383-9ac8-68842583f0db</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -886,7 +863,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>456bc83a-1227-473d-a87d-1d2150199f00</InitializeCommandId>
+  <InitializeCommandId>10893552-656b-4436-90a7-93b1813f76ee</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -894,8 +871,9 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>a6a1428b-a791-4026-930d-2483bcc293e9</LastEditedCommand>
+  <LastEditedCommand>f656a112-53f5-4358-9cba-957b1ee9dadd</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
+  <ReferencedProfiles />
   <IP>0</IP>
 </Profile>

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>2ffbaec6-3cb6-4ee4-9f61-3e44924b33bf</Id>
-  <Name>DCS - Gazelle</Name>
+  <Id>44683091-8e1a-4167-8db5-4133933836d9</Id>
+  <Name>IL2</Name>
   <Commands>
     <Command>
       <Referrer xsi:nil="true" />
@@ -16,10 +16,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>2ef26157-7b2c-421c-9f1b-1baae9a64918</BaseId>
+      <BaseId>1f320bed-ef94-4fb9-a8ea-0808447d625f</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>c00eb109-db88-48a0-b77f-92375729def2</Id>
-      <CommandString>Doors</CommandString>
+      <Id>93be902d-eb19-4da6-a5ce-4ea3dbcd101b</Id>
+      <CommandString>Canopy</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -30,12 +30,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4fe7ecf1-62b3-4ebc-99aa-9e4c3f06b038</Id>
+          <Id>c5dcb779-5272-4967-bd5e-febf2210d2ab</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
           <KeyCodes>
-            <unsignedShort>163</unsignedShort>
+            <unsignedShort>165</unsignedShort>
             <unsignedShort>67</unsignedShort>
           </KeyCodes>
           <Context />
@@ -99,7 +99,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>b0e1613d-4ad0-427d-b164-a00d2bd67464</lastEditedAction>
+      <lastEditedAction>da81c413-03ed-4a70-9e68-a6bbea174a93</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -119,10 +119,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>dbb6e1f5-b618-470d-9895-15c43f1a0d67</BaseId>
+      <BaseId>926a6d5a-92f7-460e-b4da-3ea688688d94</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>50e193a8-7b3b-4b26-bfc7-7e23d8197164</Id>
-      <CommandString>Goggles; IN Vee Gees</CommandString>
+      <Id>786ac519-bd2f-49a2-95d3-a968c692d934</Id>
+      <CommandString>Center</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -133,13 +133,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a97dbd21-f3a7-48ac-bb0e-d4010d93ecc4</Id>
+          <Id>ae0a0073-05d7-4ac5-bed3-a3c4faff1f2b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
           <KeyCodes>
-            <unsignedShort>161</unsignedShort>
-            <unsignedShort>72</unsignedShort>
+            <unsignedShort>101</unsignedShort>
           </KeyCodes>
           <Context />
           <X>0</X>
@@ -202,7 +201,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>4e0626bd-5e6a-4054-a31f-e66f4abaf979</lastEditedAction>
+      <lastEditedAction>062fc200-b629-4372-9938-ceb7501949c6</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -222,10 +221,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>77640c25-2945-408a-838c-e4ec8725c2ce</BaseId>
+      <BaseId>b6b509ba-772a-4282-80eb-0b69b8b20a5f</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>e4b77bb5-8249-4939-9a44-eae5c2b7ddf5</Id>
-      <CommandString>Init</CommandString>
+      <Id>001bdcbb-5e40-433c-a460-08000e413290</Id>
+      <CommandString>Map</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -236,14 +235,15 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>362bc0c3-503b-4fff-9275-903238c5781e</Id>
-          <ActionType>Say</ActionType>
-          <Duration>0</Duration>
+          <Id>ef2b2f2f-fc79-45f6-9a5c-c17ad7e2db59</Id>
+          <ActionType>PressKey</ActionType>
+          <Duration>0.1</Duration>
           <Delay>0</Delay>
-          <KeyCodes />
-          <Context>Gazelle Loaded</Context>
-          <Context2 xml:space="preserve">Microsoft Zira Desktop</Context2>
-          <X>100</X>
+          <KeyCodes>
+            <unsignedShort>79</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
           <Y>0</Y>
           <Z>0</Z>
           <InputMode>0</InputMode>
@@ -270,7 +270,7 @@
       <keyCtrl>0</keyCtrl>
       <keyWin>0</keyWin>
       <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
       <onlyKeyUp>false</onlyKeyUp>
       <RepeatNumber>2</RepeatNumber>
       <RepeatType>0</RepeatType>
@@ -303,7 +303,7 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
+      <lastEditedAction>81dfc91c-f016-43d5-91dd-44341898b8fe</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
@@ -346,8 +346,8 @@
   <Confidence>0</Confidence>
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
-  <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>e4b77bb5-8249-4939-9a44-eae5c2b7ddf5</InitializeCommandId>
+  <InitializeCommandEnabled>false</InitializeCommandEnabled>
+  <InitializeCommandId xsi:nil="true" />
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -355,9 +355,8 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>77640c25-2945-408a-838c-e4ec8725c2ce</LastEditedCommand>
+  <LastEditedCommand>1f320bed-ef94-4fb9-a8ea-0808447d625f</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
-  <ReferencedProfiles />
   <IP>0</IP>
 </Profile>

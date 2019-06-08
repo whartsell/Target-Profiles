@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>a15f5095-18d1-4e22-b74e-dcc49dc09e99</Id>
+  <Id>7d307b36-cfbe-49e0-a80c-61cbab4b6a6d</Id>
   <Name>DCS - MiG21</Name>
   <Commands>
     <Command>
@@ -18,7 +18,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>836aeafb-b148-41eb-9eec-6aaa2de54e30</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>183272c9-93f7-4155-a16a-a3d977d773df</Id>
+      <Id>a9efc73e-fe03-4543-8860-4ecc5e6029c1</Id>
       <CommandString>Flashlight</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +30,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>991388bf-aa92-4ec1-a9aa-581169299779</Id>
+          <Id>1f0cf225-e0e0-4305-bc13-b8b849777008</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -121,7 +121,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>63cf5195-c9de-4f06-be80-fdc71ec2ddc2</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>91e26ccf-c261-4a4f-83e1-252d4432f472</Id>
+      <Id>3496f97a-c06b-4e70-b0fd-dac69b7e1cf6</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -133,7 +133,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>8a655b1e-d7fb-48b3-ba17-1af306bfbd50</Id>
+          <Id>beee955d-a115-438e-a58a-df52d4b263d8</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -223,7 +223,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>c04b2cc1-5073-4f9b-8d60-6fc80ad8b8af</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b7296f85-2719-4859-9781-6c515ee694b5</Id>
+      <Id>7fc7cdcd-5d4e-486b-9b1c-6ffcef8f324a</Id>
       <CommandString>Kneeboard</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -235,7 +235,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>1eed88c1-4802-4c06-96d4-57a6d860a9ba</Id>
+          <Id>7dd78702-3ed3-45dc-aa91-e5d1e923ad30</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -327,7 +327,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>6a209b3a-abe8-45cb-ad99-aa3aedce36fb</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>7f3e5624-7807-406e-bb5f-8455256e380e</Id>
+      <Id>b6d71811-19d2-47c0-a220-f64b02da1619</Id>
       <CommandString>Load Master</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -339,7 +339,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4fd16c73-5dad-476e-8517-5727b8821920</Id>
+          <Id>7031859d-5385-4ba0-bfd8-f3078ffb8863</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -428,7 +428,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>361b234a-7cfc-4cb6-8440-f22a2e1ce1e9</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>a3e4fa3b-ec3a-403f-b8d6-fc8ed2a68225</Id>
+      <Id>486baf7e-0126-4811-ae34-c00793a75191</Id>
       <CommandString>Next Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -440,7 +440,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9e5542f3-5e00-4a10-9e8c-b0e68e1fd3e6</Id>
+          <Id>2881dc78-837a-4fab-9546-172af8d24667</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -532,7 +532,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>22f2d63d-9c21-4c26-a258-53686dd1df46</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>7d5b72e1-1cc9-404a-b73d-3895bf3397cc</Id>
+      <Id>f9c75a40-9fd7-46f9-ad85-e00d9d615464</Id>
       <CommandString>Previous Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -544,7 +544,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7cab9abf-cd11-475a-9118-5418343f6687</Id>
+          <Id>d7144691-3196-4eab-ad24-5253939bd953</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -636,7 +636,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>5faa14d0-db8a-45d7-a791-c55930fa84dd</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>a9e3b672-a7d9-43a7-b352-8e1198df1e94</Id>
+      <Id>5ce330fc-ad4b-4479-baf1-83aed0c03da0</Id>
       <CommandString>Rearm</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -648,7 +648,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e3b70d3c-5127-4e1b-b5d0-7c2a46adedd4</Id>
+          <Id>32cd14ef-3eba-4d73-8135-c5d9408a8ab2</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -738,7 +738,7 @@
       <IsOverride>false</IsOverride>
       <BaseId>c6fb6ad4-1696-4027-a09e-a9c2450f8869</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>3d63b6f2-f2b2-4039-81b1-d95f41110cef</Id>
+      <Id>88572f59-f567-4b9d-99ba-86ee3eff458b</Id>
       <CommandString>Toggle Pilot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -750,7 +750,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6b17aa0d-a166-4d99-99a6-a22c228b5224</Id>
+          <Id>689fc8e1-bc73-4889-a814-aa5c78906120</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -864,7 +864,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>91e26ccf-c261-4a4f-83e1-252d4432f472</InitializeCommandId>
+  <InitializeCommandId>3496f97a-c06b-4e70-b0fd-dac69b7e1cf6</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>

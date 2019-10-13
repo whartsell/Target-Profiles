@@ -16,36 +16,60 @@ local diff = {
 				},
 			},
 		},
+		["a3083cd57"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_SLIDER1",
+				},
+			},
+			["name"] = "DLC / Maneuver Flaps Retract",
+		},
 	},
 	["keyDiffs"] = {
 		["d3078pnilu3078cd57vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN2",
+					["key"] = "JOY_BTN5",
 				},
 			},
 			["name"] = "Store Release",
 		},
-		["d3080pnilu3080cd57vd1vpnilvu0"] = {
+		["d3079pnilunilcd55vd-0.5vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN8",
+				},
+			},
+			["name"] = "Weapon Selector Sidewinder Missiles",
+		},
+		["d3079pnilunilcd55vd-1vpnilvunil"] = {
+			["added"] = {
+				[1] = {
+					["key"] = "JOY_BTN10",
+				},
+			},
+			["name"] = "Weapon Selector Off",
+		},
+		["d3079pnilunilcd55vd0.5vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN7",
 				},
 			},
-			["name"] = "Weapon Selector up",
+			["name"] = "Weapon Selector Sparrow or Phoenix Missiles",
 		},
-		["d3081pnilu3081cd57vd1vpnilvu0"] = {
+		["d3079pnilunilcd55vd1vpnilvunil"] = {
 			["added"] = {
 				[1] = {
 					["key"] = "JOY_BTN9",
 				},
 			},
-			["name"] = "Weapon Selector down",
+			["name"] = "Weapon Selector Gun",
 		},
 		["d3082pnilu3082cd57vd1vpnilvu0"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN8",
+					["key"] = "JOY_BTN2",
 				},
 			},
 			["name"] = "Weapon Selector press",
@@ -90,34 +114,10 @@ local diff = {
 			},
 			["name"] = "Trigger First Detent",
 		},
-		["d3143pnilu3143cd55vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN11",
-				},
-			},
-			["name"] = "Target designate up / VSL HI",
-		},
-		["d3144pnilu3144cd55vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN12",
-				},
-			},
-			["name"] = "Target designate fwd / PAL",
-		},
-		["d3145pnilu3145cd55vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN13",
-				},
-			},
-			["name"] = "Target designate down / VSL LO",
-		},
 		["d3550pnilu3550cd62vd1vpnilvu-1"] = {
 			["added"] = {
 				[1] = {
-					["key"] = "JOY_BTN5",
+					["key"] = "JOY_BTN11",
 				},
 			},
 			["name"] = "Toggle Menu",
@@ -153,22 +153,6 @@ local diff = {
 				},
 			},
 			["name"] = "Trim Roll Right Wing Down",
-		},
-		["dnilp3083u3083cd57vdnilvp-1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN17",
-				},
-			},
-			["name"] = "DLC Thumbwheel Aft",
-		},
-		["dnilp3083u3083cd57vdnilvp1vu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN15",
-				},
-			},
-			["name"] = "DLC Thumbwheel Forward",
 		},
 	},
 }

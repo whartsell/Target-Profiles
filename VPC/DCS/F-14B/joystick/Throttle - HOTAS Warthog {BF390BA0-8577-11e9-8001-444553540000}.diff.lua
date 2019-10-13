@@ -1,4 +1,62 @@
 local diff = {
+	["axisDiffs"] = {
+		["a2005cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.07,
+							[3] = 0.15,
+							[4] = 0.23,
+							[5] = 0.32,
+							[6] = 0.41,
+							[7] = 0.51,
+							[8] = 0.62,
+							[9] = 0.74,
+							[10] = 0.86,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_RZ",
+				},
+			},
+			["name"] = "Throttle Left",
+		},
+		["a2006cdnil"] = {
+			["changed"] = {
+				[1] = {
+					["filter"] = {
+						["curvature"] = {
+							[1] = 0,
+							[2] = 0.07,
+							[3] = 0.15,
+							[4] = 0.23,
+							[5] = 0.32,
+							[6] = 0.41,
+							[7] = 0.51,
+							[8] = 0.62,
+							[9] = 0.74,
+							[10] = 0.86,
+							[11] = 1,
+						},
+						["deadzone"] = 0,
+						["invert"] = false,
+						["saturationX"] = 1,
+						["saturationY"] = 1,
+						["slider"] = true,
+					},
+					["key"] = "JOY_Z",
+				},
+			},
+			["name"] = "Throttle Right",
+		},
+	},
 	["keyDiffs"] = {
 		["d3056pnilu3056cd34vd1vpnilvu0"] = {
 			["added"] = {
@@ -32,39 +90,6 @@ local diff = {
 			},
 			["name"] = "Right Engine Cutoff",
 		},
-		["d3384pnilu3384cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-					["reformers"] = {
-						[1] = "JOY_BTN2",
-					},
-				},
-			},
-			["name"] = "Mic Button ICS",
-		},
-		["d3385pnilu3385cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-					["reformers"] = {
-						[1] = "JOY_BTN2",
-					},
-				},
-			},
-			["name"] = "Mic Button UHF1 (ARC-159)",
-		},
-		["d3386pnilu3386cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-					["reformers"] = {
-						[1] = "JOY_BTN2",
-					},
-				},
-			},
-			["name"] = "Mic Button UHF2 (ARC-182)",
-		},
 		["d3550pnilu3550cd62vd1vpnilvu-1"] = {
 			["name"] = "Toggle Menu",
 			["removed"] = {
@@ -72,30 +97,6 @@ local diff = {
 					["key"] = "JOY_BTN2",
 				},
 			},
-		},
-		["d3705pnilu3705cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_D",
-				},
-			},
-			["name"] = "Mic Button ICS - SRS Only / No Menu",
-		},
-		["d3706pnilu3706cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_R",
-				},
-			},
-			["name"] = "Mic Button UHF1 (ARC-159) - SRS Only / No Menu",
-		},
-		["d3707pnilu3707cd2vd1vpnilvu0"] = {
-			["added"] = {
-				[1] = {
-					["key"] = "JOY_BTN_POV1_L",
-				},
-			},
-			["name"] = "Mic Button UHF2 (ARC-182) - SRS Only / No Menu",
 		},
 	},
 }

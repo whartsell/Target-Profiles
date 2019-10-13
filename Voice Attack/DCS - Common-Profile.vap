@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Id>dfa96246-1004-40ef-9df0-707031509ccb</Id>
+  <HasMB>false</HasMB>
+  <Id>b15d54b5-656e-4bf9-986d-589ebc1ef400</Id>
   <Name>DCS - Common</Name>
   <Commands>
     <Command>
@@ -16,9 +17,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>2f1441e6-c598-4b3f-831a-2937d90511e7</BaseId>
+      <BaseId>a93bcabf-69f8-4c7f-b06c-067ee6046dea</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5124c425-abbc-4f2d-a373-76d0c3d75a93</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>ae17007c-ca16-4610-a1f2-195323b7e306</Id>
       <CommandString>Active Pause</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -30,7 +32,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>00fc0950-d879-40e6-937c-3d969960b223</Id>
+          <Id>d2a8ff96-f650-4ac9-a698-d9133c10cc9f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -56,6 +58,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -106,6 +109,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -120,9 +132,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>c9f20256-be03-4a4e-9b07-021f79ec9849</BaseId>
+      <BaseId>fb78bf92-b46c-4fcd-9d45-d7e8d1ef552a</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>4d8e2b38-36f6-4b39-8b04-9da2d5f53df1</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>ff0a4a73-65c1-4023-97ce-ec853fe7b1a1</Id>
       <CommandString>Bort</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -134,7 +147,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9eca058f-c91c-4e5d-ad2a-905f602614d0</Id>
+          <Id>01eaa568-bc1b-4b5c-a742-9c685777941f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -157,6 +170,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -167,7 +181,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bd4d821f-db92-419d-8f17-b258f260c0df</Id>
+          <Id>ddf192f5-0f0c-44b9-ac6e-0485e300c2ca</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -188,6 +202,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -198,7 +213,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>f15b723b-62e8-4645-ac71-d027278fa0b5</Id>
+          <Id>a88a98c6-39f1-48b0-8650-f7a3bcab9c4a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -221,6 +236,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -231,7 +247,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>52b8263c-10e7-4145-88f3-bff47f258576</Id>
+          <Id>d7aca31f-ab48-47ae-8e28-62e8a62274a7</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -252,6 +268,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -262,7 +279,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7f89e05b-aaf9-4ef5-88ba-2986d58b1e5b</Id>
+          <Id>d748c97d-8e0e-40d0-aaeb-0b948590b588</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -285,6 +302,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -335,6 +353,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -349,9 +376,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>a5d11943-51ff-4186-b87a-77c20878df19</BaseId>
+      <BaseId>04c6fbe5-e203-45e1-a3cb-3f43ccd870f4</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>0539b310-3cb3-4bbb-ac31-f0473afcdd29</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>d249d5de-f386-424d-ac67-2c8c774a9381</Id>
       <CommandString>Briefing</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -363,7 +391,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>588b0cf5-5547-47a5-865f-628b377e6ddd</Id>
+          <Id>69b6a440-43d7-4564-ad3d-46254496969b</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -438,6 +466,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -452,9 +489,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>b972d750-da79-40bf-a00e-6c906fec68a2</BaseId>
+      <BaseId>b37d59cc-131a-46d7-87c6-c4583753d39c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>3ac2ea4e-7daa-43a2-b587-6b9fc90cadbc</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>15c823da-4efc-4f02-bb34-c3a8a05840e4</Id>
       <CommandString>Canopy</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -466,7 +504,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c9316ac7-d547-453c-ab71-31f2b195b032</Id>
+          <Id>e382c9e3-c5ff-43f0-9659-24f73a3643a8</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -542,6 +580,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -556,9 +603,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>31c2b535-b4b7-4c19-bcc7-1fd442e98467</BaseId>
+      <BaseId>4db1f37f-ca4a-4572-bcc4-ef65e37a8cbd</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2d07ad07-9b45-4e0f-8165-93d22c111d33</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>58c32d92-53fe-47bf-953a-95cc16cbb58f</Id>
       <CommandString>Catapult;CAT;Tension</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -570,7 +618,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c1815733-790e-4d5a-8125-40d936187916</Id>
+          <Id>c5a1e698-195b-47cf-8813-ff954f603073</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -594,6 +642,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -644,6 +693,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -658,9 +716,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>323981bc-ba22-4a17-944a-2215de65593c</BaseId>
+      <BaseId>aecb16a4-8491-45ce-a197-c790777abfc0</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>98840240-114e-4ca0-97f1-87c26c5489ed</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>dcc7289e-cd31-44cd-9480-14b1168ca711</Id>
       <CommandString>Center</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -672,7 +731,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>cad824a9-8dd7-4152-846a-8232445a4d8d</Id>
+          <Id>8f83e7f9-c9e3-4b4e-8fa5-ca825bf58b69</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -696,6 +755,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -746,6 +806,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -760,9 +829,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>256268f4-c92b-423d-b5dd-4833b6f2dd9d</BaseId>
+      <BaseId>b6ca90da-1be0-40b5-955f-7a18cf342ede</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>a42e023e-a2fa-48d9-bda6-d73d0bf5bb16</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>d622c8b5-4b96-4ee2-9844-dce2e2edc78f</Id>
       <CommandString>Center It</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -774,7 +844,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>89a8e2a7-75e1-448a-9f94-305f8f30b50a</Id>
+          <Id>91cfcc32-b360-48eb-9ea1-64c813565b07</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -850,6 +920,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -864,9 +943,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>3f32dca5-dfed-413a-870f-7e4e5d98a0eb</BaseId>
+      <BaseId>4dc73283-d1b6-4b2d-87fd-5a590a6db7ca</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>c895154d-ebe2-4587-9295-bb5bd8546f09</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>c49d1202-9645-45e0-a406-0260225a3508</Id>
       <CommandString>Chat Window</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -878,7 +958,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>1b7fdac1-a6fb-4988-9514-41e2ffc4677b</Id>
+          <Id>d6c3a6ec-b0c1-4789-a356-6670cc9cdcbb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -953,6 +1033,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -967,9 +1056,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>a7811846-f89a-4878-88b4-57b6f230a52b</BaseId>
+      <BaseId>8f494d84-d2a6-493a-97d2-c83ca6b02a27</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>99aadb50-07d0-4392-9c95-66b88cd086aa</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>0455dc30-67b9-4d9b-97a1-394a6ba36f72</Id>
       <CommandString>Cheat Start</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -981,7 +1071,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>95d48a0d-d162-4c6c-93a6-3457a3fcd291</Id>
+          <Id>8dbc6784-f32d-464f-9e57-4545e98cf327</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1006,6 +1096,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -1056,6 +1147,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1070,9 +1170,301 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>d473a9dd-c345-4190-816d-d577513b4517</BaseId>
+      <BaseId>58af9342-7d5c-4bda-8e88-ed6556ba7a06</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>9d5e9357-2e4c-4311-943c-9f281dd07d8d</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>e9b78cd9-993f-448e-9bdd-6a055de4e776</Id>
+      <CommandString>DISCORD PTT DOWN</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>acad9f6c-aee8-450b-81bf-9cb899f69e0a</Id>
+          <ActionType>InternalProcess_StopListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>1f7bf262-cad3-4bd4-8822-052dd4de1c2c</Id>
+          <ActionType>KeyDown</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>164</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>COMMS</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>2</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>4c622ce9-d917-4f51-affb-d2dd5cac1d70</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput>true</HasInput>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>75a4a903-3715-4498-807d-0d1e8612cb56</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>7682c3a8-a152-4448-afa0-c3f92210afde</Id>
+      <CommandString>DISCORD PTT UP</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>adffa4e6-33bc-47c1-b782-760944661242</Id>
+          <ActionType>KeyUp</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>164</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>788d5bb9-4e46-430c-96a9-27a472ca9b7e</Id>
+          <ActionType>InternalProcess_StartListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Description>DISCORD PTT UP</Description>
+      <Category>COMMS</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>2</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>true</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>ac1a4726-a2c0-48a5-84c5-fb9cd07658cb</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput>true</HasInput>
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>1e1bdb3e-0474-4a97-956e-ed0dd3aa96fa</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>816839a4-b5aa-4e16-9028-61d67e885cae</Id>
       <CommandString>Eject</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1084,7 +1476,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2d610efa-93cc-44c7-b2be-f0b81f7aa6d6</Id>
+          <Id>2b280f60-2e85-4365-bc55-6ae495b8ee9e</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1107,6 +1499,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1117,7 +1510,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>04b7de51-7cc3-47fb-8c03-f97240994898</Id>
+          <Id>cbf6f183-dc22-4b3c-90c3-871d3a70d464</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1138,6 +1531,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1148,7 +1542,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ee4ab086-efed-4d91-9b26-ab5c83ed8df1</Id>
+          <Id>79a273c4-1151-4241-82d0-30dab1c29fbf</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1171,6 +1565,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1181,7 +1576,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>79b1b396-dd3b-4e4e-b530-9f2435ba130e</Id>
+          <Id>1f2fd7f3-8a3d-4a00-ba20-0dc7148cc485</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1202,6 +1597,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1212,7 +1608,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>42efe3fa-1797-4d97-97c8-66e93b6a4332</Id>
+          <Id>65bafe08-7514-47ed-b366-a76016a3b633</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1235,6 +1631,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1245,7 +1642,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>28c95fa1-2013-4629-a3db-8210a499a3ea</Id>
+          <Id>c3aef1b9-e692-4b9c-b10b-43effd92f67d</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1266,6 +1663,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1276,7 +1674,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3c6ac44f-4101-4662-b954-39c97594d23f</Id>
+          <Id>d1168c21-84ee-4e08-90d5-d5498935e527</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1299,6 +1697,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1309,7 +1708,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6fc9be19-efc2-4b74-89cf-344281dc4504</Id>
+          <Id>68b29882-859e-49e7-aaad-8a337b5480ed</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -1330,6 +1729,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -1340,7 +1740,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>791b7e9c-dff2-4d71-8fc0-7d6d139f1de8</Id>
+          <Id>516cbcc2-81d0-4f94-951e-5d012eea83fa</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -1363,6 +1763,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -1374,7 +1775,7 @@
       <keyCtrl>0</keyCtrl>
       <keyWin>0</keyWin>
       <keyPassthru>true</keyPassthru>
-      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
       <onlyKeyUp>false</onlyKeyUp>
       <RepeatNumber>2</RepeatNumber>
       <RepeatType>0</RepeatType>
@@ -1413,6 +1814,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput>true</HasInput>
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1427,9 +1837,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>bc33183a-0b8e-44e5-a41e-ef7cba4c7de7</BaseId>
+      <BaseId>29104ff5-06d3-49bb-84f5-3739b896732d</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>6817d61c-5ea9-4851-86b4-43527296db88</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>21122365-481d-450d-8ebd-667478ca98bc</Id>
       <CommandString>End Stream</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1441,7 +1852,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c8cad552-d2de-4aac-a07c-5aacd9be869f</Id>
+          <Id>948231ea-e072-419f-8f53-3956960e329a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1466,6 +1877,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -1516,6 +1928,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1530,9 +1951,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>41f318e0-8b74-42e3-934b-dc668e7d3ed7</BaseId>
+      <BaseId>04c035bd-be52-4c71-b267-bb6a295e6b91</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>48f37898-7f8c-4ea4-8ef5-bbce5d4a08cd</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>ea587a4b-c235-4080-9bcb-4fa3157045dd</Id>
       <CommandString>F1</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1544,7 +1966,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ac9048c9-42fb-4443-b92e-72d74a05cfba</Id>
+          <Id>334af2dd-ed95-411a-8f3a-879ed9df7a6c</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1619,6 +2041,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1633,9 +2064,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>ecfb1cfb-3a36-4c38-b08d-48f1f967983e</BaseId>
+      <BaseId>fba30a36-fe2e-4c93-88c5-cb83ffa2938b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2e122908-73c7-474b-820e-f08445aec0c6</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>8f1ae9d9-a2c0-447f-993e-7400db741f6a</Id>
       <CommandString>F10</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1647,7 +2079,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>97679845-dc09-4e85-bb0c-148f62b2387d</Id>
+          <Id>f26f1c3f-1b79-44d3-ab41-3283d0ff4959</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1722,6 +2154,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1736,9 +2177,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>99799cf9-1cae-4a23-a10c-de0708113ee3</BaseId>
+      <BaseId>342dc601-f747-491d-b1e0-1c0dd2aa4c9b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b36c0251-c3e6-4c72-96e3-d6f86421f4a4</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>279b786f-6b7b-4953-b23e-17c412f31026</Id>
       <CommandString>F11</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1750,7 +2192,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0ca10113-7c04-40bf-ad14-7e6b8246f686</Id>
+          <Id>e7da00f5-f114-4a4f-ab23-e00c77531174</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1825,6 +2267,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1839,9 +2290,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>b172a15e-925d-49bd-94ac-2d42d9b554f9</BaseId>
+      <BaseId>75532412-2a40-4f84-ba0c-a9b8dd6a7629</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>39b07166-537e-4c62-a1ba-1e580130518e</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>62de3d2f-afaa-4be6-9b97-dcbcb1a27484</Id>
       <CommandString>F12</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1853,7 +2305,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2f663a34-8e09-453a-9b8a-edbaa9e1a2fc</Id>
+          <Id>04081507-2523-4689-bfa8-306eb855f9df</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1928,6 +2380,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -1942,9 +2403,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>56f3efac-0c3f-497e-b239-5496f54348e3</BaseId>
+      <BaseId>45289e36-67a3-4220-a0d5-1705adefbcb0</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>08cf3063-3dc9-43d0-938a-313d197c5f58</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>0688bb86-9b0a-4a8d-b4af-830d7b323f82</Id>
       <CommandString>F14</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -1956,7 +2418,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>37a28340-ba77-4fe8-9045-a0c69d05c98a</Id>
+          <Id>404618a7-a68d-491b-9cc3-d92b36816a88</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -1980,6 +2442,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -2031,6 +2494,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2045,9 +2517,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>1d0f0dab-87da-4e6a-a836-ee220ad559bc</BaseId>
+      <BaseId>dbac2d68-5e00-4e5c-ba12-62931a50dcc8</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>851c9d60-bc1c-4406-a4f9-ac234745a2c7</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>d8ab0069-82ac-4830-a84d-91e0c29742da</Id>
       <CommandString>F2</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2059,7 +2532,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>babb9a9d-468c-4d0d-a22f-0838093a77f3</Id>
+          <Id>cf900b28-741a-4cf1-8ac4-615dbdefedc3</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2134,6 +2607,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2148,9 +2630,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>62738eeb-9425-4079-a86c-e2f40a1aed0a</BaseId>
+      <BaseId>8e45796c-1b12-4037-b060-949d172c348d</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>23f845df-eb33-42a9-ba38-d7b1773587bb</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>21e15669-4363-426d-8a21-9cc5cff8e0c3</Id>
       <CommandString>F3</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2162,7 +2645,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>aa6d9498-0296-4b78-8888-9c78c188caf2</Id>
+          <Id>20fee447-96ed-42e4-bc83-d4f05504d31a</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2237,6 +2720,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2251,9 +2743,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>16ea8eac-2a13-4592-973f-8891298baeb6</BaseId>
+      <BaseId>7f7e3e9a-5386-4118-b1ca-2225b1f4cb84</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>bf14402a-cf68-41d5-8d35-0c41704eee74</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>debd58e6-c1b2-47df-b745-bf989155b9d1</Id>
       <CommandString>F4</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2265,7 +2758,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9ec9d14b-a0a1-4fb8-918e-2c0481a0d5e3</Id>
+          <Id>ab81da8e-f278-4d74-819a-62d5c7ea1355</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2340,6 +2833,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2354,9 +2856,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>20faa501-7c51-4e74-a5a2-f4bcc6d1644d</BaseId>
+      <BaseId>e45e36d3-b9e3-4ea8-9ea3-a54ec134783f</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>31fb0e9f-1a51-4941-8a6b-cc412c07b7d2</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>2121b2ee-ed11-49fa-9fb7-27dd3ea4ea75</Id>
       <CommandString>F5</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2368,7 +2871,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b747df92-a1b1-4f1e-aa0c-263e044231f3</Id>
+          <Id>c2fee0a2-d0ea-4a59-ba1b-f94851fb81de</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2443,6 +2946,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2457,9 +2969,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>ddbc28e2-7fe3-4d30-905e-86274dafdee6</BaseId>
+      <BaseId>ce372048-1cac-4558-99a0-16999e6e21a7</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>ce8ee4a0-4e12-45ca-bc2a-0278b3d64d7e</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>5e8aa2bc-f753-4f93-a02a-bf9aa515fe55</Id>
       <CommandString>F6</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2471,7 +2984,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>349412e2-0974-4e3b-a621-dff564839528</Id>
+          <Id>18884433-23ad-4dbe-8886-e06e960486c1</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2546,6 +3059,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2560,9 +3082,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>4e6c08f8-c85e-46cb-bd84-4389682ebda3</BaseId>
+      <BaseId>6d736468-514f-4d0c-9e27-8a13783f2df1</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>d49552cd-cd78-4811-99fd-9a673e872616</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>1da53013-1679-48bb-b9cc-c8242d9376c1</Id>
       <CommandString>F7</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2574,7 +3097,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>f7668d39-c62a-4218-a161-2830075d5461</Id>
+          <Id>ad0b3b89-34b3-48e5-bdf7-094f9e362018</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2649,6 +3172,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2663,9 +3195,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>97825910-49d8-41bc-ae42-71077d1c1689</BaseId>
+      <BaseId>48d2e314-f980-4028-9cb1-6ca434c83e7c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>017ab7bd-8d19-4429-8e23-30fc44d45b9f</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>c43ca3f7-542f-44ab-9145-c2fc2fc55cb1</Id>
       <CommandString>F8</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2677,7 +3210,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>bd38565d-f821-4259-9a82-e0758d844b3d</Id>
+          <Id>89a01313-e1c7-4503-afbe-546172854a54</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2752,6 +3285,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2766,9 +3308,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>ab84bbff-036c-4704-9af2-5ec754c2773f</BaseId>
+      <BaseId>64c14241-3a2a-4618-a22b-e4ed2c639ad4</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>291deff5-10fc-42d8-aa65-5c48a69cb483</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>5d934407-2f74-4fb7-a422-2c2c83fc9131</Id>
       <CommandString>F9</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2780,7 +3323,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4cb99134-5cd9-40f9-8b6b-67e47e28377e</Id>
+          <Id>2aa8385f-f307-40d5-9d6d-9ca4c1fc0f49</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2855,6 +3398,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2869,9 +3421,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>0713f58d-fd2e-4ecc-bc03-afc5beb5bf6c</BaseId>
+      <BaseId>dc446fe3-f755-40ad-b1a6-e59f4b5d382a</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>e3176beb-df1a-4613-a06a-bd515bd5c24f</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>5a453c20-e318-4a1f-83dc-ac0f710483dc</Id>
       <CommandString>Flashlight</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2883,7 +3436,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>56a85fb5-49b9-4176-990b-85199fc06c34</Id>
+          <Id>791a57ab-d3d8-475f-90a7-e98c88ff93cd</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -2908,6 +3461,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -2958,6 +3512,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -2972,9 +3535,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>68e8c67c-abef-4924-9631-1c6b0c79b627</BaseId>
+      <BaseId>f6ce6bec-51a7-4f06-b899-507ffa3ae904</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2e17cdbe-a338-44f6-a7e7-43ad2974e343</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>60712090-266f-4a2e-91ba-9d7b506bb7a3</Id>
       <CommandString>Gear;Landing Gear</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -2986,7 +3550,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>017a549b-8261-400e-a0a6-4fcacf56878d</Id>
+          <Id>691253a1-e62d-4244-a473-ce989de1bb3f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3061,6 +3625,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3075,9 +3648,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>6fbb4369-c6df-4e22-ac2e-8731ec0ab24b</BaseId>
+      <BaseId>6b294a32-2298-4b7b-805d-b5bcb69de6ef</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5365b483-3bef-4e87-a7e1-805092e4b7ef</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>48a7b137-08ea-4a74-af8e-63d60541e367</Id>
       <CommandString>Goggles; IN Vee Gees</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3089,7 +3663,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>0d2ea45d-19e9-4f0f-abee-3a790cbf2198</Id>
+          <Id>e005e04b-c038-4581-81f4-44ceaab8563f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3165,6 +3739,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3179,9 +3762,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>482db837-c94c-4172-b563-0a650196c4ba</BaseId>
+      <BaseId>9a352220-b14f-4f23-bb06-3fe19d108369</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>612facae-ffb2-4ae9-860e-3633957bf2aa</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>5e1a9f12-5830-4006-95ae-c9f655490074</Id>
       <CommandString>Init</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3193,7 +3777,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>88d63d8b-2363-42a2-bcca-b5b5b54cf7ba</Id>
+          <Id>7a29b538-057b-4643-96db-660a973db8c9</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3216,6 +3800,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -3266,6 +3851,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3280,9 +3874,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>49aada82-a5d8-42a5-aacc-b935ac18bcb0</BaseId>
+      <BaseId>39b96f04-02a1-451a-839b-6e8ad8debb75</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>e9801edb-00fd-4c24-8fca-553d3631d05a</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>575d9242-1a2c-46ba-802e-7cf936b6e461</Id>
       <CommandString>Kneeboard</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3294,7 +3889,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7d511b5b-3eca-435a-933b-577bd6daa730</Id>
+          <Id>f7852d02-be85-4b2c-a62d-8cac834fba10</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3370,6 +3965,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3384,9 +3988,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>4d796bd5-defd-410c-992e-f2ad256cd014</BaseId>
+      <BaseId>6c2571f2-9ed2-4dea-937a-f2b09e23cd36</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>6d606033-bfee-48d6-8ac6-5cfb449ee318</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>36d27440-7e5f-44ef-94e4-0bcfc40efa32</Id>
       <CommandString>Labels</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3398,7 +4003,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7ef7f5db-d5c1-4a4f-a91a-941426d8c0b1</Id>
+          <Id>4ca14883-c175-4e29-8e47-760e19cc4dd9</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -3423,6 +4028,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -3473,6 +4079,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3487,9 +4102,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>20bace2f-df72-4929-9b08-5756af9b5711</BaseId>
+      <BaseId>d0413ca1-922c-4eaf-b9fe-cb604078d570</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>d88c7886-9206-48d4-9bc2-dc8a9b92e3ea</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>c4f3f034-3f85-4be5-bd0a-7b0abdc4723e</Id>
       <CommandString>Lag Fix</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -3501,7 +4117,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>4fe8d603-de78-4402-863e-6e2090a84aba</Id>
+          <Id>40ae1ca2-55a6-4089-901c-2a8f88632f2c</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3524,6 +4140,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3534,7 +4151,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>11893d74-7e93-47fc-888f-d242d48f3758</Id>
+          <Id>506a5300-9424-4927-aafc-9b1c9212e84b</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3555,6 +4172,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3565,7 +4183,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5efbdfea-48ec-452f-87ee-1cb0ba2dafbe</Id>
+          <Id>99c9e113-88d3-446e-8ae8-540eeff2a4c1</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3588,6 +4206,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3598,7 +4217,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>fc430e3c-feb9-465f-911d-c4f6f82d0c66</Id>
+          <Id>6d18fb78-7b52-495c-b5e3-62328a62e724</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3619,6 +4238,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3629,7 +4249,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>488f2f2f-8132-4279-9ce2-63c423802f93</Id>
+          <Id>bee4f0d9-7fa6-4ef1-8049-ae08649c4a1a</Id>
           <ActionType>KeyDown</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3652,6 +4272,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3662,7 +4283,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>21de3b3e-a163-4b53-8c85-4006b4668dad</Id>
+          <Id>bba4f9f8-967b-4237-81d0-ea249945649a</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3683,6 +4304,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3693,7 +4315,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>334d89eb-0009-44a1-8517-2c2da55451be</Id>
+          <Id>4b5cb91c-bbb3-4a16-b1b4-4813e770cc11</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3716,6 +4338,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3726,7 +4349,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>f76c6e8f-742f-49e2-9df7-202064d3feab</Id>
+          <Id>7889b4ed-373a-4d39-9a70-bffa5bb98f59</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3747,6 +4370,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3757,7 +4381,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>6760ef1c-6669-434a-90eb-6bef724658f7</Id>
+          <Id>1bb06dc3-2c5d-4ffe-9dc3-5aa5b614cfcf</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3780,6 +4404,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3790,7 +4415,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>43b0457b-f551-4b66-947c-7892ed138889</Id>
+          <Id>17f8da7c-43f4-4dee-bd33-50d51209131f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -3811,6 +4436,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3821,7 +4447,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b9e82b93-cd0a-4b91-aba4-ab5600836b54</Id>
+          <Id>4178d39e-9e20-4c16-8348-fe1ef81a8094</Id>
           <ActionType>KeyUp</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3844,6 +4470,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -3894,6 +4521,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -3908,10 +4544,11 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>c930a71f-6ef6-4b66-8523-29da633f09ec</BaseId>
+      <BaseId>decfdea3-dc27-49cc-aa8f-a0b940d92f0b</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>0962b666-05ef-4319-8da9-8f0116115702</Id>
-      <CommandString>Load FishBed</CommandString>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>427d1871-12e1-44c4-bd9f-3e4acfaa4d9f</Id>
+      <CommandString>Load Black Shark</CommandString>
       <ActionSequence>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3922,7 +4559,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>5d09843d-96b4-4bc3-8304-dfc4a46a4847</Id>
+          <Id>5314d87a-60f8-4abe-9a66-57559e451932</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -3945,6 +4582,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -3955,12 +4593,12 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>90946a4d-3889-4975-b202-3dc17a91c294</Id>
+          <Id>d5bed168-5cf3-4d68-9f5b-7316e2399bbb</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
           <KeyCodes />
-          <Context>4774b890-a9cd-4c27-873f-a8c25a27ea7a</Context>
+          <Context>553695c4-a99d-4423-8521-e2b063b85739</Context>
           <Context2 />
           <X>0</X>
           <Y>0</Y>
@@ -3978,6 +4616,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4023,12 +4662,21 @@
       <MouseUpOnly>false</MouseUpOnly>
       <MousePassThru>true</MousePassThru>
       <joystickExclusive>false</joystickExclusive>
-      <lastEditedAction>00000000-0000-0000-0000-000000000000</lastEditedAction>
+      <lastEditedAction>b4cddf20-4d36-47d5-9ffd-bc102df44919</lastEditedAction>
       <UseProfileProcessOverride>false</UseProfileProcessOverride>
       <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4043,9 +4691,157 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>d3510a98-88a4-42cc-b8c7-ad48f0fea3d2</BaseId>
+      <BaseId>16e7a04f-98c9-4916-bbed-9741f8a3d5e0</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b98c38a3-bbfa-454b-88c0-489bc5650a6d</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>b42d7268-c4d3-41f1-b644-f1f4830177dc</Id>
+      <CommandString>Load FishBed</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>0229d602-81de-41a7-90bd-7830c9385821</Id>
+          <ActionType>Say</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>Loading Fishbed</Context>
+          <Context2 xml:space="preserve">Microsoft Zira Desktop</Context2>
+          <X>100</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>803133d3-cfc2-46f0-ac81-8606f1380c93</Id>
+          <ActionType>ChangeProfile</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>d851498d-9624-4910-a0e2-759a29cabad9</Context>
+          <Context2 />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Category>Aircraft Profile</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>0</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>true</keyPassthru>
+      <UseSpokenPhrase>true</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>c7d35322-8a06-405b-a891-d5fe208db086</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>false</UseJoystick>
+      <joystickNumber>0</joystickNumber>
+      <joystickButton>0</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>0</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru>true</MousePassThru>
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>70afec36-c4cc-4d54-aef7-b371d004da4a</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>727c909e-0457-480e-9009-c4fc6ea6e7e3</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>9f6cdba1-edf8-483f-a836-4505e6080f98</Id>
       <CommandString>Load FrogFoot T</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4057,7 +4853,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>56156533-f2b6-4a1c-a058-1c5320d84d92</Id>
+          <Id>75eaf982-5fad-4192-945b-00712e594319</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4080,6 +4876,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4090,7 +4887,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>992b9e53-9d71-4637-8eac-c4aedc1fbe7c</Id>
+          <Id>790d7dab-98f8-4184-b2ed-af24597eab5c</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4113,6 +4910,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4164,6 +4962,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4178,9 +4985,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>910689f3-9cda-448a-a89f-edd771f9e627</BaseId>
+      <BaseId>42c95168-0b98-480b-93e5-f3b76039784c</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>086833a4-2da5-46f9-af2c-afe1bddd6140</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>fdfdb16b-c2f8-4e22-be99-ab34cde53053</Id>
       <CommandString>Load Fulcrum</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4192,7 +5000,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>672ade8a-bb80-4bc0-8a39-30ad8683ed48</Id>
+          <Id>52d227a3-6835-40d8-84e6-4df02d8ab2a8</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4215,6 +5023,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4225,7 +5034,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b46e0715-c055-4006-bf0b-1cff88f47814</Id>
+          <Id>80a6174c-de92-45cb-bb27-8aacf7970458</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4248,6 +5057,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4299,6 +5109,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4313,9 +5132,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>101379d3-55f8-45bf-9ace-0d03462d3617</BaseId>
+      <BaseId>e77ecb4c-6eb2-4e5f-86e9-a3e747081b74</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>be155d0a-6d14-475a-9ae6-149a1a778fc8</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>90eaaffe-118b-4652-a816-e7e13a1430c7</Id>
       <CommandString>Load Gazelle</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4327,7 +5147,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>ed4905db-e60c-4897-b08f-f455a5eecb89</Id>
+          <Id>7e4378f2-d1a2-4d5e-b20f-be5f7c88d388</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4350,6 +5170,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4360,7 +5181,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>79d8bb93-e34d-4244-a77d-159b2ad15965</Id>
+          <Id>958c65a6-0679-40d0-bdad-0898ea615fe5</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4383,6 +5204,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4434,6 +5256,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4448,9 +5279,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>296d7d19-9f44-475a-9e05-4079e9cad399</BaseId>
+      <BaseId>b6ed3613-5397-4551-8323-5aee862b2f65</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>ac7dfa04-8711-4876-8b0c-423ba32c1997</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>8fbf2ce8-8ce8-43be-8179-d7537296c79f</Id>
       <CommandString>Load Harrier</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4462,7 +5294,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>a99c8507-3c13-4e75-9347-5d7ac4c7c4e4</Id>
+          <Id>487588d8-b801-4a1b-a088-7d200a20cf38</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4485,6 +5317,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4495,7 +5328,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d8765137-b9d5-438a-95c8-e4c4e20fed32</Id>
+          <Id>14dbea26-2bdc-4a5a-82df-4d6e147b3639</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4518,6 +5351,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4569,6 +5403,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4583,9 +5426,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>ce464d0b-de18-41d5-a5ea-c55672002065</BaseId>
+      <BaseId>d5c2d745-193e-4273-bb48-cffd87b47230</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>474ea6b9-1d8d-4ba0-ad67-3e9d12cba85c</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>8396a64e-6a18-4156-a5c0-661b3d724d5b</Id>
       <CommandString>Load Hornet</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4597,7 +5441,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>084204dc-65d9-4e97-a4c2-c9bcd7f07009</Id>
+          <Id>53d043b4-b2b2-4024-b5dd-f36779ad90dd</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4620,6 +5464,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4630,7 +5475,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>42d8ae07-3e46-4146-bcf3-74687a114ae6</Id>
+          <Id>5d0de95b-babc-40ea-a77e-c321a738998e</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4653,6 +5498,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4704,6 +5550,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4718,9 +5573,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>80206fe6-134c-410f-ad0c-2664de0ac61c</BaseId>
+      <BaseId>0efb09e2-198d-49ce-aff3-9e5f4886bd53</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>adc4a1d1-61f1-43b5-90e4-379d61c07999</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>f3ca1874-bc8a-4140-b940-f09744008ffc</Id>
       <CommandString>Load Tomcat</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4732,7 +5588,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c0d746ad-bfc7-457c-9e62-b576fdeb8725</Id>
+          <Id>b1d612e1-2f6d-434e-b91f-b3917f597915</Id>
           <ActionType>Say</ActionType>
           <Duration>0</Duration>
           <Delay>0</Delay>
@@ -4755,6 +5611,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -4765,7 +5622,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>d361c76b-d90e-4105-9a4c-ea562758e17a</Id>
+          <Id>44e211bb-f53b-4ecc-a80d-d622826176fb</Id>
           <ActionType>ChangeProfile</ActionType>
           <Duration>0</Duration>
           <Delay>1</Delay>
@@ -4788,6 +5645,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4839,6 +5697,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4853,9 +5720,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>1ac58d2f-307e-4bd5-a8f9-c9869d3e3cac</BaseId>
+      <BaseId>77c4c233-9236-435a-8495-70dde1102d99</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>50f3977f-0842-4345-aced-3b7e1fe8e37b</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>fb33ff23-a8f7-4389-93be-12ce9df4d861</Id>
       <CommandString>Menu</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4867,7 +5735,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>886aa41c-0398-4189-b17e-9f8278fdcfc2</Id>
+          <Id>bc1cb3bd-117b-4362-940a-7d6dc1050f15</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -4891,6 +5759,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -4941,6 +5810,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -4955,9 +5833,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>36188d53-dd67-406d-9b2c-3606de1bbd96</BaseId>
+      <BaseId>fd512ec6-0682-4ffa-a3c5-f9e237bea813</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>5efeff72-e9ad-438d-b223-ea35d0aa1b68</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>fb4dd432-7f03-4ceb-b41d-ad207a0ddc01</Id>
       <CommandString>Next Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -4969,7 +5848,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>420d5584-9d6d-4932-b3c3-24eccfaec845</Id>
+          <Id>b5869221-f226-4448-a7e9-af776c019f75</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5044,6 +5923,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5058,9 +5946,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>2e42cb8c-c578-401f-9b0e-f598ca0428cb</BaseId>
+      <BaseId>01f37221-d991-4bd3-a5d5-557d490a0010</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>d2b6e43f-92e7-45a0-98be-e5371977ef06</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>f7e4248c-2bd1-467d-8411-75b5845af1af</Id>
       <CommandString>Password</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5072,7 +5961,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>02e94025-b63d-4b2a-9257-bc7022b6196c</Id>
+          <Id>92eb4db8-91d2-4c79-9aed-b45091a3a576</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -5095,6 +5984,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -5105,7 +5995,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>3c0d53d4-1e82-4b36-b160-3cda8d8bc91e</Id>
+          <Id>c11d9d43-429c-47b9-9ead-dabaa05c748f</Id>
           <ActionType>Pause</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -5126,6 +6016,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
         <CommandAction>
           <PairingSet>false</PairingSet>
@@ -5136,7 +6027,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>09a2549e-9ef1-48c8-9ee5-99a78a49cbe4</Id>
+          <Id>671e2065-77da-4b25-aa0c-f138fe642619</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.01</Duration>
           <Delay>0</Delay>
@@ -5159,6 +6050,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -5209,6 +6101,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5223,9 +6124,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>f999cdfc-66be-4194-aaeb-8f07ceaa9178</BaseId>
+      <BaseId>28364ef8-add2-4cbe-9dfc-e6fd17e2c542</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>75f195c2-2b22-4732-8a4d-85eab5648910</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>eb373969-e79d-4dbb-89e1-10d754ce9c4f</Id>
       <CommandString>Players</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5237,7 +6139,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>e98cdd49-5588-44eb-9274-17b105531d6d</Id>
+          <Id>220485fb-5f63-4d5b-b16d-a06b633ab367</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5261,6 +6163,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -5311,6 +6214,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5325,9 +6237,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>31e71272-8e1d-40de-890a-dbb2c112a442</BaseId>
+      <BaseId>0bcdbeaa-d693-4ad7-8ae5-cd4ac4de3f39</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>2b8f0b3b-d860-49b3-a6a3-898fe59eca53</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>6fdd8943-9ff4-4761-91be-34a698e1c6fa</Id>
       <CommandString>Previous Page</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5339,7 +6252,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>9958658a-29b7-43e4-8ae5-587f828995ae</Id>
+          <Id>93111a0d-eefb-4fcf-b969-fe021babbd5f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5414,6 +6327,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5428,9 +6350,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>408c6bd0-a5a6-4576-9d3b-1b2a049ac7d9</BaseId>
+      <BaseId>16480118-1436-45bd-bd86-3b77dc788d25</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>78df3df3-d1c9-4e62-8e68-f45966ec07c9</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>450ccfe8-e1fb-4d29-9eb5-64805ee71341</Id>
       <CommandString>Radio Overlay;Radio</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5442,7 +6365,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>445353de-44c8-4ecf-b54e-c3fb527a323d</Id>
+          <Id>cfa23c77-9543-4973-8fbc-86d1e5f3a1e6</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5519,6 +6442,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5533,9 +6465,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>811ae1e3-c41e-44da-b5ed-331aaef75d74</BaseId>
+      <BaseId>35d76333-c061-4076-b79e-f3b08e11705a</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>e8df40e7-e51f-454d-99de-efc0b2accdaf</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>55a59336-d167-4dab-ab45-913b3132c4a4</Id>
       <CommandString>Rearm</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5547,7 +6480,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>137e292c-cf04-4e34-89de-33a6adbbed9c</Id>
+          <Id>d296f965-614b-42a4-86e9-ceb570f6836d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5572,6 +6505,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -5622,6 +6556,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5636,9 +6579,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>0d1b4086-08ab-45ba-8862-87027094739c</BaseId>
+      <BaseId>64ac3bbf-f0c9-410d-9a7b-8e2a0a05d24e</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b7a47d3e-d631-4653-b507-c763c1e490bc</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>7d54e1ed-5784-4824-9dcf-a57ec6c08d78</Id>
       <CommandString>Record</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5650,7 +6594,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>2f0776db-ce21-4a2a-b89b-993f9fb87ae2</Id>
+          <Id>9bdeecb0-3906-452c-9968-c5845d1de163</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5726,6 +6670,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5740,9 +6693,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>2b2c673e-56e7-40c9-846d-31d8dd535d69</BaseId>
+      <BaseId>ade2c9bb-1fe0-4785-86ec-efc8b51b5389</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>516c3a2f-9d67-4cfd-9170-fb15d247e170</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>cc3fb421-0669-4bf9-8f42-2993a92a980c</Id>
       <CommandString>Replay</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5754,7 +6708,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>c7442661-b2f8-4e02-ad2b-9116b87834b9</Id>
+          <Id>e431e763-7546-42d1-80ef-b4085ec20f8f</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5830,6 +6784,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5844,9 +6807,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>b9577bf4-adf9-439e-84b7-d6817e3a3ecb</BaseId>
+      <BaseId>308f5ab0-c187-4306-9aa2-277f0957c936</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>b81505fb-a5d3-465d-b6fc-a1b066ca756d</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>3a56aa78-a667-4228-8737-f2e6b2b98473</Id>
       <CommandString>Screenshot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5858,7 +6822,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>32254575-3f8a-4894-85a1-4713afb06105</Id>
+          <Id>cb835864-0754-408c-b3f7-c6dc367d6c5d</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5933,6 +6897,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -5947,9 +6920,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>b251f8cd-3766-4205-b180-8ea3884d6080</BaseId>
+      <BaseId>08a4126f-6c3f-4a10-aef1-ee8bda1ed7db</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>afeaa5d5-f704-4220-87a4-8d88ac715e42</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>66f36aa3-ffd2-4f43-96e1-9750d1c9dc15</Id>
       <CommandString>Start Stream</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -5961,7 +6935,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>aa3b02f2-b2ab-4a67-a22b-7d6d646c5cdc</Id>
+          <Id>1e33be1b-c0ca-4dc2-9c0b-6d1d9b24aedc</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -5986,6 +6960,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -6036,6 +7011,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -6050,9 +7034,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>2b91f1cd-0975-4811-b1d6-4333742c683b</BaseId>
+      <BaseId>4d080ce8-21a1-499c-9883-eea8f991be80</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>841ecee4-309c-4587-80c0-5216a856157d</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>4a494a1c-9590-440d-8bd0-373b2e67206b</Id>
       <CommandString>Stats</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6064,7 +7049,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>b855ac60-6f14-4e9b-afc2-3f11bab9922d</Id>
+          <Id>457fe3a8-6da9-4467-9338-22371b309b75</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -6088,6 +7073,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -6138,6 +7124,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -6152,9 +7147,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>8d052dd5-ea7b-4b89-93fd-b0db17094b42</BaseId>
+      <BaseId>d4e96197-5555-4d42-bc52-5795978d6afc</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>8e9cbabc-e64f-4b8d-a34e-9936a32818bb</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>67b9f706-c207-4c69-8c23-192a7460c2b8</Id>
       <CommandString>Toggle Pilot</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6166,7 +7162,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>293006cb-17f7-48fa-b8da-1db39aecac14</Id>
+          <Id>8ed3bc65-ec0e-47cd-984d-d988731aa3ca</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -6191,6 +7187,7 @@
           <DateContext2>0001-01-01T00:00:00</DateContext2>
           <Disabled>false</Disabled>
           <RandomSounds />
+          <ConditionExpressions />
         </CommandAction>
       </ActionSequence>
       <Async>true</Async>
@@ -6241,6 +7238,15 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
     <Command>
       <Referrer xsi:nil="true" />
@@ -6255,9 +7261,10 @@
       <ExecFromWildcard>false</ExecFromWildcard>
       <IsSubCommand>false</IsSubCommand>
       <IsOverride>false</IsOverride>
-      <BaseId>545b68b8-c474-4556-ac2f-4fef5d27f2c4</BaseId>
+      <BaseId>a4770d0a-422b-41db-a7f2-59f8bb1f6e31</BaseId>
       <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
-      <Id>c7e6f654-7ed5-4990-862e-aa3a5ba1bf6b</Id>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>4744e41f-fdac-4076-9310-51970c006f33</Id>
       <CommandString>Toggle Replay</CommandString>
       <ActionSequence>
         <CommandAction>
@@ -6269,7 +7276,7 @@
           <ConditionSkip>false</ConditionSkip>
           <IsSuffixAction>false</IsSuffixAction>
           <DecimalTransient1>0</DecimalTransient1>
-          <Id>7310d343-7991-4e39-a8ef-8dfa816c2a27</Id>
+          <Id>68b3e951-82c0-43d5-ae24-cba48a0003bb</Id>
           <ActionType>PressKey</ActionType>
           <Duration>0.1</Duration>
           <Delay>0</Delay>
@@ -6346,6 +7353,763 @@
       <RepeatIfKeysDown>false</RepeatIfKeysDown>
       <RepeatIfMouseDown>false</RepeatIfMouseDown>
       <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>64453371-29d5-485e-828a-878b77617409</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>eea13d6e-9a20-4a22-ae47-8c1587d5ed5b</Id>
+      <CommandString>Transmit TX1 press</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>e665d4de-05e8-4871-a6c1-58cb476ede08</Id>
+          <ActionType>InternalProcess_StartListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>23e94cf3-d027-493f-85bb-23142440d37c</Id>
+          <ActionType>ExternalInvoke</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>5b433065-dec8-4852-8912-2ff6edf9807f</Context>
+          <Context2 />
+          <Context3 />
+          <Context4>ptt.hotkey.TX1.press</Context4>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartNameFrom />
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>4062f0c4-c553-44e8-8155-b971d9f01afe</Id>
+          <ActionType>KeyDown</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>160</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Description>TX1 (VHF AM)</Description>
+      <Category>Push-To-Talk</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>49</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>false</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>3</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru xsi:nil="true" />
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>73d52d8e-9090-43c1-8169-85fc321fc8c9</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>b2ff3c35-3a66-4b39-bf6c-9b1a8ada6a85</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>3d6f7c5a-881b-4123-8481-df23bea952a7</Id>
+      <CommandString>Transmit TX1 release</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>98567b6c-ff8f-46ae-94ad-25668166ae9b</Id>
+          <ActionType>InternalProcess_StopListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>534fb790-f61f-4aaf-9ec0-6de24150b338</Id>
+          <ActionType>ExternalInvoke</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>5b433065-dec8-4852-8912-2ff6edf9807f</Context>
+          <Context2 />
+          <Context3 />
+          <Context4>ptt.hotkey.TX1.release</Context4>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartNameFrom />
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>3eaeca95-2f39-407f-b925-e558242f3381</Id>
+          <ActionType>KeyUp</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>160</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Description>TX1 (VHF AM)</Description>
+      <Category>Push-To-Talk</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>49</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>false</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>true</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>3</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>true</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru xsi:nil="true" />
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>9519d25d-c4aa-4ba7-a50a-645ed328989c</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>6b99e50d-eb7d-41a1-9000-be4377c3ea1b</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>62aa99c0-c97c-426e-bc7e-b86d8de386f6</Id>
+      <CommandString>Transmit TX2 press</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>0aada02d-5259-4bcc-b2b5-2c2118297467</Id>
+          <ActionType>InternalProcess_StartListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>ae77c308-a93a-4d45-8ae5-75903201d72a</Id>
+          <ActionType>ExternalInvoke</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>5b433065-dec8-4852-8912-2ff6edf9807f</Context>
+          <Context2 />
+          <Context3 />
+          <Context4>ptt.hotkey.TX2.press</Context4>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartNameFrom />
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>0dd586b2-30e5-4eec-a3c5-60b3a416f557</Id>
+          <ActionType>KeyDown</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>162</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Description>TX2 (UHF)</Description>
+      <Category>Push-To-Talk</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>50</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>false</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>false</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>5</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>false</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru xsi:nil="true" />
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>4e9dd9cd-2e4a-4b4b-9386-f76e1ff2d0d3</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
+    </Command>
+    <Command>
+      <Referrer xsi:nil="true" />
+      <ExecType>3</ExecType>
+      <Confidence>0</Confidence>
+      <PrefixActionCount>0</PrefixActionCount>
+      <IsDynamicallyCreated>false</IsDynamicallyCreated>
+      <TargetProcessSet>false</TargetProcessSet>
+      <TargetProcessType>0</TargetProcessType>
+      <TargetProcessLevel>0</TargetProcessLevel>
+      <CompareType>0</CompareType>
+      <ExecFromWildcard>false</ExecFromWildcard>
+      <IsSubCommand>false</IsSubCommand>
+      <IsOverride>false</IsOverride>
+      <BaseId>f7257a45-aafb-4c67-b65e-68109a7aabc4</BaseId>
+      <OriginId>00000000-0000-0000-0000-000000000000</OriginId>
+      <SessionEnabled>true</SessionEnabled>
+      <Id>74d82438-e841-4b3d-ab04-5ee776f812b5</Id>
+      <CommandString>Transmit TX2 release</CommandString>
+      <ActionSequence>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>03894c10-6a57-4c1c-b48d-3c2af1d4f6a4</Id>
+          <ActionType>InternalProcess_StopListening</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>377ce5e1-d1a5-4072-8eb7-d67c8fa33b2c</Id>
+          <ActionType>ExternalInvoke</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes />
+          <Context>5b433065-dec8-4852-8912-2ff6edf9807f</Context>
+          <Context2 />
+          <Context3 />
+          <Context4>ptt.hotkey.TX2.release</Context4>
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionSetName />
+          <ConditionSetCondition />
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartNameFrom />
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartCompareToCondtion />
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+          <ConditionExpressions />
+        </CommandAction>
+        <CommandAction>
+          <PairingSet>false</PairingSet>
+          <PairingSetElse>false</PairingSetElse>
+          <Ordinal>0</Ordinal>
+          <ConditionMet xsi:nil="true" />
+          <IndentLevel>0</IndentLevel>
+          <ConditionSkip>false</ConditionSkip>
+          <IsSuffixAction>false</IsSuffixAction>
+          <DecimalTransient1>0</DecimalTransient1>
+          <Id>0a02781a-2f7b-4b64-96e6-67684562502d</Id>
+          <ActionType>KeyUp</ActionType>
+          <Duration>0</Duration>
+          <Delay>0</Delay>
+          <KeyCodes>
+            <unsignedShort>162</unsignedShort>
+            <unsignedShort>125</unsignedShort>
+          </KeyCodes>
+          <Context />
+          <X>0</X>
+          <Y>0</Y>
+          <Z>0</Z>
+          <InputMode>0</InputMode>
+          <ConditionPairing>0</ConditionPairing>
+          <ConditionGroup>0</ConditionGroup>
+          <ConditionStartOperator>0</ConditionStartOperator>
+          <ConditionStartValue>0</ConditionStartValue>
+          <ConditionStartValueType>0</ConditionStartValueType>
+          <ConditionStartType>0</ConditionStartType>
+          <DecimalContext1>0</DecimalContext1>
+          <DecimalContext2>0</DecimalContext2>
+          <DateContext1>0001-01-01T00:00:00</DateContext1>
+          <DateContext2>0001-01-01T00:00:00</DateContext2>
+          <Disabled>false</Disabled>
+          <RandomSounds />
+        </CommandAction>
+      </ActionSequence>
+      <Async>true</Async>
+      <Enabled>true</Enabled>
+      <Description>TX2 (UHF)</Description>
+      <Category>Push-To-Talk</Category>
+      <UseShortcut>false</UseShortcut>
+      <keyValue>50</keyValue>
+      <keyShift>0</keyShift>
+      <keyAlt>0</keyAlt>
+      <keyCtrl>0</keyCtrl>
+      <keyWin>0</keyWin>
+      <keyPassthru>false</keyPassthru>
+      <UseSpokenPhrase>false</UseSpokenPhrase>
+      <onlyKeyUp>true</onlyKeyUp>
+      <RepeatNumber>2</RepeatNumber>
+      <RepeatType>0</RepeatType>
+      <CommandType>0</CommandType>
+      <SourceProfile>00000000-0000-0000-0000-000000000000</SourceProfile>
+      <UseConfidence>false</UseConfidence>
+      <minimumConfidenceLevel>0</minimumConfidenceLevel>
+      <UseJoystick>true</UseJoystick>
+      <joystickNumber>1</joystickNumber>
+      <joystickButton>5</joystickButton>
+      <joystickNumber2>0</joystickNumber2>
+      <joystickButton2>-1</joystickButton2>
+      <joystickUp>true</joystickUp>
+      <KeepRepeating>false</KeepRepeating>
+      <UseProcessOverride>false</UseProcessOverride>
+      <ProcessOverrideActiveWindow>true</ProcessOverrideActiveWindow>
+      <LostFocusStop>false</LostFocusStop>
+      <PauseLostFocus>false</PauseLostFocus>
+      <LostFocusBackCompat>true</LostFocusBackCompat>
+      <UseMouse>false</UseMouse>
+      <Mouse1>false</Mouse1>
+      <Mouse2>false</Mouse2>
+      <Mouse3>false</Mouse3>
+      <Mouse4>false</Mouse4>
+      <Mouse5>false</Mouse5>
+      <Mouse6>false</Mouse6>
+      <Mouse7>false</Mouse7>
+      <Mouse8>false</Mouse8>
+      <Mouse9>false</Mouse9>
+      <MouseUpOnly>false</MouseUpOnly>
+      <MousePassThru xsi:nil="true" />
+      <joystickExclusive>false</joystickExclusive>
+      <lastEditedAction>3b0bb3e8-e97c-4b84-a34c-ed267ed0f109</lastEditedAction>
+      <UseProfileProcessOverride>false</UseProfileProcessOverride>
+      <ProfileProcessOverrideActiveWindow>false</ProfileProcessOverrideActiveWindow>
+      <RepeatIfKeysDown>false</RepeatIfKeysDown>
+      <RepeatIfMouseDown>false</RepeatIfMouseDown>
+      <RepeatIfJoystickDown>false</RepeatIfJoystickDown>
+      <AH>0</AH>
+      <CL>0</CL>
+      <HasMB>false</HasMB>
+      <UseVariableHotkey>false</UseVariableHotkey>
+      <CLE>0</CLE>
+      <EX1>false</EX1>
+      <EX2>false</EX2>
+      <InternalId xsi:nil="true" />
+      <HasInput xsi:nil="true" />
     </Command>
   </Commands>
   <OverrideGlobal>false</OverrideGlobal>
@@ -6376,7 +8140,7 @@
   <GlobalJoystickButton2>0</GlobalJoystickButton2>
   <GlobalJoystickNumber2>0</GlobalJoystickNumber2>
   <ReferencedProfile xsi:nil="true" />
-  <ExportVAVersion>1.6.9</ExportVAVersion>
+  <ExportVAVersion>1.7.8</ExportVAVersion>
   <ExportOSVersionMajor>6</ExportOSVersionMajor>
   <ExportOSVersionMinor>2</ExportOSVersionMinor>
   <OverrideConfidence>false</OverrideConfidence>
@@ -6384,7 +8148,7 @@
   <CatchAllEnabled>false</CatchAllEnabled>
   <CatchAllId xsi:nil="true" />
   <InitializeCommandEnabled>true</InitializeCommandEnabled>
-  <InitializeCommandId>612facae-ffb2-4ae9-860e-3633957bf2aa</InitializeCommandId>
+  <InitializeCommandId>5e1a9f12-5830-4006-95ae-c9f655490074</InitializeCommandId>
   <UseProcessOverride>false</UseProcessOverride>
   <ProcessOverrideAciveWindow>true</ProcessOverrideAciveWindow>
   <DictationCommandEnabled>false</DictationCommandEnabled>
@@ -6392,9 +8156,22 @@
   <EnableProfileSwitch>false</EnableProfileSwitch>
   <CategoryGroups />
   <GroupCategory>false</GroupCategory>
-  <LastEditedCommand>80206fe6-134c-410f-ad0c-2664de0ac61c</LastEditedCommand>
+  <LastEditedCommand>58af9342-7d5c-4bda-8e88-ed6556ba7a06</LastEditedCommand>
   <IS>0</IS>
   <IO>0</IO>
   <ReferencedProfiles />
   <IP>0</IP>
+  <BE>0</BE>
+  <UnloadCommandEnabled>false</UnloadCommandEnabled>
+  <UnloadCommandId xsi:nil="true" />
+  <BlockExternal>false</BlockExternal>
+  <AuthorID xsi:nil="true" />
+  <ProductID xsi:nil="true" />
+  <CR>0</CR>
+  <InternalID xsi:nil="true" />
+  <PR>0</PR>
+  <CO>0</CO>
+  <OP>0</OP>
+  <CV>0</CV>
+  <PD>0</PD>
 </Profile>
